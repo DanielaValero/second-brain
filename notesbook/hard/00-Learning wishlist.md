@@ -1,5 +1,5 @@
-# Wishlist
-
+# Things I want to learn, rebrush, or dig deeper
+## Basics
 ### Data Structures
 
 - Linked Lists
@@ -23,3 +23,8 @@
 - Knapsack Problems
 - Recursion
 - Analysis of performance upper and lower bounds
+
+## On top
+Machine learning
+AI
+Go/scala/nodeJS

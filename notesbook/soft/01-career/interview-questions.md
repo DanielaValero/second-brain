@@ -1,4 +1,14 @@
+## As an interviewe
 
+What do you expect me to accomplish in the first 90 days?
+
+What does a typical day in this position look like?
+
+Do you have any reservations about hiring me for this position at this point? If so, what are they?
+
+What could I learn now that would best prepare me to get started right away if I were hired?
+
+What do you like most and you dislike most about what you do?
 **1. How will I fail?**
 can clue you into whether or not the person who’s interviewing you has truly thought about your success in the role
 
@@ -23,11 +33,7 @@ https://github.com/readme/guides/technical-interviews
 
 * What are the current goals of the team?
 * How does this role and project contribute to the firm’s larger goals?
-* How engineering strategy and product strategy work together?
-
-
-
-I want to know:
+* How engineering strategy and product strategy work together?s
 * From your perspective, what are the strengths and weaknesses of this firm?
 * What is the largest problem facing the current team that needs to be addressed immediately?
 * What type of personalities generally work well within your team?
@@ -60,7 +66,7 @@ What behaviors do team members who struggle the most exhibit?
 
 
 
-
+### Ask myself
 
 1.  What is my personality?
 2.  What are my values?
@@ -69,26 +75,7 @@ What behaviors do team members who struggle the most exhibit?
 5.  What type of work environment do I thrive in?
 
 
-**Round 2.** 
-- Management Style. How I lead teams and ensure good processes are followed. 
-- What metrics do I use day to day? 
-- How do I ensure diversity in my teams? 
-- Give example of difficult stakeholders that I have worked with. Why they were difficult? How did I manage them?
-- Give Example of difficult employees I had to work with. How I managed them?
-- My priorities in the current role are? Why?
-
-
-**Round 3. Face to face at Spotify office.** 
-Round a. Technical. 
-- Draw architecture of my current applications/project. Descibe each part how they interact etc. OR They can provide a scenario. (I suggest ask for scenario) 
-Round b. 
-- Many real world situations and examples questions. Examples of providing negative feedback. Describe the impact. 
-- What objectives have been set for me, in my current role? How i deliver it. 
-- Scenario example, where i have backed a team member or colleague to deliver a piece of work.
-
-
 **Eng manager questions**
-
 - How do you handle conflict?
 - How would I monitor team performance from a Product perspective.
 - Tell me about a time you had an underperforming direct report
@@ -116,8 +103,6 @@ Round b.
  3: If you replaced yourself with any other PM at the company, how would the outcome of the project have been different?
 
 3 additions from me: 1. Tell me specific moments that you felt celebrating in the PM role? 2. What things do you not like to do? 3. Tell us things didn't go the way you wanted, or a project that didn't turn out how you had hoped.
-
-
 
 Great answers:  1: Clearly articulates a high-impact project.  2
 
