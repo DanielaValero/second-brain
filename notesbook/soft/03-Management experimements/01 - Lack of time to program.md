@@ -1,0 +1,2 @@
+- no meetings on Fridays
+- 
