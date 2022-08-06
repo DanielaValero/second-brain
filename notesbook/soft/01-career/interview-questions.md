@@ -1,4 +1,9 @@
-## As an interviewe
+## Questions for programmers in coding interviews
+* What is currently slowing down the team's delivery? 
+* What process does the team have to identify and improve the system?
+
+
+## As an interviewer
 
 What do you expect me to accomplish in the first 90 days?
 
