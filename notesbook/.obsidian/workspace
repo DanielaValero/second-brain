@@ -1,0 +1,135 @@
+{
+  "main": {
+    "id": "24e7857583103d80",
+    "type": "split",
+    "children": [
+      {
+        "id": "550bd56cf933513b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "hard/02 - Microfrontends/Chapter 4. Discovering Micro-Frontend Architectures.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db62814be087d53b",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e1e1babce6567bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16ff3b5d9478a535",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "23601fbceb32e1b6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1e0abcba26c47931",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d128fa6dc305ee79",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6259c1a4c6c98af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3e5172caf50deb8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "hard/02 - Microfrontends/Chapter 4. Discovering Micro-Frontend Architectures.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "568441725f196e10",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "hard/02 - Microfrontends/Chapter 4. Discovering Micro-Frontend Architectures.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d35c1a9011dfad01",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d735e1e4a7bd11cd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "hard/02 - Microfrontends/Chapter 4. Discovering Micro-Frontend Architectures.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "550bd56cf933513b",
+  "lastOpenFiles": [
+    "hard/01 - Algorithms/searching.md"
+  ]
+}
