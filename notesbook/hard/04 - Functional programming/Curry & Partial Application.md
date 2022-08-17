@@ -7,3 +7,5 @@ All curried functions are a form of higher-order function which allows you to cr
 **point-free style**
 
 Declare a function without all its parameters. For example: Function composition and curry
+
+#functionalProgramming #softwareConcepts 

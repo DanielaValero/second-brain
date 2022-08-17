@@ -26,3 +26,6 @@ Source
 > Specific goals could include race or event completion, race finish times, bike power numbers, pace, speed, weight and general workout consistency. Non-specific goals might include happiness with yourself, confidence, resilience, stress-management, contentment and general well-being. When you write your goals down, it can help to divide them into these two categories.
 
 Link: [https://www.trainingpeaks.com/blog/how-to-set-real-goals-for-your-next-season/](https://www.trainingpeaks.com/blog/how-to-set-real-goals-for-your-next-season/)
+
+
+#goals #career

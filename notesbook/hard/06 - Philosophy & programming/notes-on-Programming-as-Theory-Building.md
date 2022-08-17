@@ -14,3 +14,6 @@ https://blog.ceejbot.com/posts/programming-as-theory-building/
 
 
 “the theory of the program” === “a mental model of the system”
+
+
+#softwareConcepts #softwarePhylosophy

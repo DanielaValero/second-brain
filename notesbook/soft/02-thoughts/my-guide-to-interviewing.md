@@ -86,3 +86,6 @@ I have done many interviews in 2022, and out of interviewing a lot, I have learn
   * **Take home excersice:**
     * **Contra**: They are the ones that require more time investment: you have to ramp yourself up, understand the tooling, the task and do it. Then you have to 'defend' your work in an interview
     * **Benefit**: I can do the work as I normally would do work. So I dont have to study and learn the skill of competitive programming, needed in live coding interviews
+
+
+#experienceDriven #journaling #interviewing #career 

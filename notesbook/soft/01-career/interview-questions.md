@@ -114,3 +114,6 @@ Great answers:  1: Clearly articulates a high-impact project.  2
 : Shares specific milestones and metrics, while giving credit to the team.  
 
 3: Cites their specific impact and unique contributions, but does not over-congratulate themselves.
+
+#interviewing #career 
+[[interview-questions]]

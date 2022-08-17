@@ -56,3 +56,6 @@ Here are more questions we can ask ourselves while coding:
 
 -   What would happen if we had to change this module? Would we need to change other modules at the same time? If yes, should we refactor these modules to make them more cohesive (and, therefore, less coupled)?
 -   Should we reduce the scope of this module? Can we modify it easily, or does it take time, because it’s too big for our poor brains to reason about? Should we consider creating two (or more) modules instead?
+
+
+#softwareConcepts #basicConcepts #softwareDesign 

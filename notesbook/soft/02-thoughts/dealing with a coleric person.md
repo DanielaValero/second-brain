@@ -29,3 +29,4 @@ If you are being emotional/when you are emotional, you are not being rational, a
 
 
 
+#peopleTool #difficultConversations #tips

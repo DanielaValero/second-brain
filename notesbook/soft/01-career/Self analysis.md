@@ -21,3 +21,5 @@ leaders can best use competition by encouraging team members to use their streng
 Give constructive feedback to your manager about what she’s doing well and where you could use more support.
 
 . Teach someone a skill you’re proud to have
+
+#career #self-insight 

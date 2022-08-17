@@ -56,3 +56,5 @@ The developer uses computer science background knowledge, and mixes it with patt
 **Sources**
 https://bootcamp.cvn.columbia.edu/blog/software-engineer-vs-developer/
 https://www.indeed.com/career-advice/finding-a-job/software-engineer-vs-developer
+
+#career

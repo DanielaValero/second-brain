@@ -13,3 +13,6 @@ Actually, a monad isn't a single data type, it's really more like a related coll
 What is a monad, anyway? A monad is a value type, an interface, an object data structure with encapsulated behaviors.
 
 But none of those definitions are particularly useful. Here's an attempt at something better: a monad is how you organize behavior around a value in a more declarative way.
+
+
+#functionalProgramming #softwareConcepts 

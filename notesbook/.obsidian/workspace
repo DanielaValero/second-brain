@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "550bd56cf933513b",
+        "id": "f36590d821fc3222",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "hard/02 - Microfrontends/Chapter 4. Discovering Micro-Frontend Architectures.md",
+            "file": "zettelkasten/daily-notes 📅/00- template--literature-note.md.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 316.5
   },
   "right": {
     "id": "d128fa6dc305ee79",
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "hard/02 - Microfrontends/Chapter 4. Discovering Micro-Frontend Architectures.md",
+                "file": "zettelkasten/daily-notes 📅/00- template--literature-note.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,8 +94,8 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "hard/02 - Microfrontends/Chapter 4. Discovering Micro-Frontend Architectures.md",
-                "linksCollapsed": false,
+                "file": "zettelkasten/daily-notes 📅/00- template--literature-note.md.md",
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -117,19 +117,29 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hard/02 - Microfrontends/Chapter 4. Discovering Micro-Frontend Architectures.md"
+                "file": "zettelkasten/daily-notes 📅/00- template--literature-note.md.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "550bd56cf933513b",
+  "active": "f36590d821fc3222",
   "lastOpenFiles": [
-    "hard/01 - Algorithms/searching.md"
+    "zettelkasten/index 🗂/index-IntelectualInspiration.md.md",
+    "zettelkasten/slip-box 🗃️/202208171521 - Italo Calvino on how he reads.md",
+    "zettelkasten/index 🗂/IntelectualInspiration.md",
+    "zettelkasten/daily-notes 📅/00- template--fleeting-note.md.md",
+    "zettelkasten/README.MD.md",
+    "zettelkasten/index 🗂/00 - template-index-note.md.md",
+    "zettelkasten/inbox 📥/Untitled.md",
+    "zettelkasten/inbox 📥/README.md.md",
+    "zettelkasten/daily-notes 📅/17-08-2022.md",
+    "zettelkasten/slip-box 🗃️/00- template--permantent-note.md.md"
   ]
 }

@@ -23,7 +23,7 @@
 | [Community](file:///Users/daniela/Desktop/Export-e3b5ee90-8ff9-4b21-be8d-4b3df28b2ce0/My%20brand%20021a01e413224321853963099edeebe0/Quarterly%20Self%20Review%201ecaa7d5563d4be4bb8af491161b3c69/Less%20than%2040%25%20a%20quarter%20means%20action%206079e63f23b34f81845479c8750419fb/Community%206dea52c067034162adf3d21a064c80c4.html) |     |     |
 | [Total](file:///Users/daniela/Desktop/Export-e3b5ee90-8ff9-4b21-be8d-4b3df28b2ce0/My%20brand%20021a01e413224321853963099edeebe0/Quarterly%20Self%20Review%201ecaa7d5563d4be4bb8af491161b3c69/Less%20than%2040%25%20a%20quarter%20means%20action%206079e63f23b34f81845479c8750419fb/Total%2056a82053b3854ab88d6a21102e44e347.html) |     |     |
 
-#   
+
 
 **Reinventing myself**
 
@@ -38,3 +38,6 @@ How can you make the relationship reciprocal?
 How are you adapting to the new reinvention curve?
 
 How do you stay comptetitive and relevant?
+
+
+#career #self-insight
