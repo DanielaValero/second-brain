@@ -1,19 +1,32 @@
-## Questions for programmers in coding interviews
+
+Inspiration of questions to ask / to assess in a new organization
+https://franciscomt.medium.com/the-systems-within-a-software-team-dc69d31cf9f9
+
+
+## As an interviewee
+
+### For first calls
+* From your perspective, what are the strengths and weaknesses of this firm?
+* How engineering strategy and product strategy work together?
+
+### For technical interviewers
 * What is currently slowing down the team's delivery? 
 * What process does the team have to identify and improve the system?
+* What do you expect me to accomplish in the first 90 days?
+* What does the shipping look like internally?
 
 
-## As an interviewer
+### For hiring managers or recruiters
+* What are the current goals of the team?
+* How much attention do you pay to reducing friction for the engineering team?
+* How engineering strategy and product strategy work together?
+* What is the largest problem facing the current team that needs to be addressed immediately?
+* What type of personalities generally work well within your team?
 
-What do you expect me to accomplish in the first 90 days?
 
-What does a typical day in this position look like?
+## As an interviewer or intervewiee
+- What do you like most and you dislike most about what you do?
 
-Do you have any reservations about hiring me for this position at this point? If so, what are they?
-
-What could I learn now that would best prepare me to get started right away if I were hired?
-
-What do you like most and you dislike most about what you do?
 **1. How will I fail?**
 can clue you into whether or not the person who’s interviewing you has truly thought about your success in the role
 
@@ -26,24 +39,13 @@ Red flags if the incentives are unfair, unattainable, or not well thought throug
 helps you learn is whether or not the team and leadership have thought about principles and values, how they communicate and uphold those, and how they work to hold a high bar. 
 The second thing this question can do is help you understand if the team is rewarded for thinking like scientists
 
-**4. What does the shipping look like internally?**
-**5. How much attention do you pay to reducing friction for the engineering team?**
-They help to know how important is for the comapny to improve their technical delivery (DORA metrics)
 
 Source
 https://github.com/readme/guides/technical-interviews
 
 
-## What I want to know?
 
-* What are the current goals of the team?
-* How does this role and project contribute to the firm’s larger goals?
-* How engineering strategy and product strategy work together?s
-* From your perspective, what are the strengths and weaknesses of this firm?
-* What is the largest problem facing the current team that needs to be addressed immediately?
-* What type of personalities generally work well within your team?
-
-
+#### Questions per caterogy
 **Culture**
 - How engineering strategy and product strategy work together?
 - From your perspective, what are the strengths and weaknesses of this firm?
@@ -80,6 +82,8 @@ What behaviors do team members who struggle the most exhibit?
 5.  What type of work environment do I thrive in?
 
 
+
+## As an interviewer
 **Eng manager questions**
 - How do you handle conflict?
 - How would I monitor team performance from a Product perspective.

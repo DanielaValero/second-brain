@@ -1,6 +1,6 @@
 Fleeting notes from daily notes need to be moved here within 1-2 days for processing.
 
-Notes will be moved to:
+Then move to
 - slip box
 - project folder
 
