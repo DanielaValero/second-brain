@@ -14,7 +14,7 @@ Good for:
 
 Limitations:
 - **Setting up the code challenge**, in a way that helps you find what you want to know is hard
-- Time investment: considering the stack is new to the candidate, the setup needs to be simple enough for them to quickly jump in and do something
+- **Time investment:** considering the stack is new to the candidate, the setup needs to be simple enough for them to quickly jump in and do something
 - **Expectation management:** some companies tend to expect the candidate to produce production ready code. However, a code challenge is something that candidates do in their own time, and should be solved in 8h max. Depending on the amount of work that needs to be done, producing production ready code might be setting unrealistic expectations
 - **Room for interpretation:** In some cases the ask is very open to the interpretations of the candidate. This can lead to having different expectations, the company might expect A, B and C. And the candidate might think A and B are enough and decide deliberately not to do C. The company ends up rejecting the candidate, even though they were able to do C and D.
 - **It is still a code challenge:** Some places tend to expect production ready solutions. However, this is a code challenge. They are missing the fact that what this actually helps to know, is how they solve a specific software problem within the bounds of 8h, in a setup and product terminology that is new to them.

@@ -8,12 +8,6 @@ It would solve my need of:
 - Recommend and promote alternative, indie-web-like, new music, new music sources (ie: flow state, fip radio, etc)
 - Find in those whatever they are playing
 
-Tech
-- Some web framework
-- Rust/Go/Clojure
-- Docker/k8s/kafta and all that lingo
-- Open source
-
 
 ### Music streaming APIS
 https://rapidapi.com/search/music
@@ -39,6 +33,16 @@ https://jonasrmichel.github.io/radio-garden-openapi/
 - Web player
 - Music inspiration:
 	- online magazines?
+* Option to edit custom order of my playlits
+* Intelligent search:
+	* Powered by AI?
+	* Seach by mood, genre, name of artist, playlist, album, year.
+* My library with sorting of albums and playlists per genre, mood
+
+
+
+
+
 
 
 ### Data Fetching alternatives
@@ -54,7 +58,7 @@ Questions:
 ### Backend & Deployments
 - Lambda AWS -> Event driven serverless computing platform
 - Nest JS ?
-- Lambda Netlify
+- Lambda Netlify + faunadb
 
 Boilerplates
 - https://github.com/arabold/serverless-react-boilerplate
@@ -68,3 +72,21 @@ Boilerplates
 [] Finish AWS registration
 [] Create AWS key -> https://www.serverless.com/framework/docs/providers/aws/guide/credentials#create-an-iam-user-and-access-key
 [] Follow tutorial: https://blog.logrocket.com/building-serverless-app-typescript/
+
+
+### Tech
+- React
+- Backend: NodeJs
+- AWS Serverless
+
+
+### Web APIs
+https://developer.spotify.com/documentation/web-playback-sdk/
+https://developer.spotify.com/documentation/web-api/
+https://developer.spotify.com/documentation/web-api/reference/#/
+https://developer.spotify.com/documentation/general/guides/working-with-playlists/
+https://developer.spotify.com/documentation/general/guides/local-files-spotify-playlists/
+
+
+### References
+https://medium.com/geekculture/spotify-system-architecture-6bb418db6084

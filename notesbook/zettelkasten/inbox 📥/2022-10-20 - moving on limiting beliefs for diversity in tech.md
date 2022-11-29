@@ -1,6 +1,6 @@
 Moving on Limiting beliefs in tech teams and communities
-#deepThinking #peopleTool #diversityInTechnology #softwarePhylosophy 
-
+#deepThinking #diversityInTechnology #idea #reflection 
+#idea-to-refine 
 
 
 Idea:
