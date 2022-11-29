@@ -1,30 +1,20 @@
-# Things I want to learn, rebrush, or dig deeper
-## Basics
-### Data Structures
 
-- Linked Lists
-- Stacks & Queues
-- Hash Tables
-- Trees & BSTs
-- Skip Lists
-- Tries
-- Heaps
-- Graphs
-- Systems Design
 
-### Algorithms
+### Tech
+* Cloud architectures
+* Microservices
+* Backend programming: kotlin, clojure, phyton, node
+* Containerization
+* Serverless
+* Architecture documentation, trade offs etc.
+* Field: AI/ML
 
-- Search
-- Sort
-- Traversals
-- Huffman Codes
-- Understanding P vs NP problems
-- Dynamic Programming and Memoization
-- Knapsack Problems
-- Recursion
-- Analysis of performance upper and lower bounds
+# Phylosofy
+* Focault on power
 
-## On top
-Machine learning
-AI
-Go/scala/nodeJS
+# Theater
+* Read out loud poems and monologues
+
+# Finance
+* Finish finance for people
+* Trading, investments, budgetting

@@ -11,8 +11,12 @@
             "id": "534b25ee5d475b11",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "hard/00-Learning wishlist.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "hard/00-Learning wishlist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "hard/00-Learning wishlist.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "hard/00-Learning wishlist.md"
+              }
             }
           }
         ],
@@ -129,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "16ff3b5d9478a535",
+  "active": "534b25ee5d475b11",
   "lastOpenFiles": [
+    "hard/06 - Philosophy & programming/notes-on-Programming-as-Theory-Building.md",
+    "hard/03 - Architecture/structure design.md",
+    "202211291429.md",
     "zettelkasten/index 🗂/index-Intelectual-Inspiration.md.md",
     "zettelkasten/index 🗂/00 - template-index-note.md.md",
     "zettelkasten/inbox 📥/2022-10-20 - moving on limiting beliefs for diversity in tech.md",
     "zettelkasten/inbox 📥/2022-11-25 - what-is-for-stack-real-time-app.md",
     "zettelkasten/inbox 📥/30-08-2022 reflection - Finding my ikigai - live first work second.md",
     "zettelkasten/daily-notes 📅/30-08-2022 idea-own-my-career-app.md",
-    "zettelkasten/daily-notes 📅/2022-10-07 - blogpost on book recommendations.md",
-    "zettelkasten/daily-notes 📅/00- template--fleeting-note.md.md",
-    "zettelkasten/daily-notes 📅/00- template--literature-note.md.md",
-    "zettelkasten/projects 🧾/post-technical-assessments/2022-10-27 Live coding interview.md"
+    "zettelkasten/daily-notes 📅/2022-10-07 - blogpost on book recommendations.md"
   ]
 }
