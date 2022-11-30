@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "95ce7d38723e3698",
+        "id": "b50cd68d1020049f",
         "type": "tabs",
         "children": [
           {
-            "id": "534b25ee5d475b11",
+            "id": "0619f3280da4781f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hard/00-Learning wishlist.md",
+                "file": "zettelkasten/projects 🧾/research-cloud-architectures/00-Readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 545.5
+    "width": 451.5
   },
   "right": {
     "id": "d128fa6dc305ee79",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "hard/00-Learning wishlist.md",
+                "file": "zettelkasten/projects 🧾/research-cloud-architectures/00-Readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "hard/00-Learning wishlist.md",
+                "file": "zettelkasten/projects 🧾/research-cloud-architectures/00-Readme.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hard/00-Learning wishlist.md"
+                "file": "zettelkasten/projects 🧾/research-cloud-architectures/00-Readme.md"
               }
             }
           }
@@ -137,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "534b25ee5d475b11",
+  "active": "0619f3280da4781f",
   "lastOpenFiles": [
-    "hard/06 - Philosophy & programming/notes-on-Programming-as-Theory-Building.md",
+    "zettelkasten/projects 🧾/research-programming-and-languages/paradigms/Reactive Programming.md",
+    "zettelkasten/projects 🧾/research-cloud-architectures/00-Readme.md",
+    "zettelkasten/projects 🧾/research-cloud-architectures/mind-map.png",
+    "zettelkasten/projects 🧾/research-cloud-architectures/communication-among-microservices/Event driven architecture.md",
+    "zettelkasten/projects 🧾/research-programming-and-languages/paradigms/Functional programming.md",
     "hard/03 - Architecture/structure design.md",
-    "202211291429.md",
-    "zettelkasten/index 🗂/index-Intelectual-Inspiration.md.md",
-    "zettelkasten/index 🗂/00 - template-index-note.md.md",
-    "zettelkasten/inbox 📥/2022-10-20 - moving on limiting beliefs for diversity in tech.md",
-    "zettelkasten/inbox 📥/2022-11-25 - what-is-for-stack-real-time-app.md",
-    "zettelkasten/inbox 📥/30-08-2022 reflection - Finding my ikigai - live first work second.md",
-    "zettelkasten/daily-notes 📅/30-08-2022 idea-own-my-career-app.md",
-    "zettelkasten/daily-notes 📅/2022-10-07 - blogpost on book recommendations.md"
+    "zettelkasten/projects 🧾/research-programming-and-languages/00-Readme.md",
+    "zettelkasten/projects 🧾/research-cloud-architectures/cloud-native/Serverless.md",
+    "zettelkasten/projects 🧾/research-cloud-architectures/cloud-native/Microservices.md",
+    "zettelkasten/projects 🧾/research-cloud-architectures/devOps/Infrastructure provisioning.md"
   ]
 }
