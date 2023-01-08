@@ -1,4 +1,5 @@
-# Self analysis
+#career #self-insight 
+
 
 What I do
 
@@ -22,4 +23,3 @@ Give constructive feedback to your manager about what she’s doing well and whe
 
 . Teach someone a skill you’re proud to have
 
-#career #self-insight 

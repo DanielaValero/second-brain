@@ -1,3 +1,5 @@
+#softwarePhylosophy 
+
 # What?
 These are notes I've taken out of reading this article:
 https://blog.ceejbot.com/posts/programming-as-theory-building/

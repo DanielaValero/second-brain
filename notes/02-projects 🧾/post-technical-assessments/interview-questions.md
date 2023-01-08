@@ -1,3 +1,4 @@
+#interviewing #career 
 
 Inspiration of questions to ask / to assess in a new organization
 https://franciscomt.medium.com/the-systems-within-a-software-team-dc69d31cf9f9
