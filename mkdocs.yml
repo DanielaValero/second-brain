@@ -1,16 +1,8 @@
 site_name: 'Daniela's notes'
 #site_url: 'https://notes.danielavalero.com'
-docs_dir: './notes'
+#docs_dir: './notes'
 theme:
-    name: 'mkdocs'
-    highlightjs: true
-    include_sidebar: true
-    nav_style: light
-
-extra:
-  nav:
-    sort_order: reverse
-
+    name: 'gitbook'
 
 # Extensions
 markdown_extensions:
