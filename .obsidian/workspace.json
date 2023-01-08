@@ -1,0 +1,154 @@
+{
+  "main": {
+    "id": "8d683356103ea79a",
+    "type": "split",
+    "children": [
+      {
+        "id": "617ee225c16cc5e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a834a1118019464",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7cd26f1d4f7490d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "4fc55ea0f47b7e41",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "93882dada8ae93a6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a8f7c0d8e205f557",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "rabbit",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "798ba4b9361ec84b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 323.5
+  },
+  "right": {
+    "id": "d1ecb1d55d6e1979",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba9833630dc02f68",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31d1e740e57574e8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "89f4585bd9fbc73a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4653fd3139ab219e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6f1d13340354a0b1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9a834a1118019464",
+  "lastOpenFiles": [
+    "notesbook/zettelkasten/daily-notes 📅/2023-01-04 - Technical books I like.md",
+    "notesbook/zettelkasten/daily-notes 📅/2023-01-06 ACT - Values & goals.md",
+    "notesbook/zettelkasten/daily-notes 📅/2023-01-06 Category theory.md",
+    "notesbook/zettelkasten/daily-notes 📅/2023-01-06 FP Patterns.md",
+    "README.md",
+    "notesbook/zettelkasten/daily-notes 📅/2023-01-04 - Arch. trade-off analysis.md",
+    "notesbook/zettelkasten/daily-notes 📅/2022-12-13 - Tech assessments @ Trade Republic.md",
+    "notesbook/zettelkasten/inbox 📥/2022-11-25 - what-is-for-stack-real-time-app.md",
+    "notesbook/zettelkasten/projects 🧾/research-cloud-architectures/devOps--Infra/Databases.md",
+    "notesbook/zettelkasten/projects 🧾/research-cloud-architectures/devOps--Infra/Infrastructure provisioning.md"
+  ]
+}

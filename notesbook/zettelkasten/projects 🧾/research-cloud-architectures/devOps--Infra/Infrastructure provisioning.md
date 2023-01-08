@@ -26,8 +26,3 @@ Infrastructure as code tool, to build, change and version cloud services.
 Helps provisioning a consistent workflow and manage all infrastructure in a life cycle. It can manage low-level components like compute, storage, and networking resources, as well as high-level components like DNS entries and SaaS features.
 
 for cloud and on-prem (On-premises data centers, commonly referred to as “on-prem,” allow you to have full control of your infrastructure, while cloud computing is cost-efficient and easy to scale up and down.)
-
-
-### Tool DB provisioning: AWS RDS
-Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud.
-https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html

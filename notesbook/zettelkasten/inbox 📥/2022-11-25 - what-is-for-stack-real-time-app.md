@@ -134,6 +134,7 @@ https://medium.com/swlh/monolith-to-event-driven-microservices-with-apache-kafka
 
 # Infrastructure
 ## Terraform
+#infrastructureAsCode 
 https://developer.hashicorp.com/terraform/intro
 Infrastructure as code tool, to build, change and version cloud services.
 Helps provisioning a consistent workflow and manage all infrastructure in a life cycle. It can manage low-level components like compute, storage, and networking resources, as well as high-level components like DNS entries and SaaS features.
@@ -161,6 +162,8 @@ Kafka provides three main functions to its users:
 
 ### RabbitMQ
 Open source message broker that uses messaging queue approach. Queues are spread across a cluster of nodes and optionally replicated, with each message only being delivered to a single consumer.
+
+Used to communicate among services. It creates a queue of messages
 
 https://www.rabbitmq.com/
 https://aws.amazon.com/msk/what-is-kafka/
