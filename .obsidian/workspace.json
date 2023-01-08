@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b059538d946b416a",
+        "id": "f79944c781cae9ae",
         "type": "tabs",
         "children": [
           {
-            "id": "ea4a3692d27678e4",
+            "id": "53bc08775768263c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 475.5
+    "width": 427.5
   },
   "right": {
     "id": "d1ecb1d55d6e1979",
@@ -138,17 +138,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "93882dada8ae93a6",
+  "active": "53bc08775768263c",
   "lastOpenFiles": [
-    "notesbook/zettelkasten/inbox 📥/Quarterly Self Review - Professional.md",
-    "notesbook/zettelkasten/inbox 📥/Self analysis.md",
-    "notesbook/zettelkasten/projects 🧾/lessons-Ive-learned-as-EM.md",
-    "notesbook/zettelkasten/projects 🧾/post-technical-assessments/interview-questions.md",
-    "notesbook/zettelkasten/inbox 📥/GOALS THEORY.md",
-    "notesbook/zettelkasten/inbox 📥/feedback.md",
-    "notesbook/zettelkasten/projects 🧾/post-technical-assessments/my-guide-to-interviewing.md",
-    "notesbook/zettelkasten/00-Learning wishlist.md",
-    "notesbook/zettelkasten/reference system 🧾/tools-Difficult situations/dealing with a coleric person.md",
-    "notesbook/zettelkasten/inbox 📥/after-sentiers-229.md"
+    "notes/01-inbox 📥/00-readme.md",
+    "notes/01-inbox 📥/Self analysis.md",
+    "notes/01-inbox 📥/onLabels.md",
+    "notes/01-inbox 📥/notes-on-Programming-as-Theory-Building.md",
+    "notes/02-ideas 🗃️/after-sentiers-229 - designing without depletion.md",
+    "notes/02-ideas 🗃️/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md",
+    "notes/02-ideas 🗃️/2022-10-20 - moving on limiting beliefs for diversity in tech.md",
+    "notes/03-areas 🧾/readme.md",
+    "notes/03-projects 📅/readme.md",
+    "notes/05-reference system 🧾/06-ebooks/HBR_Martin_PlayingtoWin_executive-summary.pdf"
   ]
 }

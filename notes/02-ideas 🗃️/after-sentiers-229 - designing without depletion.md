@@ -1,3 +1,4 @@
+#humaneTech #sustainableTech #deepThinking #sustainability
 -**Thoughts on designing "without depletion" in Sentiers No. 229**
 
 
@@ -23,4 +24,4 @@ So the deep thinking here applies in summary to three areas: the teams that buil
 
 The current social scientific knowledge, across different fields, is pointing to the direction of adopting more collective, well-being, intersectionally diverse and collaborative perspectives produce human environments, products, and impact on environment closer to achieve that sustainable goal that humans nowadays seem to be in the need for.
 
-#humaneTech #sustainableTech #deepThinking #sustainability
+
