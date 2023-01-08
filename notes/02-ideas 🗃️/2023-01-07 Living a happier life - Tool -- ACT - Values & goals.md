@@ -1,4 +1,5 @@
-#self-insight #understandMyself 
+#self-insight #understandMyself #act-values #act 
+
 
 
 Inspiration from
@@ -53,6 +54,3 @@ https://www.actmindfully.com.au/upimages/2016_Complete_Worksheets_for_Russ_Harri
 
 ### Resources
 https://portlandpsychotherapy.com/values_exercises/
-
-
-

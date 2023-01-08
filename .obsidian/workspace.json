@@ -11,8 +11,12 @@
             "id": "53bc08775768263c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "notes/00-daily-notes 📅/2023-01-08 act - finding my values.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "notes/00-daily-notes 📅/2023-01-08 act - finding my values.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "notes/00-daily-notes 📅/2023-01-08 act - finding my values.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "notes/00-daily-notes 📅/2023-01-08 act - finding my values.md"
+              }
             }
           }
         ]
@@ -140,12 +148,12 @@
   },
   "active": "53bc08775768263c",
   "lastOpenFiles": [
+    "notes/02-ideas 🗃️/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md",
     "notes/01-inbox 📥/00-readme.md",
     "notes/01-inbox 📥/Self analysis.md",
     "notes/01-inbox 📥/onLabels.md",
     "notes/01-inbox 📥/notes-on-Programming-as-Theory-Building.md",
     "notes/02-ideas 🗃️/after-sentiers-229 - designing without depletion.md",
-    "notes/02-ideas 🗃️/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md",
     "notes/02-ideas 🗃️/2022-10-20 - moving on limiting beliefs for diversity in tech.md",
     "notes/03-areas 🧾/readme.md",
     "notes/03-projects 📅/readme.md",
