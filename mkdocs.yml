@@ -3,10 +3,13 @@ site_name: Notes
 #docs_dir: './notes'
 theme:
     name: 'material'
-markdown_extensions:
-    - toc:
-        permalink: True
-        separator: "-"
+    features:
+      - navigation.instant
+      - navigation.sections
+# markdown_extensions:
+#     - toc:
+#         permalink: True
+#         separator: "-"
 # Extensions
 # markdown_extensions:
 #   - footnotes
@@ -28,8 +31,9 @@ markdown_extensions:
   # - toc:
   #     permalink: true
 
-# plugins:
-#   - search
+plugins:
+  - search
+  - tags
 #   - roamlinks 
 #   - mermaid2
 
