@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "617ee225c16cc5e0",
+        "id": "ce95ab8a8be4a351",
         "type": "tabs",
         "children": [
           {
-            "id": "9a834a1118019464",
+            "id": "666978e58875e26a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "notesbook/zettelkasten/inbox 📥/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5
+    "width": 475.5
   },
   "right": {
     "id": "d1ecb1d55d6e1979",
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "notesbook/zettelkasten/inbox 📥/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "notesbook/zettelkasten/inbox 📥/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "notesbook/zettelkasten/inbox 📥/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md"
+              }
             }
           }
         ]
@@ -138,17 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9a834a1118019464",
+  "active": "666978e58875e26a",
   "lastOpenFiles": [
-    "notesbook/zettelkasten/daily-notes 📅/2023-01-04 - Technical books I like.md",
-    "notesbook/zettelkasten/daily-notes 📅/2023-01-06 ACT - Values & goals.md",
-    "notesbook/zettelkasten/daily-notes 📅/2023-01-06 Category theory.md",
-    "notesbook/zettelkasten/daily-notes 📅/2023-01-06 FP Patterns.md",
-    "README.md",
-    "notesbook/zettelkasten/daily-notes 📅/2023-01-04 - Arch. trade-off analysis.md",
-    "notesbook/zettelkasten/daily-notes 📅/2022-12-13 - Tech assessments @ Trade Republic.md",
-    "notesbook/zettelkasten/inbox 📥/2022-11-25 - what-is-for-stack-real-time-app.md",
-    "notesbook/zettelkasten/projects 🧾/research-cloud-architectures/devOps--Infra/Databases.md",
-    "notesbook/zettelkasten/projects 🧾/research-cloud-architectures/devOps--Infra/Infrastructure provisioning.md"
+    "notesbook/zettelkasten/inbox 📥/2022-10-20 - moving on limiting beliefs for diversity in tech.md",
+    "notesbook/zettelkasten/inbox 📥/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md",
+    "notesbook/zettelkasten/projects 🧾/what's-that-for/real-time-app--tech-stack.md",
+    "notesbook/zettelkasten/projects 🧾/what's-that-for/readme.md",
+    "notesbook/zettelkasten/projects 🧾/post-technical-assessments/2022-12-13 - Tech assessments.md",
+    "notesbook/zettelkasten/permanent-notes 🗃️/00- template--permantent-note.md.md",
+    "notesbook/zettelkasten/projects 🧾/functional-programming/2023-01-06 Category theory.md",
+    "notesbook/zettelkasten/index 🗂/index-Intelectual-Inspiration.md.md",
+    "notesbook/zettelkasten/reference system 🧾/2023-01-04 - Technical books I like.md",
+    "notesbook/zettelkasten/reference system 🧾/readme.md.md"
   ]
 }

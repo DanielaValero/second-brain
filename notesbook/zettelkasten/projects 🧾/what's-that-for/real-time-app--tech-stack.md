@@ -1,4 +1,4 @@
-What is for: tech stack for an example real time app
+What's that for: tech stack for an example real time app
 #tools #softwareArchitecture #tradeRepublic
 
 
