@@ -2,7 +2,7 @@ site_name: Notes
 #site_url: 'https://notes.danielavalero.com'
 #docs_dir: './notes'
 theme:
-    name: 'gitbook'
+    name: 'material'
 markdown_extensions:
     - toc:
         permalink: True
