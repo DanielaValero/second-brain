@@ -3,6 +3,13 @@ site_name: 'Daniela's notes'
 docs_dir: './notes'
 theme:
     name: 'gitbook'
+    include_sidebar: true
+
+extra:
+  nav:
+    sort_order: reverse
+
+
 # Extensions
 markdown_extensions:
   - footnotes
