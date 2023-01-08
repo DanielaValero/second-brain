@@ -1,6 +1,6 @@
-site_name: Daniela's notes
-site_url: https://notes.danielavalero.com
-docs_dir: 'notes'
+site_name: 'Daniela's notes'
+#site_url: 'https://notes.danielavalero.com'
+docs_dir: './notes'
 theme:
     name: 'gitbook'
 # Extensions
