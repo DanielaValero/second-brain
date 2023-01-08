@@ -1,37 +1,40 @@
-site_name: 'Daniela's notes'
+site_name: Notes
 #site_url: 'https://notes.danielavalero.com'
 #docs_dir: './notes'
 theme:
     name: 'gitbook'
-
-# Extensions
 markdown_extensions:
-  - footnotes
-  # - attr_list
-  - pymdownx.arithmatex:
-      generic: true
-  # - pymdownx.superfences
-  # - pymdownx.details
-  # - pymdownx.magiclink
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - def_list
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
+    - toc:
+        permalink: True
+        separator: "-"
+# Extensions
+# markdown_extensions:
+#   - footnotes
+#   # - attr_list
+#   - pymdownx.arithmatex:
+#       generic: true
+#   # - pymdownx.superfences
+#   # - pymdownx.details
+#   # - pymdownx.magiclink
+#   - pymdownx.tasklist:
+#       custom_checkbox: true
+#   - def_list
+#   - pymdownx.critic
+#   - pymdownx.caret
+#   - pymdownx.keys
+#   - pymdownx.mark
+#   - pymdownx.tilde
 
-  - toc:
-      permalink: true
+  # - toc:
+  #     permalink: true
 
-plugins:
-  - search
-  - roamlinks 
-  - mermaid2
+# plugins:
+#   - search
+#   - roamlinks 
+#   - mermaid2
 
-extra_javascript:
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://unpkg.com/mermaid/dist/mermaid.min.js 
+# extra_javascript:
+#   - javascripts/mathjax.js
+#   - https://polyfill.io/v3/polyfill.min.js?features=es6
+#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+#   - https://unpkg.com/mermaid/dist/mermaid.min.js 
