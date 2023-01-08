@@ -2,8 +2,10 @@ site_name: 'Daniela's notes'
 #site_url: 'https://notes.danielavalero.com'
 docs_dir: './notes'
 theme:
-    name: 'gitbook'
+    name: 'mkdocs'
+    highlightjs: true
     include_sidebar: true
+    nav_style: light
 
 extra:
   nav:
