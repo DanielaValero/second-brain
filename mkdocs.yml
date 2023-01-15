@@ -22,14 +22,13 @@ markdown_extensions:
    - meta
    - admonition
 #   - codehilite
-   - custom-attributes:
-      file: assets/css/extra.css
    - pymdownx.arithmatex:
        generic: true
 
 plugins:
   - search
   - tags
-#  - roamlinks
-#  - mermaid2
-#  - custom-attributes
+  - roamlinks
+  - mermaid2
+  - custom-attributes
+    file: assets/css/extra.css
