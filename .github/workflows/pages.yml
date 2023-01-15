@@ -2,7 +2,7 @@ name: build-pages
 on:
   push:
     branches:
-      - config-mkdocs
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
