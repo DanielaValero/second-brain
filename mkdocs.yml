@@ -42,3 +42,6 @@ markdown_extensions:
 plugins:
   - search
   - tags
+  - roamlinks
+  - mermaid2
+  - custom-attributes
