@@ -1,9 +1,8 @@
 :root {
   --md-text-font: "SpaceGrotesk", "Roboto";
-  --md-code-font: "space_mono";
-  --custom-headline-font: "miratrix";
+  --md-code-font: "space_mono", "Roboto Mono";
+  --custom-headline-font: "miratrix", "Roboto";
 }
-
 
 @font-face {
   font-family: 'SpaceGrotesk';
@@ -27,8 +26,8 @@
 @font-face {
   font-family: 'space_mono';
   font-display: fallback;
-  src: url('/assets/fonts/spacemono-regular-webfont.woff2') format('woff2'),
-       url('/assets/fonts/spacemono-regular-webfont.woff') format('woff');
+  src: url('../fonts/spacemono-regular-webfont.woff2') format('woff2'),
+       url('../fonts/spacemono-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -36,8 +35,8 @@
 
 @font-face {
   font-family: 'miratrix';
-  src: url('assets/fonts/miratrix-normal-webfont.woff2') format('woff2'),
-       url('assets/fonts/miratrix-normal-webfont.woff') format('woff');
+  src: url('../fonts/miratrix-normal-webfont.woff2') format('woff2'),
+       url('../fonts/miratrix-normal-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

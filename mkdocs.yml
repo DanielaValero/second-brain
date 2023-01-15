@@ -5,7 +5,6 @@ extra_css:
   - assets/css/extra.css
 theme:
     name: material
-    #custom_dir: 'themeOverrides/'
     logo: assets/logo.png
     favicon: assets/favicon.png
     palette:
