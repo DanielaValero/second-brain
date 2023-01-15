@@ -32,3 +32,9 @@ plugins:
 #  - mermaid2
   - custom-attributes:
      file: assets/css/extra.css
+
+
+# https://github.com/ObsidianPublisher/publisher-template-gh-pages
+# hooks:
+#   - overrides/hooks/on_page_markdown.py
+#   - overrides/hooks/on_env.py

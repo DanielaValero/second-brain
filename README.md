@@ -30,3 +30,9 @@ mkdocs serve
 ### Deployment
 the github workflow will update the gh-pages branch.
 You need to go to your github pages setting and configure it to be deployed by that branch name
+
+
+## Things I want to add
+[] Slugigy the URLs
+[] Make the tags be a link
+[] Config obsidian markdown stuff to render here too... Example: https://www.sukany.cz/blog/2022/03/documentation-publishing-with-obsidian-and-github-pages-using-mkdocs/
