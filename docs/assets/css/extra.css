@@ -82,11 +82,6 @@ html .md-footer-meta.md-typeset a {
   font-family: var(--custom-headline-font);
 }
 
-.hash:first-of-type:before{
-  content: '\a';
-  white-space: pre;
-}
-
 .hash,
 .hash:first-of-type{
   vertical-align: middle;
@@ -97,12 +92,5 @@ html .md-footer-meta.md-typeset a {
   padding: 0 .5em;
   height: 2.3em;
   color: #f2f9f9;
-  border: 1px solid #DA2F43;
   background-color: #DA2F43;
 }
-/* .md-typeset h1,
-.md-typeset h2,
-.md-typeset h3,
-.md-typeset h4 {
-  font-family: 'SpaceGrotesk'
-} */
