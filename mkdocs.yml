@@ -30,5 +30,5 @@ plugins:
   - tags
   - roamlinks
   - mermaid2
-  - custom-attributes
-    file: assets/css/extra.css
+  - custom-attributes:
+     file: assets/css/extra.css
