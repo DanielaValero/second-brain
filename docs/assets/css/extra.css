@@ -1,0 +1,91 @@
+:root {
+  --md-text-font: "SpaceGrotesk", "Roboto";
+  --md-code-font: "space_mono";
+  --custom-headline-font: "miratrix";
+}
+
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  font-display: swap;
+  src: url('/assets/fonts/SpaceGrotesk-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SpaceGrotesk';
+  font-display: fallback;
+  src: url('/assets/fonts/SpaceGrotesk-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'SpaceGrotesk';
+  font-display: fallback;
+  src: url('/assets/fonts/SpaceGrotesk-Medium.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'space_mono';
+  font-display: fallback;
+  src: url('/assets/fonts/spacemono-regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/spacemono-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'miratrix';
+  src: url('/assets/fonts/miratrix-normal-webfont.woff2') format('woff2'),
+       url('/assets/fonts/miratrix-normal-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.md-nav__item {
+  padding: 0.1rem 0.6rem;
+}
+
+.md-header__inner.md-grid {
+  border-bottom: 9px solid #DA2F43;
+}
+
+.md-footer-meta__inner.md-grid {
+  border-top: 9px solid #DA2F43;
+}
+.md-header--shadow {
+  box-shadow: none;
+}
+
+
+.md-footer,
+.md-footer-meta, 
+.md-copyright,
+html .md-footer-meta.md-typeset a {
+  background-color: transparent;
+  color: var(--md-typeset-color);
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+  height: 3rem;
+}
+
+.md-header__title .md-ellipsis {
+  margin-left: 0;
+  font-family: var(--custom-headline-font);
+}
+
+.md-nav__title {
+  margin-bottom: 15px;
+}
+.md-nav__title {
+  font-family: var(--custom-headline-font);
+}
+
+/* .md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: 'SpaceGrotesk'
+} */
