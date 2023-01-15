@@ -1,0 +1,17 @@
+<!-- https://github.com/squidfunk/mkdocs-material/blob/master/material/partials/footer.html -->
+
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+        <a href="http://danielavalero.com" target="_blank" rel="noopener" md-footer-link">
+            danielavalero.com
+        </a>
+        {% if config.extra.social %}
+          {% include "partials/social.html" %}
+        {% endif %}
+
+        {% include "partials/copyright.html" %}
+
+    </div>
+  </div>
+</footer>
