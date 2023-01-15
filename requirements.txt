@@ -1,5 +1,6 @@
-mkdocs-custom-tags-attributes
+mkdocs
 mkdocs-material
+mkdocs-roamlinks-plugin
 mkdocs-mermaid2-plugin
-mkdocs-meta-descriptions-plugin
+mkdocs-custom-tags-attributes
 obsidiantools

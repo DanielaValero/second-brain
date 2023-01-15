@@ -20,27 +20,16 @@ markdown_extensions:
    - footnotes
    - attr_list
    - meta
-   - pymdownx.tabbed:
-        slugify: !!python/object/apply:pymdownx.slugs.slugify
-          kwds:
-            case: lower
-#   - pymdownx.arithmatex:
-#       generic: true
-#   # - pymdownx.superfences
-#   # - pymdownx.details
-#   # - pymdownx.magiclink
-#   - pymdownx.tasklist:
-#       custom_checkbox: true
-#   - def_list
-#   - pymdownx.critic
-#   - pymdownx.caret
-#   - pymdownx.keys
-#   - pymdownx.mark
-#   - pymdownx.tilde
+   - admonition
+#   - codehilite
+   - custom-attributes:
+      file: assets/css/extra.css
+   - pymdownx.arithmatex:
+       generic: true
 
 plugins:
   - search
   - tags
-  - roamlinks
-  - mermaid2
-  - custom-attributes
+#  - roamlinks
+#  - mermaid2
+#  - custom-attributes
