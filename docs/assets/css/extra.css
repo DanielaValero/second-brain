@@ -7,19 +7,19 @@
 @font-face {
   font-family: 'SpaceGrotesk';
   font-display: swap;
-  src: url('/assets/fonts/SpaceGrotesk-Regular.woff2') format('woff2');
+  src: url('../fonts/SpaceGrotesk-Regular.woff2') format('woff2');
   font-weight: 400;
 }
 @font-face {
   font-family: 'SpaceGrotesk';
   font-display: fallback;
-  src: url('/assets/fonts/SpaceGrotesk-Light.woff2') format('woff2');
+  src: url('../fonts/SpaceGrotesk-Light.woff2') format('woff2');
   font-weight: 300;
 }
 @font-face {
   font-family: 'SpaceGrotesk';
   font-display: fallback;
-  src: url('/assets/fonts/SpaceGrotesk-Medium.woff2') format('woff2');
+  src: url('../fonts/SpaceGrotesk-Medium.woff2') format('woff2');
   font-weight: 600;
 }
 
