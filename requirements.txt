@@ -1,0 +1,5 @@
+mkdocs-custom-tags-attributes
+mkdocs-material
+mkdocs-mermaid2-plugin
+mkdocs-meta-descriptions-plugin
+obsidiantools

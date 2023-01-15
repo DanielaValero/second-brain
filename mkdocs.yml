@@ -1,19 +1,30 @@
-site_name: Notes
+site_name: Daniela's public notes
 #site_url: 'https://notes.danielavalero.com'
 #docs_dir: './notes'
+extra_css:
+  - assets/css/extra.css
 theme:
-    name: 'material'
+    name: material
+    #custom_dir: 'themeOverrides/'
+    logo: assets/logo.png
+    favicon: assets/favicon.png
+    palette:
+      accent: red
+      primary: white
     features:
       - navigation.instant
-      - navigation.sections
-# markdown_extensions:
-#     - toc:
-#         permalink: True
-#         separator: "-"
+      - navigation.path
+      - navigation.indexes
+      - navigation.top
 # Extensions
-# markdown_extensions:
-#   - footnotes
-#   # - attr_list
+markdown_extensions:
+   - footnotes
+   - attr_list
+   - meta
+   - pymdownx.tabbed:
+        slugify: !!python/object/apply:pymdownx.slugs.slugify
+          kwds:
+            case: lower
 #   - pymdownx.arithmatex:
 #       generic: true
 #   # - pymdownx.superfences
@@ -28,17 +39,9 @@ theme:
 #   - pymdownx.mark
 #   - pymdownx.tilde
 
-  # - toc:
-  #     permalink: true
-
 plugins:
   - search
   - tags
-#   - roamlinks 
-#   - mermaid2
-
-# extra_javascript:
-#   - javascripts/mathjax.js
-#   - https://polyfill.io/v3/polyfill.min.js?features=es6
-#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-#   - https://unpkg.com/mermaid/dist/mermaid.min.js 
+  - roamlinks
+  - mermaid2
+  - custom-attributes

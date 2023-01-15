@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "f79944c781cae9ae",
+        "id": "66a6fa1f75cd47b4",
         "type": "tabs",
         "children": [
           {
-            "id": "53bc08775768263c",
+            "id": "04229b77367847c2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/00-daily-notes 📅/2023-01-08 act - finding my values.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -48,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rabbit",
+                "query": "tag:#microservice",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/00-daily-notes 📅/2023-01-08 act - finding my values.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/00-daily-notes 📅/2023-01-08 act - finding my values.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "notes/00-daily-notes 📅/2023-01-08 act - finding my values.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "53bc08775768263c",
+  "active": "04229b77367847c2",
   "lastOpenFiles": [
+    "docs/03-areas 🧾/research-cloud-architectures/cloud storage/Data management and Databases.md",
     "notes/02-ideas 🗃️/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md",
     "notes/01-inbox 📥/00-readme.md",
     "notes/01-inbox 📥/Self analysis.md",
@@ -156,7 +149,6 @@
     "notes/02-ideas 🗃️/after-sentiers-229 - designing without depletion.md",
     "notes/02-ideas 🗃️/2022-10-20 - moving on limiting beliefs for diversity in tech.md",
     "notes/03-areas 🧾/readme.md",
-    "notes/03-projects 📅/readme.md",
-    "notes/05-reference system 🧾/06-ebooks/HBR_Martin_PlayingtoWin_executive-summary.pdf"
+    "notes/03-projects 📅/readme.md"
   ]
 }
