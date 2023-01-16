@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "66a6fa1f75cd47b4",
+        "id": "7041d8c7cc6dabf8",
         "type": "tabs",
         "children": [
           {
-            "id": "04229b77367847c2",
+            "id": "8e8b46cc7a71e2d3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -44,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#microservice",
+                "query": "tag:#softwareArchitecture",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 427.5
+    "width": 481.50312423706055
   },
   "right": {
     "id": "d1ecb1d55d6e1979",
@@ -138,17 +138,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "04229b77367847c2",
+  "active": "93882dada8ae93a6",
   "lastOpenFiles": [
-    "docs/03-areas 🧾/research-cloud-architectures/cloud storage/Data management and Databases.md",
-    "notes/02-ideas 🗃️/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md",
-    "notes/01-inbox 📥/00-readme.md",
-    "notes/01-inbox 📥/Self analysis.md",
-    "notes/01-inbox 📥/onLabels.md",
-    "notes/01-inbox 📥/notes-on-Programming-as-Theory-Building.md",
-    "notes/02-ideas 🗃️/after-sentiers-229 - designing without depletion.md",
-    "notes/02-ideas 🗃️/2022-10-20 - moving on limiting beliefs for diversity in tech.md",
+    "Kata.md",
+    "README.md",
+    "Untitled.md",
+    "notes/06-diagrams-media 🌁/Agile.pdf",
+    "notes/05-reference system 🧾/Algorithms/hash-tables.md",
+    "notes/05-reference system 🧾/readme.md.md",
+    "notes/03-projects 📅/readme.md",
+    "notes/02-ideas 🗃️/readme.md",
     "notes/03-areas 🧾/readme.md",
-    "notes/03-projects 📅/readme.md"
+    "notes/02-ideas 🗃️/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md"
   ]
 }

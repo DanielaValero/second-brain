@@ -1,6 +1,6 @@
-site_name: Daniela's public notes
+site_name: Daniela's second brain
 site_url: 'https://notes.danielavalero.com'
-#docs_dir: './notes'
+docs_dir: 'notes'
 extra_css:
   - assets/css/extra.css
 theme:

@@ -10,12 +10,19 @@ I am building it with mkdocs (a python static stite generator), and using mkdocs
 
 ### Installation
 #### Pre requisites
-* Python 3
-* pip or pip3
+* Intall Python 3: `brew install python3`
+-- note: if pip is not linked, do: `brew unlink python && brew link python`
+* Install pip: `python3 -m ensurepip --upgrade`
+* Add python3 to your PATH: `echo PATH=/opt/homebrew/bin/python3/:$PATH`
 
 Installation:
 ```
-$ pip3 install -r requirements.txt
+$ pip install -r requirements.txt
+```
+If you get a message that the default write folder (to install dependencies) is not writable, then use the follwing command:
+
+```
+python3 -m pip install -r requirements.txt 
 ```
 
 ### Running docs locally
