@@ -25,6 +25,8 @@ If you get a message that the default write folder (to install dependencies) is 
 python3 -m pip install -r requirements.txt 
 ```
 
+Other problems? [Checkout the troubleshooting page](https://jimandreas.github.io/mkdocs-material/troubleshooting/)
+
 ### Running docs locally
 ```
 mkdocs serve
