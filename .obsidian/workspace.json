@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "7041d8c7cc6dabf8",
+        "id": "98e92b6fbeeb6278",
         "type": "tabs",
         "children": [
           {
-            "id": "8e8b46cc7a71e2d3",
+            "id": "a9abd7eb5eab6c4d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "notes/00-daily-notes 📅/2023-01-16 - On Documenting Architectures.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#softwareArchitecture",
+                "query": "tag:#tradeRepublic",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 481.50312423706055
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d1ecb1d55d6e1979",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "notes/00-daily-notes 📅/2023-01-16 - On Documenting Architectures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "notes/00-daily-notes 📅/2023-01-16 - On Documenting Architectures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "notes/00-daily-notes 📅/2023-01-16 - On Documenting Architectures.md"
+              }
             }
           }
         ]
@@ -138,17 +147,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "93882dada8ae93a6",
+  "active": "a9abd7eb5eab6c4d",
   "lastOpenFiles": [
+    "notes/03-areas 🧾/research-cloud-architectures/devOps--Infra/Containerization.md",
+    "notes/03-areas 🧾/what's-that-for/real-time-app--tech-stack.md",
+    "notes/03-areas 🧾/research-programming-and-languages/paradigms/Reactive Programming.md",
+    "notes/03-areas 🧾/research-cloud-architectures/cloud storage/Data management and Databases.md",
+    "notes/03-projects 📅/post-technical-assessments/2022-12-13 - Tech assessments.md",
     "Kata.md",
     "README.md",
     "Untitled.md",
     "notes/06-diagrams-media 🌁/Agile.pdf",
-    "notes/05-reference system 🧾/Algorithms/hash-tables.md",
-    "notes/05-reference system 🧾/readme.md.md",
-    "notes/03-projects 📅/readme.md",
-    "notes/02-ideas 🗃️/readme.md",
-    "notes/03-areas 🧾/readme.md",
-    "notes/02-ideas 🗃️/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md"
+    "notes/05-reference system 🧾/Algorithms/hash-tables.md"
   ]
 }
