@@ -1,4 +1,4 @@
-#cloudComputing #tradeRepublic #devOps #microservice 
+#cloudComputing #realTime #devOps #microservice 
 
 # Container Orchestration
 Container orchestrators provide automated management for containerized applications, especially in environments in which large numbers of containers are running on multiple hosts. In complex environments such as these, orchestrators are usually needed to handle operations such as deploying and scaling the containers. [Kubernetes](https://kubernetes.io/) and [Amazon Elastic Container Service (ECS)](https://aws.amazon.com/ecs/) are examples of popular container orchestration tools.

@@ -3,11 +3,18 @@
 ### Tech
 * Cloud architectures
 * Microservices
-* Backend programming: kotlin, clojure, node
+* Backend programming: kotlin, Cojure
 * Containerisation
 * Serverless
-* Architecture documentation, trade offs etc. --- WIP --- 
+* Architecture documentation, trade offs etc. --- WIP ---
 * Field: AI/ML
+* Databases
+
+## Improve
+* Functional programming - Clojure
+* Design patterns
+* Algorithmic/Mathematical thinking --- WIP ---
+
 
 # Philosophy
 * Foucault on power
@@ -17,4 +24,4 @@
 
 # Finance
 * Finish finance for people
-* Trading, investments, budgetting
+* Trading, investments, budgeting

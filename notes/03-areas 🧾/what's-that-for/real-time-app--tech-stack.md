@@ -1,5 +1,5 @@
 What's that for: tech stack for an example real time app
-#tools #softwareArchitecture #tradeRepublic
+#tools #softwareArchitecture #realTime
 
 
 # Container Orchestration

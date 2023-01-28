@@ -1,5 +1,6 @@
 #humaneTech #sustainableTech #deepThinking #sustainability
--**Thoughts on designing "without depletion" in Sentiers No. 229**
+
+**Thoughts on designing "without depletion" in Sentiers No. 229**
 
 
 What can we learn from knowledge created in other fields, and adopt in the technology world, so that we adopt mind perspectives that allow us to build technology that integrates in a sustainable manner with us as inviduals, us as societies and within the environment.

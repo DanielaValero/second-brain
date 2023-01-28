@@ -48,8 +48,6 @@ ie: use always the same prop name for props that do the same thing across compon
 
 
 
-6. 
-
 
 [Inspiration guides](https://sporto.github.io/elm-patterns/basic/type-blindness.html)
 

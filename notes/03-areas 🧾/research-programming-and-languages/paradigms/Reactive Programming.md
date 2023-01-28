@@ -1,4 +1,4 @@
-#reactiveProgramming #tradeRepublic #eventDriven #programmingParadigm
+#reactiveProgramming #realTime #eventDriven #programmingParadigm
 
 
 > Reactive programming is a programming paradigm oriented toward data flows and the propagation of change: programming with asynchronous data streams.

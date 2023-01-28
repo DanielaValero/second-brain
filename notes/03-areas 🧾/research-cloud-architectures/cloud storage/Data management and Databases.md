@@ -1,5 +1,5 @@
 # Data management and Databases
-#microservice#dataBase #techStack #tradeRepublic  #dataManagement #cloudComputing #cloudNative 
+#microservice#dataBase #techStack  #dataManagement #cloudComputing #cloudNative 
 
 
 
