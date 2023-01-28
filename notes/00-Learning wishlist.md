@@ -3,14 +3,14 @@
 ### Tech
 * Cloud architectures
 * Microservices
-* Backend programming: kotlin, clojure, phyton, node
-* Containerization
+* Backend programming: kotlin, clojure, node
+* Containerisation
 * Serverless
-* Architecture documentation, trade offs etc.
+* Architecture documentation, trade offs etc. --- WIP --- 
 * Field: AI/ML
 
-# Phylosofy
-* Focault on power
+# Philosophy
+* Foucault on power
 
 # Theater
 * Read out loud poems and monologues

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b52afde15c3d5a50",
+        "id": "b0afed932f8a5177",
         "type": "tabs",
         "children": [
           {
-            "id": "2b0bfb8ded1601ff",
+            "id": "078db09edb9b5f4c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/00-daily-notes 📅/2023-01-16 - On Documenting Architectures.md",
+                "file": "notes/00-Learning wishlist.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#technicalWritting",
+                "query": "forum",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 314.50312423706055
+    "width": 466.50312423706055
   },
   "right": {
     "id": "d1ecb1d55d6e1979",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/00-daily-notes 📅/2023-01-16 - On Documenting Architectures.md",
+                "file": "notes/00-Learning wishlist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/00-daily-notes 📅/2023-01-16 - On Documenting Architectures.md",
+                "file": "notes/00-Learning wishlist.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/00-daily-notes 📅/2023-01-16 - On Documenting Architectures.md"
+                "file": "notes/00-Learning wishlist.md"
               }
             }
           }
@@ -146,17 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2b0bfb8ded1601ff",
+  "active": "078db09edb9b5f4c",
   "lastOpenFiles": [
-    "notes/00-daily-notes 📅/2023-01-16 Structirizr tool for docs as code Arcs.md",
-    "notes/00-daily-notes 📅/2023-01-16 - On Documenting Architectures.md",
-    "notes/00-daily-notes 📅/2023-01-16 Scaling FE at TR conversationally.md",
-    "notes/03-areas 🧾/research-cloud-architectures/devOps--Infra/Containerization.md",
-    "notes/03-areas 🧾/what's-that-for/real-time-app--tech-stack.md",
-    "notes/03-areas 🧾/research-programming-and-languages/paradigms/Reactive Programming.md",
-    "notes/03-areas 🧾/research-cloud-architectures/cloud storage/Data management and Databases.md",
-    "notes/03-projects 📅/post-technical-assessments/2022-12-13 - Tech assessments.md",
-    "Kata.md",
-    "README.md"
+    "notes/00-book-wishlist.md",
+    "notes/02-ideas 🗃️/after-sentiers-229 - designing without depletion.md",
+    "notes/02-ideas 🗃️/202208171521 - Italo Calvino on how he reads.md",
+    "notes/02-ideas 🗃️/2023-01-07 Living a happier life - Tool -- ACT - Values & goals.md",
+    "notes/02-ideas 🗃️/2022-10-20 - moving on limiting beliefs for diversity in tech.md",
+    "notes/02-ideas 🗃️/00- template--permantent-note.md.md",
+    "notes/02-ideas 🗃️/notes-on-Programming-as-Theory-Building.md",
+    "notes/03-areas 🧾/feminism/feminism.md",
+    "notes/03-areas 🧾/Glossary/Structure design--Coupling.md",
+    "notes/01-inbox 📥/Self analysis.md"
   ]
 }

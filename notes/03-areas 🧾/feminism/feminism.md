@@ -6,4 +6,3 @@ La académica de la Casa de Bello agrega: “Esto es lo que plantea Simone de Be
 
 “Así es. Necesitamos desprendernos de los constructos culturales para saber quiénes somos. Ahí tenemos que preguntarnos (y de Beauvoir nos ayuda): ¿Qué significa ser mujer? ¿De qué manera esto nos corroe? ¿Nos resume? ¿Nos forma? Esa concepción cambia con el tiempo, con los años. El feminismo nos hace otras mujeres. A los hombres los hace otros hombres. Nos vuelve más humanos, más sensibles, más iguales, más libres. Simone de Beauvoir fue profundamente original. Su escritura, su pensamiento, su dialéctica es revolucionaria. Y lo seguirá siendo. Ella creía en un solo género: el humano. Ese es el futuro. Una sociedad basada en la fraternidad. El resto importa poco”.
 
-#feminism #becomeWoman 

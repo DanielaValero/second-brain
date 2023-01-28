@@ -1,4 +1,5 @@
 # Quarterly Self Review - Professional Self-Insight
+#career #self-insight
 
 **A**m **I** **G**rowing **C**omplacent **C**urrently
 
@@ -40,4 +41,3 @@ How are you adapting to the new reinvention curve?
 How do you stay comptetitive and relevant?
 
 
-#career #self-insight

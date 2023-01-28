@@ -1,11 +1,5 @@
 #technicalWritting #softwareArchitecture  #systemsDocumentation
 
-
-
-[] Docs as code: Swager, backstage, what else?
-
-
-
 ## Need
 
 At work I am currently designing a new system together with my team. The system will start as an MVP, and in will be extended in features and scaled to users and regions over time.
@@ -23,29 +17,8 @@ With such scale of the system, the people working on the system will also scale,
 	4. Practices etc
 
 
+## When to do an RFC and when to do an ADR?
 
-## Practice: Documenting system
-* **Method**: Spike
-* **Output**:  [Reference for further ideas to extend as needed in the future](https://docs.arc42.org/home/)
-	* C4 Model
-	* Non-Functional requirements
-	* Deployment view
-* **Medium**: Confluence
-
-
-## Practice: Documenting APIS
-* Swagger? Backstage?
-
-
-## Practice: Documenting technical decisions
-
-- **Method to reach the decision:** Individual time, ADR, Meetings
-- **Output**: ADR
-- **Medium for RFC and ADRs:** Git? 
-
-
-**Foreword**
-**When to do an RFC and when to do an ADR?**
 For that, let's look at this definition of software architecture
 
 > “In most successful software projects, the expert developers working on that project have a **shared understanding of the system design**. This shared understanding is called ‘architecture.’ This understanding includes how the system is divided into components and how the components interact through interfaces. These components are usually composed of smaller components, but the architecture only includes the components and interfaces that are understood by all the developers.” 
@@ -58,8 +31,6 @@ Here we can get the point that suggest:
 * Architecture is a social construct because it depends on group consensus as well as on software.
 
 So, within this context, and RFC is suitable to design decisions, and ADRS for architecture decisions.
-
-
 
 
 ### ADRs
@@ -162,6 +133,7 @@ Confluence? or Git?
 -   UX
 -   UI
 ```
+
 
 #### Notations to consider
 **Status**

@@ -5,6 +5,10 @@
 
 ## Software Architecture
 
+### Design It!: From programmer to software architect
+By [Michael Keeling](https://learning.oreilly.com/search/?query=author%3A%22Michael%20Keeling%22&sort=relevance&highlight=true)
+[OReilly](https://learning.oreilly.com/library/view/design-it/9781680502923/)
+
 ### Software architecture: The hard parts
 By [Neal Ford](https://learning.oreilly.com/search/?query=author%3A%22Neal%20Ford%22&sort=relevance&highlight=true), [Mark Richards](https://learning.oreilly.com/search/?query=author%3A%22Mark%20Richards%22&sort=relevance&highlight=true), [Pramod Sadalage](https://learning.oreilly.com/search/?query=author%3A%22Pramod%20Sadalage%22&sort=relevance&highlight=true), [Zhamak Dehghani](https://learning.oreilly.com/search/?query=author%3A%22Zhamak%20Dehghani%22&sort=relevance&highlight=true)
 Oct 2021

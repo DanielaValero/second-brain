@@ -1,3 +1,4 @@
+#feedback #communication 
 as Winston Churchill wisely put it: “Criticism may not be agreeable, but it is necessary. It fulfills the same function as pain in the human body. It calls attention to an unhealthy state of things.”
 
 This is the time of the year where most of people is in a self reflecting mode. 
