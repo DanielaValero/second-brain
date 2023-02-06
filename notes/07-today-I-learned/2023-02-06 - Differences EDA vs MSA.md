@@ -30,9 +30,9 @@ We can also create hybrids of these two architectures, for example:
 
 
 ### Related terms
-* Bounded context [web link](/03-areas%20🧾/Glossary/Bounded%20Context/) or [obsidian link](obsidian://open?vault=learn-in-public&file=notes%2F03-areas%20%F0%9F%A7%BE%2FGlossary%2FBounded%20Context)
-* Microservice [web link](/03-areas%20🧾/Glossary/Microservice/) - [obsidian link](obsidian://open?vault=learn-in-public&file=notes%2F03-areas%20%F0%9F%A7%BE%2FGlossary%2FMicroservice)
-* Event processor [web link](/03-areas%20🧾/Glossary/Event%20processor/) - [obsidian link](obsidian://open?vault=learn-in-public&file=notes%2F03-areas%20%F0%9F%A7%BE%2FGlossary%2FEvent%20processor)
+* Bounded context [web link](/03-areas%20🧾/Glossary/Bounded%20Context/) or [obsidian link](obsidian://open?vault=second-brain&file=notes%2F03-areas%20%F0%9F%A7%BE%2FGlossary%2FBounded%20Context)
+* Microservice [web link](/03-areas%20🧾/Glossary/Microservice/) - [obsidian link](obsidian://open?vault=second-brain&file=notes%2F03-areas%20%F0%9F%A7%BE%2FGlossary%2FMicroservice)
+* Event processor [web link](/03-areas%20🧾/Glossary/Event%20processor/) - [obsidian link](obsidian://open?vault=second-brain&file=notes%2F03-areas%20%F0%9F%A7%BE%2FGlossary%2FEvent%20processor)
 
 Learned from: [Lesson 131 - Microservices vs. Event-Driven Architecture  
 (posted January 31, 2022)](https://www.developertoarchitect.com/lessons/lesson131.html)
