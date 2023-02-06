@@ -106,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 426.5
+    "width": 254.5
   },
   "right": {
     "id": "d1ecb1d55d6e1979",
@@ -183,7 +183,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "10ffd2eae8197c87",
+  "active": "93882dada8ae93a6",
   "lastOpenFiles": [
     "notes/03-areas 🧾/Glossary/Bounded Context.md",
     "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md",
