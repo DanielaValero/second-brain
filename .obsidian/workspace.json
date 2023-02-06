@@ -4,56 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "cc1c60cd66d6c1ca",
+        "id": "e43edc96a83a2609",
         "type": "tabs",
         "children": [
           {
-            "id": "10ffd2eae8197c87",
+            "id": "76f6593cbc9f9701",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ea31076d06408071",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/03-areas 🧾/Glossary/Event processor.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b76903ab15a2f695",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/03-areas 🧾/Glossary/Bounded Context.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dbb1b520ea2d4337",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/03-areas 🧾/Glossary/Microservice.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -122,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -183,12 +138,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "93882dada8ae93a6",
+  "active": "76f6593cbc9f9701",
   "lastOpenFiles": [
-    "notes/03-areas 🧾/Glossary/Bounded Context.md",
-    "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md",
-    "notes/03-areas 🧾/Glossary/Event processor.md",
     "notes/03-areas 🧾/Glossary/Microservice.md",
+    "notes/03-areas 🧾/Glossary/Bounded Context.md",
+    "notes/03-areas 🧾/Glossary/Event processor.md",
+    "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md",
     "notes/07-today-I-learned/2023-02-01 - Coupling  & evolve systems.md",
     "notes/07-today-I-learned/2023-01-18 TIL - domain architecture isomorphism.md",
     "README.md",
