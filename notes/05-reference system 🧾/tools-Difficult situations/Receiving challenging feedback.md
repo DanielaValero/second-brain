@@ -1,5 +1,7 @@
-Receiving challenging feedback
-==============================
+#feedback #communication
+
+## Receiving challenging feedback
+
 
 Sign up witnesses. Ask your boss or team to alert you when they observe you mastering the skills or approaches flagged in your review. It’s human nature to categorize people and never change. To disrupt that pattern, ask them to look for positive evidence that you’re changing. As their brains do that work, their opinion of you will change!
 

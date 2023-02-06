@@ -1,11 +1,13 @@
-
+#peopleTool #difficultConversations #communication
 
 ---- 
 
-Id like to ask you to sleep on it. I am happy to discuss in the future how we can collaborate more. Feedback is a gift, you dont need to keep it, but hold on to it a bit to see if it resonates with you.
+I'd like to ask you to sleep on it. I am happy to discuss in the future how we can collaborate more. Feedback is a gift, you dont need to keep it, but hold on to it a bit to see if it resonates with you.
 
 ----
-**Dealing with emotional person:**
+
+
+**Dealing with a person in a strong emotional state:**
 - Sending the person for a timeout, to calm down
 - Remember this has nothing to do with me
 - Stay calm. "You seem very emotional, lets take a breather"
@@ -29,4 +31,4 @@ If you are being emotional/when you are emotional, you are not being rational, a
 
 
 
-#peopleTool #difficultConversations #tips
+

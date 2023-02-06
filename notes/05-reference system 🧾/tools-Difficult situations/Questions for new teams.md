@@ -1,3 +1,5 @@
+#teamBuilding #newTeams
+
 Questions for new teams
 =======================
 

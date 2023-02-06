@@ -4,15 +4,56 @@
     "type": "split",
     "children": [
       {
-        "id": "16a63575d0ac19b1",
+        "id": "cc1c60cd66d6c1ca",
         "type": "tabs",
         "children": [
           {
-            "id": "bb54ff9e9be82ef5",
+            "id": "10ffd2eae8197c87",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea31076d06408071",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/03-areas 🧾/Glossary/Event processor.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b76903ab15a2f695",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/03-areas 🧾/Glossary/Bounded Context.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dbb1b520ea2d4337",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/03-areas 🧾/Glossary/Microservice.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#tradeRepublic",
+                "query": "bounded",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,12 +102,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 466.50312423706055
+    "width": 426.5
   },
   "right": {
     "id": "d1ecb1d55d6e1979",
@@ -82,6 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +161,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md"
+              }
             }
           }
         ]
@@ -139,17 +183,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bb54ff9e9be82ef5",
+  "active": "10ffd2eae8197c87",
   "lastOpenFiles": [
-    "notes/03-areas 🧾/research-programming-and-languages/paradigms/Reactive Programming.md",
-    "notes/03-areas 🧾/research-cloud-architectures/cloud storage/Data management and Databases.md",
-    "notes/03-areas 🧾/research-cloud-architectures/devOps--Infra/Containerization.md",
-    "notes/03-areas 🧾/what's-that-for/real-time-app--tech-stack.md",
-    "notes/01-inbox 📥/2023-01-25 - Component API.md",
-    "notes/03-areas 🧾/software-architecture/2023-01-16 - ADRs & RFCs differences and process.md",
-    "notes/02-ideas 🗃️/Notes about Feedback.md",
-    "notes/03-areas 🧾/event-driven/Glossary.md",
-    "notes/index.md",
-    "notes/03-areas 🧾/lessons-Ive-learned-as-EM.md"
+    "notes/03-areas 🧾/Glossary/Bounded Context.md",
+    "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md",
+    "notes/03-areas 🧾/Glossary/Event processor.md",
+    "notes/03-areas 🧾/Glossary/Microservice.md",
+    "notes/07-today-I-learned/2023-02-01 - Coupling  & evolve systems.md",
+    "notes/07-today-I-learned/2023-01-18 TIL - domain architecture isomorphism.md",
+    "README.md",
+    "PI planning invite 1.md",
+    "Wohnung WG months.md",
+    "notes/03-areas 🧾/research-programming-and-languages/paradigms/Reactive Programming.md"
   ]
 }
