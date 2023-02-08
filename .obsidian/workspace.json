@@ -11,8 +11,12 @@
             "id": "453c5e9f318678eb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -21,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/03-areas 🧾/functional-programming/Monad.md",
+                "file": "notes/03-areas 🧾/functional-programming/Maybe type.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bff",
+                "query": "tag:#monad",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +77,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -93,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md"
+              }
             }
           }
         ]
@@ -150,14 +159,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "93882dada8ae93a6",
+  "active": "453c5e9f318678eb",
   "lastOpenFiles": [
-    "Untitled 1.md",
-    "Untitled.md",
-    "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md",
     "notes/03-areas 🧾/functional-programming/Maybe type.md",
     "notes/03-areas 🧾/functional-programming/Monad.md",
+    "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md",
     "Untitled 2.md",
+    "Untitled 1.md",
+    "Untitled.md",
     "notes/03-areas 🧾/Microfrontends/Step 2 - Coordination among teams.md",
     "notes/00-daily-notes 📅/2023-02-07 - Role ownership mapped to RACI.md",
     "notes/03-areas 🧾/Microfrontends/Chapter 4. Discovering Micro-Frontend Architectures.md",
