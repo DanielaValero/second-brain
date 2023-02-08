@@ -1,25 +1,3 @@
-1. Define roles clearly
-2. Define career framework
-3. Define values:
-   1.  “***statements of value\***”, as they represent what the organization values in regard to behaviors, methods, and outcomes.
-4. Define processes
-
-
-
-
-
-> as your company grows, you stop being able to personally influence all employees. This is true for managers as well, as your team grows in size. Your personal behaviors no longer drive significant influence without other mechanisms in place. You need to scale your personal values.
->
-> https://www.scarletink.com/why-do-the-amazon-leadership-principles-successfully-drive-behavior/
-
-
-
-
-
->  If you say that you value something, but don't encourage it in any way, it creates zero results. For example, you could say that your company values transparency, but if you don't encourage transparency in any way, you have not changed any behaviors.
-
-You say you care about people, but your actions are not coherent with it, the message you are giving is that in reality you don't care about people
-
 
 
 ## Early adopter of micro frontend architecture

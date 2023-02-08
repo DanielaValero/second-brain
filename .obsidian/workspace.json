@@ -4,15 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "e43edc96a83a2609",
+        "id": "e726dd61aef02fa9",
         "type": "tabs",
         "children": [
           {
-            "id": "76f6593cbc9f9701",
+            "id": "453c5e9f318678eb",
             "type": "leaf",
             "state": {
               "type": "empty",
               "state": {}
+            }
+          },
+          {
+            "id": "495f0859ae1bf240",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/03-areas 🧾/functional-programming/Monad.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bounded",
+                "query": "bff",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254.5
+    "width": 368.5
   },
   "right": {
     "id": "d1ecb1d55d6e1979",
@@ -138,17 +150,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "76f6593cbc9f9701",
+  "active": "93882dada8ae93a6",
   "lastOpenFiles": [
-    "notes/03-areas 🧾/Glossary/Microservice.md",
-    "notes/03-areas 🧾/Glossary/Bounded Context.md",
-    "notes/03-areas 🧾/Glossary/Event processor.md",
-    "notes/07-today-I-learned/2023-02-06 - Differences EDA vs MSA.md",
-    "notes/07-today-I-learned/2023-02-01 - Coupling  & evolve systems.md",
-    "notes/07-today-I-learned/2023-01-18 TIL - domain architecture isomorphism.md",
-    "README.md",
-    "PI planning invite 1.md",
-    "Wohnung WG months.md",
-    "notes/03-areas 🧾/research-programming-and-languages/paradigms/Reactive Programming.md"
+    "Untitled 1.md",
+    "Untitled.md",
+    "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md",
+    "notes/03-areas 🧾/functional-programming/Maybe type.md",
+    "notes/03-areas 🧾/functional-programming/Monad.md",
+    "Untitled 2.md",
+    "notes/03-areas 🧾/Microfrontends/Step 2 - Coordination among teams.md",
+    "notes/00-daily-notes 📅/2023-02-07 - Role ownership mapped to RACI.md",
+    "notes/03-areas 🧾/Microfrontends/Chapter 4. Discovering Micro-Frontend Architectures.md",
+    "notes/03-areas 🧾/Microfrontends/Quotes/Delivery Models.md"
   ]
 }

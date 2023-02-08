@@ -1,3 +1,6 @@
+#functionalProgramming #fpTerm #monad
+
+
 # Monad
 
 Source: [https://github.com/getify/Functional-Light-JS/blob/master/manuscript/apB.md/#appendix-b-the-humble-monad](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/apB.md/#appendix-b-the-humble-monad)
@@ -15,4 +18,3 @@ What is a monad, anyway? A monad is a value type, an interface, an object data s
 But none of those definitions are particularly useful. Here's an attempt at something better: a monad is how you organize behavior around a value in a more declarative way.
 
 
-#functionalProgramming #softwareConcepts 
