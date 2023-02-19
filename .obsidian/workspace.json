@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e726dd61aef02fa9",
+        "id": "1ab0d22d08d0b1ea",
         "type": "tabs",
         "children": [
           {
-            "id": "453c5e9f318678eb",
+            "id": "f1b8ab0eb7ad23ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "495f0859ae1bf240",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/03-areas 🧾/functional-programming/Maybe type.md",
+                "file": "notes/00-daily-notes 📅/2023-02-19.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#monad",
+                "query": "tag:#harmonious-life-tool",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md",
+                "file": "notes/00-daily-notes 📅/2023-02-19.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md",
+                "file": "notes/00-daily-notes 📅/2023-02-19.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md"
+                "file": "notes/00-daily-notes 📅/2023-02-19.md"
               }
             }
           }
@@ -159,17 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "453c5e9f318678eb",
+  "active": "f1b8ab0eb7ad23ae",
   "lastOpenFiles": [
+    "notes/00-daily-notes 📅/2023-02-19 - writing with ai.md",
+    "notes/00-daily-notes 📅/2023-02-19 - How to craft a harmonius life.md",
+    "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md",
     "notes/03-areas 🧾/functional-programming/Maybe type.md",
     "notes/03-areas 🧾/functional-programming/Monad.md",
-    "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md",
     "Untitled 2.md",
     "Untitled 1.md",
     "Untitled.md",
     "notes/03-areas 🧾/Microfrontends/Step 2 - Coordination among teams.md",
-    "notes/00-daily-notes 📅/2023-02-07 - Role ownership mapped to RACI.md",
-    "notes/03-areas 🧾/Microfrontends/Chapter 4. Discovering Micro-Frontend Architectures.md",
-    "notes/03-areas 🧾/Microfrontends/Quotes/Delivery Models.md"
+    "notes/00-daily-notes 📅/2023-02-07 - Role ownership mapped to RACI.md"
   ]
 }
