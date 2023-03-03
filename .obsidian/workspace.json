@@ -1,31 +1,19 @@
 {
   "main": {
-    "id": "8d683356103ea79a",
+    "id": "4e22e8da0119c5d2",
     "type": "split",
     "children": [
       {
-<<<<<<< HEAD
-        "id": "1ab0d22d08d0b1ea",
+        "id": "0376dd070e10173b",
         "type": "tabs",
         "children": [
           {
-            "id": "f1b8ab0eb7ad23ae",
-=======
-        "id": "7754e19a26a25e30",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ce70f03385effc26",
->>>>>>> 257dda4 (push notes, and add til)
+            "id": "580bb04e5ad59b21",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
-                "file": "notes/00-daily-notes 📅/2023-02-19.md",
-=======
-                "file": "notes/07-today-I-learned/2023-02-28 - Build a component library with vue ts and vite.md",
->>>>>>> 257dda4 (push notes, and add til)
+                "file": "notes/00-daily-notes 📅/2023-03-03 - Notes FAQ with Marc Richards and Neild Ford.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "7cd26f1d4f7490d7",
+    "id": "3eac14ca6ab97fcd",
     "type": "split",
     "children": [
       {
-        "id": "4fc55ea0f47b7e41",
+        "id": "da0b15b5ba4db7ef",
         "type": "tabs",
         "children": [
           {
-            "id": "93882dada8ae93a6",
+            "id": "e31a310276a58690",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -55,12 +43,12 @@
             }
           },
           {
-            "id": "a8f7c0d8e205f557",
+            "id": "fc28cf43239fbaf0",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#harmonious-life-tool",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +58,7 @@
             }
           },
           {
-            "id": "798ba4b9361ec84b",
+            "id": "89816f0ed12d6334",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -81,27 +69,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 461.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
-    "id": "d1ecb1d55d6e1979",
+    "id": "aa33361c84598a0a",
     "type": "split",
     "children": [
       {
-        "id": "ba9833630dc02f68",
+        "id": "0abdcb737ec4904b",
         "type": "tabs",
         "children": [
           {
-            "id": "31d1e740e57574e8",
+            "id": "04797b762f5d4344",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "notes/00-daily-notes 📅/2023-02-19.md",
-=======
-                "file": "notes/07-today-I-learned/2023-02-28 - Build a component library with vue ts and vite.md",
->>>>>>> 257dda4 (push notes, and add til)
+                "file": "notes/00-daily-notes 📅/2023-03-03 - Notes FAQ with Marc Richards and Neild Ford.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,23 +98,19 @@
             }
           },
           {
-            "id": "89f4585bd9fbc73a",
+            "id": "fae81e869cd3fa7c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "notes/00-daily-notes 📅/2023-02-19.md",
-=======
-                "file": "notes/07-today-I-learned/2023-02-28 - Build a component library with vue ts and vite.md",
->>>>>>> 257dda4 (push notes, and add til)
+                "file": "notes/00-daily-notes 📅/2023-03-03 - Notes FAQ with Marc Richards and Neild Ford.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "4653fd3139ab219e",
+            "id": "12f9cc785a732907",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -140,16 +121,12 @@
             }
           },
           {
-            "id": "6f1d13340354a0b1",
+            "id": "b1a589aa35b56b62",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< HEAD
-                "file": "notes/00-daily-notes 📅/2023-02-19.md"
-=======
-                "file": "notes/07-today-I-learned/2023-02-28 - Build a component library with vue ts and vite.md"
->>>>>>> 257dda4 (push notes, and add til)
+                "file": "notes/00-daily-notes 📅/2023-03-03 - Notes FAQ with Marc Richards and Neild Ford.md"
               }
             }
           }
@@ -170,32 +147,6 @@
       "command-palette:Open command palette": false
     }
   },
-<<<<<<< HEAD
-  "active": "f1b8ab0eb7ad23ae",
-  "lastOpenFiles": [
-    "notes/00-daily-notes 📅/2023-02-19 - writing with ai.md",
-    "notes/00-daily-notes 📅/2023-02-19 - How to craft a harmonius life.md",
-    "notes/00-daily-notes 📅/2023-02-08 - Impossible states Richard Feldman.md",
-    "notes/03-areas 🧾/functional-programming/Maybe type.md",
-    "notes/03-areas 🧾/functional-programming/Monad.md",
-    "Untitled 2.md",
-    "Untitled 1.md",
-    "Untitled.md",
-    "notes/03-areas 🧾/Microfrontends/Step 2 - Coordination among teams.md",
-    "notes/00-daily-notes 📅/2023-02-07 - Role ownership mapped to RACI.md"
-=======
-  "active": "ce70f03385effc26",
-  "lastOpenFiles": [
-    "notes/07-today-I-learned/2023-01-18 TIL - domain architecture isomorphism.md",
-    "notes/07-today-I-learned/2023-02-28 - Build a component library with vue ts and vite.md",
-    "notes/07-today-I-learned/2023-02-01 - Coupling  & evolve systems.md",
-    "notes/03-areas 🧾/software-architecture/2023-01-16 - ADRs & RFCs differences and process.md",
-    "notes/07-today-I-learned/2023-02-27 deploying to dev backstage.md",
-    "notes/03-areas 🧾/functional-programming/2023-01-06 Category theory.md",
-    "notes/03-areas 🧾/functional-programming/2023-01-06 FP Patterns.md",
-    "notes/03-areas 🧾/functional-programming/Curry & Partial Application.md",
-    "notes/03-areas 🧾/functional-programming/Maybe type.md",
-    "notes/03-areas 🧾/functional-programming/Monad.md"
->>>>>>> 257dda4 (push notes, and add til)
-  ]
+  "active": "580bb04e5ad59b21",
+  "lastOpenFiles": []
 }
