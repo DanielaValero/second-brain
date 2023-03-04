@@ -25,6 +25,10 @@ markdown_extensions:
 #   - codehilite
    - pymdownx.arithmatex:
        generic: true
+   - pymdownx.tabbed:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
 plugins:
   - search

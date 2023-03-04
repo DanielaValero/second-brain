@@ -153,6 +153,13 @@ html .md-footer-meta.md-typeset a:hover {
   font-family: var(--custom-headline-font);
 }
 
+
+.md-header__title.md-header__title--active .md-ellipsis  {
+  font-family: var(--md-text-font);
+  font-size: 22px;
+  font-weight: 800;
+}
+
 .md-nav__title {
   margin-bottom: 15px;
 }
