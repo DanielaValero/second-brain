@@ -1,3 +1,9 @@
+---
+tags:
+  - functionalProgramming
+  - fpTerm
+  - monad
+---
 #functionalProgramming #fpTerm #monad
 
 

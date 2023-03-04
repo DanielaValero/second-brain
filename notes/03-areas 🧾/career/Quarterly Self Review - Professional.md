@@ -1,3 +1,8 @@
+---
+tags:
+  - career
+  - self-insight
+---
 # Quarterly Self Review - Professional Self-Insight
 #career #self-insight
 

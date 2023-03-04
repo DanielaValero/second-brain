@@ -1,3 +1,8 @@
+---
+tags:
+  - career
+  - interviewing
+---
 # Tech-Assessments: Take home interview
 #career #interviewing 
 

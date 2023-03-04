@@ -1,3 +1,11 @@
+---
+tags:
+  - self-insight
+  - ACTValues
+  - reflection
+  - needs-based-crafting
+  - harmonious-life-tool
+---
 #self-insight #ACTValues #reflection #needs-based-crafting #harmonious-life-tool
 
 

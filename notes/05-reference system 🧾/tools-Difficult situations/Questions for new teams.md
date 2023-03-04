@@ -1,3 +1,8 @@
+---
+tags:
+  - teamBuilding
+  - newTeams
+---
 #teamBuilding #newTeams
 
 Questions for new teams

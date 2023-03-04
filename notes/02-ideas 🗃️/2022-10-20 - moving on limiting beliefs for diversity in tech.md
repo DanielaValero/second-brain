@@ -1,3 +1,11 @@
+---
+tags:
+  - deepThinking
+  - diversityInTechnology
+  - idea
+  - reflection
+  - idea-to-refine
+---
 Moving on Limiting beliefs in tech teams and communities
 #deepThinking #diversityInTechnology #idea #reflection 
 #idea-to-refine 

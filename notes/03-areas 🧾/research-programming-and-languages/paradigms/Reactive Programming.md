@@ -1,3 +1,10 @@
+---
+tags:
+  - reactiveProgramming
+  - realTime
+  - eventDriven
+  - programmingParadigm
+---
 #reactiveProgramming #realTime #eventDriven #programmingParadigm
 
 

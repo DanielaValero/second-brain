@@ -1,3 +1,10 @@
+---
+tags:
+  - architecturePatterns
+  - cloudNative
+  - microservice
+  - reactiveProgramming
+---
 #architecturePatterns #cloudNative #microservice #reactiveProgramming 
 
 Microservices are  a foundational part of cloud native application architecture

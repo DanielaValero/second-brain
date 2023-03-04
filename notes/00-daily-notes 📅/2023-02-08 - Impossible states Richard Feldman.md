@@ -1,4 +1,9 @@
-#functionalDomainModelling #functionalProgramming #functionalProgramming 
+---
+tags:
+  - functionalDomainModelling
+  - functionalProgramming
+---
+#functionalDomainModelling #functionalProgramming
 
 ### What is an impossible state?
 

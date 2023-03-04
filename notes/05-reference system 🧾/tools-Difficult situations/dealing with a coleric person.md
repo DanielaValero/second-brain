@@ -1,3 +1,9 @@
+---
+tags:
+  - peopleTool
+  - difficultConversations
+  - communication
+---
 #peopleTool #difficultConversations #communication
 
 ---- 

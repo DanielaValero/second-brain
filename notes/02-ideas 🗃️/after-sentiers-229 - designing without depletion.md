@@ -1,3 +1,10 @@
+---
+tags:
+  - humaneTech
+  - sustainableTech
+  - deepThinking
+  - sustainability
+---
 #humaneTech #sustainableTech #deepThinking #sustainability
 
 **Thoughts on designing "without depletion" in Sentiers No. 229**

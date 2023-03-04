@@ -1,3 +1,10 @@
+---
+tags:
+  - self-insight
+  - understandMyself
+  - ACTValues
+  - actTherapy
+---
 #self-insight #understandMyself #ACTValues #actTherapy
 
 

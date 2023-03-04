@@ -1,3 +1,8 @@
+---
+tags:
+  - career
+  - goals
+---
 #career #goals 
 
 Goals should contain the following characteristics:

@@ -1,4 +1,16 @@
-#architecture #adr #architectureCharacteristics #technicalDecisions #technicalDocumentation #theArchitectRole
+---
+tags:
+  - architecture
+  - adr
+  - architectureCharacteristics
+  - technicalDecisions
+  - technicalDocumentation
+  - theArchitectRole
+---
+
+
+#architecture #adr #architectureCharacteristics #technicalDecisions #technicalDocumentation #theArchitectRole 
+
 
 link: https://www.developertoarchitect.com/foundations-friday-forum.html
 

@@ -1,3 +1,10 @@
+---
+tags:
+  - feedback
+  - communication
+  - tools
+  - career
+---
 #feedback #communication 
 
 as Winston Churchill wisely put it: “Criticism may not be agreeable, but it is necessary. It fulfils the same function as pain in the human body. It calls attention to an unhealthy state of things.”

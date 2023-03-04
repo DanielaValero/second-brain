@@ -1,3 +1,7 @@
+---
+tags:
+  - softwarePhylosophy
+---
 #softwarePhylosophy 
 
 # What?

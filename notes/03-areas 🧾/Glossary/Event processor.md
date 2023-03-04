@@ -1,3 +1,8 @@
+---
+tags:
+  - eventDriven
+  - architecture
+---
 #eventDriven #architecture 
 
 ## Event processor

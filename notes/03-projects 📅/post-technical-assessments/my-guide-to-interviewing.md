@@ -1,3 +1,10 @@
+---
+tags:
+  - experienceDriven
+  - journaling
+  - interviewing
+  - career
+---
 These are unrefined notes based on my experience of interviewing for different product companies.
 I have done many interviews in 2022, and out of interviewing a lot, I have learned some things about:
 

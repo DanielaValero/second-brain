@@ -1,3 +1,8 @@
+---
+tags:
+  - reflection
+  - humaneTech
+---
 #reflection #humaneTech 
 
 

@@ -1,3 +1,10 @@
+---
+tags:
+  - pet-project
+  - idea-to-refine
+  - build-for-fun
+  - music
+---
 #pet-project , #idea-to-refine #build-for-fun #music 
 
 The main idea of the app is to be a web browser app, made with whatever tech I decide, to practice, and learn full software design, and product design. At my own pace, with or without help of others. To have my own thing that I grow over time.

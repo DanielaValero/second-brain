@@ -1,3 +1,9 @@
+---
+tags:
+  - techniques
+  - softwareArchitecture
+  - tradeOff
+---
 #techniques #softwareArchitecture #tradeOff
 
 

@@ -1,3 +1,9 @@
+---
+tags:
+  - DDD
+  - architecture
+  - systemDesign
+---
 #DDD #architecture #systemDesign 
 
 

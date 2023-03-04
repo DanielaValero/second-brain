@@ -28,7 +28,8 @@ markdown_extensions:
 
 plugins:
   - search
-  - tags
+  - tags:
+      tags_file: tags.md
   - roamlinks
 #  - mermaid2
   - custom-attributes:

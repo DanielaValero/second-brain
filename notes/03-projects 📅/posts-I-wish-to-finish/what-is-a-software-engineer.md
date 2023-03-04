@@ -1,3 +1,7 @@
+---
+tags:
+  - career
+---
 Moving from maker to multiplier is a switch that takes time to understand. For me it has taken years to be honest. 
 
 I have never understood properly the standard career framework of a software engineer, and because of that, my progression has taken turns that have affected me.

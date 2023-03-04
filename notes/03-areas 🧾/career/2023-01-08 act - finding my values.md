@@ -1,3 +1,8 @@
+---
+tags:
+  - understandMyself
+  - self-insight
+---
 #understandMyself #self-insight 
 
 ### my first draft values

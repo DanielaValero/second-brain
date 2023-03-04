@@ -1,3 +1,9 @@
+---
+tags:
+  - technicalWritting
+  - softwareArchitecture
+  - systemsDocumentation
+---
 #technicalWritting #softwareArchitecture  #systemsDocumentation
 
 ## Need

@@ -1,3 +1,10 @@
+---
+tags:
+  - feminism
+  - self-insight
+  - understandMyself
+  - becomeWoman
+---
 #feminism #self-insight #understandMyself 
 # Labels
 

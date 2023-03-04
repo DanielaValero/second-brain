@@ -1,3 +1,10 @@
+---
+tags:
+  - dataStreaming
+  - cloudComputing
+  - cloudNative
+  - microservice
+---
 #dataStreaming #cloudComputing #cloudNative #microservice #microservice 
 
 is the continuous transmission of data from a source to a destination. With streaming, data sources send data frequently, sometimes multiple times per second, and in small quantities. Contrast that with the more traditional [batch processing](https://www.ibm.com/docs/en/zos-basic-skills?topic=jobs-what-is-batch-processing), where operations run infrequently and transmit larger amounts of data each time.

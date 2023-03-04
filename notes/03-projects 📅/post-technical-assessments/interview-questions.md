@@ -1,3 +1,8 @@
+---
+tags:
+  - interviewing
+  - career
+---
 #interviewing #career 
 
 Inspiration of questions to ask / to assess in a new organization

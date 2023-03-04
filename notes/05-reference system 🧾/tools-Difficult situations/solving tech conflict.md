@@ -1,3 +1,8 @@
+---
+tags:
+  - conflictResolution
+  - difficultSituations
+---
 #conflictResolution #difficultSituations
 
 - How does your/their solution improve the situation? In what ways does it improve the situation?

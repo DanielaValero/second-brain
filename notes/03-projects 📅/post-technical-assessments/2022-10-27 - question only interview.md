@@ -1,3 +1,8 @@
+---
+tags:
+  - career
+  - interviewing
+---
 # Tech-Assessments: Questions-only interview
 #career #interviewing 
 

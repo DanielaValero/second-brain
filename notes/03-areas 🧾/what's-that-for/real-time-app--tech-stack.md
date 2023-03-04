@@ -1,3 +1,10 @@
+---
+tags:
+  - tools
+  - softwareArchitecture
+  - realTime
+  - infrastructureAsCode
+---
 What's that for: tech stack for an example real time app
 #tools #softwareArchitecture #realTime
 

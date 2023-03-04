@@ -1,3 +1,8 @@
+---
+tags:
+  - functionalProgramming
+  - softwareConcepts
+---
 # Curry & Partial Application
 
 All curried functions are a form of higher-order function which allows you to create specialized versions of the original function for the specific use case at hand.

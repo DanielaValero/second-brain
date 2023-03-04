@@ -1,3 +1,11 @@
+---
+tags:
+  - microservice
+  - techStack
+  - dataManagement
+  - cloudComputing
+  - cloudNative
+---
 # Data management and Databases
 #microservice#dataBase #techStack  #dataManagement #cloudComputing #cloudNative 
 

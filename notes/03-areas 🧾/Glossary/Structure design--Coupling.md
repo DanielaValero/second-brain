@@ -1,3 +1,9 @@
+---
+tags:
+  - softwareConcepts
+  - basicConcepts
+  - softwareDesign
+---
 #softwareConcepts #basicConcepts #softwareDesign 
 
 ### Coupling

@@ -1,3 +1,9 @@
+---
+tags:
+  - intelectualEstimulation
+  - creativeWriting
+  - writersInspiration
+---
 #intelectualEstimulation #creativeWriting #writersInspiration
 
 Tiempo cero - Italo Calvino

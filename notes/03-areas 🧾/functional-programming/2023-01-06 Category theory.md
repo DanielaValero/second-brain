@@ -1,3 +1,7 @@
+---
+tags:
+  - functionalProgramming
+---
 #functionalProgramming 
 
 Category theory is a branch of mathematics initially concerned with finding similar constructs within different areas of mathematics. It is a unifying theory. It later was applied to FP.

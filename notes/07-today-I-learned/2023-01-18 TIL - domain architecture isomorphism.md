@@ -1,3 +1,9 @@
+---
+tags:
+  - architecture
+  - basicConcepts
+  - systemDesign
+---
 #architecture #basicConcepts #systemDesign
 
 How an architecture maps to the business domain..

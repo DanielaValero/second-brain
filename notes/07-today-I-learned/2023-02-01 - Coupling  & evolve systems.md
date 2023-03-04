@@ -1,3 +1,8 @@
+---
+tags:
+  - architecture
+  - principles
+---
 #architecture #principles
 
 The more coupling there is, the less evolvability there will be in the system
