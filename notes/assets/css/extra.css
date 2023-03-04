@@ -151,6 +151,7 @@ html .md-footer-meta.md-typeset a:hover {
 .md-header__title .md-ellipsis {
   margin-left: 0;
   font-family: var(--custom-headline-font);
+  font-weight: 400;
 }
 
 
