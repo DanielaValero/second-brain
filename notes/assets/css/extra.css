@@ -6,6 +6,8 @@
   --color-highlight: #3E0E3C;
   /* #DA2F43; #4051b5 */
   --color-no-highlight: #f2f9f9;
+  --color-black: #333333;
+  --color-body: var(var(--color-black))
 
   /* --color-shadow-dark: #C21225;
   --color-shadow: #DA2F43;
@@ -52,6 +54,28 @@
   font-display: swap;
 }
 
+body {
+  color: var(--color-body);
+}
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset li {
+  color: var(--color-body);
+}
+
+.md-typeset a {
+  color: var(--color-highlight);
+  font-weight: 400;
+}
+.md-typeset a:hover {
+  color: var(--color-highlight);
+  font-weight: 800;
+  text-decoration: underline;
+}
+
 .md-nav__item {
   padding: 0.1rem 0.6rem;
 }
@@ -79,14 +103,10 @@
   margin: auto 0.6rem;
 }
 
-.md-typeset a {
-  color: var(--color-highlight);
+.md_nav__list {
+  background-color: #fff;
 }
-.md-typeset a:hover {
-  color: var(--color-highlight);
-  font-weight: 800;
-  text-decoration: underline;
-}
+
 .md-nav__item .md-nav__link--active {
   color: var(--color-highlight);
   font-weight: 800;
@@ -98,10 +118,6 @@
 
 .md-nav__link--passed {
   color: var(--md-default-fg-color--lighter);
-}
-
-.md_top {
-  color: var(--md-default-fg-color);
 }
 
 .md-top:hover {
@@ -152,6 +168,10 @@ html .md-footer-meta.md-typeset a:hover {
   padding-top: 0;
 }
 
+p {
+  margin-bottom: 30px;
+}
+
 /** tags in file with hash **/
 .hash {
   display: none;
@@ -169,14 +189,12 @@ html .md-footer-meta.md-typeset a:hover {
 .md-typeset .md-tag {
   height: auto;
   border-radius: 0;
-  /* background-color: var(--color-highlight); */
   background-color: var(--color-no-highlight);
   border: 1px solid var(--color-highlight);
   padding: .1em .9375em;
 }
 .md-typeset .md-tag[href],
 .md-tag {
-  /* color: var(--color-no-highlight); */
   color: var(--color-highlight);
 }
 
@@ -188,7 +206,6 @@ html .md-footer-meta.md-typeset a:hover {
 .md-typeset h1 {
   margin-bottom: 0.5em;
   font-weight: 800;
-  color: var(--md-typeset-color);
 }
 
 .md-typeset h2,
@@ -205,4 +222,43 @@ html .md-footer-meta.md-typeset a:hover {
 .md-typeset {
   font-size: 19px;
   line-height: 28.5px;
+  font-weight: 300;
+}
+
+[dir=ltr] .md-typeset blockquote {
+  border-left-color: var(--color-highlight);
+}
+
+.md-typeset blockquote {
+  background-color: var(--color-no-highlight);
+  padding:1em 0.5em;
+  color: var(--color-body);
+}
+
+blockquote {
+  position: relative;
+}
+
+blockquote p {
+  padding: 0 2em;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-family: Arial;
+  left: 10px;
+  top: 21px;
+  font-size: 3em;
+  color: var(--color-highlight);
+  position: absolute;
+}
+
+blockquote:after {
+  font-family: Arial;
+  content: "\201D" !important;
+  right: 19px;
+  top: 21px;
+  font-size: 3em;
+  position: absolute;
+  color: var(--color-highlight);
 }

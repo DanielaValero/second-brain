@@ -16,6 +16,7 @@ https://www.thisiscalmer.com/blog/5-stages-of-burnout
 https://www.winona.edu/stress/bntstages.htm
 https://anjuansimmons.com/talks/managing-the-burnout-burndown/
 
+
 ### Define: Burnout
 
 The [World Health Organization](https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases) recognized burnout as an occupational phenomenon. Yet they don't clasify it as a medical condition, it has become so common, that today the WHO labels it, and calls to address it as the syndrome it is due to the effects it has in human beings.
@@ -93,7 +94,7 @@ Once people begin to feel hostile and angry about job inequities, and lack faith
 
 
 
-source: https://www.researchgate.net/publication/5396366_Early_Predictors_of_Job_Burnout_and_Engagement
+[source](https://www.researchgate.net/publication/5396366_Early_Predictors_of_Job_Burnout_and_Engagement)
 
 
 
@@ -228,17 +229,15 @@ Meditation is proven to provide us with enough internal resources to unwind, and
 
 With burnout come negative thoughts about our professionalism, about us not being enough, or just feeling bad. For that, what has worked for me the best is to practice self compassion, here is a set of guided meditations to chose from, that I recommend you. 
 
-https://self-compassion.org/category/exercises/
 
-
-
+- [self compassion ecercises](https://self-compassion.org/category/exercises/)
 - Routine that marks the beginning of the work day
 - Routine that marks the end of the work day. 
 - Excersice daily
 - Cook my meals
 - Keep a stressors diary: date, time, situation, scale, symptoms, efficiency and reaction
 - Decrease factors that give me stress
-- Manage your energy, not your time (https://learning.oreilly.com/library/view/hbrs-10-must/9781647822521/12572/OEBPS/xhtml/09_Manage_Y.xhtml)
+- [Manage your energy, not your time](https://learning.oreilly.com/library/view/hbrs-10-must/9781647822521/12572/OEBPS/xhtml/09_Manage_Y.xhtml)
 
 
 
@@ -246,7 +245,7 @@ https://self-compassion.org/category/exercises/
 
 ### Actions for the individual per job domain
 
-https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500086.htm#st0065
+[source](https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500086.htm#st0065)
 
 - **Workload:** 
 
@@ -318,7 +317,7 @@ https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtm
 
 ### Organizational meassures
 
-https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500086.htm#st0095
+[source](https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500086.htm#st0095)
 
 
 This is a post focused mainly on the individual, rather than the organization. However, provided most of the causes of burnout have origin in the organization, some actions that the organization can look at, in order to address properly are:
@@ -372,41 +371,41 @@ This is a post focused mainly on the individual, rather than the organization. H
 
 ### Quotes and resources
 
-https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500098.htm#st0095
+[source](https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500098.htm#st0095)
 
 > our decisions to do mental work appear to include a comparison of the costs of an action against the potential benefits resulting from it
 
-https://psyche.co/ideas/when-a-tricky-task-makes-your-brain-hurt-heres-what-to-do
+[When a tricky task makes your brain hurt. What to do - Phyche magazine](https://psyche.co/ideas/when-a-tricky-task-makes-your-brain-hurt-heres-what-to-do)
 
 > - **Good system-level prioritization is essential**. You won’t decouple your teams without good product management. You need a product management (or Integrator) listening and prioritizing for global needs. If teams prioritize based on local needs, you need to strengthen your Integrators.
 
-source: https://www.rubick.com/independent-executor-mode
+[source](https://www.rubick.com/independent-executor-mode)
 
 > 1. **Program manager**. A role that runs programs (projects containing projects) and coordinates efforts across teams.
 > 2. **Integrator**. A role that solicits information from a broad variety of sources and synthesizes them into prioritization and plans.
 > 3. **Controller**. A role that has explicit authority to demand behavior in a particular arena.
 > 4. **Standard definer**. A role that defines guidelines and guardrails that constrain behavior that can be done without discussion.
 
-https://www.rubick.com/coordination-models/
+[source coordination models](https://www.rubick.com/coordination-models/)
 
 > If your company is using the OKR framework:
 >
 > - The Goal (G) is your Objective (O)
 > - The Measures (M) are your Key Results (KR)
 
-https://kathkeating.com/get-your-okrs-out-of-my-gems
+[Get your OKRs out of my gems](https://kathkeating.com/get-your-okrs-out-of-my-gems)
 
 
 
 > The Always-On manager fails to take time to step back and think strategically about their role. They can only see trees and not the forest. As a result, their department never has the desired impact on the business's bottom line, and the team burns out, one at a time.
 
-https://medium.com/management-matters/the-mangers-driving-the-great-resignation-29406ae74c56
+[The managers driving the great resignation](https://medium.com/management-matters/the-mangers-driving-the-great-resignation-29406ae74c56)
 
 
 
 > The hard truth is: If the present has to be in perfect shape before we allow ourselves to work on the future, then we’d never do any strategic work.
 
-https://medium.com/management-matters/mental-toughness-with-strategic-work-8ae1f4090ccc
+[Mental toughness with strategic work](https://medium.com/management-matters/mental-toughness-with-strategic-work-8ae1f4090ccc)
 
 
 
@@ -416,7 +415,7 @@ https://medium.com/management-matters/mental-toughness-with-strategic-work-8ae1f
 >
 > Companies can begin to address the collaboration overload problem by adjusting organizational structures and routines. One easy step is to look at the number of nodes in the organization. These are intersections in the organizational matrix where a decision maker sits. A proliferation of nodes is a sign of unnecessary organizational complexity, and nodes act as organizational speed bumps, slowing down the action and stealing organizational time and energy.
 
-https://learning.oreilly.com/library/view/hbr-guide-to/9781647820015/Text/35_23__Employee_Burnout_Is_a_Leader.xhtml
+[Source Employee burnout is a leader - hbr](https://learning.oreilly.com/library/view/hbr-guide-to/9781647820015/Text/35_23__Employee_Burnout_Is_a_Leader.xhtml)
 
 
 

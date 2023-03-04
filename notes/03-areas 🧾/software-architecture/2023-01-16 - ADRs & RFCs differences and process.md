@@ -79,13 +79,12 @@ flowchart TB
 [Source](https://ozimmer.ch/practices/2020/05/22/ADDefinitionOfDone.html)
 
 **Process checklist**
-[] Are we confident enough that this design will work (`Evidence`)?
-   -- Spike
-[] Have we decided between at least two options, and compared them (semi-)systematically (`Criteria`) ?
-    -- Evaluate enough alternatives 
-[] Have we discussed among each other and with peers just enough and come to a common view (`Agreement`)?
-[] Have we captured the decision outcome and shared the decision record (`Document`)?
-[] Do we know when to realize, review and possibly revise this decision (`Realization  & Revise`)?[6](https://ozimmer.ch/practices/2020/05/22/ADDefinitionOfDone.html#fn:6)
+
+* [] Are we confident enough that this design will work (`Evidence`)?
+* [] Have we decided between at least two options, and compared them (semi-)systematically (`Criteria`) ?
+* [] Have we discussed among each other and with peers just enough and come to a common view (`Agreement`)?
+* [] Have we captured the decision outcome and shared the decision record (`Document`)?
+* [] Do we know when to realize, review and possibly revise this decision (`Realization  & Revise`)
 
 **Suggested template**
 [Decision record template by Michael Nygard](https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/templates/decision-record-template-by-michael-nygard/index.md)
@@ -189,6 +188,6 @@ _Any consequences that are in play as a result of the decision being put into pl
 
 
 ### Further reading
-* [Design practice](https://socadk.github.io/design-practice-repository/artifact-templates/) : Why? Seems more suitable for DDD, and the artifacts are similar to the ones we are currently using
-* [Scaling Engineering Teams via RFCs: Writing Things Down[(https://blog.pragmaticengineer.com/scaling-engineering-teams-via-writing-things-down-rfcs/)
+* [Design practice](https://socadk.github.io/design-practice-repository/artifact-templates/) Why? Seems more suitable for DDD, and the artifacts are similar to the ones we are currently using
+* [Scaling Engineering Teams via RFCs: Writing Things Down](https://blog.pragmaticengineer.com/scaling-engineering-teams-via-writing-things-down-rfcs/)
 * [6 Lessons I learned while implementing technical RFCs as a decision making tool](https://buriti.ca/6-lessons-i-learned-while-implementing-technical-rfcs-as-a-management-tool-34687dbf46cb)
