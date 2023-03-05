@@ -231,7 +231,7 @@ The following code implements the selection sort. In the code, there is one for 
 
 **Space Complexity:** O(1)
 
--   The time complexity for selection sort is still O(_n__2_) because of the nested for loop .
+*   The time complexity for selection sort is still O(_n__2_) because of the nested for loop .
     
 
 ### Insertion Sort

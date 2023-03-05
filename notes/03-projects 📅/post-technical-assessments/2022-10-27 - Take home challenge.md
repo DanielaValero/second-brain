@@ -6,25 +6,25 @@ tags:
 # Tech-Assessments: Take home interview
 #career #interviewing 
 
-This is a more practical type of interview.
-The company prepares a code challenge, that you do in your own time. 
+This is a more practical type of interview.  
+The company prepares a code challenge, that you do in your own time.  
 The rule is that you take 3-5 days to solve. Once you send it, the development team reviews the submission, and if your solution matches their expectations, then they invite you for a 90minute interview, to talk about your solution, do some live coding, and talking further about topis specifics to the position.
 
 
 The goal of this type of interview, usually is to figure out in a practical manner how you code, and to know how much you can do pair programming, how do you solve problems on the spot etc.
 
 Good for:
-- Finding in a practical manner how people code.
-- Have some code that allows for practical conversations to understand where the person is technically speaking
+* Finding in a practical manner how people code.
+* Have some code that allows for practical conversations to understand where the person is technically speaking
 
 Limitations:
-- **Setting up the code challenge**, in a way that helps you find what you want to know is hard
-- **Time investment:** considering the stack is new to the candidate, the setup needs to be simple enough for them to quickly jump in and do something
-- **Expectation management:** some companies tend to expect the candidate to produce production ready code. However, a code challenge is something that candidates do in their own time, and should be solved in 8h max. Depending on the amount of work that needs to be done, producing production ready code might be setting unrealistic expectations
-- **Room for interpretation:** In some cases the ask is very open to the interpretations of the candidate. This can lead to having different expectations, the company might expect A, B and C. And the candidate might think A and B are enough and decide deliberately not to do C. The company ends up rejecting the candidate, even though they were able to do C and D.
-- **It is still a code challenge:** Some places tend to expect production ready solutions. However, this is a code challenge. They are missing the fact that what this actually helps to know, is how they solve a specific software problem within the bounds of 8h, in a setup and product terminology that is new to them.
-- **Candidates might not be honest with regards of the type they invested on it:** Many candidates will have the tendency to say that they spent less time than they actually did on the challenge. Doing this mostly comes from the desire to pass the challenge. When they do this, and you blindly trust this, without actually putting yourself on the seat of the candidate, you might end up with the idea the challenge takes less time than it does, and this might lead you to developed a flawed technical assesment.
-- **Fluency with specific tools:** Being an engineer in general is more about having the mental structured in the mind to be able to read and understand how different tools work. Many developers for example, are fluent with a specific tool, but being fluent with it is not an indicator of their understanding and fluency with software itself. So, a candidate who is not fluent with the tools that you provided, might build a less refined solution than another candidate who is more fluent with it. You might end up hiring the more fluent one, but you might be missing the opportunity to hire a good engineer who would pick things up very quickly and ultimately deliver more value than a tool-specific developer.
+* **Setting up the code challenge**, in a way that helps you find what you want to know is hard
+* **Time investment:** considering the stack is new to the candidate, the setup needs to be simple enough for them to quickly jump in and do something
+* **Expectation management:** some companies tend to expect the candidate to produce production ready code. However, a code challenge is something that candidates do in their own time, and should be solved in 8h max. Depending on the amount of work that needs to be done, producing production ready code might be setting unrealistic expectations
+* **Room for interpretation:** In some cases the ask is very open to the interpretations of the candidate. This can lead to having different expectations, the company might expect A, B and C. And the candidate might think A and B are enough and decide deliberately not to do C. The company ends up rejecting the candidate, even though they were able to do C and D.
+* **It is still a code challenge:** Some places tend to expect production ready solutions. However, this is a code challenge. They are missing the fact that what this actually helps to know, is how they solve a specific software problem within the bounds of 8h, in a setup and product terminology that is new to them.
+* **Candidates might not be honest with regards of the type they invested on it:** Many candidates will have the tendency to say that they spent less time than they actually did on the challenge. Doing this mostly comes from the desire to pass the challenge. When they do this, and you blindly trust this, without actually putting yourself on the seat of the candidate, you might end up with the idea the challenge takes less time than it does, and this might lead you to developed a flawed technical assessment.
+* **Fluency with specific tools:** Being an engineer in general is more about having the mental structured in the mind to be able to read and understand how different tools work. Many developers for example, are fluent with a specific tool, but being fluent with it is not an indicator of their understanding and fluency with software itself. So, a candidate who is not fluent with the tools that you provided, might build a less refined solution than another candidate who is more fluent with it. You might end up hiring the more fluent one, but you might be missing the opportunity to hire a good engineer who would pick things up very quickly and ultimately deliver more value than a tool-specific developer.
 
 
 Challenges to overcome

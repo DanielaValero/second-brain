@@ -1,5 +1,4 @@
-# 4  
-Sorting and Searching
+# 4 Sorting and Searching
 
 ![](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781098128210/files/image_fi/book_art/circleart.png)
 
@@ -330,7 +329,7 @@ Take the first file from the old cabinet and insert it into the (empty) new cabi
 
 1
 
-0. (There are no files to compare to.)
+1. (There are no files to compare to.)
 
 1
 
@@ -376,9 +375,9 @@ _n_   – 1 or fewer. (There are _n_   – 1 files and we have t
 
 If we add up all the steps described in this table, we get the following maximum total steps:
 
--   Steps required for pulling files: _n_ (1 step for pulling each of _n_ files)
--   Steps required for comparison: up to 1 + 2 + . . . + (_n_ – 1)
--   Steps required for inserting files: _n_ (1 step for inserting each of _n_ files)
+*   Steps required for pulling files: _n_ (1 step for pulling each of _n_ files)
+*   Steps required for comparison: up to 1 + 2 + . . . + (_n_ – 1)
+*   Steps required for inserting files: _n_ (1 step for inserting each of _n_ files)
 
 If we add these up, we get an expression like the following:
 

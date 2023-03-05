@@ -8,7 +8,7 @@ tags:
 ### What is an impossible state?
 
 
-Impossible states, or nonsense states, states of the system that most likely they are a by-product of how you store your state. The occur when a combination of values in your data model happen, when should not happen. 
+Impossible states, or nonsense states, states of the system that most likely they are a by-product of how you store your state. The occur when a combination of values in your data model happen, when should not happen.  
 When this happens it means that design our data mode is done in a way that allows for impossible combinations.
 
 ### Example 1: A survey app model:
@@ -20,7 +20,7 @@ When this happens it means that design our data mode is done in a way that allow
 }
 ```
 
-In this case the questions can be empty, and the current question too.
+In this case the questions can be empty, and the current question too.  
 Alternative model:
 
 ```
@@ -153,23 +153,23 @@ This model makes it impossible to store a city in the data model if there is no 
 
 #### Final thoughts
 
-> If it is possible to represent states that should be impossible, then rewrite them to make them impossible.
+> If it is possible to represent states that should be impossible, then rewrite them to make them impossible.  
    Richard Feldman
 
-Avoiding impossible states help making APIs stronger and clearer. 
+Avoiding impossible states help making APIs stronger and clearer.  
 In order to achieve this, we need to have a clear data model, preferably that avoids impossible states
 
 
 ### Further knowledge on this
 
-> "Making the Impossible States Impossible" is just one of the type of so-called business logic errors which is possible to prevent with the help of the type system. But there are others, for example, impossible transitions. When business rules require a specific transition from one state to another. That kind of requirements is not (easily) expressable with the help of the described technique. This task is typically solved with Finite State Machines. I tried to come up with a good example for a system which doesn't allow impossible states, but still can have bugs with the impossible transition and wasn't able to do it right away, so **take this paragraph with a grain of salt**, maybe it is not the whole truth.
-  "Making the Impossible States Impossible" doesn't prevent infinite loops and doesn't prove that all states are reachable. Keep in mind, that this technique will greatly decrease the number of bugs in your application, but this doesn't mean that you [formally proofed correctness of it](https://www.hillelwayne.com/post/theorem-prover-showdown/).
+> "Making the Impossible States Impossible" is just one of the type of so-called business logic errors which is possible to prevent with the help of the type system. But there are others, for example, impossible transitions. When business rules require a specific transition from one state to another. That kind of requirements is not (easily) expressible with the help of the described technique. This task is typically solved with Finite State Machines. I tried to come up with a good example for a system which doesn't allow impossible states, but still can have bugs with the impossible transition and wasn't able to do it right away, so **take this paragraph with a grain of salt**, maybe it is not the whole truth.  
+  "Making the Impossible States Impossible" doesn't prevent infinite loops and doesn't prove that all states are reachable. Keep in mind, that this technique will greatly decrease the number of bugs in your application, but this doesn't mean that you [formally proofed correctness of it](https://www.hillelwayne.com/post/theorem-prover-showdown/).  
 [source](https://github.com/stereobooster/pragmatic-types/blob/master/posts/making-impossible-states-impossible.md)
 
 
 
 ### References
 
-[Source: # "Making Impossible States Impossible" by Richard Feldman](https://www.youtube.com/watch?v=IcgmSRJHu_8&list=WL&index=3)
-[source: gist with explanations](https://github.com/stereobooster/pragmatic-types/blob/master/posts/making-impossible-states-impossible.md)
+[Source: # "Making Impossible States Impossible" by Richard Feldman](https://www.youtube.com/watch?v=IcgmSRJHu_8&list=WL&index=3)  
+[source: gist with explanations](https://github.com/stereobooster/pragmatic-types/blob/master/posts/making-impossible-states-impossible.md)  
 [notes of the talk](https://cadelwatson.com/blog/untitled/)

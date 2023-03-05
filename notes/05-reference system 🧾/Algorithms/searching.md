@@ -1,5 +1,4 @@
-# CHAPTER 7  
-Searching
+# CHAPTER 7  Searching
 
 The preceding chapter explained how you can sort data. Algorithms such as quicksort and heapsort let you sort large amounts of data quickly. Algorithms such as countingsort and bucketsort let you sort data almost as quickly as a program can examine it, but only under certain special circumstances.
 
@@ -183,10 +182,10 @@ If you're not familiar with recursion, skip Exercises 2, 5, and 7 and come back 
 10.  In the Boyer-Moore majority voting algorithm, what happens if outcome M occurs exactly half of the time in the list of outcomes? Can you make two example lists, one that causes the algorithm to return M and one that returns some other value?
 11.  The Boyer-Moore majority voting algorithm always returns an outcome, but if there is no majority, the result is not guaranteed to be the most common outcome in the list. How could you modify that algorithm to indicate whether the result is really a majority without changing the O(N) run time and O(1) memory characteristics?
 
--   [Support](https://www.oreilly.com/online-learning/support/)
--   [Sign Out](https://learning.oreilly.com/accounts/logout/)
+*   [Support](https://www.oreilly.com/online-learning/support/)
+*   [Sign Out](https://learning.oreilly.com/accounts/logout/)
 
 ©2022 O'Reilly Media, Inc. 
 
--   [Terms of Service](https://www.oreilly.com/terms/)
--   [Privacy Policy](https://learning.oreilly.com/privacy)
+*   [Terms of Service](https://www.oreilly.com/terms/)
+*   [Privacy Policy](https://learning.oreilly.com/privacy)

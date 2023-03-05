@@ -12,7 +12,7 @@ tags:
 #architecture #adr #architectureCharacteristics #technicalDecisions #technicalDocumentation #theArchitectRole 
 
 
-link: https://www.developertoarchitect.com/foundations-friday-forum.html
+link: <https://www.developertoarchitect.com/foundations-friday-forum.html>
 
 ### Intro
 
@@ -88,9 +88,9 @@ I usually define it in terms of what I can measure.
 
 ie: Reliability:
 
--   How many errors
+*   How many errors
     
--   Time where system is down/active
+*   Time where system is down/active
     
 
 We can then have conversations to define our arch characteristics, how can we measure them, and base on that the definition for us.

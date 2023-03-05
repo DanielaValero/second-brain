@@ -7,7 +7,7 @@
 
 
 
-https://www.rubick.com/coordination-models/
+<https://www.rubick.com/coordination-models/>
 
 
 
@@ -24,7 +24,7 @@ Roles
 
 
 
-https://www.rubick.com/coordination-models/
+<https://www.rubick.com/coordination-models/>
 
 
 
@@ -38,14 +38,14 @@ Being in the flow is the state when people are more efficient
 
 
 
-- You can concentrate for an extended period of time
-- The task has a clear goal
-- You receive immediate feedback on your progress
-- You feel a sense of control
-- You’re absorbed, and it feels effortless. You’re singularly focused instead of focused on many things and distracted
-- Your sense of time is altered; time passes quickly or it is slowed in a good way
-- You don’t feel self-conscious, and your sense of self emerges stronger
-- You desire to repeat the task
+* You can concentrate for an extended period of time
+* The task has a clear goal
+* You receive immediate feedback on your progress
+* You feel a sense of control
+* You’re absorbed, and it feels effortless. You’re singularly focused instead of focused on many things and distracted
+* Your sense of time is altered; time passes quickly or it is slowed in a good way
+* You don’t feel self-conscious, and your sense of self emerges stronger
+* You desire to repeat the task
 
 
 
@@ -73,7 +73,7 @@ Being in the flow is the state when people are more efficient
 
 
 
-Source: https://leaddev.com/culture-engagement-motivation/why-flow-matters-more-passion
+Source: <https://leaddev.com/culture-engagement-motivation/why-flow-matters-more-passion>
 
 
 
@@ -93,4 +93,4 @@ I think there is so much poor code out there because we somehow got convinced th
 
 
 
-https://future.a16z.com/the-case-for-developer-experience
+<https://future.a16z.com/the-case-for-developer-experience>

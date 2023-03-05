@@ -13,7 +13,7 @@ Source: [https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ap
 
 "A monad is a data structure. It's a type. It's a set of behaviors that are specifically designed to make working with a value predictable."
 
-- functors: a value along with a map-like utility to perform an operation on all its constitute data members.
+* functors: a value along with a map-like utility to perform an operation on all its constitute data members.
 
 A monad is a functor that includes some additional behavior.
 

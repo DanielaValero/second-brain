@@ -7,4 +7,4 @@ Writing code in “stateless functions”. A _stateless function_ takes in data 
   >  **data mutability** is the concept where a given dataset might change over a given course of time during program execution.
   
   
-Source: https://www.freecodecamp.org/news/functional-reactive-programming-frp-imperative-vs-declarative-vs-reactive-style-84878272c77f/
+Source: <https://www.freecodecamp.org/news/functional-reactive-programming-frp-imperative-vs-declarative-vs-reactive-style-84878272c77f/>

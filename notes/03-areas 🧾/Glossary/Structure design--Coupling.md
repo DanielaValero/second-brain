@@ -14,7 +14,7 @@ According to the structured design movement, the strength of coupling depends on
 2.  The complexity of the interfaces of the modules.
 3.  The type of information going through the connection.
 
-https://thevaluable.dev/cohesion-coupling-guide-examples/
+<https://thevaluable.dev/cohesion-coupling-guide-examples/>
 
 
 
@@ -60,6 +60,6 @@ Here’s the guideline I’m trying to follow when I’m building an application
 
 Here are more questions we can ask ourselves while coding:
 
--   What would happen if we had to change this module? Would we need to change other modules at the same time? If yes, should we refactor these modules to make them more cohesive (and, therefore, less coupled)?
--   Should we reduce the scope of this module? Can we modify it easily, or does it take time, because it’s too big for our poor brains to reason about? Should we consider creating two (or more) modules instead?
+*   What would happen if we had to change this module? Would we need to change other modules at the same time? If yes, should we refactor these modules to make them more cohesive (and, therefore, less coupled)?
+*   Should we reduce the scope of this module? Can we modify it easily, or does it take time, because it’s too big for our poor brains to reason about? Should we consider creating two (or more) modules instead?
 

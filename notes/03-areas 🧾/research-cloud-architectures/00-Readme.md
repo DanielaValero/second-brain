@@ -12,5 +12,5 @@ Here is an overview of how all this somewhat connects.
 
 
 ## Good sources
-https://www.ibm.com/cloud/learn
-https://aws.amazon.com/what-is-cloud-computing/?nc2=h_ql_le_int_cc
+<https://www.ibm.com/cloud/learn>  
+<https://aws.amazon.com/what-is-cloud-computing/?nc2=h_ql_le_int_cc>

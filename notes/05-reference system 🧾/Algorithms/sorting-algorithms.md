@@ -2,21 +2,21 @@
 
 In this chapter, you will learn:
 
--   How comparison-based sorting algorithms require two fundamental operations:
+*   How comparison-based sorting algorithms require two fundamental operations:
     
-    -   `less(i,j)` determines whether `A[i]` < `A[j]`.
+    *   `less(i,j)` determines whether `A[i]` < `A[j]`.
         
-    -   `swap(i,j)` swaps the contents of `A[i]` and `A[j]`.
+    *   `swap(i,j)` swaps the contents of `A[i]` and `A[j]`.
         
--   How to provide a comparator function when sorting; for example, you can sort integers or string values in descending order. The comparator function can also sort complex data structures with no default ordering; for example, it is not clear how to sort a collection of two-dimensional (x, y) points.
+*   How to provide a comparator function when sorting; for example, you can sort integers or string values in descending order. The comparator function can also sort complex data structures with no default ordering; for example, it is not clear how to sort a collection of two-dimensional (x, y) points.
     
--   How to identify inefficient O(N2) sorting algorithms, such as Insertion Sort and Selection Sort, from the structure of their code.
+*   How to identify inefficient O(N2) sorting algorithms, such as Insertion Sort and Selection Sort, from the structure of their code.
     
--   _Recursion_, where a function can call itself. This fundamental computer science concept forms the basis of a _divide-and-conquer_ strategy for solving problems.
+*   _Recursion_, where a function can call itself. This fundamental computer science concept forms the basis of a _divide-and-conquer_ strategy for solving problems.
     
--   How Merge Sort and Quicksort can sort an array of N values in O(N `log` N) using divide and conquer. How Heap Sort also guarantees O(N `log` N).
+*   How Merge Sort and Quicksort can sort an array of N values in O(N `log` N) using divide and conquer. How Heap Sort also guarantees O(N `log` N).
     
--   How Tim Sort combines Insertion Sort and functionality from Merge Sort to implement Python’s default sorting algorithm in guaranteed O(N `log` N).
+*   How Tim Sort combines Insertion Sort and functionality from Merge Sort to implement Python’s default sorting algorithm in guaranteed O(N `log` N).
     
 
 In this chapter, I present algorithms that rearrange the N values in an array so they are in ascending order. Organizing a collection of values in sorted order is an essential first step to improve the efficiency of many programs. Sorting is also necessary for many real-world applications, such as printing staff directories for a company with the names and phone numbers of employees, or displaying flight departure times on an airport display.
@@ -317,22 +317,22 @@ Invoke the initial recursive call.
 
 The `for` loop over `i` will execute 8 times, because that is the total size of the two sub-problems being merged. Starting in the third row of [Figure 5-10](https://learning.oreilly.com/library/view/learning-algorithms/9781492091059/ch05.html#figure-merge-example-two), the variables `left`, `right`, and `i` each keep track of specific locations:
 
--   `left` is the index position of the next value in the left sub-array to be merged.
+*   `left` is the index position of the next value in the left sub-array to be merged.
     
--   `right` is the index position of the next value in the right sub-array to be merged.
+*   `right` is the index position of the next value in the right sub-array to be merged.
     
--   `i` is the index position in `A` where successively larger values are copied until, by the last step, all values in `A[lo .. hi]` are in sorted order.
+*   `i` is the index position in `A` where successively larger values are copied until, by the last step, all values in `A[lo .. hi]` are in sorted order.
     
 
 Within the `for` loop, up to two values in `aux` (highlighted in [Figure 5-10](https://learning.oreilly.com/library/view/learning-algorithms/9781492091059/ch05.html#figure-merge-example-two)) are compared to find the lower value, which is then copied into `A[i]`. With each step, `i` is incremented, while `left` and `right` advance only when the value at `aux[left]` or `aux[right]` is found to be the next smallest one to be copied into `A`. The time to complete `merge()` is directly proportional to the combined size of the sub-problems (or `hi – lo + 1`).
 
 Merge Sort is a great example of a divide-and-conquer algorithm that guarantees O(N `log` N) performance. If you have a problem that satisfies the following checklist, then an O(N `log` N) algorithm exists:
 
--   If you can subdivide a problem of size N into two independent sub-problems of size N/2; it is perfectly fine for one sub-problem to be slightly larger than the other.
+*   If you can subdivide a problem of size N into two independent sub-problems of size N/2; it is perfectly fine for one sub-problem to be slightly larger than the other.
     
--   If you have a base case that either does nothing (like with Merge Sort) or performs some operations in constant time.
+*   If you have a base case that either does nothing (like with Merge Sort) or performs some operations in constant time.
     
--   If you have a processing step (either before the problem is subdivided or afterward as a post-processing step) that requires time directly proportional to the number of values in the sub-problem. For example, the `for` loop in `merge()` repeats a number of times equal to the size of the sub-problem being solved.
+*   If you have a processing step (either before the problem is subdivided or afterward as a post-processing step) that requires time directly proportional to the number of values in the sub-problem. For example, the `for` loop in `merge()` repeats a number of times equal to the size of the sub-problem being solved.
     
 
 ![Step by step merge](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492091059/files/assets/lalg_0510.png)
@@ -367,11 +367,11 @@ Choose `A[lo]` as the pivot value, `p`.
 
 Return `location` in `A` such that:
 
--   `A[location] = p`
+*   `A[location] = p`
     
--   All values in left sub-array `A[lo .. location–1]` are all ≤ `p`
+*   All values in left sub-array `A[lo .. location–1]` are all ≤ `p`
     
--   All values in right sub-array `A[location+1 .. hi]` are all ≥ `p`
+*   All values in right sub-array `A[location+1 .. hi]` are all ≥ `p`
     
 
 [![4](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492091059/files/assets/4.png)](https://learning.oreilly.com/library/view/learning-algorithms/9781492091059/ch05.html#co_sorting_without_a_hat_CO8-4)
@@ -404,9 +404,9 @@ To see why a max binary heap can help sort an array, consider [Figure 5-13](htt
 
 To make this promising approach work, I need to address the following issues:
 
--   The heap data structure ignores the value in index position 0 to simplify its computations using an array of size N + 1 to store N values.
+*   The heap data structure ignores the value in index position 0 to simplify its computations using an array of size N + 1 to store N values.
     
--   The heap is initially empty, and new values are enqueued one at a time. When starting with N values to sort initially, there needs to be an efficient way to “bulk upload” all values.
+*   The heap is initially empty, and new values are enqueued one at a time. When starting with N values to sort initially, there needs to be an efficient way to “bulk upload” all values.
     
 
 Let’s fix how index positions are calculated. The original heap with 18 elements (as shown in [Figure 5-13](https://learning.oreilly.com/library/view/learning-algorithms/9781492091059/ch05.html#figure-heap-consider-sort)) was stored in an array with 19 elements. Any reference to `A[i]` uses 1-based indexing, meaning that `A[1]` stored the first value in the heap, and `A[N–1]` stored the last. In [Listing 5-9](https://learning.oreilly.com/library/view/learning-algorithms/9781492091059/ch05.html#listing-heapsort), the `less(i,j)` and `swap(i,j)` functions all subtract 1 from `i` and `j` whenever accessing `A[i]` or `A[j]`. This allows 1-based indexing to work with 0-based array storage. The largest value in the heap is now in `A[0]`. When `swap(1, N)` appears in the `sort()` function, it actually swaps the values in `A[0]` and `A[N–1]`. With this small adjustment, the `sink()` method remains the same. Note that Heap Sort never uses `swim()`.
@@ -665,15 +665,15 @@ Sorting is a fundamental problem in computer science and has been extensively st
 
 In this chapter, you learned:
 
--   How some basic sorting algorithms have O(N2) performance, making them completely unsuitable for sorting large data sets.
+*   How some basic sorting algorithms have O(N2) performance, making them completely unsuitable for sorting large data sets.
     
--   The concept of recursion as a key strategy to solve problems by dividing them into smaller sub-problems.
+*   The concept of recursion as a key strategy to solve problems by dividing them into smaller sub-problems.
     
--   That Merge Sort and Heap Sort, in different ways, achieve O(N `log` N) performance.
+*   That Merge Sort and Heap Sort, in different ways, achieve O(N `log` N) performance.
     
--   That Quicksort achieves O(N `log` N) performance without requiring additional storage, as Merge Sort does.
+*   That Quicksort achieves O(N `log` N) performance without requiring additional storage, as Merge Sort does.
     
--   Tim Sort, the default sorting algorithm used by Python and an increasing number of other programming languages.
+*   Tim Sort, the default sorting algorithm used by Python and an increasing number of other programming languages.
     
 
 # Challenge Exercises
@@ -692,9 +692,9 @@ In this chapter, you learned:
     
 6.  The Fibonacci series is defined using the recursive formula FN = FN – 1 + FN – 2, with base cases of F0 = 0 and F1 = 1. A related series, _Lucas Numbers_, is defined as LN = LN – 1 + LN – 2, with base cases of L0 = 2 and L1 = 1. Implement `fibonacci(n)` and `lucas(n)` using a standard recursive approach and measure the time it takes to compute both FN and LN up to N = 40; depending on the speed of your computer, you might have to increase or decrease N to allow the code to terminate. Now implement a new `fib_with_lucas(n)` method that takes advantage of the following two identities:
     
-    -   `fib_with_lucas(n)`: If you set i = n//2 and j = n-i, then Fi + j = (Fi + Lj) × (Fj + Li)/2
+    *   `fib_with_lucas(n)`: If you set i = n//2 and j = n-i, then Fi + j = (Fi + Lj) × (Fj + Li)/2
         
-    -   `lucas_with_fib(n)`: LN = FN – 1 + FN + 1  
+    *   `lucas_with_fib(n)`: LN = FN – 1 + FN + 1  
         
     
     Compare timing results of `fibonacci()` with `fib_with_lucas()`.
@@ -706,11 +706,11 @@ Get more hands-on training and test your understanding of the concepts by workin
 
 The following scenarios cover material from this chapter:
 
--   [Sorting Algorithms: Insertion Sort](https://learning.oreilly.com/scenarios/sorting-algorithms-insertion/9781098114138/)
+*   [Sorting Algorithms: Insertion Sort](https://learning.oreilly.com/scenarios/sorting-algorithms-insertion/9781098114138/)
     
--   [Sorting Algorithms: Merge Sort](https://learning.oreilly.com/scenarios/sorting-algorithms-merge/9781098114145/)
+*   [Sorting Algorithms: Merge Sort](https://learning.oreilly.com/scenarios/sorting-algorithms-merge/9781098114145/)
     
--   [Sorting Algorithms: Quicksort Variations](https://learning.oreilly.com/scenarios/sorting-algorithms-quicksort/9781098114152/)
+*   [Sorting Algorithms: Quicksort Variations](https://learning.oreilly.com/scenarios/sorting-algorithms-quicksort/9781098114152/)
     
 
 [1](https://learning.oreilly.com/library/view/learning-algorithms/9781492091059/ch05.html#idm45239914779104-marker) No. See the challenge exercises at the end of the chapter.
@@ -725,5 +725,4 @@ The following scenarios cover material from this chapter:
 
 [6](https://learning.oreilly.com/library/view/learning-algorithms/9781492091059/ch05.html#idm45239913448288-marker) Invented by Tony Hoare in 1959, Quicksort is well over 50 years old!
 
--   [Support](https://www.oreilly.com/online-learning/support/)
--   [](https://learning.oreilly.com/accounts/logout/)
+*   [Support](https://www.oreilly.com/online-learning/support/)

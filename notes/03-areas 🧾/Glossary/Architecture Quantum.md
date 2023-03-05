@@ -6,7 +6,7 @@ the minimum amount of any physical entity involved in an interaction.
 
 > A quantum (plural: quanta) is the smallest discrete unit of a phenomenon*. For example, a quantum of light is a photon, and a quantum of electricity is an electron
 > 
-> Quantum theory describes the behavior of microscopic particles; Albert Einstein's theory of relativity describes the behavior of macroscopic things
+> Quantum theory describes the behavior of microscopic particles; Albert Einstein's theory of relativity describes the behavior of macroscopic things  
 > [source](https://www.techtarget.com/whatis/definition/quantum)
 
 

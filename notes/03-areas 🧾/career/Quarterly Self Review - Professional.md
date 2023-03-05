@@ -8,15 +8,11 @@ tags:
 
 **A**m **I** **G**rowing **C**omplacent **C**urrently
 
-- **Accomplishment**: Have I done anything noteworthy these last three months?
-
-- **Impact**: Would I write a line in my resume about the work I have done over these three months? Would I value this specific work experience if I was hiring for my own company?
-
-- **Growth/Future alignment**: Have I acquired valuable insights or skills? Are these skills aligned with my future goals?
-
-- **Challenge**: Have there been days when I was thinking about a work problem in the shower so profoundly that I forgot if I used the soap or not?
-
-- **Community**: Am I excited and happy to go to work every morning and see my teammates. Do I believe in the mission, vision, and leadership of this team or company?
+* **Accomplishment**: Have I done anything noteworthy these last three months?
+* **Impact**: Would I write a line in my resume about the work I have done over these three months? Would I value this specific work experience if I was hiring for my own company?
+* **Growth/Future alignment**: Have I acquired valuable insights or skills? Are these skills aligned with my future goals?
+* **Challenge**: Have there been days when I was thinking about a work problem in the shower so profoundly that I forgot if I used the soap or not?
+* **Community**: Am I excited and happy to go to work every morning and see my teammates. Do I believe in the mission, vision, and leadership of this team or company?
 
 #### Less than 40% a quarter means action
 

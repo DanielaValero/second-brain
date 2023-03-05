@@ -1,5 +1,4 @@
-# CHAPTER 15  
-String Algorithms
+# CHAPTER 15   String Algorithms
 
 String operations are common in many programs, so they have been studied extensively, and many programming libraries have good string tools. Because these operations are so important, the tools available to you probably use the best algorithms available, so you are unlikely to beat them with your own code.
 
@@ -35,9 +34,9 @@ Some expressions contain text other than parentheses. For example, the arithmeti
 
 You can recursively define a fully parenthesized arithmetic expression as one of the following:
 
--   A literal value such as 4 or 1.75
--   An expression surrounded by parentheses (_expr_) for some expression _expr_
--   Two expressions separated by an operator, as in _expr1_ + _expr2_ or _expr1_ × _expr2_
+*   A literal value such as 4 or 1.75
+*   An expression surrounded by parentheses (_expr_) for some expression _expr_
+*   Two expressions separated by an operator, as in _expr1_ + _expr2_ or _expr1_ × _expr2_
 
 For example, the expression ![images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0010.png) uses the third rule, with the two expressions 8 and 3 separated by the operator ×. The values 8 and 3 are both expressions according to the first rule.
 
@@ -77,11 +76,11 @@ The algorithms described in the preceding sections are useful and effective, but
 
 For example, a _regular expression_ is a string that a program can use to represent a pattern for matching in another string. Programmers have defined several different regular expression languages. To keep this discussion reasonably simple, this section uses a language that defines the following symbols:
 
--   An alphabetic character such as A or Q represents that letter.
--   The `+` symbol represents concatenation. For the sake of readability, this symbol is often omitted, so ABC is the same as ![images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0018.png) . However, it may be convenient to require the symbol to make it easier for a program to parse the regular expression.
--   The `*` symbol means that the previous expression can be repeated any number of times (including zero).
--   The `|` symbol means that the text must match either the previous or the following expression.
--   Parentheses determine the order of operation.
+*   An alphabetic character such as A or Q represents that letter.
+*   The `+` symbol represents concatenation. For the sake of readability, this symbol is often omitted, so ABC is the same as ![images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0018.png) . However, it may be convenient to require the symbol to make it easier for a program to parse the regular expression.
+*   The `*` symbol means that the previous expression can be repeated any number of times (including zero).
+*   The `|` symbol means that the text must match either the previous or the following expression.
+*   Parentheses determine the order of operation.
 
 For example, with this restricted language, the regular expression ![images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0021.png) matches strings that begin with an A, contain any number of Bs, and then end with an A. That pattern would match ABA, ABBBBA, and AA.
 
@@ -101,9 +100,9 @@ You can represent a DFA with a _state transition diagram_, which is basically a 
 
 To summarize, there are three ways that a DFA can stop:
 
--   _It can finish reading its inputs while in an accepting state_. In that case, it accepts the input. (The regular expression matches.)
--   _It can finish reading its inputs while in a nonaccepting state_. In that case, it rejects the input. (The regular expression does not match.)
--   _It can read an input that does not have a link leading out of the current state node_. In that case, it rejects the input. (The regular expression does not match.)
+*   _It can finish reading its inputs while in an accepting state_. In that case, it accepts the input. (The regular expression matches.)
+*   _It can finish reading its inputs while in a nonaccepting state_. In that case, it rejects the input. (The regular expression does not match.)
+*   _It can read an input that does not have a link leading out of the current state node_. In that case, it rejects the input. (The regular expression does not match.)
 
 For example, [Figure 15.3](https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0003) shows a state transition diagram for a DFA that recognizes the pattern ![images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0020.png) . The DFA starts in state 0. If it reads an A character, then it moves to state 1. If it sees any other character, then the machine halts in a nonaccepting state.
 
@@ -527,14 +526,14 @@ In 1990, Lawrence Philips published a new phonetic algorithm named _Metaphone_. 
 9.  Convert PH into _F_.
 10.  Convert _Q_ into _K_.
 11.  Convert _S_ into _X_ if followed by H, IO, or IA.
-12.  Convert _T_:
-    1.  Convert _T_ into _X_ if part of TIA or TIO.
-    2.  Convert TH into _0_.
+12.  Convert _T_:  
+    1.  Convert _T_ into _X_ if part of TIA or TIO.  
+    2.  Convert TH into _0_.  
     3.  Drop the _T_ in TCH.
 13.  Convert _V_ into _F_.
 14.  Convert WH into _W_ if at the beginning of the word. Otherwise, drop the _W_s if not followed by a vowel.
-15.  Convert _X_:
-    1.  Convert _X_ into _S_ if at the beginning of the word.
+15.  Convert _X_:  
+    1.  Convert _X_ into _S_ if at the beginning of the word.  
     2.  Otherwise convert _X_ into KS.
 16.  Drop _Y_ if not followed by a vowel.
 17.  Convert _Z_ into _S_.
@@ -546,10 +545,10 @@ Metaphone 3 further refines Metaphone's phonetic rules and provides better resul
 
 For more information on phonetic algorithms, see the following URLs:
 
--   `[https://en.wikipedia.org/wiki/Phonetic_algorithm](https://en.wikipedia.org/wiki/Phonetic_algorithm)`
--   `[https://en.wikipedia.org/wiki/Soundex](https://en.wikipedia.org/wiki/Soundex)`
--   `[https://en.wikipedia.org/wiki/Metaphone](https://en.wikipedia.org/wiki/Metaphone)`
--   `[http://ntz-develop.blogspot.com/2011/03/phonetic-algorithms.html](http://ntz-develop.blogspot.com/2011/03/phonetic-algorithms.html)`
+*   `[https://en.wikipedia.org/wiki/Phonetic_algorithm](https://en.wikipedia.org/wiki/Phonetic_algorithm)`
+*   `[https://en.wikipedia.org/wiki/Soundex](https://en.wikipedia.org/wiki/Soundex)`
+*   `[https://en.wikipedia.org/wiki/Metaphone](https://en.wikipedia.org/wiki/Metaphone)`
+*   `[http://ntz-develop.blogspot.com/2011/03/phonetic-algorithms.html](http://ntz-develop.blogspot.com/2011/03/phonetic-algorithms.html)`
 
 ## Summary
 
@@ -589,9 +588,9 @@ You can find the answers to these exercises in [Appendix B](https://learning.ore
     
     [**Figure 15.15**](https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0015)**:** By following the path through the edit graph, you can show exactly what edits were needed to change one string into another.
     
-19.  Is edit distance commutative? In other words, is the edit distance between word 1 and word 2 the same as the edit distance between word 2 and word 1? Why or why not?
-20.  *Modify the program you wrote for Exercise 17 to calculate the edit distance between two files instead of the differences between two strings.
-21.  *Modify the program you wrote for Exercise 18 to display the differences between two files instead of the differences between two strings.
+19.  Is edit distance commutative? In other words, is the edit distance between word 1 and word 2 the same as the edit distance between word 2 and word 1? Why or why not?  
+20.  *Modify the program you wrote for Exercise 17 to calculate the edit distance between two files instead of the differences between two strings.  
+21.  *Modify the program you wrote for Exercise 18 to display the differences between two files instead of the differences between two strings.  
 22.  Write a program that calculates Soundex encodings. When the program starts, make it verify that the names Smith, Smyth, Smithe, and Smythe all encode to S530. Also make the program verify the encoded values shown in [Table 15.4](https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-tbl-0004).
 
 [**Table 15.4**](https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-tbl-0004)**:** Soundex Encodings for Example Names

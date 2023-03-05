@@ -2,8 +2,8 @@
 
 ![Playing%20to%20win%20How%20strategy%20really%20works%20cc767f89dea94038aab9ec566849ec68/Playing-to-Win_Stategy-Playbook_Overview1.png](Playing-to-Win_Stategy-Playbook_Overview1.png)
 
-- Strategy is not about perfection, is about shortening your odds
-- Reverse engineering: Make a list of things that have to be true for your strategy to work
+* Strategy is not about perfection, is about shortening your odds
+* Reverse engineering: Make a list of things that have to be true for your strategy to work
 
 **Blog post:** 
 

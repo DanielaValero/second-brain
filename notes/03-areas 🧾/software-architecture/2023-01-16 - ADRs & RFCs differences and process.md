@@ -45,13 +45,13 @@ So, within this context, and RFC is suitable to design decisions, and ADRS for a
 
 > Martin Fowler described an Architectural Decision (AD) as “a decision that you wish you could get right early” in an [IEEE Software article](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=1231144).
 
-Translation: when the decision is **architecturally significant**.
+Translation: when the decision is **architecturally significant**.  
 **Architectural significance**
 1.  Architectural decisions directly or indirectly determine the _non-functional characteristics (or qualities)_ of a system (think -ilities)
 2.  Each decision describes a concrete, architecturally significant _design issue (problem)_ for which several potential _solution options_ exist and provides rationale for the _decision outcome_ (the selection of the chosen solution option, that is), for instance by arguing whether and how the desired quality attributes will be achieved.
 3.  Architectural decisions concern a _software system as a whole_, or one or more of the _core components_ of such system (whatever the “core” might be).
 
-**Architectural significance test**
+**Architectural significance test**  
 Do this to decide if making an ADR makes sense for this use case
 1.  Impact on _business value and risk?_
 2.  _Key stakeholder concern?_
@@ -81,27 +81,27 @@ flowchart TB
 **Process checklist**
 
 - [x] Are we confident enough that this design will work (`Evidence`)?
-- [] Have we decided between at least two options, and compared them (semi-)systematically (`Criteria`) ?
-- [] Have we discussed among each other and with peers just enough and come to a common view (`Agreement`)?
-- [] Have we captured the decision outcome and shared the decision record (`Document`)?
-- [] Do we know when to realize, review and possibly revise this decision (`Realization  & Revise`)
+* [] Have we decided between at least two options, and compared them (semi-)systematically (`Criteria`) ?
+* [] Have we discussed among each other and with peers just enough and come to a common view (`Agreement`)?
+* [] Have we captured the decision outcome and shared the decision record (`Document`)?
+* [] Do we know when to realize, review and possibly revise this decision (`Realization  & Revise`)
 
-**Suggested template**
+**Suggested template**  
 [Decision record template by Michael Nygard](https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/templates/decision-record-template-by-michael-nygard/index.md)
 
 
 ###  RFC
 
 #### When to make an RFC
--   You want to frame a problem and propose a solution.
--   You want thoughtful feedback from team members on our globally-distributed remote team.
--   You want to surface an idea, tension, or feedback.
--   You want to define a project or design brief to drive project collaboration.
--   You need to surface and communicate around an important, highly cross-functional decision.
+*   You want to frame a problem and propose a solution.
+*   You want thoughtful feedback from team members on our globally-distributed remote team.
+*   You want to surface an idea, tension, or feedback.
+*   You want to define a project or design brief to drive project collaboration.
+*   You need to surface and communicate around an important, highly cross-functional decision.
 
 #####  When to skip the RFC
--   You want to discuss personal or sensitive topics one-on-one with another team member.
--   If you can decide on your own. In the vast majority of cases, creating an RFC to explain yourself will be overkill. RFCs should only be used if a decision explicitly requires one of the bullets in the section above.
+*   You want to discuss personal or sensitive topics one-on-one with another team member.
+*   If you can decide on your own. In the vast majority of cases, creating an RFC to explain yourself will be overkill. RFCs should only be used if a decision explicitly requires one of the bullets in the section above.
 
 
 #### Process
@@ -113,7 +113,7 @@ flowchart TB
 * Plan and do implementation
 
 
-**Open decision:**
+**Open decision:**  
 Confluence? or Git?
 
 

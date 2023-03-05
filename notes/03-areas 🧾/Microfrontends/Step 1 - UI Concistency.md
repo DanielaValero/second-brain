@@ -18,18 +18,18 @@ We need to provide **efficiently** visual **consistency**, while we build a prod
 
 **Long term solutions**
 
-- Global pattern lib
-  - too much work. We dont have to have a code global pattern library in order to let patterns arise
-  - Does your pattern library say how and when a pattern is meant to be used? If the design of your image/caption pattern was shaped outside forces — by the kind of content inside it, by business requirements — are those considerations, those *tradeoffs* documented in your pattern library?
+* Global pattern lib
+  * too much work. We dont have to have a code global pattern library in order to let patterns arise
+  * Does your pattern library say how and when a pattern is meant to be used? If the design of your image/caption pattern was shaped outside forces — by the kind of content inside it, by business requirements — are those considerations, those *tradeoffs* documented in your pattern library?
 
 
 **Short term alternatives**
-- Mindset of: Scale processes and delivery together with UX team
-- Build patterns (maybe not even yet in a global pattern lib), focus the effort on discussing and documenting rising patterns in the context of *how* and *why* they were made. Reasoning is what enables a collection of patterns to mature into a fully-realized design system. We should keep defining how patterns look, how they’re built, and how to integrate them into our websites — but we don’t have to stop there. We can also better describe the compromises we make — the forces we resolve — when we design (and use) our patterns
-- Define UX/UI guidines on how devs create/implement work (and not in mocks/design)
-	- ie: Content page: when to use which vertical spacing. When which headline. And so on
-- Get UI/UX giving feedback as soon as possible
-	- ie: Involve UX  in the code reviews / release reviews
+* Mindset of: Scale processes and delivery together with UX team
+* Build patterns (maybe not even yet in a global pattern lib), focus the effort on discussing and documenting rising patterns in the context of *how* and *why* they were made. Reasoning is what enables a collection of patterns to mature into a fully-realized design system. We should keep defining how patterns look, how they’re built, and how to integrate them into our websites — but we don’t have to stop there. We can also better describe the compromises we make — the forces we resolve — when we design (and use) our patterns
+* Define UX/UI guidines on how devs create/implement work (and not in mocks/design)
+	* ie: Content page: when to use which vertical spacing. When which headline. And so on
+* Get UI/UX giving feedback as soon as possible
+	* ie: Involve UX  in the code reviews / release reviews
 
 
 
@@ -65,7 +65,7 @@ Developers do components, and deliver fragments, that dont know what space avail
 
 ![image of the new responsive](https://miro.medium.com/max/2000/1*UH74lSesLFbEyGP9Ec425A.png)
 
-source https://uxdesign.cc/the-start-of-a-new-era-for-responsive-web-design-6658a6bbeb9b
+source <https://uxdesign.cc/the-start-of-a-new-era-for-responsive-web-design-6658a6bbeb9b>
 
 **Switch to component's thinking**
 
@@ -87,30 +87,25 @@ source https://uxdesign.cc/the-start-of-a-new-era-for-responsive-web-design-6658
 
 **Task:**
 
-[] Introduce Component's thinking to designers. 
-
-[] Forster mindset switch from pages to patterns
-
-[] Define design tokens
-
-[] Identify with designers UI patterns
-
-[] Start moving rising patterns to a Figma pattern lib, so they can be reused in design
-
-[] Shift less documentation: documenting throughout the creation process allows for smoother decision-making. Avoids confusion when teams scale
+* [] Introduce Component's thinking to designers. 
+* [] Forster mindset switch from pages to patterns
+* [] Define design tokens
+* [] Identify with designers UI patterns
+* [] Start moving rising patterns to a Figma pattern lib, so they can be reused in design
+* [] Shift less documentation: documenting throughout the creation process allows for smoother decision-making. Avoids confusion when teams scale
 
 
 
 **How to decide that a UI pattern is robust enough to go to pattern Lib**
 
-- **Uniqueness:** Is this design pattern necessary, or can we use an already-built pattern instead? What new thing does this pattern offer us?
-- **Reusability:** Is this design pattern abstracted enough to be reused elsewhere in the application? (Whether it’s the code that’s abstracted, or the general concept of the component itself.)
-- **Statefulness and Interactivity:** Have we covered all bases regarding state with this component? We use [this checklist](https://gist.github.com/alishalisha/7fe8b7e8af79c4487bb9f4d859abc69f).
-- **Clarity (in language, motion, and code):** If code is presented, is it clear? Does it follow our code styleguide? (We use BEM, mixed with utility/helper classes.) If copy is present, is the language clear and friendly, or is there ambiguous terminology present? (Ideally, you’d have a UI copy styleguide to check against.) If animation is present, is the transition clear and does it make sense, or is it superfluous and confusing? Can you conduct user testing to find answers to these questions?
-- **Responsiveness:** Depends on the product, but most products should be small screen friendly. Does your design pattern scale gracefully?
-- **Accessibility:** If code is presented, does it follow [accessibility](http://bradfrost.com/blog/post/clarity-conf-baking-accessibility-in/) guidelines? If colors are used, does the pattern pass color contrast tests?
+* **Uniqueness:** Is this design pattern necessary, or can we use an already-built pattern instead? What new thing does this pattern offer us?
+* **Reusability:** Is this design pattern abstracted enough to be reused elsewhere in the application? (Whether it’s the code that’s abstracted, or the general concept of the component itself.)
+* **Statefulness and Interactivity:** Have we covered all bases regarding state with this component? We use [this checklist](https://gist.github.com/alishalisha/7fe8b7e8af79c4487bb9f4d859abc69f).
+* **Clarity (in language, motion, and code):** If code is presented, is it clear? Does it follow our code styleguide? (We use BEM, mixed with utility/helper classes.) If copy is present, is the language clear and friendly, or is there ambiguous terminology present? (Ideally, you’d have a UI copy styleguide to check against.) If animation is present, is the transition clear and does it make sense, or is it superfluous and confusing? Can you conduct user testing to find answers to these questions?
+* **Responsiveness:** Depends on the product, but most products should be small screen friendly. Does your design pattern scale gracefully?
+* **Accessibility:** If code is presented, does it follow [accessibility](http://bradfrost.com/blog/post/clarity-conf-baking-accessibility-in/) guidelines? If colors are used, does the pattern pass color contrast tests?
 
-source: https://product.voxmedia.com/2016/4/20/11458814/how-designers-can-use-unit-testing-to-build-resilient-and-happy-design-systems
+source: <https://product.voxmedia.com/2016/4/20/11458814/how-designers-can-use-unit-testing-to-build-resilient-and-happy-design-systems>
 
 
 
@@ -132,13 +127,10 @@ source: https://product.voxmedia.com/2016/4/20/11458814/how-designers-can-use-un
 
 **Task:**
 
-[] Add to DoD of developers to use the prefference media queries
-
-[] Document in styleguide alternatives found for the prefference media query
-
-[] Identify with designers what can be prepared during design phase and what can be prepared during dev phase
-
-[] Include in global Obi brand style guide alternatives for these queries
+* [] Add to DoD of developers to use the prefference media queries
+* [] Document in styleguide alternatives found for the prefference media query
+* [] Identify with designers what can be prepared during design phase and what can be prepared during dev phase
+* [] Include in global Obi brand style guide alternatives for these queries
 
 
 
@@ -152,7 +144,7 @@ source: https://product.voxmedia.com/2016/4/20/11458814/how-designers-can-use-un
 
 > *Container* queries will allow developers to vary the layout within specific elements on a page (and their children) based on the dimensions of the parent elements themselves, allowing for much more modular approaches to layout.
 >
-> http://ricg.io/
+> <http://ricg.io/>
 
 
 
@@ -166,17 +158,17 @@ source: https://product.voxmedia.com/2016/4/20/11458814/how-designers-can-use-un
 
 Use BEM for:
 
-- DRY-ing the HTML from the CSS you don’t plan on customizing (e.g., behavioral CSS-like transitions, positioning, hover/focus effects),
-- advanced animations/effects.
+* DRY-ing the HTML from the CSS you don’t plan on customizing (e.g., behavioral CSS-like transitions, positioning, hover/focus effects),
+* advanced animations/effects.
 
 Use utility classes for:
 
-- the “frequently-customized” properties, often used to create component variations (like padding, margin, text-alignment, etc.),
-- elements that are hard to identify with a new, meaningful class name (e.g., you need a parent element with a `position: relative` → create `<div class="position-relative"><div class="my-component"></div></div>`).
+* the “frequently-customized” properties, often used to create component variations (like padding, margin, text-alignment, etc.),
+* elements that are hard to identify with a new, meaningful class name (e.g., you need a parent element with a `position: relative` → create `<div class="position-relative"><div class="my-component"></div></div>`).
 
-source: https://css-tricks.com/building-a-scalable-css-architecture-with-bem-and-utility-classes/
+source: <https://css-tricks.com/building-a-scalable-css-architecture-with-bem-and-utility-classes/>
 
-https://codyhouse.co/ds/docs/framework/utilities
+<https://codyhouse.co/ds/docs/framework/utilities>
 
 
 
@@ -186,16 +178,16 @@ https://codyhouse.co/ds/docs/framework/utilities
 
 **Glossary**
 
-- Pattern Lib
-- UI Lib
-- Design System
-- Design Token
-- Component
-- Style guide
-- Living style guide
-- Pattern:  
-  - On the web, we think of patterns as reusable interface components . The pattern’s value comes out of how reusable it is. a pattern never exists in isolation. It is always defined by, and shaped by, its environment. “**Patterns are not rules.** They represent our shared understanding of design solutions.”
-- Design pattern:   [reusable](https://en.wikipedia.org/wiki/Reusability) solution to a commonly occurring problem within a given context in [software design](https://en.wikipedia.org/wiki/Software_design). Design patterns are formalized [best practices](https://en.wikipedia.org/wiki/Best_practice) that the programmer can use to solve common problems when designing an application or system.
+* Pattern Lib
+* UI Lib
+* Design System
+* Design Token
+* Component
+* Style guide
+* Living style guide
+* Pattern:  
+  * On the web, we think of patterns as reusable interface components . The pattern’s value comes out of how reusable it is. a pattern never exists in isolation. It is always defined by, and shaped by, its environment. “**Patterns are not rules.** They represent our shared understanding of design solutions.”
+* Design pattern:   [reusable](https://en.wikipedia.org/wiki/Reusability) solution to a commonly occurring problem within a given context in [software design](https://en.wikipedia.org/wiki/Software_design). Design patterns are formalized [best practices](https://en.wikipedia.org/wiki/Best_practice) that the programmer can use to solve common problems when designing an application or system.
 
 
 
@@ -203,14 +195,14 @@ https://codyhouse.co/ds/docs/framework/utilities
 
 **Resources**
 
-https://uxdesign.cc/the-start-of-a-new-era-for-responsive-web-design-6658a6bbeb9b
+<https://uxdesign.cc/the-start-of-a-new-era-for-responsive-web-design-6658a6bbeb9b>
 
-https://css-tricks.com/building-a-scalable-css-architecture-with-bem-and-utility-classes/
+<https://css-tricks.com/building-a-scalable-css-architecture-with-bem-and-utility-classes/>
 
-https://ethanmarcotte.com/wrote/on-container-queries/
+<https://ethanmarcotte.com/wrote/on-container-queries/>
 
-https://ethanmarcotte.com/wrote/pattern-patter/
+<https://ethanmarcotte.com/wrote/pattern-patter/>
 
-https://airbnb.design/building-a-visual-language/
+<https://airbnb.design/building-a-visual-language/>
 
-https://product.voxmedia.com/2016/4/20/11458814/how-designers-can-use-unit-testing-to-build-resilient-and-happy-design-systems
+<https://product.voxmedia.com/2016/4/20/11458814/how-designers-can-use-unit-testing-to-build-resilient-and-happy-design-systems>

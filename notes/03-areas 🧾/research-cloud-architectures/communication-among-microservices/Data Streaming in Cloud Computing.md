@@ -7,18 +7,18 @@ tags:
 ---
 #dataStreaming #cloudComputing #cloudNative #microservice #microservice 
 
-is the continuous transmission of data from a source to a destination. With streaming, data sources send data frequently, sometimes multiple times per second, and in small quantities. Contrast that with the more traditional [batch processing](https://www.ibm.com/docs/en/zos-basic-skills?topic=jobs-what-is-batch-processing), where operations run infrequently and transmit larger amounts of data each time.
-Source: https://www.udacity.com/blog/2021/08/what-is-data-streaming.html
+is the continuous transmission of data from a source to a destination. With streaming, data sources send data frequently, sometimes multiple times per second, and in small quantities. Contrast that with the more traditional [batch processing](https://www.ibm.com/docs/en/zos-basic-skills?topic=jobs-what-is-batch-processing), where operations run infrequently and transmit larger amounts of data each time.  
+Source: <https://www.udacity.com/blog/2021/08/what-is-data-streaming.html>
 
 People who work with this: Data scientist
 
 Aka: Streaming data processing
 
-> Streaming data is data that is generated continuously by thousands of data sources, which typically send in the data records simultaneously, and in small sizes (order of Kilobytes). This data needs to be processed sequentially and incrementally on a record-by-record basis or over sliding time windows, and used for a wide variety of analytics including correlations, aggregations, filtering, and sampling.
-> ...
+> Streaming data is data that is generated continuously by thousands of data sources, which typically send in the data records simultaneously, and in small sizes (order of Kilobytes). This data needs to be processed sequentially and incrementally on a record-by-record basis or over sliding time windows, and used for a wide variety of analytics including correlations, aggregations, filtering, and sampling.  
+> ...  
 > Stream processing requires ingesting a sequence of data, and incrementally updating metrics, reports, and summary statistics in response to each arriving data record. It is better suited for real-time monitoring and response functions.
 
-https://aws.amazon.com/streaming-data/
+<https://aws.amazon.com/streaming-data/>
 
 In contrast there is: Batch processing
 
@@ -47,18 +47,18 @@ Distributed data store optimized to store and handle real time data. Uses pub/su
 
 Kafka provides three main functions to its users:
 
--   Publish and subscribe to streams of records
--   Effectively store streams of records in the order in which records were generated
--   Process streams of records in real time
+*   Publish and subscribe to streams of records
+*   Effectively store streams of records in the order in which records were generated
+*   Process streams of records in real time
 
- https://aws.amazon.com/msk/what-is-kafka/
+ <https://aws.amazon.com/msk/what-is-kafka/>
 
 
 ### RabbitMQ
 Open source message broker that uses messaging queue approach. Queues are spread across a cluster of nodes and optionally replicated, with each message only being delivered to a single consumer.
 
-https://www.rabbitmq.com/
-https://aws.amazon.com/msk/what-is-kafka/
+<https://www.rabbitmq.com/>  
+<https://aws.amazon.com/msk/what-is-kafka/>
 
 
 
@@ -68,5 +68,5 @@ https://aws.amazon.com/msk/what-is-kafka/
 
 process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information
 
-Amazon Kinesis is a real-time, fully managed, and highly scalable cloud service for streaming large volumes of data on AWS
-https://www.whizlabs.com/blog/what-is-aws-kinesis/
+Amazon Kinesis is a real-time, fully managed, and highly scalable cloud service for streaming large volumes of data on AWS  
+<https://www.whizlabs.com/blog/what-is-aws-kinesis/>

@@ -1,5 +1,4 @@
-# CHAPTER 8  
-Hash Tables
+# CHAPTER 8   Hash Tables
 
 The preceding chapter explained binary search, an ![images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c08-i0002.png) algorithm for locating an item in a sorted list. The algorithm repeatedly examines a test item in the middle of the part of the list where the target item must be. It compares the test item to the target item and then recursively examines the left or right half of the region, depending on whether the test item is greater than or less than the target item.
 
@@ -41,9 +40,9 @@ A hash table's _fill percentage_, the percentage of the table that contains entr
 
 To summarize, a hash table needs the following:
 
--   A data structure to hold the data
--   A hashing function to map keys to locations in the data structure
--   A collision-resolution policy that specifies what to do when keys collide
+*   A data structure to hold the data
+*   A hashing function to map keys to locations in the data structure
+*   A collision-resolution policy that specifies what to do when keys collide
 
 To be useful, a hash table must be able to at least add new items and locate items that were previously stored. Another feature that is useful but not provided by some hash tables is the ability to remove a hashed key.
 
@@ -293,5 +292,4 @@ The Create button creates a new hash table. The Make Items button lets you add m
 16.  When you insert an item in an ordered hash table that uses open addressing, you sometimes find a larger value along an item's probe sequence. In that case, you deposit the new item and rehash the larger value. How do you know that this process will eventually stop? What is the largest number of items that you might move during this process?
 17.  In ordered hashing, what happens if the algorithm is unable to find an empty position to add a new item even if the table isn't full?
 
--   [Support](https://www.oreilly.com/online-learning/support/)
--   [](https://learning.oreilly.com/accounts/logout/)
+*   [Support](https://www.oreilly.com/online-learning/support/)

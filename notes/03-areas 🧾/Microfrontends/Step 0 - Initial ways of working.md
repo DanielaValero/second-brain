@@ -3,10 +3,10 @@
 ## Early adopter of micro frontend architecture
 
 
-Initial state:
+Initial state:  
 No processes, no clear roles, no clear tech vision or goal, not enough know-how on the heuristics of building microfrontends
 
-Caused:
+Caused:  
 Double work, high levels of stress, early symthoms of burnout, conflict among team members, no clear goal or direction, confusion, missed deadlines, deadlines and scope unclear
 
 
@@ -40,7 +40,7 @@ Next lessons
 
 > as your company grows, you stop being able to personally influence all employees. This is true for managers as well, as your team grows in size. Your personal behaviors no longer drive significant influence without other mechanisms in place. You need to scale your personal values.
 >
-> https://www.scarletink.com/why-do-the-amazon-leadership-principles-successfully-drive-behavior/
+> <https://www.scarletink.com/why-do-the-amazon-leadership-principles-successfully-drive-behavior/>
 
 
 
@@ -56,20 +56,20 @@ You say you care about people, but your actions are not coherent with it, the me
 
 
 
-Guided continous improvement: guidance to help teams identify techniques that are likely to work in their context.
-Improve through small changes:
-https://www.pmi.org/disciplined-agile/gci/kaizen-improvement-through-small-changes
+Guided continuous improvement: guidance to help teams identify techniques that are likely to work in their context.  
+Improve through small changes:  
+<https://www.pmi.org/disciplined-agile/gci/kaizen-improvement-through-small-changes>
 
 
-Resources to learn the next lessons:
-https://www.pmi.org/disciplined-agile/gci
-https://www.infoq.com/articles/agile-scaling-value-delivery/
-https://www.pmi.org/disciplined-agile/agility-at-scale/tactical-agility-at-scale/scaling-factors
-https://www.projectmanagement.com/blog/blogPostingView.cfm?blogPostingID=61732&thisPageURL=/blog-post/61732/choosing-your-wow--the-situation-context-framework--scf-#_=_
-https://www.pmi.org/disciplined-agile/ongoing-goals/evolve-wow
-https://www.pmi.org/disciplined-agile/gci/agile-methods-frameworks-only-get-you-so-far
+Resources to learn the next lessons:  
+<https://www.pmi.org/disciplined-agile/gci>  
+<https://www.infoq.com/articles/agile-scaling-value-delivery/>  
+<https://www.pmi.org/disciplined-agile/agility-at-scale/tactical-agility-at-scale/scaling-factors>  
+<https://www.projectmanagement.com/blog/blogPostingView.cfm?blogPostingID=61732&thisPageURL=/blog-post/61732/choosing-your-wow--the-situation-context-framework--scf-#_=_>  
+<https://www.pmi.org/disciplined-agile/ongoing-goals/evolve-wow>  
+<https://www.pmi.org/disciplined-agile/gci/agile-methods-frameworks-only-get-you-so-far>
 
-Method prisson:
-https://queue.acm.org/detail.cfm?id=3301760
+Method prisson:  
+<https://queue.acm.org/detail.cfm?id=3301760>
 
 

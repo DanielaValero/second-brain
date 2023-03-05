@@ -8,7 +8,7 @@ tags:
 
 ### Definition from Haskel
 
-A maybe is a monad 
+A maybe is a monad  
 The **Maybe** type is defined as follows:
 
  ```
@@ -47,7 +47,7 @@ Maybe types accept the provided type as well as `null` or `undefined`.
 
 ### Maybe type in Typescript
 
-It is something or nothing.
+It is something or nothing.  
 In JS nothing can be: null or undefined. Due to [this]([there is a nice article by Sourav Debnath about the typeof null bug](https://dev.to/_ravo_lution/why-typeof-null-is-object-181)) is better to define the `Nothing` as undefined.
 
 If an API returns null, then could use something like this:

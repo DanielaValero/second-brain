@@ -3,7 +3,7 @@
 
 > Functional programs use code constructs that are **immutable**, obey **referential transparency**, use **higher order functions**, and make liberal use of functional patterns.
 
-category theory based
+category theory based  
 Functor, Monoid, and Monad patterns
 
 

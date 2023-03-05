@@ -20,12 +20,12 @@ Primary ownership aligns most closely with with "Accountable" (or "Approver" or 
 
 **Primary owners typically:**
 
--   Drive the decision-making process
--   Have direct interaction with the secondary owner(s) discussing issues
--   Delegate the work to other roles or team members (as needed)
--   Lead the task to completion
--   Have final sign-off authority (if/when used)
--   Are ultimately accountable for the outcome of taskpoint or design decisions
+*   Drive the decision-making process
+*   Have direct interaction with the secondary owner(s) discussing issues
+*   Delegate the work to other roles or team members (as needed)
+*   Lead the task to completion
+*   Have final sign-off authority (if/when used)
+*   Are ultimately accountable for the outcome of taskpoint or design decisions
 
 The last few points emphasize that the primary role is ultimately accountable. This is why there can only be **one primary owner for each taskpoint**.
 
@@ -35,11 +35,11 @@ The Secondary role most directly aligns with the [RACI matrix](https://en.wikip
 
 **Secondary owners:**
 
--   Directly support the primary owner
--   Are actively involved in the decision-making process
--   Have active interest and participation in the outcomes
--   May work to complete the task
--   (but) Ultimately defer final decisions to primary owner
+*   Directly support the primary owner
+*   Are actively involved in the decision-making process
+*   Have active interest and participation in the outcomes
+*   May work to complete the task
+*   (but) Ultimately defer final decisions to primary owner
 
 #### Contributor = "Consulted"
 
@@ -47,9 +47,9 @@ The Contributor role typically aligns with "Consulted" (or "Consultant" or "coun
 
 **Contributors:**
 
--   Are not actively involved in the decision-making process
--   Typically provide initial input or requirements
--   May be asked to provide additional information
+*   Are not actively involved in the decision-making process
+*   Typically provide initial input or requirements
+*   May be asked to provide additional information
 
 Contributors may have only limited participation by providing initial design input (such as branding guidelines or business requirements) with little or no subsequent interaction. In those cases the communication may be input only with little or no concern of being "informed" of the result (relying on the expertise of other owners).
 

@@ -529,13 +529,13 @@ The coordination between teams doesn’t stop on the design phase, either. It wi
 
 One of micro-frontends’ main benefits is the strong boundaries that allow every team to move at the speed they need, loosely coupling the organization, reducing the time of coordination, and allowing developers to take destiny in their hands. In the microservices world, to achieve a loose coupling between microservices and therefore between teams, we use the choreography pattern, which uses an asynchronous communication, or event broker, to notify all the consumers interested in a specific event. With this approach we have:
 
--   Independent microservices that can react to (or not react to) external events triggered by one or more producers
+*   Independent microservices that can react to (or not react to) external events triggered by one or more producers
     
--   Solid, bounded context that doesn’t leak into multiple services
+*   Solid, bounded context that doesn’t leak into multiple services
     
--   Reduced communication overhead for coordinating across teams
+*   Reduced communication overhead for coordinating across teams
     
--   Agility for every team so they can evolve their microservice based on their customers’ needs
+*   Agility for every team so they can evolve their microservice based on their customers’ needs
     
 
 With micro-frontends, we should think in the same way to gain the same benefits. Instead of using a shared state, we maintain our micro-frontends’ boundaries and communicate any event that should be shared on the view using asynchronous messages, something we’re used to dealing with on the frontend.
@@ -656,7 +656,7 @@ As we will describe in [Chapter 7](https://learning.oreilly.com/library/view/bu
 
 Although horizontal-split architectures are the most versatile, they also present intrinsic implementation challenges from an organizational point of view, with coordinating a final output for the use being the main one. When we have multiple micro-frontends owned by different teams composed in the same view, we have to create a social mechanism for avoiding runtime issues in production due to dependency clashes or CSS classes overriding each other. As well, observability tools must be added to quickly identify which micro-frontends are failing in production and provide the team with clear information so they can diagnose the issue in their micro-frontend.
 
-The best way to avoid issues is to keep the communication channels open and maintain a fast feedback loop that keeps all teams in sync, such as a weekly or biweekly meeting with a member from every micro-frontend team responsible for a view. Synching the work between teams has to happen either in a live meeting or via asynchronous communication, such as emails or instant messaging clients.
+The best way to avoid issues is to keep the communication channels open and maintain a fast feedback loop that keeps all teams in sync, such as a weekly or biweekly meeting with a member from every micro-frontend team responsible for a view. Syncing the work between teams has to happen either in a live meeting or via asynchronous communication, such as emails or instant messaging clients.
 
 We must also reduce the number of teams working on the same page and make one team responsible for the final output presented to the users. This doesn’t mean that the team responsible for the final look and feel of a view should do all the work. However, shared responsibilities often lead to misunderstandings, so having one team lead the effort creates a better experience for your users.
 
@@ -734,11 +734,11 @@ In the next chapter, we will dive deeply into Module Federation composition, pro
 
 Module Federation makes sharing code very simple, providing a frictionless developer experience. However, we have to carefully consider why we are embracing micro-frontends in the first place. This plug-in allows you to have bidirectional sharing across micro-frontends, therefore flattening the hierarchical nature of an application where a host micro-frontend can share code with a remote micro-frontend and vice versa. I tend to discourage this practice because a unidirectional implementation brings several advantages, such as the following:
 
--   Code is easier to debug, as we know what code is coming from where.
+*   Code is easier to debug, as we know what code is coming from where.
     
--   It’s less prone to errors, as we have more control over our code.
+*   It’s less prone to errors, as we have more control over our code.
     
--   It’s more efficient, as the micro-frontend knows the boundaries of each part of the system.
+*   It’s more efficient, as the micro-frontend knows the boundaries of each part of the system.
     
 
 In the past, we have seen a similar approach with frontend architecture moving from a bidirectional data flow to a unidirectional one with the release of Facebook’s [Flux](https://oreil.ly/4FflK), which made developers’ lives easier and the applications more stable. The same reasoning was applied to React and how we deal with props objects injected from the parent component to one or more child components.  Additionally, reactive architectures have fully embraced this pattern with interesting implementations, like Model-View-Intent (MVI) applied on [Elm](https://elm-lang.org) or [Cycle.js](https://oreil.ly/iU68m).
@@ -1456,10 +1456,10 @@ Coordination
 
 In this chapter, we have applied the micro-frontend decisions framework to multiple architectures. Defining the four pillars (defining, composing, routing, and communicating) offered by the micro-frontends decisions framework helps us to filter our choices and select the right architecture for a project. We have analyzed different micro-frontend architectures, highlighting their challenges and scoring the architecture characteristics so that we can easily select the right architecture based on what we have to optimize for. Finally, because we understand that the perfect architecture doesn’t exist, we realized that we have to find the _less worse architecture_ based on the context we operate in. In the next chapter, we will analyze a technical implementation and focus our attention on the main challenges we may encounter in a micro-frontend implementation.
 
--   [Support](https://www.oreilly.com/online-learning/support/)
--   [Sign Out](https://learning.oreilly.com/accounts/logout/)
+*   [Support](https://www.oreilly.com/online-learning/support/)
+*   [Sign Out](https://learning.oreilly.com/accounts/logout/)
 
 ©2022 O'Reilly Media, Inc. 
 
--   [Terms of Service](https://www.oreilly.com/terms/)
--   [Privacy Policy](https://learning.oreilly.com/privacy)
+*   [Terms of Service](https://www.oreilly.com/terms/)
+*   [Privacy Policy](https://learning.oreilly.com/privacy)

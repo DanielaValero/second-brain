@@ -1,11 +1,10 @@
-# CHAPTER 6  
-Sorting
+# CHAPTER 6   Sorting
 
 Sorting algorithms are usually covered in great detail in algorithms books for several reasons.
 
--   They are interesting and demonstrate several useful techniques, such as recursion, divide and conquer, heaps, and trees.
--   Sorting algorithms are well-studied and are some of the few algorithms for which exact run times are known. It can be shown that the fastest possible algorithm that uses comparisons to sort N items must use O(N log N) time. Several sorting algorithms actually achieve that performance, so in some sense they are optimal.
--   Sorting algorithms are useful. Almost any data is more useful when it is sorted in various ways, so sorting algorithms play an important role in many applications.
+*   They are interesting and demonstrate several useful techniques, such as recursion, divide and conquer, heaps, and trees.
+*   Sorting algorithms are well-studied and are some of the few algorithms for which exact run times are known. It can be shown that the fastest possible algorithm that uses comparisons to sort N items must use O(N log N) time. Several sorting algorithms actually achieve that performance, so in some sense they are optimal.
+*   Sorting algorithms are useful. Almost any data is more useful when it is sorted in various ways, so sorting algorithms play an important role in many applications.
 
 This chapter describes several different sorting algorithms. Some, such as insertionsort, selectionsort, and bubblesort, are relatively simple but slow. Others, such as heapsort, quicksort, and mergesort, are more complicated but much faster. Still others, such as countingsort and pigeonhole sort, don't use comparisons to sort items, so they can break the O(N log N) barrier and perform amazingly fast under the right circumstances.
 
@@ -651,17 +650,17 @@ You can find the answers to these exercises in [Appendix B](https://learning.ore
 18.  If an array holds N items that span the range 0 to M – 1, what happens to bucketsort if you use M buckets?
 19.  Write a program that implements bucketsort. Allow the user to specify the number of items, the maximum item value, and the number of buckets.
 20.  Explain the space/time trade-off that you should consider when picking the number of buckets used by bucketsort.
-21.  For the following data sets, which sorting algorithms would work well, and which would not?
-    1.  10 floating-point values
-    2.  1,000 integers
-    3.  1,000 names
-    4.  100,000 integers with values between 0 and 1,000
-    5.  100,000 integers with values between 0 and 1 billion
-    6.  100,000 names
-    7.  1 million floating-point values
-    8.  1 million names
-    9.  1 million integers with uniform distribution
+21.  For the following data sets, which sorting algorithms would work well, and which would not?  
+    1.  10 floating-point values  
+    2.  1,000 integers  
+    3.  1,000 names  
+    4.  100,000 integers with values between 0 and 1,000  
+    5.  100,000 integers with values between 0 and 1 billion  
+    6.  100,000 names  
+    7.  1 million floating-point values  
+    8.  1 million names  
+    9.  1 million integers with uniform distribution  
     10.  1 million integers with nonuniform distribution
 
--   [Support](https://www.oreilly.com/online-learning/support/)
--   [](https://learning.oreilly.com/accounts/logout/)
+*   [Support](https://www.oreilly.com/online-learning/support/)
+*   [](https://learning.oreilly.com/accounts/logout/)

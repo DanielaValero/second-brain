@@ -7,12 +7,12 @@ tags:
 ---
 #architecturePatterns #cloudNative #microservice #reactiveProgramming 
 
-Microservices are  a foundational part of cloud native application architecture
+Microservices are  a foundational part of cloud native application architecture  
 event-driven architecture is widely considered best practice for microservices implementations
 
 
-> Event-driven architecture maximizes the potential of [cloud native applications](https://www.ibm.com/cloud/learn/cloud-native) and enables powerful applications technologies, such as real-time analytics and decision support.
-Source: https://www.ibm.com/cloud/learn/event-driven-architecture
+> Event-driven architecture maximizes the potential of [cloud native applications](https://www.ibm.com/cloud/learn/cloud-native) and enables powerful applications technologies, such as real-time analytics and decision support.  
+Source: <https://www.ibm.com/cloud/learn/event-driven-architecture>
 
 
 ### Parts
@@ -27,7 +27,7 @@ Source: https://www.ibm.com/cloud/learn/event-driven-architecture
 	1. **Pub/sub:** event consumers subscribe to a class or classes of messages published by event producers. When an event producer publishes an event, the message is sent directly to all subscribers who want to consume it. 
 	2. **Event Streaming:**  In the event streaming model, event producers publish _streams_ of events to a broker. Event consumers subscribe to the streams, but instead of receiving and consuming every event as it is published, consumers can step into each stream at any point and consume only the events they want to consume. The key difference here is that the events are retained by the broker even after the consumers have received them. (Kafka is a tool for this)
 
-source: https://www.ibm.com/cloud/learn/event-driven-architecture
+source: <https://www.ibm.com/cloud/learn/event-driven-architecture>
 
 
 
@@ -35,12 +35,11 @@ source: https://www.ibm.com/cloud/learn/event-driven-architecture
 ### Notes
 
 
-Event driven is reactive
+Event driven is reactive  
 **Event-Driven Systems are Reactive**
 
-[The Reactive Manifesto](https://www.reactivemanifesto.org/) addresses problems with legacy by laying out the philosophies of modern web-native software development.
-https://medium.com/swlh/monolith-to-event-driven-microservices-with-apache-kafka-6e4abe171cbb
+[The Reactive Manifesto](https://www.reactivemanifesto.org/) addresses problems with legacy by laying out the philosophies of modern web-native software development.  
+<https://medium.com/swlh/monolith-to-event-driven-microservices-with-apache-kafka-6e4abe171cbb>
 
--   **events** are simple notifications raised towards an event store
--   **messages** are data sent towards an addressable recipient
--
+*   **events** are simple notifications raised towards an event store
+*   **messages** are data sent towards an addressable recipient

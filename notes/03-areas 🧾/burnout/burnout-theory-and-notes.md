@@ -12,21 +12,21 @@ Part 3:
 * External fixes: Stablishing actions to address it in your team/organiation
 
 
-https://www.thisiscalmer.com/blog/5-stages-of-burnout
-https://www.winona.edu/stress/bntstages.htm
-https://anjuansimmons.com/talks/managing-the-burnout-burndown/
+<https://www.thisiscalmer.com/blog/5-stages-of-burnout>  
+<https://www.winona.edu/stress/bntstages.htm>  
+<https://anjuansimmons.com/talks/managing-the-burnout-burndown/>
 
 
 ### Define: Burnout
 
-The [World Health Organization](https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases) recognized burnout as an occupational phenomenon. Yet they don't clasify it as a medical condition, it has become so common, that today the WHO labels it, and calls to address it as the syndrome it is due to the effects it has in human beings.
+The [World Health Organization](https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases) recognized burnout as an occupational phenomenon. Yet they don't classify it as a medical condition, it has become so common, that today the WHO labels it, and calls to address it as the syndrome it is due to the effects it has in human beings.
 
 
 > “Burn-out is a syndrome conceptualized as resulting from chronic workplace stress that has not been successfully managed. It is characterized by three dimensions:
 >
-> - Feelings of energy depletion or **exhaustion**;
-> - Increased mental distance from one’s job, or feelings of **negativism or cynicism** related to one's job; and
-> - **Reduced professional efficacy**.
+> * Feelings of energy depletion or **exhaustion**;
+> * Increased mental distance from one’s job, or feelings of **negativism or cynicism** related to one's job; and
+> * **Reduced professional efficacy**.
 >
 > Burn-out refers specifically to phenomena in the occupational context and should not be applied to describe experiences in other areas of life.”
 
@@ -100,21 +100,14 @@ Once people begin to feel hostile and angry about job inequities, and lack faith
 
 ### Internal causes: Individual
 
-- **Age or experience:**  the research raises as many questions as it answers and invites more investigation to determine how reliable age and years of experience are as predictors of burnout.
-
-- **Personality**: we might conclude that while research of this nature provides us with some insight into the linkage between personality and burnout, it also raises a number of questions as to how universally applicable the findings are.
-
-- **Locus of control:** Locus of control has to do with an individual’s beliefs about the future and who or what has the power to control future events. Studies have shown workers are more vulnerable to stress and burnout when their locus of control is external
-
-- **Marital status:** On the effects of marriage on burnout, however, research has shown mixed results.these studies often raise as many questions as they answer and call for more investigation.
-
-- **Gender**: In other words, men and women have been found to suffer from both mental and physical health problems when forced to endure chronic stress on the job. 
-
-- **Work-home interference:** “Interference” happens when a work deadline requires an individual to forgo a family gathering (external interference) or when one cannot stop thinking about or being preoccupied by work (internal interference). Individuals with this particular problem cannot participate fully in and enjoy home life, and find recovery from the stresses of the workday much more difficult. In contrast, when matters from one’s home life interfere negatively with one’s work life, researchers refer to this as home–work interference (HWI). HWI affects the ability to think, concentrate and perform tasks in the workplace as required 
-
-- **Expectations**:  the gulf between expectations of what a job will be like and what a job is actually like is generally responsible for the burnout. "Happiness is reality divided by expectations" Alden Cass.
-
-  -  “realistic job preview” (RJP) and “expectation lowering procedures” (ELP) in order to “adjust” the expectations of potential and new employees.
+* **Age or experience:**  the research raises as many questions as it answers and invites more investigation to determine how reliable age and years of experience are as predictors of burnout.
+* **Personality**: we might conclude that while research of this nature provides us with some insight into the linkage between personality and burnout, it also raises a number of questions as to how universally applicable the findings are.
+* **Locus of control:** Locus of control has to do with an individual’s beliefs about the future and who or what has the power to control future events. Studies have shown workers are more vulnerable to stress and burnout when their locus of control is external
+* **Marital status:** On the effects of marriage on burnout, however, research has shown mixed results.these studies often raise as many questions as they answer and call for more investigation.
+* **Gender**: In other words, men and women have been found to suffer from both mental and physical health problems when forced to endure chronic stress on the job. 
+* **Work-home interference:** “Interference” happens when a work deadline requires an individual to forgo a family gathering (external interference) or when one cannot stop thinking about or being preoccupied by work (internal interference). Individuals with this particular problem cannot participate fully in and enjoy home life, and find recovery from the stresses of the workday much more difficult. In contrast, when matters from one’s home life interfere negatively with one’s work life, researchers refer to this as home–work interference (HWI). HWI affects the ability to think, concentrate and perform tasks in the workplace as required 
+* **Expectations**:  the gulf between expectations of what a job will be like and what a job is actually like is generally responsible for the burnout. "Happiness is reality divided by expectations" Alden Cass.
+  *  “realistic job preview” (RJP) and “expectation lowering procedures” (ELP) in order to “adjust” the expectations of potential and new employees.
 
   
 
@@ -124,53 +117,40 @@ can instead be explained by the level of “mismatch” between an individual an
 
 
 * **Feelings of lack of control:**
-
   * An employee is said to have control when she is able to participate in and influence workplace decision-making and is also able to exercise professional autonomy. Control has to do not only with how and when the job is done, but also how much leeway employees have in determining when they can take a break or when they can schedule their vacation
   *  In terms of burning out, workers who feel they have little job autonomy or control are at greater risk (Paine, 1982; Glass et al., 1993). Lack of control can take a number of different forms including supervisors who micromanage or organizations that do not allow employees to participate in policy or other work-related decisions (Glass et al., 1993). Lack of control is particularly stressful in an environment in which downsizing and job restructuring are taking place.
   * fix: Give more control to people, autonomy and power of decision making
-
 * **Role conflict or role ambiguity:** 
-
   * Role ambiguity is a term used to  describe the lack of clarity, certainty and/or predictability one might  have expected with regards to behaviour in a job (due, perhaps to an  ill-defined or ambiguous job description and/or uncertain organizational objectives). 
 
     Employees who work hard on what they think is an important project only to find it shelved or placed on the back burner, as well  as employees who don’t understand the scope and parameters of their job, the goals they should be pursuing, and what their priorities should be  are more likely to suffer from role ambiguity.
 
     In contrast, role  conflict involves competing and incompatible demands placed on an  employee. This can involve the sometimes contradictory demand of being  both a supervisor and a friend, the irreconcilable demands of providing  good service while striving to reduce costs, or the difficulties of  doing a job which is at odds with one’s own values. Where role conflict  and role ambiguity are high, high levels of burnout are also found ([Tunc and Kutanis, 2009](https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500025.htm#bb0585)).
 
-    https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500025.htm#st0095
+    <https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500025.htm#st0095>
 
 * **Lack of support from management:**  Leadership style in terms of credibility has to do with the extent to which workers feel they can trust the person in charge.
 
   Where workers feel they can trust their managers/supervisors, they are less likely to question managerial objectives or to refrain from volunteering to take on additional work required to accomplish these objectives. Where leadership credibility is low, the extent to which employees are burned out is likely to be higher
 
 * **Social support:**  
-
   * Part of social support concerns appreciation and is a major buffer against stress.  People who feel unappreciated almost never reach out to show appreciation of someone else’s work. Our experience has shown that one of the best ways for individuals to encourage others to pay attention to their work is to start acknowledging the good work of others. peer appreciation (which is easy to institute) reduces the need for approval from above (which is frequently difficult, if not impossible, to institute).
   * Younger employees need more social support from their supervisors to reduce stress. They tend to rely far more on assistance and encouragement from their supervisors to help buffer higher levels of job stress.
   * Have good social support and a network of people with similar interest have lower scores on emotional exhaustion
-
 * **Conflict**: Although conflict may occur for many reasons, the feeling that one has too much work and too few resources with which to carry it out is likely to contribute to interpersonal conflict in the workplace
-
   * fix: social support
-
 * **Reciprocity**: 
-
   * Reciprocity involves the amount an individual invests in a particular relationship with another and whether, and to what extent, that investment is returned. In the case of workers who feel they are contributing more to relationships with clients, patrons, patients, etc. than is being returned, there is an increased risk of burnout. But a perceived lack of reciprocity may exist not only with the recipients of one’s care but also with colleagues. The later contributes a lot to burnout, and by colleagues also mean: supervisors. Indeed, employees who feel a lack of reciprocity with their employing organization have been found to experience an even greater distress than when that lack of reciprocity exists with patients and co-workers
   * employees are expected to give more in terms of time, effort, skills, and flexibility, whereas they receive less in terms of career opportunities, lifetime employment, job security, and so on. Violation of the psychological contract is likely to produce burnout because it erodes the notion of reciprocity, which is crucial in maintaining well-being.
-
 * **Underwork**:  Underwork has been described in a number of ways including not being challenged enough on the job, or not having enough work to do, or lacking interest in the tasks that need to be done, or trying to look busy because there is not enough work. Certain experts who deal with the syndrome call it “boreout” – a syndrome with symptoms almost identical to burnout but which is differentiated by the fact that it afflicts the under-challenged 
-
 * Leadership style: There is an established link between type of leadership style, negative emotions, stress and burnout. 
-
   * employees working with a transformational leader rather than a transactional leader are less likely to see an impending stressor as threatening. Transformational leadership has been found to increase well-being and job satisfaction, and to decrease burnout in employees 
   * A transformational leadership style is one in which the leader attempts to inspire and motivate by appealing to an individual’s sense of self-worth in addition to other unique emotional and developmental needs. 
   * transactional leadership is of these types: contingent reward, management by exception-active, and management by exception-passive
     * Contingent reward” involves the provision of a reward (money, positive feedback, commendation) in exchange for good job performance
     * “Management by exception” may be active or passive. In the active form, the leader monitors an employee’s work, and if job performance deviates from expected performance standards, correction in the shape of negative feedback, discipline or punishment takes place. 
     * In the passive form, the leader is not actively involved in the monitoring of work, and only steps in when any deviation is brought to his or her attention
-
 * **Unmanageable workload & time pressure:** they contribute strongly to emotional exhaustion. Overload is bad for both the individual and the organization – the quality of work drops, co-workers have no time for collegiality or to build community, and morale and motivation suffer.
-
   * When to know? If it's hard to find relief at work. If restful moments between events are gone, and each demand rolls in the next one. When this happens exhaustion builds up, additional demands are not manageable and  the current scramble for survival often results in a shortage of resources. 
   * Workload can be of two types – either quantitative (e.g., high job demands with too little time in which to carry out those demands) or qualitative (e.g., jobs with a great deal of complexity or requiring a great deal of concentration
 
@@ -182,7 +162,7 @@ Burnout is [an organizational issue](https://hbr.org/2019/12/burnout-is-about-yo
 as employees, are not responsible for solving it. Still, it is not entirely out of our control. We can choose to set boundaries that protect our mental, physical, and emotional health. The challenge is that our efforts to do so are often hijacked by guilt.
 
 
-https://egn.com/dk/wp-content/uploads/sites/3/2020/08/Burnout-is-about-your-workplace-not-your-people-1.pdf
+<https://egn.com/dk/wp-content/uploads/sites/3/2020/08/Burnout-is-about-your-workplace-not-your-people-1.pdf>
 
 overload the most capabale: The overload problem is compounded for companies because the best  people are the ones whose knowledge is most in demand and who are often  the biggest victims of collaboration overload. 
 
@@ -198,8 +178,8 @@ Yet it is not in our control to address the underlying cause and mitigate the ca
 
 These boundaries can be different from person to person, generally speaking I would suggest.
 
-- Raise the red flag in your organization
-- Set your boundaries, putting a drastic limit on the things that have caused your burnout. 
+* Raise the red flag in your organization
+* Set your boundaries, putting a drastic limit on the things that have caused your burnout. 
 
 
 
@@ -219,9 +199,8 @@ Yet you might lack of one or other skill, yet could be that another person might
 
 Steps to get out
 
-- Take time to unwind, take time off
-- Identify the cause, [keep a stress diary](https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500098.htm#st0030)
-- 
+* Take time to unwind, take time off
+* Identify the cause, [keep a stress diary](https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500098.htm#st0030)
 
 ### Action tips
 
@@ -230,14 +209,14 @@ Meditation is proven to provide us with enough internal resources to unwind, and
 With burnout come negative thoughts about our professionalism, about us not being enough, or just feeling bad. For that, what has worked for me the best is to practice self compassion, here is a set of guided meditations to chose from, that I recommend you. 
 
 
-- [self compassion ecercises](https://self-compassion.org/category/exercises/)
-- Routine that marks the beginning of the work day
-- Routine that marks the end of the work day. 
-- Excersice daily
-- Cook my meals
-- Keep a stressors diary: date, time, situation, scale, symptoms, efficiency and reaction
-- Decrease factors that give me stress
-- [Manage your energy, not your time](https://learning.oreilly.com/library/view/hbrs-10-must/9781647822521/12572/OEBPS/xhtml/09_Manage_Y.xhtml)
+* [self compassion ecercises](https://self-compassion.org/category/exercises/)
+* Routine that marks the beginning of the work day
+* Routine that marks the end of the work day. 
+* Excersice daily
+* Cook my meals
+* Keep a stressors diary: date, time, situation, scale, symptoms, efficiency and reaction
+* Decrease factors that give me stress
+* [Manage your energy, not your time](https://learning.oreilly.com/library/view/hbrs-10-must/9781647822521/12572/OEBPS/xhtml/09_Manage_Y.xhtml)
 
 
 
@@ -247,88 +226,74 @@ With burnout come negative thoughts about our professionalism, about us not bein
 
 [source](https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500086.htm#st0065)
 
-- **Workload:** 
-
-  - self-awareness and self-monitoring are critical in preventing burnout, and when tackling the problem of workload, workers need to know what fires them up about the job and what, on the other hand, drains them of energy. Is it simply a case of too much work? Are deadlines too severe? Is it the type of work?
-
-  - Fix: limit hours
-
-  - Fix: learn to say no (dont take in more work) 
-    - or say a conditional no, 
-    - or sleep on it no. 
-    - alternative solution no
-    - secret weapon no (saying no wihtout explaining why)
-
-  - Fix: delegate
-
-  - Fix: manage time wisely
-
-    - prioritize week's work
-    - minimize notifications and interruptions
-    - schedule down time
-    - periodically evaluate commitments
-    - take vactions
-
-  - Fix: Break routines
-
-    - for example, incorporating new activities into the work day or carrying out old activities in different ways or at different times is a start. Employees who eat lunch at their desk each day while trying to work not only have no chance to unwind, but they risk the physical problems which result when eating while under stress. As Ashley Koff, RD, a Los Angeles dietitian, notes,
-    - do hobby during lunch break
-    - work at different times
-    - incorporate non brain activities if you are a mind worker
-
-  - Fix: increase resilience
-    - eat healthy
-    - Get enough sleep
-    - Excersice
-    - Employ relaxation techniques
+* **Workload:** 
+  * self-awareness and self-monitoring are critical in preventing burnout, and when tackling the problem of workload, workers need to know what fires them up about the job and what, on the other hand, drains them of energy. Is it simply a case of too much work? Are deadlines too severe? Is it the type of work?
+  * Fix: limit hours
+  * Fix: learn to say no (dont take in more work) 
+    * or say a conditional no, 
+    * or sleep on it no. 
+    * alternative solution no
+    * secret weapon no (saying no without explaining why)
+  * Fix: delegate
+  * Fix: manage time wisely
+    * prioritize week's work
+    * minimize notifications and interruptions
+    * schedule down time
+    * periodically evaluate commitments
+    * take vactions
+  * Fix: Break routines
+    * for example, incorporating new activities into the work day or carrying out old activities in different ways or at different times is a start. Employees who eat lunch at their desk each day while trying to work not only have no chance to unwind, but they risk the physical problems which result when eating while under stress. As Ashley Koff, RD, a Los Angeles dietitian, notes,
+    * do hobby during lunch break
+    * work at different times
+    * incorporate non brain activities if you are a mind worker
+  * Fix: increase resilience
+    * eat healthy
+    * Get enough sleep
+    * Excersice
+    * Employ relaxation techniques
 
       
 
-- Control
-  - Autonomy: 
-    - Identifying the type of control which is absent in the environment and then responding accordingly. 
-    - building a record of exceptional performance on the job and earning the trust of management.
-    - Volunteering to take more control is also an option.
-    - the way an employee might achieve more autonomy in the workplace is through external validation. Volunteering for professional associations, 
-  - Supervision
-    - Creative control involves keeping the boss up to date on innovation, new ideas or new concepts
-    - Critical control involves taking more interest in job performance and working with the supervisor to enhance quality in the workplac
-    - supportive control involves paying more attention to the supervisor and communicating more about frustrations and accomplishments in an attempt to model supportive behavior
-
-- Reward
-  - Ask for salary increase or promotion
-  - Ask for feedback from supervisor when acknoledgment is the issue
-  - Bring accomplishments to the eyes of others
-  - Seek validation beyond the workplace
-  - Or change jobs
-
-- Community
-  -  first step determining who the problems are – co-workers, supervisors and/or clients – and where the solution might lie.
-  - building a better community starts with better communication and by reaching out to others in the workplace.
-  - build better relationships in the workplace and to create alliances.
-
-- Fairness and respect
-  - first ways to address incidents of disrespect or discrimination is to talk about the incident with the offending party, or when that does not change the behavior, to talk to a supervisor.
-
-- Values
-  - Find a source of meaining insde or outside the job
+* Control
+  * Autonomy: 
+    * Identifying the type of control which is absent in the environment and then responding accordingly. 
+    * building a record of exceptional performance on the job and earning the trust of management.
+    * Volunteering to take more control is also an option.
+    * the way an employee might achieve more autonomy in the workplace is through external validation. Volunteering for professional associations, 
+  * Supervision
+    * Creative control involves keeping the boss up to date on innovation, new ideas or new concepts
+    * Critical control involves taking more interest in job performance and working with the supervisor to enhance quality in the workplac
+    * supportive control involves paying more attention to the supervisor and communicating more about frustrations and accomplishments in an attempt to model supportive behavior
+* Reward
+  * Ask for salary increase or promotion
+  * Ask for feedback from supervisor when acknowledgment is the issue
+  * Bring accomplishments to the eyes of others
+  * Seek validation beyond the workplace
+  * Or change jobs
+* Community
+  *  first step determining who the problems are – co-workers, supervisors and/or clients – and where the solution might lie.
+  * building a better community starts with better communication and by reaching out to others in the workplace.
+  * build better relationships in the workplace and to create alliances.
+* Fairness and respect
+  * first ways to address incidents of disrespect or discrimination is to talk about the incident with the offending party, or when that does not change the behavior, to talk to a supervisor.
+* Values
+  * Find a source of meaining inside or outside the job
 
 
 
-### Organizational meassures
+### Organizational measures
 
 [source](https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500086.htm#st0095)
 
 
 This is a post focused mainly on the individual, rather than the organization. However, provided most of the causes of burnout have origin in the organization, some actions that the organization can look at, in order to address properly are:
 
-- Define roles
-- Prioritize work
-- Work on important non urgent things
-- Privide people more control, for example over:  autonomy, opportunity for promotion, feedback and social  support
-- Adjust organizational structures and routines, decrease decision nodes, to address excesive collaboration
-- Evaluate leadership style of managers, target to transformational service leadership
-
+* Define roles
+* Prioritize work
+* Work on important non urgent things
+* Provide people more control, for example over:  autonomy, opportunity for promotion, feedback and social  support
+* Adjust organizational structures and routines, decrease decision nodes, to address excessive collaboration
+* Evaluate leadership style of managers, target to transformational service leadership
 * Workload:
   * Resuce workload
     * if not possible workload is expected to be busier than usual, but only temporarily, managers need to let employees know what has brought about this change, how long the increased amount of work is expected, and why additional staff are not being hired.
@@ -377,7 +342,7 @@ This is a post focused mainly on the individual, rather than the organization. H
 
 [When a tricky task makes your brain hurt. What to do - Phyche magazine](https://psyche.co/ideas/when-a-tricky-task-makes-your-brain-hurt-heres-what-to-do)
 
-> - **Good system-level prioritization is essential**. You won’t decouple your teams without good product management. You need a product management (or Integrator) listening and prioritizing for global needs. If teams prioritize based on local needs, you need to strengthen your Integrators.
+> * **Good system-level prioritization is essential**. You won’t decouple your teams without good product management. You need a product management (or Integrator) listening and prioritizing for global needs. If teams prioritize based on local needs, you need to strengthen your Integrators.
 
 [source](https://www.rubick.com/independent-executor-mode)
 
@@ -390,8 +355,8 @@ This is a post focused mainly on the individual, rather than the organization. H
 
 > If your company is using the OKR framework:
 >
-> - The Goal (G) is your Objective (O)
-> - The Measures (M) are your Key Results (KR)
+> * The Goal (G) is your Objective (O)
+> * The Measures (M) are your Key Results (KR)
 
 [Get your OKRs out of my gems](https://kathkeating.com/get-your-okrs-out-of-my-gems)
 

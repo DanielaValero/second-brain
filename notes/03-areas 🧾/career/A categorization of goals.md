@@ -6,11 +6,11 @@ tags:
 #career #goals 
 
 Goals should contain the following characteristics:
--   **Attainability:** Challenge but not overwhelm
--   **Flexibility:** Have a range of goals
--   **Time:** Reasonable deadlines and allow for process
--   **Process-focus:** Be mindful of the steps along the way
--   **Inspiration:** How do you want to feel
+*   **Attainability:** Challenge but not overwhelm
+*   **Flexibility:** Have a range of goals
+*   **Time:** Reasonable deadlines and allow for process
+*   **Process-focus:** Be mindful of the steps along the way
+*   **Inspiration:** How do you want to feel
 
 
 ### Categories of goals

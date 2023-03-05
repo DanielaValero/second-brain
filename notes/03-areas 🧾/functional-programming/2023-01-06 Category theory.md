@@ -14,7 +14,7 @@ In category theory, _objects_ can be anything: sets, numbers, matrices, just 
 
 We write it like this:
 
--   _A_ → _B_
+*   _A_ → _B_
     
 
 But what does an arrow mean, exactly? Well, it connects object _A_ to object _B_. Where the arrow starts and where the arrow ends is the information that defines the morphism.
@@ -31,14 +31,14 @@ But what does an arrow mean, exactly? Well, it connects object _A_ to object 
 _f_: _A_ → _B_ is a morphism, and _g_: _B_ → _C_ is a morphism. Since we are in a category, there must exist a morphism _h_ from _A_ to _C_ satisfying:
 > If _f_ is a morphism from _A_ to _B_, and _g_ is a morphism from _B_ to _C_, then there must exist a morphism _h_ from _A_ to _C_ where for all _x_ in _A_, _h_(_x_) = _g_(_f_(_x_)). In this case, we denote _h_ with the expression _g_ o _f_ and call it _f composed with g_.
 
--   _h_(_x_) = _g_(_f_(_x_))
+*   _h_(_x_) = _g_(_f_(_x_))
 
 
 > A set is just a collection of objects. The objects can be numbers, people, or even other sets. We are about to consider the category whose objects are _all_ sets.
 
 
 > The identity function on a set A is the function that maps every element to itself. The category theory version of this is that the identity morphism on _A_, denoted _idA_, when it composes with another function, leaves that function unchanged.
-> -   _idB_ o _g_ = _g_
+> *   _idB_ o _g_ = _g_
 
 
 > Category theorists tend to think not in terms of points, but rather in terms of composition of functions. The earlier expression is how you express the identity function in category theory in terms of composition.... Instead of saying identity morphism takes every point in the object to itself (because we don’t think about the points), you say that when you compose the identity morphism with another morphism, you get the original morphism back.
@@ -51,10 +51,10 @@ _f_: _A_ → _B_ is a morphism, and _g_: _B_ → _C_ is a morphism. Sin
 > In a semigroup, we often call the binary operation multiplication, even if it is not necessarily the usual multiplication of numbers.
 
 
-Functor
-Is a function that when gets a type applied, produces another type:
-`List[String]` is not a functor. It is a type. `List` by itself is a functor. When you apply it to a type, like `String`, for example, you get a type. This is why, in Scala, a functor is also called a type constructor.
-(given two categories: _C1_ and _C2_.)
+Functor  
+Is a function that when gets a type applied, produces another type:  
+`List[String]` is not a functor. It is a type. `List` by itself is a functor. When you apply it to a type, like `String`, for example, you get a type. This is why, in Scala, a functor is also called a type constructor.  
+(given two categories: _C1_ and _C2_.)  
 Then a functor _F_ from _C1_ to _C2_ is a function from the first category to the second category, which satisfies the following properties.
 
 1.  _F_ takes objects in _C1_ to objects in _C2_. (Just like `List` takes `String` to `List[String]`.)
@@ -69,20 +69,20 @@ This condition basically means that the two categories _C1_ and _C2_ have si
 Functors turn up in FP anywhere there are types that implement the `map` function. Think `functor` = mappable trait (or interface).
 
 
- In category theory, the `map` function is what you get when you apply a functor to a morphism.
+ In category theory, the `map` function is what you get when you apply a functor to a morphism.  
 We know that there are three properties a functor from category _C_ to category _D_ must satisfy:
 
--   A functor `F` takes objects in _C_ to objects in _D_. In the case of the category Scal, this means `F` takes Scala types to Scala types.
+*   A functor `F` takes objects in _C_ to objects in _D_. In the case of the category Scal, this means `F` takes Scala types to Scala types.
     
--   `F` takes morphisms in _C_ to morphisms in _D_.
+*   `F` takes morphisms in _C_ to morphisms in _D_.
     
--   A composition property, seen here:
+*   A composition property, seen here:
     
     _F_(_f_ o _g_) = _F_(_f_) o _F_(_g_)$ where _f_ and _g_ are morphisms.
 
--   They always have a map function.
+*   They always have a map function.
     
--   They can always be composed.
+*   They can always be composed.
 
 
 ## Monoids

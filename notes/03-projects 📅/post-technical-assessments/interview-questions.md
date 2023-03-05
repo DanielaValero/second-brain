@@ -5,8 +5,8 @@ tags:
 ---
 #interviewing #career 
 
-Inspiration of questions to ask / to assess in a new organization
-https://franciscomt.medium.com/the-systems-within-a-software-team-dc69d31cf9f9
+Inspiration of questions to ask / to assess in a new organization  
+<https://franciscomt.medium.com/the-systems-within-a-software-team-dc69d31cf9f9>
 
 
 ## As an interviewee
@@ -31,51 +31,51 @@ https://franciscomt.medium.com/the-systems-within-a-software-team-dc69d31cf9f9
 
 
 ## As an interviewer or intervewiee
-- What do you like most and you dislike most about what you do?
+* What do you like most and you dislike most about what you do?
 
-**1. How will I fail?**
+**1. How will I fail?**  
 can clue you into whether or not the person who’s interviewing you has truly thought about your success in the role
 
-**2. How do you incentivise your team?**
-tells what is important for the person
+**2. How do you incentivise your team?**  
+tells what is important for the person  
 Red flags if the incentives are unfair, unattainable, or not well thought through.
 
 **3. Can you share an example of something the team did that didn’t go well, and what did you do to course correct?**
 
-helps you learn is whether or not the team and leadership have thought about principles and values, how they communicate and uphold those, and how they work to hold a high bar. 
+helps you learn is whether or not the team and leadership have thought about principles and values, how they communicate and uphold those, and how they work to hold a high bar.  
 The second thing this question can do is help you understand if the team is rewarded for thinking like scientists
 
 
-Source
-https://github.com/readme/guides/technical-interviews
+Source  
+<https://github.com/readme/guides/technical-interviews>
 
 
 
 #### Questions per caterogy
 **Culture**
-- How engineering strategy and product strategy work together?
-- From your perspective, what are the strengths and weaknesses of this firm?
-- How do you balance deadlines with innovation and quality?
-- What are the key organizational values and principles that I should pay attention to?
-- How do you choose who to promote?
+* How engineering strategy and product strategy work together?
+* From your perspective, what are the strengths and weaknesses of this firm?
+* How do you balance deadlines with innovation and quality?
+* What are the key organizational values and principles that I should pay attention to?
+* How do you choose who to promote?
 
 **Impact**
-- What is the largest problem facing the current team that needs to be addressed immediately?
-- How does this role and project contribute to the firm’s larger goals?
-- What types of skills and expertise are you looking to fill with a contract engineer?
-- What are some of the challenges or roadblocks I might encounter?
-- If you hire me, what would your top priorities be for me?
-- What behaviors do team members that are the most successful exhibit?
-What behaviors do team members who struggle the most exhibit?
+* What is the largest problem facing the current team that needs to be addressed immediately?
+* How does this role and project contribute to the firm’s larger goals?
+* What types of skills and expertise are you looking to fill with a contract engineer?
+* What are some of the challenges or roadblocks I might encounter?
+* If you hire me, what would your top priorities be for me?
+* What behaviors do team members that are the most successful exhibit?  
+What behaviors do team members who struggle the most exhibit?  
  What do you think are the best ways to keep an engineering team motivated?
 
 **team work**
--   – How can I make sure that I get off on the right foot with my teammates?
--   – How often does the team meet and how do they prefer to communicate?
--   – How would you describe the team chemistry and dynamics? Who are the key players?
--   – With whom will I be working most closely?
--   – What will be my role on the team?
--   – What other tips would you offer me?
+*   – How can I make sure that I get off on the right foot with my teammates?
+*   – How often does the team meet and how do they prefer to communicate?
+*   – How would you describe the team chemistry and dynamics? Who are the key players?
+*   – With whom will I be working most closely?
+*   – What will be my role on the team?
+*   – What other tips would you offer me?
 
 
 
@@ -91,19 +91,19 @@ What behaviors do team members who struggle the most exhibit?
 
 ## As an interviewer
 **Eng manager questions**
-- How do you handle conflict?
-- How would I monitor team performance from a Product perspective.
-- Tell me about a time you had an underperforming direct report
-- What does it mean success to you? How do you measure it? Can you give us some examples?
-- How you do you measure direct reports performance? Have you managed a low performer individual?
-- Talk about your teams tech stack and how you picked it.
-- How do you health-check a team?
-- How do you health-check a codebase?
-- Can you tell me about a feedback that had a big impact on your career? Who provided it? What kind of impact did it have on you?
-- What is your biggest weakness?
-- Tell me about a time you had to work alongside a difficult co-worker
-- Describe a time when you failed. How did you overcome this?
-- You're assigned a task you don't know how to complete. What do you do?
+* How do you handle conflict?
+* How would I monitor team performance from a Product perspective.
+* Tell me about a time you had an underperforming direct report
+* What does it mean success to you? How do you measure it? Can you give us some examples?
+* How you do you measure direct reports performance? Have you managed a low performer individual?
+* Talk about your teams tech stack and how you picked it.
+* How do you health-check a team?
+* How do you health-check a codebase?
+* Can you tell me about a feedback that had a big impact on your career? Who provided it? What kind of impact did it have on you?
+* What is your biggest weakness?
+* Tell me about a time you had to work alongside a difficult co-worker
+* Describe a time when you failed. How did you overcome this?
+* You're assigned a task you don't know how to complete. What do you do?
 
 
 
@@ -125,5 +125,5 @@ Great answers:  1: Clearly articulates a high-impact project.  2
 
 3: Cites their specific impact and unique contributions, but does not over-congratulate themselves.
 
-#interviewing #career 
+#interviewing #career  
 [[interview-questions]]
