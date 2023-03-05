@@ -80,11 +80,11 @@ flowchart TB
 
 **Process checklist**
 
-* [] Are we confident enough that this design will work (`Evidence`)?
-* [] Have we decided between at least two options, and compared them (semi-)systematically (`Criteria`) ?
-* [] Have we discussed among each other and with peers just enough and come to a common view (`Agreement`)?
-* [] Have we captured the decision outcome and shared the decision record (`Document`)?
-* [] Do we know when to realize, review and possibly revise this decision (`Realization  & Revise`)
+- [x] Are we confident enough that this design will work (`Evidence`)?
+- [] Have we decided between at least two options, and compared them (semi-)systematically (`Criteria`) ?
+- [] Have we discussed among each other and with peers just enough and come to a common view (`Agreement`)?
+- [] Have we captured the decision outcome and shared the decision record (`Document`)?
+- [] Do we know when to realize, review and possibly revise this decision (`Realization  & Revise`)
 
 **Suggested template**
 [Decision record template by Michael Nygard](https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/templates/decision-record-template-by-michael-nygard/index.md)

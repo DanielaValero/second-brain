@@ -1,20 +1,32 @@
 :root {
-  --md-text-font: "SpaceGrotesk", "Roboto";
-  --md-code-font: "space_mono", "Roboto Mono";
+  --me-text-font: "SpaceGrotesk", "Roboto";
+  --me-code-font: "space_mono", "Roboto Mono";
   --custom-headline-font: "miratrix", "Roboto";
-  /* --color-highlight: #C21225; */
+  --system-ui-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --md-text-font: var(--system-ui-font);
+  --md-code-font: var(--me-code-font);
+  --decorative-font: var(--me-text-font);
+  --body-font-family: var(--system-ui-font);
+
   --color-highlight: #3E0E3C;
-  /* #DA2F43; #4051b5 */
+  --color-highlight--transparent: #7c4dff1a;
   --color-no-highlight: #f2f9f9;
   --color-black: #333333;
-  --color-body: var(var(--color-black))
+  --color-body: var(--color-black);
 
-  /* --color-shadow-dark: #C21225;
-  --color-shadow: #DA2F43;
-  --color-shadow-light: #F35267;
-  --color-highlight: #f2f9f9;
-  --color-shadow-08: rgba(218, 47, 67,.8); */
+  --font-weight-body: 400;
+  --font-size-body: 16px;
+  --line-height-body: 25px;
+
+  --font-weight-headline: 800;
+  --font-weight-highlight: 800;
+  --font-weight-link-hover: 500;
+
+  --font-size-body--big: 19px;
+  --line-height-body--big: 28.5px;
 }
+
 
 @font-face {
   font-family: 'SpaceGrotesk';
@@ -22,12 +34,14 @@
   src: url('../fonts/SpaceGrotesk-Regular.woff2') format('woff2');
   font-weight: 400;
 }
+
 @font-face {
   font-family: 'SpaceGrotesk';
   font-display: fallback;
   src: url('../fonts/SpaceGrotesk-Light.woff2') format('woff2');
   font-weight: 300;
 }
+
 @font-face {
   font-family: 'SpaceGrotesk';
   font-display: fallback;
@@ -39,7 +53,7 @@
   font-family: 'space_mono';
   font-display: fallback;
   src: url('../fonts/spacemono-regular-webfont.woff2') format('woff2'),
-       url('../fonts/spacemono-regular-webfont.woff') format('woff');
+    url('../fonts/spacemono-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -48,48 +62,156 @@
 @font-face {
   font-family: 'miratrix';
   src: url('../fonts/miratrix-normal-webfont.woff2') format('woff2'),
-       url('../fonts/miratrix-normal-webfont.woff') format('woff');
+    url('../fonts/miratrix-normal-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
+/*
+ *   Typography & its colors
+ */
+
+/* Logo */
+.md-header__title .md-ellipsis {
+  margin-left: 0;
+  font-family: var(--custom-headline-font);
+  font-weight: 400;
+}
+
+.md-header__title.md-header__title--active .md-ellipsis {
+  font-family: var(--body-font-family);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.md-nav__title {
+  font-family: var(--decorative-font);
+}
+
+.md-typeset,
+.md-typeset li {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  font-weight: var(--font-weight-body);
+}
+
+.md-footer,
+.md-footer-meta,
+.md-copyright,
+html .md-footer-meta.md-typeset a,
+html .md-footer-meta.md-typeset a:hover {
+  color: var(--color-body);
+}
+
+html .md-footer-meta.md-typeset a:hover {
+  text-decoration: underline;
+}
+
 body {
   color: var(--color-body);
 }
+
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
 .md-typeset h4,
-.md-typeset h5,
-.md-typeset li {
+.md-typeset h5 {
   color: var(--color-body);
+  font-family: var(--decorative-font);
+  font-weight: var(--font-weight-headline);
 }
 
 .md-typeset a {
   color: var(--color-highlight);
-  font-weight: 400;
+  font-weight: var(--font-weight-body);
 }
+
 .md-typeset a:hover {
   color: var(--color-highlight);
-  font-weight: 800;
+  font-weight: var(--font-weight-link-hover);
   text-decoration: underline;
+}
+
+
+/*
+* Headlines in content
+*/
+
+.md-typeset h1 {
+  margin-bottom: 0.5em;
 }
 
 .md-nav__item {
   padding: 0.1rem 0.6rem;
 }
 
+.md_nav__list {
+  background-color: #fff;
+}
+
+.md-nav__item .md-nav__link--active {
+  color: var(--color-highlight);
+  font-weight: var(--font-weight-link-hover);
+  text-decoration: underline;
+}
+
+.md-nav__link {
+  margin-top: 0;
+  margin-bottom: 0.725em;
+}
+
+.md-nav__link:focus,
+.md-nav__link:hover {
+  color: var(--color-highlight);
+}
+
+.md-nav__link[aria-expanded="true"],
+.md-tabs__link.md-tabs__link--active,
+.md-nav__link.md-nav__link--active {
+  font-weight: var(--font-weight-highlight);
+}
+
+.md-nav__link--passed {
+  color: var(--md-default-fg-color--lighter);
+}
+
+.md-top:hover {
+  background-color: var(--color-highlight);
+}
+
+.md-nav__title {
+  margin-bottom: 15px;
+}
+
+/*
+ * Page layout
+ */
+
 .md-header__inner.md-grid {
   border-bottom: 9px solid var(--color-highlight);
+}
+
+.md-header--shadow {
+  box-shadow: none;
+}
+/* Hide forks etc from github repo */
+.md-source__facts {
+  display: none;
+}
+
+@media screen and (min-width: 60em) {
+.md-header__source {
+  width: 5.4rem;
+  text-align: center;
+  margin-right: 13px;
+  }
 }
 
 .md-footer-meta__inner.md-grid {
   border-top: 9px solid var(--color-highlight);
 }
-.md-header--shadow {
-  box-shadow: none;
-}
+
 
 .md-footer-meta__inner {
   display: flex;
@@ -99,31 +221,14 @@ body {
   font-size: .64rem;
   padding: 20px 0 10px;
 }
+
 .md-footer-link {
   margin: auto 0.6rem;
 }
 
-.md_nav__list {
-  background-color: #fff;
-}
-
-.md-nav__item .md-nav__link--active {
-  color: var(--color-highlight);
-  font-weight: 800;
-  text-decoration: underline;
-}
-.md-nav__link:focus, .md-nav__link:hover {
-  color: var(--color-highlight);
-}
-
-.md-nav__link--passed {
-  color: var(--md-default-fg-color--lighter);
-}
-
-.md-top:hover {
-  background-color:  var(--color-highlight);
-}
-
+/*
+ * Elements in header and footer
+ */
 .md-copyright,
 .md-social {
   padding: 0;
@@ -132,105 +237,76 @@ body {
 }
 
 .md-footer,
-.md-footer-meta, 
+.md-footer-meta,
 .md-copyright,
 html .md-footer-meta.md-typeset a {
   background-color: transparent;
-  color: var(--md-typeset-color);
 }
 
-html .md-footer-meta.md-typeset a:hover {
-  color: var(--md-typeset-color);
-  text-decoration: underline;
-}
-
-.md-header__button.md-logo img, .md-header__button.md-logo svg {
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
   height: 3rem;
 }
 
-.md-header__title .md-ellipsis {
-  margin-left: 0;
-  font-family: var(--custom-headline-font);
-  font-weight: 400;
-}
-
-
-.md-header__title.md-header__title--active .md-ellipsis  {
-  font-family: var(--md-text-font);
-  font-size: 22px;
-  font-weight: 800;
-}
-
-.md-nav__title {
-  margin-bottom: 15px;
-}
-.md-nav__title {
-  font-family: var(--custom-headline-font);
-}
-
+/*
+ * Content
+ */
 .md-main {
   margin-bottom: 1.5rem;
 }
 
-.md-content__inner  {
+.md-content {
+  margin-top: 10px;
+}
+
+.md-content__inner {
   padding-top: 0;
 }
 
-p {
+p,
+blockquote {
   margin-bottom: 30px;
 }
 
-/** tags in file with hash **/
+/*
+* Tags 
+*/
+
+/** Hide the tags from obsidian that dont get converted to links */
 .hash {
   display: none;
-  font-weight: 500;
-  color: var(--color-no-highlight);
-  background-color: var(--color-highlight);
-  padding: .1em .9375em;
-  font-size: .64rem;
-  letter-spacing: normal;
-  line-height: 1.6;
-  vertical-align: middle;
 }
 
-/** auto generated by mkdocs **/
 .md-typeset .md-tag {
   height: auto;
   border-radius: 0;
+  font-weight: var(--font-weight-highlight);
   background-color: var(--color-no-highlight);
   border: 1px solid var(--color-highlight);
   padding: .1em .9375em;
 }
+
+/** Tag page **/
+
+.md-typeset h2 .md-tag {
+  font-size: 0.8rem;
+}
+
 .md-typeset .md-tag[href],
 .md-tag {
   color: var(--color-highlight);
 }
 
-.md-typeset .md-tag[href]:focus, .md-typeset .md-tag[href]:hover {
+.md-typeset .md-tag[href]:focus,
+.md-typeset .md-tag[href]:hover {
   background-color: var(--color-highlight);
   color: var(--color-no-highlight);
-}
-
-.md-typeset h1 {
-  margin-bottom: 0.5em;
-  font-weight: 800;
-}
-
-.md-typeset h2,
-.md-typeset h3,
-.md-typeset h4,
-.md-typeset h5 {
-  font-weight: 800;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .md-typeset .md-tags {
- margin-bottom: 1.5em;
-}
-
-.md-typeset {
-  font-size: 19px;
-  line-height: 28.5px;
-  font-weight: 300;
+  margin-bottom: 1.5em;
 }
 
 [dir=ltr] .md-typeset blockquote {
@@ -238,8 +314,8 @@ p {
 }
 
 .md-typeset blockquote {
-  background-color: var(--color-no-highlight);
-  padding:1em 0.5em;
+  background-color: var(--color-highlight--transparent);
+  padding: 1em 0.5em;
   color: var(--color-body);
 }
 
@@ -247,8 +323,9 @@ blockquote {
   position: relative;
 }
 
-blockquote p {
+blockquote > p {
   padding: 0 2em;
+  margin-bottom: 20px;
 }
 
 blockquote:before {
@@ -270,3 +347,4 @@ blockquote:after {
   position: absolute;
   color: var(--color-highlight);
 }
+

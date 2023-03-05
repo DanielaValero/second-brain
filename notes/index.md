@@ -1,4 +1,4 @@
-# My second brain
+#
 Hello folks,
 
 This is an ongoing practice that I am currently (end of 2022-beginning of 2023) adopting, to build a [second brain](https://fortelabs.com/blog/basboverview/).

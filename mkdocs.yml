@@ -1,5 +1,6 @@
 site_name: Daniela's second brain
 site_url: 'https://notes.danielavalero.com'
+repo_url: https://github.com/DanielaValero/second-brain
 docs_dir: 'notes'
 extra_css:
   - assets/css/extra.css
@@ -8,27 +9,41 @@ theme:
     custom_dir: overrides
     logo: assets/logo.png
     favicon: assets/favicon.ico
+    font: false
     palette:
-      accent: red
+      accent: deep purple
       primary: white
     features:
       - navigation.instant
       - navigation.path
-      - navigation.indexes
       - navigation.top
+      - header.autohide
+      # Renders the toc as child of the right side navigation
+      #- toc.integrate
+      # Adds the high level folders to an horizontal navigation
+      #- navigation.tabs
+      #- navigation.tabs.sticky
 # Extensions
 markdown_extensions:
    - footnotes
    - attr_list
    - meta
    - admonition
-#   - codehilite
+   - abbr
+   - toc:
+      title: Contents
+   - pymdownx.tasklist:
+      custom_checkbox: true
+   - pymdownx.betterem
+   - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
    - pymdownx.arithmatex:
        generic: true
-   - pymdownx.tabbed:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+
+
 
 plugins:
   - search
