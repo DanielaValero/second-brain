@@ -7,8 +7,6 @@ tags:
 #functionalProgramming #fpTerm #monad
 
 
-# Monad
-
 Source: [https://github.com/getify/Functional-Light-JS/blob/master/manuscript/apB.md/#appendix-b-the-humble-monad](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/apB.md/#appendix-b-the-humble-monad)
 
 "A monad is a data structure. It's a type. It's a set of behaviors that are specifically designed to make working with a value predictable."

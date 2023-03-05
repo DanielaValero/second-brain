@@ -3,7 +3,7 @@ tags:
   - career
   - interviewing
 ---
-# Tech-Assessments: Take home interview
+
 #career #interviewing 
 
 This is a more practical type of interview.  

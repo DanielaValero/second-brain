@@ -1,7 +1,7 @@
 
 
 
-**Goal:**
+## Goal:
 
 Quality + Efficiency + Consistency
 
@@ -10,20 +10,20 @@ Our web experience should be nothing less than trying to adapt to the user’s n
 >  As our designs become more modular and pattern-driven, the value of *media* queries has decreased
 
 
-**Problem:**
+## Problem:
 
 We need to provide **efficiently** visual **consistency**, while we build a product with high **quality** that is in the future **accessible** to every user.
 
 
 
-**Long term solutions**
+## Long term solutions
 
 * Global pattern lib
   * too much work. We dont have to have a code global pattern library in order to let patterns arise
   * Does your pattern library say how and when a pattern is meant to be used? If the design of your image/caption pattern was shaped outside forces — by the kind of content inside it, by business requirements — are those considerations, those *tradeoffs* documented in your pattern library?
 
 
-**Short term alternatives**
+## Short term alternatives
 * Mindset of: Scale processes and delivery together with UX team
 * Build patterns (maybe not even yet in a global pattern lib), focus the effort on discussing and documenting rising patterns in the context of *how* and *why* they were made. Reasoning is what enables a collection of patterns to mature into a fully-realized design system. We should keep defining how patterns look, how they’re built, and how to integrate them into our websites — but we don’t have to stop there. We can also better describe the compromises we make — the forces we resolve — when we design (and use) our patterns
 * Define UX/UI guidines on how devs create/implement work (and not in mocks/design)
@@ -33,11 +33,11 @@ We need to provide **efficiently** visual **consistency**, while we build a prod
 
 
 
-**Research**
+## Research
 
 
 
-**Limitations of current responsive design**
+### Limitations of current responsive design
 
 > Once the screen is this size *and* the element appears in a different, smaller container, use a narrower layout on this element.”
 >
@@ -45,13 +45,13 @@ We need to provide **efficiently** visual **consistency**, while we build a prod
 
 
 
-**How applies to new obi:**
+### How applies to new my present project:
 
-Desigerns design with responsive design in mind, viewport media queries and grids
+Designs design with responsive design in mind, viewport media queries and grids
 
 Developers do components, and deliver fragments, that dont know what space available there is.
 
-**Problem**: Building a UI in our scenario, based on the "old" mindset, risks our solution to have to catter for weird layout issues, UI not fititing grid etc.
+**Problem**: Building a UI in our scenario, based on the "old" mindset, risks our solution to have to cater for weird layout issues, UI not fitting grid etc.
 
 **Solution**: Design components and patterns, and make them fill the space available, with container queries for example
 
@@ -67,7 +67,7 @@ Developers do components, and deliver fragments, that dont know what space avail
 
 source <https://uxdesign.cc/the-start-of-a-new-era-for-responsive-web-design-6658a6bbeb9b>
 
-**Switch to component's thinking**
+### Switch to component's thinking
 
 > When we talk about components, I’m referring to elements on the page that could be comprised of a collection of other elements
 
@@ -79,13 +79,11 @@ source <https://uxdesign.cc/the-start-of-a-new-era-for-responsive-web-design-665
 
 
 
-
-
 > **A unified design language shouldn’t be just a set of static rules and individual atoms; it should be an evolving ecosystem.**
 
 
 
-**Task:**
+## What to do
 
 * [] Introduce Component's thinking to designers. 
 * [] Forster mindset switch from pages to patterns
@@ -96,7 +94,7 @@ source <https://uxdesign.cc/the-start-of-a-new-era-for-responsive-web-design-665
 
 
 
-**How to decide that a UI pattern is robust enough to go to pattern Lib**
+### How to decide that a UI pattern is robust enough to go to pattern Lib
 
 * **Uniqueness:** Is this design pattern necessary, or can we use an already-built pattern instead? What new thing does this pattern offer us?
 * **Reusability:** Is this design pattern abstracted enough to be reused elsewhere in the application? (Whether it’s the code that’s abstracted, or the general concept of the component itself.)
@@ -111,7 +109,7 @@ source: <https://product.voxmedia.com/2016/4/20/11458814/how-designers-can-use-u
 
 
 
-**Users have now prefference based media queries**
+## Users have now preference based media queries
 
 > Preference-based media queries would allow us to adapt our User Experience to be specific to a particular user’s experience.
 
@@ -125,10 +123,10 @@ source: <https://product.voxmedia.com/2016/4/20/11458814/how-designers-can-use-u
 
 
 
-**Task:**
+### What to do
 
-* [] Add to DoD of developers to use the prefference media queries
-* [] Document in styleguide alternatives found for the prefference media query
+* [] Add to DoD of developers to use the preference media queries
+* [] Document in styleguide alternatives found for the preference media query
 * [] Identify with designers what can be prepared during design phase and what can be prepared during dev phase
 * [] Include in global Obi brand style guide alternatives for these queries
 
@@ -136,7 +134,7 @@ source: <https://product.voxmedia.com/2016/4/20/11458814/how-designers-can-use-u
 
 
 
-**Adopt container queries in the design system**
+### Adopt container queries in the design system
 
 > container queries would allow us to set rules based on the parent container, rather than the overall page. his means that any component is more self-contained, aligned to modern design systems, and truly become plug-and-play modules that could be moved to any page or layout without having to reconsider everything based on its new environment.
 
@@ -152,7 +150,7 @@ source: <https://product.voxmedia.com/2016/4/20/11458814/how-designers-can-use-u
 
 
 
-**For HeyObi Web**
+## For project
 
 #### By using BEM together with utility classes, the HTML is easier to read and customize.
 
@@ -176,7 +174,7 @@ source: <https://css-tricks.com/building-a-scalable-css-architecture-with-bem-an
 
 
 
-**Glossary**
+## Glossary
 
 * Pattern Lib
 * UI Lib
@@ -193,7 +191,7 @@ source: <https://css-tricks.com/building-a-scalable-css-architecture-with-bem-an
 
 
 
-**Resources**
+## Resources
 
 <https://uxdesign.cc/the-start-of-a-new-era-for-responsive-web-design-6658a6bbeb9b>
 

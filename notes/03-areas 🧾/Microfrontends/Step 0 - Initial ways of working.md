@@ -3,23 +3,23 @@
 ## Early adopter of micro frontend architecture
 
 
-Initial state:  
+### Initial state:  
 No processes, no clear roles, no clear tech vision or goal, not enough know-how on the heuristics of building microfrontends
 
 Caused:  
-Double work, high levels of stress, early symthoms of burnout, conflict among team members, no clear goal or direction, confusion, missed deadlines, deadlines and scope unclear
+Double work, high levels of stress, early symptoms of burnout, conflict among team members, no clear goal or direction, confusion, missed deadlines, deadlines and scope unclear
 
 
 
-First Lessons
-* People comes first: phychological safety, respect, trust and work-life balance
+### First Lessons
+* People comes first: psychological safety, respect, trust and work-life balance
 * Setup clear roles an expectations
 * Limit size of teams 
 * Setup a default initial process
 * Communicate deadlines, and scope clearly
 
 
-Next lessons
+### Next lessons
 * Setup processes across teams
 * Setup communication models across teams
 * Engage people by communicating purpose: 
@@ -27,14 +27,12 @@ Next lessons
 	* yes: bring the product to the browser
 
 
-
+### What to do
 1. Define roles clearly
 2. Define career framework
 3. Define values:
-   1.  “***statements of value\***”, as they represent what the organization values in regard to behaviors, methods, and outcomes.
+   1.  “***statements of value\***”, as they represent what the organisation values in regard to behaviours, methods, and outcomes.
 4. Define processes
-
-
 
 
 
@@ -43,25 +41,17 @@ Next lessons
 > <https://www.scarletink.com/why-do-the-amazon-leadership-principles-successfully-drive-behavior/>
 
 
-
-
-
 >  If you say that you value something, but don't encourage it in any way, it creates zero results. For example, you could say that your company values transparency, but if you don't encourage transparency in any way, you have not changed any behaviors.
 
 You say you care about people, but your actions are not coherent with it, the message you are giving is that in reality you don't care about people
 
-
-
-
-
-
-
-Guided continuous improvement: guidance to help teams identify techniques that are likely to work in their context.  
+### Guided continuous improvement: 
+guidance to help teams identify techniques that are likely to work in their context.  
 Improve through small changes:  
 <https://www.pmi.org/disciplined-agile/gci/kaizen-improvement-through-small-changes>
 
 
-Resources to learn the next lessons:  
+### Resources to learn the next lessons:  
 <https://www.pmi.org/disciplined-agile/gci>  
 <https://www.infoq.com/articles/agile-scaling-value-delivery/>  
 <https://www.pmi.org/disciplined-agile/agility-at-scale/tactical-agility-at-scale/scaling-factors>  
@@ -69,7 +59,7 @@ Resources to learn the next lessons:
 <https://www.pmi.org/disciplined-agile/ongoing-goals/evolve-wow>  
 <https://www.pmi.org/disciplined-agile/gci/agile-methods-frameworks-only-get-you-so-far>
 
-Method prisson:  
+## Method prisson:  
 <https://queue.acm.org/detail.cfm?id=3301760>
 
 

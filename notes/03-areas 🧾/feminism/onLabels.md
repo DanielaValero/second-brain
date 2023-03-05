@@ -6,8 +6,6 @@ tags:
   - becomeWoman
 ---
 #feminism #self-insight #understandMyself 
-# Labels
-
 
 
 # Becoming a woman

@@ -1,6 +1,4 @@
 
-# Chapter 4. Discovering Micro-Frontend Architectures
-
 In the previous chapter, we learned about _decisions framework_, the foundation of any micro-frontend architecture. In this chapter, we will review the different architecture choices, applying what we have learned so far. 
 
 # Micro-Frontend Decisions Framework Applied

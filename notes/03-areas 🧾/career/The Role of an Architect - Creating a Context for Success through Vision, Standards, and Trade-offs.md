@@ -1,4 +1,8 @@
-
+---
+tags:
+  - theArchitectRole
+---
+#theArchitectRole 
 
 As noted designer, author, and artist Edwin Schlossberg said so wonderfully, “The skill of writing is to create a context in which other people can think.” Likewise, the skill of leading an organization, or creating an architecture, or creating a strategy, is structurally analogous: you are creating a context in which other people can succeed.
 

@@ -2,8 +2,9 @@
 tags:
   - functionalDomainModelling
   - functionalProgramming
+  - impossibleState
 ---
-#functionalDomainModelling #functionalProgramming
+#functionalDomainModelling #functionalProgramming #impossibleState 
 
 ### What is an impossible state?
 

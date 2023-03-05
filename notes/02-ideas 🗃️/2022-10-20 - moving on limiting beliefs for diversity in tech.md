@@ -6,12 +6,11 @@ tags:
   - reflection
   - idea-to-refine
 ---
-Moving on Limiting beliefs in tech teams and communities  
 #deepThinking #diversityInTechnology #idea #reflection  
 #idea-to-refine 
 
 
-Idea:
+### Idea:
 * Being a person from a minority group, and having 'made it' in Germany, has required a lot of work and time
 * In times I feel the lack of empathy from people who are not or have not been part of minority group, judging me harsh... In contrast, I have got in times lack of empathy to understand where they come from, therefore becomes more difficult for us to find a way to meet in the middle.
 * In technology, there is a stereotype of the developer who programs since they are kids, and all they have done with their life, or private life is to code. If a developer does this, it means they are good and successful. However, the world is more complicated than that

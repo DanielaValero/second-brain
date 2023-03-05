@@ -5,12 +5,11 @@ tags:
 ---
 #feedback #communication
 
-## Receiving challenging feedback
-
 
 Sign up witnesses. Ask your boss or team to alert you when they observe you mastering the skills or approaches flagged in your review. It’s human nature to categorize people and never change. To disrupt that pattern, ask them to look for positive evidence that you’re changing. As their brains do that work, their opinion of you will change!
 
-**Look for the well-intended message.** Without judging yourself, find the review’s message. Trust me, there’s at least a grain of helpful truth in your review. You’re not a horrible person. You’re not the worst performer ever. You just have some growing to do.
+## **Look for the well-intended message.** 
+Without judging yourself, find the review’s message. Trust me, there’s at least a grain of helpful truth in your review. You’re not a horrible person. You’re not the worst performer ever. You just have some growing to do.
 
 * **Face the review fresh.** After your first reading or discussion, turn to another activity. Physical activity can change your emotional state. Do something that will take your mind off the injustice, insult, or condemnation until you cool down. When you’re ready, take a second look. If you’re still struggling, pretend that you’re reading someone else’s review.
 * **Move from blame to curiosity.** It’s easier to absorb a poor review when you’re curious about how to improve. “What can I learn from this?” is a better question than “What did I do wrong?” Assume that everything in the review is true and that the reviewer cares deeply about you. Your boss wants you to thrive. So get curious about what more you can learn.
@@ -20,19 +19,19 @@ Sign up witnesses. Ask your boss or team to alert you when they observe you mast
 
 [![](https://learning.oreilly.com/library/view/grow-wherever-you/9781260026474/images/cir.png)](https://learning.oreilly.com/library/view/grow-wherever-you/9781260026474/images/cir.png)
 
-**Make a connection.**
+## **Make a connection.**
 
 Show that you care about what the person is saying in the moment. That doesn’t mean you have to agree. Keep the lines of communication open; you’ll receive more insight that way.
 
 [![](https://learning.oreilly.com/library/view/grow-wherever-you/9781260026474/images/cir.png)](https://learning.oreilly.com/library/view/grow-wherever-you/9781260026474/images/cir.png)
 
-**Stay calm or withdraw.**
+## **Stay calm or withdraw.**
 
 If you’re being reactive, you’re no longer learning. Take a break to recenter. That’s another way of saying, be a logical, rational, thinking person.
 
 [![](https://learning.oreilly.com/library/view/grow-wherever-you/9781260026474/images/cir.png)](https://learning.oreilly.com/library/view/grow-wherever-you/9781260026474/images/cir.png)
 
-**Thank your manager even if you feel angry.**
+## **Thank your manager even if you feel angry.**
 
 Standing in your manager’s shoes, appreciate how hard it is to give feedback. Forgive poor delivery and accept positive intention. If you strengthen the connection, you’ll enlist your manager to coach you. That makes you a better manager in turn.
 

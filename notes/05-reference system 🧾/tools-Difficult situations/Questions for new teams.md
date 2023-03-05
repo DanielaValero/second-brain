@@ -5,8 +5,6 @@ tags:
 ---
 #teamBuilding #newTeams
 
-Questions for new teams
-=======================
 
 ### **Purpose – “Why are we here?”:**
 

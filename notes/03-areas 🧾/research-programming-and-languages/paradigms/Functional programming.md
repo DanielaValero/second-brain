@@ -1,3 +1,10 @@
+---
+tags:
+  - functionalProgramming
+  - programmingParadigm
+---
+#functionalProgramming  #programmingParadigm 
+
 Writing code in “stateless functions”. A _stateless function_ takes in data and outputs it without changing the global state
 
 > Functional programming is a programming paradigm where you model everything as a result of a function that avoids changing state and mutating data. We will discuss concepts such as state and data mutability and their importance in subsequent sections, but for reference:

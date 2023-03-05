@@ -15,8 +15,6 @@ How what we do today connects us to where we want to be tomorrow?
 Bottom-Up scaling approach by prioritizing adaptiveness by giving their teams autonomy They work out their own goals, processes, and mechanisms to achieve the goals.
 
 
-
-
 *   Get leadership buy-in and provide clear business goals
 	* Have a simple hierarchy that is easy to understand and clearly links specific tasks at the dev level to larger goal
 	*  One well-known company that has really exemplified structural agility is Spotify. Spotify lets its people [organize themselves into groups](http://reqtest.com/blog/how-spotify-does-agile-a-look-at-the-spotify-engineering-culture/) organized by shared objectives (squads), work environment (tribes), skills (chapters) and interests (guilds).
@@ -27,7 +25,7 @@ Bottom-Up scaling approach by prioritizing adaptiveness by giving their teams au
 
 
 
-Current problems:
+### Current problems:
 * Collaboration: unstructured collaboration leading to low efficiency
 	* Fix: find a new collaboration style
 * Life Cycle: 

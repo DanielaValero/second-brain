@@ -3,7 +3,6 @@ tags:
   - career
   - self-insight
 ---
-# Quarterly Self Review - Professional Self-Insight
 #career #self-insight
 
 **A**m **I** **G**rowing **C**omplacent **C**urrently

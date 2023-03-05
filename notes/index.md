@@ -1,20 +1,19 @@
-#
 Hello folks,
 
 This is an ongoing practice that I am currently (end of 2022-beginning of 2023) adopting, to build a [second brain](https://fortelabs.com/blog/basboverview/).
 
 ## Goal
 One of the things I've learned about myself, is that I value knowledge, and intellectual stimulation.  
-I have been nurturing my intellect for many years with different topics, such as web development, software architecture, phychology, Phylosofy, sociology, math, culture dynamics, etc.
+I have been nurturing my intellect for many years with different topics, such as web development, software architecture, psychology, Philosophy, sociology, math, culture dynamics, etc.
 
 Yet I've done it constantly, I've done it without a structure, and without making my knowledge somewhat accessible to other people who might be interested on the things I come up with.
 
-The goal of this initiative of mine, is to bring a structure, and to be able to create more actionables out of my knowledge, as well as have a pool of knowledge for me to use as reference for any thing I build in the future.
+The goal of this initiative of mine, is to bring a structure, and to be able to create more actionable out of my knowledge, as well as have a pool of knowledge for me to use as reference for any thing I build in the future.
 
 ### Methods
 This is a personal adaptation of [Zettelkasten](https://zettelkasten.de/introduction/) and [P.A.R.A](https://workflowy.com/systems/para-method/#:~:text=PARA%20is%20a%20methodology%20for,categories%20that%20make%20it%20up.).
 
-I've also added some extra folders, such as diagrams-and-media, or reference system, to be able to have a place where I put mindmaps, sketches, or sources to books or papers, that I want to have a space for.
+I've also added some extra folders, such as diagrams-and-media, or reference system, to be able to have a place where I put mind maps, sketches, or sources to books or papers, that I want to have a space for.
 
 ### Workflow
 #### Adding a new note

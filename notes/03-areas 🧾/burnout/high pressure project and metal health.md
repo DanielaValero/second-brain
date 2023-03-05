@@ -1,4 +1,6 @@
-hello @Irine Seng during the last 8 months we were going through a really tough time, we had a lot of pressure, no rest, and everyone, including me were facing extreme acute work stress. This is what I did to address the situation
+
+### Things I've done to aid with high conflict high pressure 10 months project as EM
+During the roughly 8-10 months I was in a project that was going through a really tough time, we had a lot of pressure, no rest, and everyone, including me were facing extreme acute work stress. This is what I did to address the situation
 
 1. Understand what burnout is, by reading research. I found this book particularly helpful, especially because it explains the different areas that might influence work-related burnout, and what can you do at the individual level, and at the organizational level: <https://www.amazon.com/Managing-Burnout-Workplace-Professionals-Professional/dp/1843347342> (understanding this helped me to figure what kind of questions would I ask in the 1:1s with my team members to understand what was the cause o their burnout - this could be a complement of the recommendation of Vaidehi in her article)
 2. Do a self analysis on where I was, and what the causes of my stress were, in my case was: role ambiguity and that I had higher expectations. I addressed these actively focusing my mental health, taking breaks when I felt it was too much, and set for myself early signs that told me when I had to take a break. For example: Ending the work day being exhausted, or starting a week being irritated.

@@ -5,10 +5,10 @@ tags:
   - dataManagement
   - cloudComputing
   - cloudNative
+  - database
 ---
-# Data management and Databases
-#microservice#dataBase #techStack  #dataManagement #cloudComputing #cloudNative 
 
+#microservice #database #techStack  #dataManagement #cloudComputing #cloudNative 
 
 
 ## Relational Databases (with JVM)

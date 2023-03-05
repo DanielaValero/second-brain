@@ -7,8 +7,6 @@ tags:
 #career #learning #tech
 
 
-
-
 ## Software Architecture
 
 ### Design It!: From programmer to software architect

@@ -16,11 +16,12 @@ I would like to develop a new definition of success for myself, and for what it 
 I would like to make sense that I am not the only one succeeding, I would like to change how people think about technology, how to build technology, and build strong human relationships with my allies on this vision.
 
 
-Idea:  
+## Idea:  
 Present the videos on these videos and share at work <3  -- maybe after work, a watch and dinner date
 
----
 
+
+## What to do
 * practicing gratefulness daily
 * reducing alcohol and treating myself with more self care and love
 * sharing love and gratefulness, and respect with those around me

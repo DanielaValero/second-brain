@@ -5,38 +5,24 @@
 5. **Metrics**. Track numbers to drive particular outcomes, add observability, or force attention to an area.
 6. **Centralized/decentralized prioritization**. Cut through cross-team projects gridlock by providing prioritization for critical projects and a way to break ties in prioritizations between decentralized teams.
 
-
-
 <https://www.rubick.com/coordination-models/>
 
-
-
-
-
-Roles
+## Roles
 
 1. **Program manager**. A role that runs programs (projects containing projects) and coordinates efforts across teams.
 2. **Integrator**. A role that solicits information from a broad variety of sources and synthesizes them into prioritization and plans.
 3. **Controller**. A role that has explicit authority to demand behavior in a particular arena.
 4. **Standard definer**. A role that defines guidelines and guardrails that constrain behavior that can be done without discussion.
 
-
-
-
-
 <https://www.rubick.com/coordination-models/>
 
 
 
-**The flow**
+## The flow
 
 A person in flow state is no longer thinking of multiple things, or even their sense of self, but is singularly focused on a task or challenge. Many people report it is the happiest feeling in their lives.
 
-
-
 Being in the flow is the state when people are more efficient
-
-
 
 * You can concentrate for an extended period of time
 * The task has a clear goal
@@ -47,13 +33,7 @@ Being in the flow is the state when people are more efficient
 * You don’t feel self-conscious, and your sense of self emerges stronger
 * You desire to repeat the task
 
-
-
-
-
-
-
-**Getting people in the flow**
+## Getting people in the flow
 
 1. Communicate purpose
    1. Define purpose
@@ -76,21 +56,10 @@ Being in the flow is the state when people are more efficient
 Source: <https://leaddev.com/culture-engagement-motivation/why-flow-matters-more-passion>
 
 
-
-
-
-
-
- **Wrong abstractions work against this goal. Right abstractions help us to achieve it.**
+> Wrong abstractions work against this goal. Right abstractions help us to achieve it.
 
 Abstractions can give us [optionality.](https://email.mg2.substack.com/c/eJwlkEGOhCAQRU_TLA0FIrpgMZu5hkEolQwCAewe5_RDtwkpoCqVn_eMrrjFfKkUSyXvMtcroQr4Kh5rxUzOgnl2VvVi5FRIIO1pYRQjcWVeM-KhnVc1n0jSuXhndHUxfDYGzkcgu-qBriCERMlNz8U6TZQudh1WKQRndrqD9WkdBoMKn5ivGJB4tdeayoN_Pdh3O1VfPuaEOpcYugNbK6Z3mvauXu1HnGKUAQAFKtkgho51Rk89crDLChMCYrf_LuHP9Nujp8fGunIupWrz05l4kKz26HWbWB0cev3UHnP8jBrc3O7jDC1rxqAXj_bmrre-j4l5w4C5abWzrgoGLqSAAaaxFzfmWwznUrKmsmXb2LaCeuFiG_dvaoCY_wG4m4pH) And **optionality enables us to react to new challenges and changing requirements faster.**
 
-
-
 I think there is so much poor code out there because we somehow got convinced that things like refactoring and testing are extras. Things that we can do later. They are not! **They are part of a professional coding workflow!**
-
-
-
-
 
 <https://future.a16z.com/the-case-for-developer-experience>

@@ -4,10 +4,8 @@ tags:
 ---
 #difficultConversation 
 
-Difficult Conversations
 
-
-**Questions to prepare for a difficult conversation**
+##  **Questions to prepare for a difficult conversation**
 
 * What is the issue I’m trying to resolve?
 * What is my counterpart’s view of the issue?
@@ -17,7 +15,7 @@ Difficult Conversations
 * What do I want to achieve from the conversation?
 * How can we break the impasse?
 
-**After the difficult converstation**
+## **After the difficult conversation**
 
 * Do I feel proud of how I managed the conversation? Do I feel strong? Or do I feel let down, embattled, embarrassed—or just happy it’s over?
 * Did I meet the objectives and cover the topics I outlined for myself?
@@ -26,15 +24,14 @@ Difficult Conversations
 * Do I feel differently now about the person or the problem?
 * Did I learn anything that changes my view of the problem?
 
-Become a better communicator
-----------------------------
+## Become a better communicator
 
 * Who do I want to be?
 * How do I want to behave in this situation?
 * What do I want others to take away about me?
 
-Three ways respect for a difficult conversation
------------------------------------------------
+## Three ways respect for a difficult conversation
+
 
 *   We need a simple system to handle tough conversations, and three-way respect is its basis.
 *   Self-respect helps us stabilize in the face of our own emotional reactions. It brings us in from the extreme emotional poles at the same time that it expands our choices for handling ourselves well.

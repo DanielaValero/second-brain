@@ -5,7 +5,7 @@ tags:
 ---
 #interviewing #career 
 
-Inspiration of questions to ask / to assess in a new organization  
+Inspiration of questions to ask / to assess in a new organisation  
 <https://franciscomt.medium.com/the-systems-within-a-software-team-dc69d31cf9f9>
 
 
@@ -30,7 +30,7 @@ Inspiration of questions to ask / to assess in a new organization
 * What type of personalities generally work well within your team?
 
 
-## As an interviewer or intervewiee
+## As an interviewer or interviewee
 * What do you like most and you dislike most about what you do?
 
 **1. How will I fail?**  

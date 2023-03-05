@@ -5,7 +5,7 @@ tags:
 ---
 #career #goals 
 
-Goals should contain the following characteristics:
+## Goals should contain the following characteristics:
 *   **Attainability:** Challenge but not overwhelm
 *   **Flexibility:** Have a range of goals
 *   **Time:** Reasonable deadlines and allow for process

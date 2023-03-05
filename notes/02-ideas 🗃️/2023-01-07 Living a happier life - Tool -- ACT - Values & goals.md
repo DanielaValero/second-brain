@@ -7,9 +7,8 @@ tags:
 ---
 #self-insight #understandMyself #ACTValues #actTherapy
 
-
-Inspiration from  
-[# How to Live By Your Values This Year](https://every.to/p/how-to-identify-and-live-your-life-by-your-values) BY [CASEY ROSENGREN](https://every.to/@caseyrosengren)
+### Inspiration from  
+[How to Live By Your Values This Year](https://every.to/p/how-to-identify-and-live-your-life-by-your-values) BY [CASEY ROSENGREN](https://every.to/@caseyrosengren)
 
 
 ## Idea

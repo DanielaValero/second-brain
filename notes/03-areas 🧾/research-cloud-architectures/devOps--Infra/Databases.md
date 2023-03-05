@@ -3,8 +3,9 @@ tags:
   - softwareArchitecture
   - infrastructure
   - devOps
+  - database
 ---
-#softwareArchitecture #infrastructure #devOps
+#softwareArchitecture #infrastructure #devOps #database 
 
 
 ### Tool DB provisioning: AWS RDS

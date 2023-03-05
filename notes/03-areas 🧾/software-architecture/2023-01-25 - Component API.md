@@ -3,15 +3,18 @@ tags:
   - web
   - components
   - developIdea
+  - wip-post
+  - componentAPI
+  - impossibleState
 ---
-#web #components #developIdea
+#wip-post #components #developIdea #componentAPI #impossibleState
 
 **What is?**  
 An API is an interface that allows an encapsulated software component to communicate with the outside world. 
 
 Designing UI components can also be thought in the same manner, an UI component should be encapsulated, and its props are what allow it to communicate with the outside world.
 
-Therefore, the props of the component are the API of the component.
+Therefore, the props of the component are imthe API of the component.
 
 As any API, if design principles were not thought through, evolved and agreed upon, they might end up being hard to use, hard to configure, and overtime become unmaintainable or unused.
 

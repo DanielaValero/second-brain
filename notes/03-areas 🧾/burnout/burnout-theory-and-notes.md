@@ -1,14 +1,14 @@
 
 ## Draft
-Part 1:
+### Part 1:
 * Burnout: we all know it, but we don't necessarily know how to recognize it in ourseves
 * Early stages are more common than we think
 * How to recognize it
 
-Part 2:
+### Part 2:
 * Internal fixes: Setting limits on things we can control
 
-Part 3:
+### Part 3:
 * External fixes: Stablishing actions to address it in your team/organiation
 
 
