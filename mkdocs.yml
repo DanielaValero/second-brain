@@ -4,6 +4,8 @@ repo_url: https://github.com/DanielaValero/second-brain
 docs_dir: 'notes'
 extra_css:
   - assets/css/extra.css
+extra_javascript:
+  - assets/js/extra.js
 theme:
     name: material
     custom_dir: overrides

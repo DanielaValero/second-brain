@@ -133,6 +133,22 @@ body {
   text-decoration: underline;
 }
 
+.resizable {
+  position: relative;
+  color: black;
+  /* top: 0px !important; */
+}
+
+.resizer-elem {
+  width: 5px;
+  height: 100vh;
+  background: var(--color-highlight--transparent);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: move;
+  top: 0;
+}
 
 /*
 * Headlines in content
