@@ -2,7 +2,7 @@ const sidebar = document.querySelector('.md-sidebar--primary');
 sidebar.classList.add('js-resizable');
 
 const resizableElem = document.querySelector('.js-resizable');
-resizableElem.classList.toggle('.resizable')
+resizableElem.classList.toggle('resizable')
 
 
 const resizer = document.createElement('div');

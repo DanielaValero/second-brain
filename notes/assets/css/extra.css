@@ -136,12 +136,12 @@ body {
 .resizable {
   position: relative;
   color: black;
-  /* top: 0px !important; */
+  top: 0px !important; 
 }
 
 .resizer-elem {
   width: 5px;
-  height: 100vh;
+  height: 80vh;
   background: var(--color-highlight--transparent);
   position: absolute;
   right: 0;
