@@ -86,3 +86,9 @@ May 2011
 by  [Jack Widman](https://learning.oreilly.com/search/?query=author%3A%22Jack%20Widman%22&sort=relevance&highlight=true)  
 Aug. 2022  
 [oReily](https://learning.oreilly.com/library/view/learning-functional-programming/9781098111748/)
+
+
+## Effective software testing
+By [Mauricio Aniche](https://learning.oreilly.com/search/?query=author%3A%22Mauricio%20Aniche%22&sort=relevance&highlight=true)
+April 2022
+https://learning.oreilly.com/library/view/effective-software-testing

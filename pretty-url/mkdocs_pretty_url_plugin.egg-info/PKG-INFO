@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: mkdocs-pretty-url-plugin
+Version: 0.1
+Summary: A plugin for mkdocs to make links pretty out of filenames and update links in markdown files

@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+pretty-url = replace:ReplaceSpacesPlugin

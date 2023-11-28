@@ -1,0 +1,8 @@
+MANIFEST.in
+replace.py
+setup.py
+mkdocs_pretty_url_plugin.egg-info/PKG-INFO
+mkdocs_pretty_url_plugin.egg-info/SOURCES.txt
+mkdocs_pretty_url_plugin.egg-info/dependency_links.txt
+mkdocs_pretty_url_plugin.egg-info/entry_points.txt
+mkdocs_pretty_url_plugin.egg-info/top_level.txt

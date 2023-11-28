@@ -1,7 +1,5 @@
 Burnout is [an organizational issue](https://hbr.org/2019/12/burnout-is-about-your-workplace-not-your-people). If you are facing burnout, is not in your entire responsibility to fix it, the fact that you have it is a symthom of a systematic issue that happens in your workplace, and it is a major red flag.
 
-
-
 > The Always-On manager fails to take time to step back and think strategically about their role. They can only see trees and not the forest. As a result, their department never has the desired impact on the business's bottom line, and the team burns out, one at a time.
 
 <https://medium.com/management-matters/the-mangers-driving-the-great-resignation-29406ae74c56>
@@ -82,7 +80,7 @@ This is a post focused mainly on the individual, rather than the organization. H
 * Adjust organizational structures and routines, decrease decision nodes, to address excessive collaboration
 * Evaluate leadership style of managers, target to transformational service leadership
 * Workload:
-  * Resuce workload
+  * Reduce workload
     * if not possible workload is expected to be busier than usual, but only temporarily, managers need to let employees know what has brought about this change, how long the increased amount of work is expected, and why additional staff are not being hired.
   * Identify and reduce boredom
     *  create “a culture of ‘psychological safety’ in which ‘it’s okay to ask questions’
@@ -132,3 +130,7 @@ The burnout group has major issues with multiple aspects of the workplace—a pa
 
 For organizations that do not have internal resources to conduct an applied study of employee burnout and engagement, an alternative option is to obtain assessment services from consultants or test publishers. External surveyors can assure confidentiality by acting as intermediaries between employee respondents and management. They often have a greater capacity to generate individual or work group reports.  
 [source](https://learning.oreilly.com/library/view/hbr-guide-to/9781647820015/Text/36_24__Burnout__What_It_Is_and_How.xhtml)
+
+
+
+https://learning.oreilly.com/library/view/managing-burnout-in/9781843347347/xhtml/B9781843347347500050.htm#st0020
