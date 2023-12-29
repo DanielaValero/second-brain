@@ -57,7 +57,7 @@ Starting point of many companies: on the cloud in AWS or GCP
 
 ### Modes of Dataflow
 
- **Data passing through databases:** Requires both processes to have access to the DB and that the DB is fast
+**Data passing through databases:** Requires both processes to have access to the DB and that the DB is fast
 
 **Data passing through services** using requests such as the requests provided by REST and RPC APIs (e.g., POST/GET requests): A service makes a request, the other responds.
 Example: To put the microservice architecture in the context of ML systems, imagine you’re an ML engineer working on the price optimization problem for a company that owns a ride-sharing application like Lyft. In reality, Lyft has [hundreds of services](https://oreil.ly/6fl8f) in its microservice architecture, but for the sake of simplicity, let’s consider only three services:

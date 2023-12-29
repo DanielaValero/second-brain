@@ -4,13 +4,6 @@ A **feature store** is a specialized component in a machine learning system that
 
 **Feature engineering,** which involves selecting, transforming, and preprocessing these features, is a critical part of the machine learning pipeline.
 
-
-
-
-
-
-
-
 The process of choosing what information to use and how to extract this information into a format usable by your ML models is feature engineering.
 
 For complex tasks such as recommending videos for users to watch next on TikTok, the number of features used can go up to millions. For domain-specific tasks such as predicting whether a transaction is fraudulent, you might need subject matter expertise with banking and frauds to be able to come up with useful features.
