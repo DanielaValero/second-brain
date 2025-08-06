@@ -1,3 +1,14 @@
+## good goal principles 
+Example: goals regarning “Collaboration Impact,” it should:
+
+Be outcome-focused (something tangible exists because of your collaboration)
+
+Be in your control (you can produce it without relying on others’ approval or recognition)
+
+Encourage the right behaviors (clarity, unblock progress, strengthen team delivery)
+
+Be measurable without being purely about vanity metrics
+
 ## Types of goals
 
 Goal are everywhere! Goals are linked! There really isn’t a hard boundary between one type of goal and another type of goal: they’re all connected.
