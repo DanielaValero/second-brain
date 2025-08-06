@@ -1,0 +1,1008 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://notes.danielavalero.com/05-reference%20system%20%F0%9F%A7%BE/Algorithms/String%20Algorithms/">
+      
+      
+        <link rel="prev" href="../../06-ebooks/readme/">
+      
+      
+        <link rel="next" href="../hash-tables/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>CHAPTER 15 String Algorithms - Daniela's second brain</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-15-string-algorithms" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!-- source https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/header.html -->
+<!-- Determine base classes -->
+
+
+  
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Header"
+  >
+
+    <!-- Link to home -->
+    <a
+      href="../../.."
+      title="Daniela&#39;s second brain"
+      class="md-header__button md-logo"
+      aria-label="Daniela's second brain"
+      data-md-component="logo"
+    >
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <a href="../../..">
+            <span class="md-ellipsis">
+              Daniela's second brain
+            </span>
+          </a>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CHAPTER 15 String Algorithms
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color palette -->
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+      <div class="md-header__source">
+        <a href="https://github.com/DanielaValero/second-brain" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Source: https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/nav.html -->
+<!-- Determine class according to configuration -->
+
+
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Source: https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/toc.html -->
+<!-- Determine title -->
+
+
+  
+
+
+<!-- Table of contents -->
+<nav class="md-nav md-nav--secondary" aria-label="Contents">
+  
+
+  <!--
+    Check whether the content starts with a level 1 headline. If it does, the
+    top-level anchor must be skipped, since it would be redundant to the link
+    to the current page that is located just above the anchor. Therefore we
+    directly continue with the children of the anchor.
+  -->
+  
+  
+    
+  
+
+  <!-- Table of contents and list -->
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#matching-parentheses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matching Parentheses
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Matching Parentheses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evaluating-arithmetic-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluating Arithmetic Expressions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-parse-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Parse Trees
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern Matching
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pattern Matching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dfas" class="md-nav__link">
+    <span class="md-ellipsis">
+      DFAs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOTE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-dfas-for-regular-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building DFAs for Regular Expressions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nfas" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFAs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-searching" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Searching
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="String Searching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOTE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calculating-edit-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Edit Distance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phonetic-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phonetic Algorithms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phonetic Algorithms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#soundex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soundex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metaphone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metaphone
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+
+
+
+  
+  
+
+<h1 id="chapter-15-string-algorithms">CHAPTER 15   String Algorithms</h1>
+<p>String operations are common in many programs, so they have been studied extensively, and many programming libraries have good string tools. Because these operations are so important, the tools available to you probably use the best algorithms available, so you are unlikely to beat them with your own code.</p>
+<p>For example, the Boyer–Moore algorithm described in this chapter lets you find the first occurrence of a string within another string. Because this is such a common operation, most high-level programming languages have tools for doing this. (In C#, that tool is the <code>string</code> class's <code>IndexOf</code> method. In Python, it's a string variable's <code>find</code> method.)</p>
+<p>Those tools probably use some variation of the Boyer–Moore algorithm, so your implementation is unlikely to be much better. In fact, many libraries are written in assembly language or at some other very low level, so they may give better performance even if you use the same algorithm in your code.</p>
+<p>If your programming library includes tools to perform these tasks, use them. The algorithms explained in this chapter are presented because they are interesting, form an important part of a solid algorithmic education, and provide examples of useful techniques that you may be able to adapt for other purposes.</p>
+<h2 id="matching-parentheses">Matching Parentheses</h2>
+<p>Some string values, such as arithmetic expressions, can contain nested parentheses. For proper nesting of parentheses, you can place a pair of matching parentheses inside another pair of matching parentheses, but you cannot place one parenthesis of a pair inside another matched pair. For example, ()(()(())) is properly nested, but (() and (())) are not.</p>
+<p>Graphically, you can tell that an expression's parentheses are properly nested if you can draw lines connecting left and right parentheses so that every parenthesis is connected to another, all of the lines are on the same side (top or bottom) of the expression, and no lines intersect. <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0001">Figure 15.1</a> shows that ()(()(())) is properly nested, but (() and (())) are not.</p>
+<p><img alt="Illustration of lines that connect matching pairs of parentheses." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f001.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0001"><strong>Figure 15.1</strong></a><strong>:</strong> Lines connect matching pairs of parentheses.</p>
+<p>Algorithmically, it is easy to see whether parentheses are properly matched by using a counter to keep track of the number of unmatched opening parentheses. Initialize the counter to 0, and loop through the expression. When you find an opening parenthesis, add 1 to the counter. When you find a closing parenthesis, subtract 1 from the counter. If the counter ever drops below 0, the parentheses are improperly nested. When you finish checking the expression, if the counter is not 0, the parentheses are improperly nested.</p>
+<p>The following pseudocode shows the algorithm:</p>
+<div class="highlight"><pre><span></span><code>Boolean: IsProperlyNested(String: expression)
+</code></pre></div>
+<p>For example, when the algorithm scans the expression ()(()(())), the counter's values after reading each character are 1, 0, 1, 2, 1, 2, 3, 2, 1, 0. The counter never drops below 0, and it ends at 0, so the expression is nested properly.</p>
+<p>Some expressions contain text other than parentheses. For example, the arithmetic expression <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0009.png" /> contains numbers, operators such as × and +, and parentheses. To see whether the parentheses are nested properly, you can use the previous <code>IsProperlyNested</code> algorithm, ignoring any characters that are not parentheses.</p>
+<h3 id="evaluating-arithmetic-expressions">Evaluating Arithmetic Expressions</h3>
+<p>You can recursively define a fully parenthesized arithmetic expression as one of the following:</p>
+<ul>
+<li>A literal value such as 4 or 1.75</li>
+<li>An expression surrounded by parentheses (<em>expr</em>) for some expression <em>expr</em></li>
+<li>Two expressions separated by an operator, as in <em>expr1</em> + <em>expr2</em> or <em>expr1</em> × <em>expr2</em></li>
+</ul>
+<p>For example, the expression <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0010.png" /> uses the third rule, with the two expressions 8 and 3 separated by the operator ×. The values 8 and 3 are both expressions according to the first rule.</p>
+<p>You can use the recursive definition to create a recursive algorithm for evaluating arithmetic expressions. The following steps describe the algorithm at a high level:</p>
+<ol>
+<li>If the expression is a literal value, use your programming language's tools to parse it and return the result. (In C#, use <code>double.Parse</code>. In Python, use the <code>float</code> function.)</li>
+<li>If the expression is of the form (expr), then remove the outer parentheses, recursively use the algorithm to evaluate expr, and return the result.</li>
+<li>If the expression is of the form expr1?expr2 for expressions expr1 and expr2 and operator?, then recursively use the algorithm to evaluate expr1 and expr2, combine those values appropriately for the operator?, and return the result.</li>
+</ol>
+<p>The basic approach is straightforward. Probably the hardest part is determining which of the three cases applies and breaking the expression into two operands and an operator in case 3. You can do that by using a counter similar to the one used by the <code>IsProperlyNested</code> algorithm described in the preceding section.</p>
+<p>When the counter is 0, if you find an operator, case 3 applies and the operands are on either side of the operator.</p>
+<p>If you finish scanning the expression and you don't find an operator when the counter is 0, then either case 1 or case 2 applies. If the first character is an opening parenthesis, then case 2 applies. If the first character is not an opening parenthesis, then case 1 applies.</p>
+<h3 id="building-parse-trees">Building Parse Trees</h3>
+<p>The algorithm described in the preceding section parses arithmetic expressions and then evaluates them, but you might like to do other things with an expression after you parse it. For example, suppose that you need to evaluate an expression that contains variables such as <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0012.png" /> many times for different values of <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0016.png" /> , perhaps to draw a graph of the equation <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0017.png" /> . One approach would be to use the previous algorithm repeatedly to parse and evaluate the expression, substituting different values for <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0011.png" /> . Unfortunately, parsing text is relatively slow.</p>
+<p>Another approach is to parse the expression but not evaluate it right away. Then you can evaluate the preparsed expression many times with different values for <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0015.png" /> without needing to parse the expression again. You can do this using an algorithm very similar to the one described in the preceding section. Instead of making the algorithm combine the results of recursive calls to itself, however, it builds a tree containing objects that represent the expression.</p>
+<p>For example, to represent multiplication, the algorithm makes a node with two children, where the children represent the multiplication's operands. Similarly, to represent addition, the algorithm makes a node with two children, where the children represent the addition's operands.</p>
+<p>You can build a class for each of the necessary node types. The classes should provide an <code>Evaluate</code> method that calculates and returns the node's value, calling the <code>Evaluate</code> method for its child nodes if it has any.</p>
+<p>Having built the parse tree, you can call the root node's <code>Evaluate</code> method any number of times for different values of <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0014.png" /> .</p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0002">Figure 15.2</a> shows the parse tree for the expression <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0002.png" /> .</p>
+<p><img alt="Illustration of using parse trees to represent expressions such as (X×X)–7." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f002.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0002"><strong>Figure 15.2</strong></a><strong>:</strong> You can use parse trees to represent expressions such as <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0013.png" /> .</p>
+<h2 id="pattern-matching">Pattern Matching</h2>
+<p>The algorithms described in the preceding sections are useful and effective, but they're tied to the particular application of parsing and evaluating arithmetic expressions. Parsing is a common task in computer programming, so it would be nice to have a more general approach that you could use to parse other kinds of text.</p>
+<p>For example, a <em>regular expression</em> is a string that a program can use to represent a pattern for matching in another string. Programmers have defined several different regular expression languages. To keep this discussion reasonably simple, this section uses a language that defines the following symbols:</p>
+<ul>
+<li>An alphabetic character such as A or Q represents that letter.</li>
+<li>The <code>+</code> symbol represents concatenation. For the sake of readability, this symbol is often omitted, so ABC is the same as <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0018.png" /> . However, it may be convenient to require the symbol to make it easier for a program to parse the regular expression.</li>
+<li>The <code>*</code> symbol means that the previous expression can be repeated any number of times (including zero).</li>
+<li>The <code>|</code> symbol means that the text must match either the previous or the following expression.</li>
+<li>Parentheses determine the order of operation.</li>
+</ul>
+<p>For example, with this restricted language, the regular expression <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0021.png" /> matches strings that begin with an A, contain any number of Bs, and then end with an A. That pattern would match ABA, ABBBBA, and AA.</p>
+<p>More generally, a program might want to find the first occurrence of a pattern within a string. For example, the string AABBA matches the previous pattern <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0019.png" /> starting at the second letter.</p>
+<p>To understand the algorithms described here for regular expression matching, it helps to understand deterministic finite automata and nondeterministic finite automata. The following two sections describe deterministic and nondeterministic finite automata. The section after that explains how you can use them to perform pattern matching with regular expressions.</p>
+<h3 id="dfas">DFAs</h3>
+<p>A <em>deterministic finite automaton</em> (DFA), also known as a <em>deterministic finite state machine</em>, is basically a virtual computer that uses a set of states to keep track of what it is doing. At each step, it reads some input and, based on that input and its current state, moves into a new state. One state is the <em>initial state</em> in which the machine starts. One or more states can also be marked as <em>accepting states</em>.</p>
+<p>If the machine ends its computation in an accepting state, then the machine accepts the input. In terms of regular expression processing, if the machine ends in an accepting state, the input text matches the regular expression.</p>
+<p>In some models, it's convenient for the machine to accept its input if it ever enters an accepting state.</p>
+<p>You can represent a DFA with a <em>state transition diagram</em>, which is basically a network in which circles represent states and directed links represent transitions to new states. Each link is labeled with the inputs that make the machine move into the new state. If the machine encounters an input that has no corresponding link, then it halts in a nonaccepting state.</p>
+<p>To summarize, there are three ways that a DFA can stop:</p>
+<ul>
+<li><em>It can finish reading its inputs while in an accepting state</em>. In that case, it accepts the input. (The regular expression matches.)</li>
+<li><em>It can finish reading its inputs while in a nonaccepting state</em>. In that case, it rejects the input. (The regular expression does not match.)</li>
+<li><em>It can read an input that does not have a link leading out of the current state node</em>. In that case, it rejects the input. (The regular expression does not match.)</li>
+</ul>
+<p>For example, <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0003">Figure 15.3</a> shows a state transition diagram for a DFA that recognizes the pattern <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0020.png" /> . The DFA starts in state 0. If it reads an A character, then it moves to state 1. If it sees any other character, then the machine halts in a nonaccepting state.</p>
+<p><img alt="Illustration of the network that represents the state transitions for a deterministic finite automaton that recognizes the pattern AB*A." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f003.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0003"><strong>Figure 15.3</strong></a><strong>:</strong> This network represents the state transitions for a DFA that recognizes the pattern <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0003.png" /> .</p>
+<p>Next, if the DFA is in state 1 and it reads a B, then it follows the loop and returns to state 1. If the DFA is in state 1 and reads an A, then it moves to state 2. If the DFA is in state 1 and reads any character other than A or B, then it halts in a nonaccepting state.</p>
+<p>State 2 is marked with a double circle to indicate that it is an accepting state. Depending on how you are using the DFA, just entering this state might make the machine return a successful match. Alternatively, it might need to finish reading its input in that state, so if the input string contains more characters, the match fails.</p>
+<p>For another example, consider the state transition diagram shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0004">Figure 15.4</a>. This diagram represents a machine that matches a string that consists of AB repeated any number of times or BA repeated any number of times.</p>
+<p><img alt="Illustration of the network that represents the state transitions for a deterministic finite automaton that recognizes the pattern (AB)*|(BA)*." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f004.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0004"><strong>Figure 15.4</strong></a><strong>:</strong> This network represents the state transitions for a DFA that recognizes the pattern <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0004.png" /> .</p>
+<p>Programmatically, you can implement a DFA by making an object to represent each of the states in the state transition diagram. When presented with an input, the program moves from the current object to the object that is appropriate for that input.</p>
+<p>Often, DFAs are implemented with a table showing the state transitions. For example, <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-tbl-0001">Table 15.1</a> shows the state transitions for the state transition diagram shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0003">Figure 15.3</a>.</p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-tbl-0001"><strong>Table 15.1</strong></a><strong>:</strong> A State Transition Table for <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0001.png" /></p>
+<p>STATE</p>
+<p>0</p>
+<p>1</p>
+<p>1</p>
+<p>2</p>
+<p><strong>On input</strong></p>
+<p>A</p>
+<p>A</p>
+<p>B</p>
+<p><strong>New state</strong></p>
+<p>1</p>
+<p>2</p>
+<p>1</p>
+<p><strong>Accepting?</strong></p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>Yes</p>
+<h3 id="note">NOTE</h3>
+<p>DFAs aren't useful only for processing regular expressions. You can use them to model the state of any system where it's convenient to specify the system's rules with a transition diagram or transition table.</p>
+<p>For example, an order processing system might track the state of the orders in the system. You could give the states intuitive names such as Placed, Fulfilled, Shipped, Billed, Canceled, Paid, and Returned. As events occur, the order's state would change accordingly. For example, if the order is in the Placed state and the customer decides to cancel the order, the order moves to the Canceled state and stops its progress through the system.</p>
+<h3 id="building-dfas-for-regular-expressions">Building DFAs for Regular Expressions</h3>
+<p>You can translate simple regular expressions into transition diagrams and transition tables easily enough by using intuition, but for complicated regular expressions, it's nice to have a methodical approach. Then you can apply this approach to let a program do the work for you.</p>
+<p>To convert a regular expression into a DFA state transition table, you can build a parse tree for the regular expression and then use it to generate recursively the corresponding state transitions.</p>
+<p>The parse tree's leaves represent literal input characters such as A and B. The state transition diagram for reading a single input character is just a start state connected to an accepting final state with a link labeled by the required character. <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0005">Figure 15.5</a> shows the simple state transition diagram for reading the input character B.</p>
+<p><img alt="Illustration of the transition diagram that represents the simple regular expression B." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f005.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0005"><strong>Figure 15.5</strong></a><strong>:</strong> This transition diagram represents the simple regular expression B.</p>
+<p>The parse tree's internal nodes represent the operators <code>+</code>, <code>*</code>, and <code>|</code>.</p>
+<p>To implement the <code>+</code> operator, take the accepting state of the left subtree's transition diagram and make it coincide with the starting state of the right subtree's transition diagram, so the machine must perform the actions of the left subtree followed by the actions of the right subtree. For example, <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0006">Figure 15.6</a> shows the transition diagrams for the simple literal patterns A and B on the left and the combined pattern <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0025.png" /> on the right.</p>
+<p><img alt="Illustration of the transition diagram on the right that represents the regular expression A plus B." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f006.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0006"><strong>Figure 15.6</strong></a><strong>:</strong> The transition diagram on the right represents the regular expression <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0005.png" /> .</p>
+<p>To implement the <code>*</code> operator, make the single subexpression's accepting state coincide with the subexpression's starting state. <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0007">Figure 15.7</a> shows the transition diagram for the pattern <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0023.png" /> on the left and the pattern <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0006.png" /> on the right.</p>
+<p><img alt="Illustration of the transition diagram on the right that represents the regular expression (A+B)*." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f007.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0007"><strong>Figure 15.7</strong></a><strong>:</strong> The transition diagram on the right represents the regular expression <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0024.png" /> .</p>
+<p>Finally, to implement the <code>|</code> operator, make the starting and ending states of the left and right subexpressions' transition diagram coincide. <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0008">Figure 15.8</a> shows the transition diagram for the patterns <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0022.png" /> and <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0026.png" /> on the left and the combined pattern <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0007.png" /> on the right.</p>
+<p><img alt="Illustration of the transition diagram on the right represents the regular expression (A+B)|(B+A)." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f008.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0008"><strong>Figure 15.8</strong></a><strong>:</strong> The transition diagram on the right represents the regular expression <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0027.png" /> .</p>
+<p>This approach works in this instance, but it has a serious drawback under some conditions. What happens to the <code>|</code> operator if the two subexpressions start with the same input transitions? For example, suppose the two subexpressions are <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0028.png" /> and <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0029.png" /> . In that case, blindly following the previous discussion leads to the transition diagram on the left in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0009">Figure 15.9</a>. It has two links labeled A that leave state 0. If the DFA is in state 0 and encounters input character A, which link should it follow?</p>
+<p><img alt="Illustration of these transition diagrams represent the regular expression (A+A)|(A+B)." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f009.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0009"><strong>Figure 15.9</strong></a><strong>:</strong> These transition diagrams represent the regular expression <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0008.png" /> .</p>
+<p>One solution is to restructure the diagram a bit, as shown on the right in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0009">Figure 15.9</a>, so that the diagrams for the two subexpressions share their first state (state 1). This works, but it requires some cleverness—something that can be hard to build into a program. If the subexpressions were more complicated, finding a similar solution might be difficult—at least for a program.</p>
+<p>One solution to this problem is to use an NFA instead of a DFA.</p>
+<h3 id="nfas">NFAs</h3>
+<p>A deterministic finite automaton is called deterministic because its behavior is completely determined by its current state and the input that it sees. If a DFA using the transition diagram on the right side of <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0008">Figure 15.8</a> is in state 0 and reads the character B, it moves into state 2 without question.</p>
+<p>A <em>nondeterministic finite automaton</em> (NFA) is similar to a DFA, except that multiple links may be leaving a state for the same input, as shown on the left in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0009">Figure 15.9</a>. When that situation occurs during processing, the NFA is allowed to guess which path it should follow to eventually reach an accepting state. It's as if the NFA were being controlled by a fortune-teller who knows what inputs will come later and can decide which links to follow to reach an accepting state.</p>
+<p>Of course, in practice a computer cannot really guess which state it should move into to eventually find an accepting state. What it <em>can</em> do is to try all of the possible paths. To do that, a program can keep a list of states it might be in. When it sees an input, the program updates each of those states, possibly creating a larger number of states.</p>
+<p>Another way to think of this is to regard the NFA as simultaneously being in all of the states. If any of its current states is an accepting state, the NFA as a whole is in an accepting state.</p>
+<p>You can make one more change to an NFA's transitions to make it slightly easier to implement. The operations shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0006">Figures 15.6</a> through <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0009">15.9</a> require that you make states from different subexpressions coincide—and that can be awkward.</p>
+<p>An alternative is to introduce a new kind of <em>null transition</em> that occurs without any input. If the NFA encounters a null transition, it immediately follows it.</p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0010">Figure 15.10</a> shows how you can combine state transition machines for subexpressions to produce more-complex expressions. Here the <code>Ø</code> character indicates a null transition, and a box indicates a possibly complicated network of states representing a subexpression.</p>
+<p><img alt="Illustration of using an NFA and null transitions that makes combining subexpressions more straightforwardly." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f010.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0010"><strong>Figure 15.10</strong></a><strong>:</strong> Using an NFA and null transitions makes combining subexpressions more straightforward.</p>
+<p>The first part of <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0010">Figure 15.10</a> shows a set of states representing some subexpression. This could be as simple as a single transition that matches a single input, as shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0005">Figure 15.5</a>, or it could be a complicated set of states and transitions. The only important feature of this construct from the point of view of the rest of the states is that it has a single input state and a single output state.</p>
+<p>The second part of <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0010">Figure 15.10</a> shows how you can combine two machines, <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0032.png" /> and <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0043.png" /> , by using the <code>+</code> operator. The output state from <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0042.png" /> is connected by a null transition to the input state of <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0033.png" /> . By using a null transition, you avoid the need to make <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0040.png" /> 's output state and <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0041.png" /> 's input state coincide.</p>
+<p>The third part of <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0010">Figure 15.10</a> shows how you can add the <code>*</code> operator to <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0038.png" /> . <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0030.png" /> 's output state is connected to its input state by a null transition. The <code>*</code> operator allows whatever it follows to occur any number of times, including zero times, so another null transition allows the NFA to jump to the accept state without matching whatever is inside the M1.</p>
+<p>The final part of <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0010">Figure 15.10</a> shows how you can combine two machines <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0036.png" /> and <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0039.png" /> by using the <code>|</code> operator. The resulting machine uses a new input state connected by null transitions to the input states of <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0037.png" /> and <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0031.png" /> . The output states of <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0034.png" /> and <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0035.png" /> are connected by null transitions to a final output state for the new combined machine.</p>
+<p>To summarize, you can follow these steps to make a regular expression parser:</p>
+<ol>
+<li>Build a parse tree for the regular expression.</li>
+<li>Use the parse tree to recursively build the states for an NFA representing the expression.</li>
+<li>Start the NFA in state 0 and use it to process the input string one character at a time.</li>
+</ol>
+<h2 id="string-searching">String Searching</h2>
+<p>The previous sections explained how you can use DFAs and NFAs to search for patterns in a string. Those methods are quite flexible, but they're also relatively slow. To search for a complicated pattern, an NFA might need to track a large number of states as it examines each character in an input string one at a time.</p>
+<p>If you want to search a piece of text for a target substring instead of a pattern, there are faster approaches. The most obvious strategy is to loop over all of the characters in the text and see whether the target is at each position. The following pseudocode shows this brute-force approach:</p>
+<div class="highlight"><pre><span></span><code>// Return the position of the target in the text.
+</code></pre></div>
+<p>In this algorithm, variable <code>i</code> loops over the length of the text. For each value of <code>i</code>, the variable <code>j</code> loops over the length of the target. If the text has length <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0044.png" /> and the target has length <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0063.png" /> , the total run time is <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0046.png" /> . This is simpler than using an NFA, but it's still not very efficient.</p>
+<p>The <em>Boyer–Moore algorithm</em> uses a different approach to search for target substrings much more quickly. Instead of looping through the target's characters from the beginning, it examines the target's characters starting at the end and works backward toward the beginning.</p>
+<p>The easiest way to understand the algorithm is to imagine the target substring sitting below the text at a position where a match might occur. The algorithm compares characters starting at the target's leftmost character. If it finds a position where the target and text don't match, the algorithm slides the target to the right to the next position where a match might be possible.</p>
+<p>For example, suppose you want to search the string <code>A man a plan a canal Panama</code> for the target string <code>Roosevelt</code>. Consider <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0011">Figure 15.11</a>.</p>
+<p><img alt="Illustration of searching the string A man a plan a canal Panama for the target string Roosevelt." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f011.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0011"><strong>Figure 15.11</strong></a><strong>:</strong> Searching <code>A man a plan a canal Panama</code> for <code>Roosevelt</code> requires only three comparisons.</p>
+<p>The algorithm first aligns the two strings so that they line up on the left and compares the last character in the target to the corresponding character in the text. At that position, the target's last character is <code>t</code>, and the text's corresponding character is <code>p</code>. Those characters don't match, so the algorithm slides the target to the right to find the next position where a match is possible. The text's character <code>p</code> doesn't appear anywhere in the target, so the algorithm slides the target to the right all the way past its current location, nine characters to the right.</p>
+<p>At the new position, the target's last character is <code>t</code>, and the text's corresponding character is <code>n</code>. Again, the characters don't match, so the algorithm slides the target to the right. Again, the text's character <code>n</code> doesn't appear in the target, so the algorithm slides the target nine characters to the right.</p>
+<p>At the new position, the target's last character is <code>t</code>, and the text's corresponding character is <code>a</code>. The characters don't match, so the algorithm slides the target to the right. Again, the text's character <code>a</code> doesn't appear in the target, so the algorithm slides the target nine characters to the right.</p>
+<p>At this point, the target extends beyond the end of the text, so a match isn't possible, and the algorithm concludes that the target is not present in the text. The brute-force algorithm described earlier would have required 37 comparisons to decide that the target wasn't present, but the Boyer–Moore algorithm required only three comparisons.</p>
+<p>Things don't always work out this smoothly. For a more complicated example, suppose that you want to search the text <code>abba daba abadabracadabra</code> for the target <code>cadabra</code>. Consider <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0012">Figure 15.12</a>.</p>
+<p><img alt="Illustration of searching abba daba abadabracadabra for cadabra which requires 18 comparisons." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f012.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0012"><strong>Figure 15.12</strong></a><strong>:</strong> Searching abba daba abadabracadabra for cadabra requires 18 comparisons.</p>
+<p>The algorithm starts with the two strings aligned at the left and compares the target character <code>a</code> with the text character <code>a</code>. Those characters match, so the algorithm considers the preceding characters, <code>r</code> and <code>d</code>. Those characters do not match, so the algorithm slides the target to the right. In this case, however, the text's character <code>d</code> <em>does</em> appear in the target, so there's a chance that the <code>d</code> is part of a match. The algorithm slides the target to the right until the last <code>d</code> in the target (shown with a dark box in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0012">Figure 15.12</a>) aligns with the <code>d</code> in the text.</p>
+<p>At the new position, the target's last character is <code>a</code>, and the text's corresponding character is a space. Those characters don't match, so the algorithm slides the target to the right. The target has no space, so the algorithm moves the target its full width of seven characters.</p>
+<p>At the new position, the target's last character is <code>a</code> and the text's corresponding character is <code>r</code>. Those characters don't match, so the algorithm slides the target to the right. The character <code>r</code> <em>does</em> appear in the target, so the algorithm moves the target until its last <code>r</code> (dark) aligns with the <code>r</code> in the text.</p>
+<p>At the new position, the target's last character is <code>a</code>, and the text's corresponding character is <code>a</code>. These characters match, so the algorithm compares the preceding characters to see whether they match. Those characters also match, so the algorithm continues comparing characters backward through the target and text. Six characters match. Not until the algorithm considers the target's first character does it find a mismatch. Here the target's character is <code>c</code>, and the text's corresponding character is <code>b</code>.</p>
+<p>The target has a <code>b</code>, but it comes after the position in the target the algorithm is currently considering. To align this <code>b</code> with the one in the text, the algorithm would have to move the target to the left. All leftward positions have already been eliminated as possible locations for the match, so the algorithm doesn't do this. Instead, it shifts the target seven characters to the right to the next position where a match could occur.</p>
+<p>At this new position, the target's characters all match the corresponding characters in the text, so the algorithm has found a match.</p>
+<p>The following steps describe the basic Boyer–Moore algorithm at a high level:</p>
+<ol>
+<li>Align the target and text on the left.</li>
+<li>Repeat until the target's last character is aligned beyond the end of the text:<ol>
+<li>Compare the characters in the target with the corresponding characters in the text, starting from the end of the target and moving backward toward the beginning.</li>
+<li>If all of the characters match, then congratulations—you've found a match!</li>
+<li>Suppose character <code>X</code> in the text doesn't match the corresponding character in the target. Slide the target to the right until the <code>X</code> aligns with the next character with the same value <code>X</code> in the target to the left of the current position. If no such character <code>X</code> exists to the left of the position in the target, slide the target to the right by its full length.</li>
+</ol>
+</li>
+</ol>
+<p>One of the more time-consuming pieces of this algorithm is step 2c, which calculates the amount by which the algorithm slides the target to the right. You can make this step faster if you precalculate the amounts for different mismatched characters in different positions within the target.</p>
+<p>For example, suppose that the algorithm compares target and text characters, and the first mismatch is in position 3, where the text has the character <code>G</code>. The algorithm would then slide the text to the right to align the <code>G</code> with the first <code>G</code> that appears to the left of position 3 in the target. If you use a table to store the amounts by which you need to slide the target, then you can just look up that amount instead of calculating it during the search.</p>
+<h3 id="note_1">NOTE</h3>
+<p>Variations on the Boyer–Moore algorithm use other, more complicated rules for shifting the target string efficiently. For example, suppose that the algorithm considers the following alignment:</p>
+<div class="highlight"><pre><span></span><code>    … what shall we draw today …
+</code></pre></div>
+<p>The algorithm scans the target <code>abracadabra</code> backward. The first two characters, <code>a</code> and <code>r</code>, match. Then the text's <code>d</code> doesn't match the target's <code>b</code>. The previous algorithm would shift the target to align the text's mismatched <code>d</code> like this:</p>
+<div class="highlight"><pre><span></span><code>    … what shall we draw today …
+</code></pre></div>
+<p>But you know that the text matched the following two characters, <code>ra</code>, so you know that the text's characters <code>dra</code> cannot match the target's characters <code>dab</code> at this point.</p>
+<p>Instead of shifting to align the text's mismatched <code>d</code>, you can shift to align the entire suffix that has been matched so far—in this case, <code>ra</code>—to an earlier occurrence of those characters in the target. In other words, you can move the target to place an earlier occurrence of the characters <code>ra</code> where the matched suffix is right now, as in the following:</p>
+<div class="highlight"><pre><span></span><code>    … what shall we draw today …
+</code></pre></div>
+<p>This lets the algorithm shift the target further so that it can make the search run faster.</p>
+<p>For more information on variations on the Boyer–Moore algorithm, see <code>[https://en.wikipedia.org/wiki/Boyer-Moore_string_search_algorithm](https://en.wikipedia.org/wiki/Boyer-Moore_string_search_algorithm)</code>.</p>
+<p>The Boyer–Moore algorithm has the unusual property that it tends to be faster if the target string is longer because, when it finds a nonmatching character, it can shift the target farther.</p>
+<h2 id="calculating-edit-distance">Calculating Edit Distance</h2>
+<p>The <em>edit distance</em> of two strings is the minimum number of changes that you need to make to turn the first string into the second. You can define the changes that you are allowed to make in several ways. For this discussion, assume that you are only allowed to remove or insert letters. (Another common change that isn't considered here is changing one letter into another letter. You can achieve the same result by deleting the first character and then inserting the second.)</p>
+<p>For example, consider the words <em>encourage</em> and <em>entourage</em>. It's fairly easy to see that you can change <em>encourage</em> into <em>entourage</em> by removing the <em>c</em> and inserting a <em>t</em>. That's two changes, so the edit distance between those two words is 2.</p>
+<p>For another example, consider the words <em>assent</em> and <em>descent</em>. One way to convert <em>assent</em> into <em>descent</em> would be to follow these steps:</p>
+<ol>
+<li>Remove <em>a</em> to get <em>ssent</em>.</li>
+<li>Remove <em>s</em> to get <em>sent</em>.</li>
+<li>Remove <em>s</em> to get <em>ent</em>.</li>
+<li>Add <em>d</em> to get <em>dent</em>.</li>
+<li>Add <em>e</em> to get <em>deent</em>.</li>
+<li>Add <em>s</em> to get <em>desent</em>.</li>
+<li>Add <em>c</em> to get <em>descent</em>.</li>
+</ol>
+<p>This requires seven steps, so the edit distance is no more than 7, but how can you tell if this is the most efficient way to convert <em>assent</em> to <em>descent</em>? For longer words or strings (or, as you'll see later in this section, for files), it can be hard to be sure that you have found the best solution.</p>
+<p>One way to calculate the edit distance is to build an <em>edit graph</em> that represents all the possible changes that you could make to get from the first word to the second. Start by creating an array of nodes similar to the one shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0013">Figure 15.13</a>.</p>
+<p><img alt="Illustration of the edit graph that represents possible ways to convert assent to descent." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f013.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0013"><strong>Figure 15.13</strong></a><strong>:</strong> This edit graph represents possible ways to convert <em>assent</em> to <em>descent</em>.</p>
+<p>The nodes across the top of the graph represent the letters in the first word. The nodes down the left side represent the letters in the second word. Create links between the nodes leading to their rightward and downward neighbors.</p>
+<p>Add diagonal links ending at any locations where the corresponding letters in both words are the same. For example, <em>assent</em> has an <em>e</em> in the fourth position, and <em>descent</em> has an <em>e</em> in its second position, so a diagonal link leads to the node below the <em>e</em> in <em>assent</em> and to the right of the first <em>e</em> in <em>descent</em>.</p>
+<p>Each link represents a transformation of the first word, making it more similar to the second word. A link pointing right represents removing a letter from the first word. For example, the link leading to the <em>a</em> on the top row represents removing the <em>a</em> from <em>assent</em>, which would make <em>ssent</em>.</p>
+<p>A link pointing down represents adding a letter to the word. For example, the link pointing to the <em>d</em> in the first column represents adding the letter <em>d</em> to the current word, which would make <em>dassent</em>.</p>
+<p>A diagonal link represents keeping a letter unchanged.</p>
+<p>Any path through the graph from the upper-left corner to the lower-right corner corresponds to a series of changes to convert the first word into the second. For example, the bold arrows shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0013">Figure 15.13</a> represent the changes described earlier to convert <em>assent</em> into <em>descent</em>.</p>
+<p>Now finding a path through the edit graph that has the least cost is fairly easy. Give each horizontal and vertical link a cost of 1, and give the diagonal links a cost of 0. Now you just need to find the shortest path through the network.</p>
+<p>You can use the same techniques described in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c13.xhtml">Chapter 13</a>, “Basic Network Algorithms,” to find the shortest path, but this network has a special structure that lets you use an easier method.</p>
+<p>First, set the distances for the nodes in the top row to be their column numbers. To get to the node in column 5 from the upper-left corner, you need to cross five links, so its distance is 5.</p>
+<p>Similarly, set the distances for the nodes in the leftmost column to be their row numbers. To get to the node in row 7, you need to cross seven links, so its distance is 7.</p>
+<p>Now loop over the rows and, for each row, loop over its columns. The shortest path to the node at position <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0047.png" /> comes via the node above at <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0048.png" /> , the node to the left at <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0049.png" /> , or, if a diagonal move is allowed, the node diagonally up and to the left at <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0050.png" /> . The distances to all of those nodes have already been set. You can determine what the cost would be for each of those possibilities and set the distance for the node at <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0051.png" /> to be the smallest of those.</p>
+<p>When you're finished looping through the rows and columns, the distance to the node in the lower-right corner gives the edit distance.</p>
+<p>Once you know how to find the edit distance between two words or strings, it's easy to find the edit distance between two files. You could just use the algorithm as is to compare the files character by character. Unfortunately, that could require a very large edit graph. For example, if the two files have about 40,000 characters (this chapter is in that neighborhood), then the edit graph would have about <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0052.png" /> . Building that graph would require a lot of memory, and using it would take a long time.</p>
+<p>Another approach is to modify the algorithm so that it compares lines in the files instead of characters. If the files each contain about <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0053.png" /> , the edit graph would hold about <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0054.png" /> . That's still a lot, but it's much more reasonable.</p>
+<h2 id="phonetic-algorithms">Phonetic Algorithms</h2>
+<p>A <em>phonetic algorithm</em> is one that categorizes and manipulates words based on their pronunciation. For example, suppose you are a customer service representative and a customer tells you that his name is Smith. You need to look up that customer in your database, but you don't know if the name should be spelled, Smith, Smyth, Smithe, or Smythe.</p>
+<p>If you enter any reasonable spelling (perhaps Smith), the computer can convert it into a phonetic form and then look for previously stored phonetic versions in the customer database. You can look through the results, ask a few questions to verify that you have the right person, and begin troubleshooting.</p>
+<p>Unfortunately, deducing a word's pronunciation from its spelling it difficult, at least in English. That means these algorithms tend to be long and complicated.</p>
+<p>The following sections describe two phonetic algorithms: Soundex and Metaphone.</p>
+<h3 id="soundex">Soundex</h3>
+<p>The <em>Soundex algorithm</em> was devised by Robert C. Russell and Margaret King Odell in the early 1900s to simplify the U.S. census. They first patented their algorithm in 1918, long before the first computers were created.</p>
+<p>The following list shows my version of the Soundex rules. They're slightly different from the rules that you'll see online. I've reformulated them slightly to make them easier to implement.</p>
+<ol>
+<li>Save the first letter of the name for later use.</li>
+<li>Remove <em>w</em> and <em>h</em> after the first character.</li>
+<li>
+<p>Use <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-tbl-0002">Table 15.2</a> to convert the remaining characters into codes. If a character doesn't appear in the table (<em>w</em> or <em>h</em>), leave it unchanged.</p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-tbl-0002"><strong>Table 15.2</strong></a><strong>:</strong> Soundex Letter Codes</p>
+<p>LETTER</p>
+<p>CODE</p>
+<p>a, e, I, o, u, y</p>
+<p>0</p>
+<p>b, f, p, v</p>
+<p>1</p>
+<p>c, g, j, k, q, s, x, z</p>
+<p>2</p>
+<p>d, t</p>
+<p>3</p>
+<p>l</p>
+<p>4</p>
+<p>m, n</p>
+<p>5</p>
+<p>r</p>
+<p>6</p>
+</li>
+<li>
+<p>If two or more adjacent codes are the same, keep only one of them.</p>
+</li>
+<li>Replace the first code with the original first letter.</li>
+<li>Remove code 0 (vowels after the first letter).</li>
+<li>Truncate or pad with 0s on the right so that the result has four characters.</li>
+</ol>
+<p>For example, let's walk through the steps for the name Ashcraft.</p>
+<ol>
+<li>We save the first letter, <em>A</em>.</li>
+<li>We remove <em>w</em> and <em>h</em> after the first letter to get Ascraft.</li>
+<li>Using <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-tbl-0002">Table 15.2</a> to convert the remaining letters into codes gives 0226013.</li>
+<li>Removing adjacent duplicates gives 026013.</li>
+<li>Replacing the first code with the original first letter gives A26013.</li>
+<li>Removing code 0 gives A2613.</li>
+<li>Truncating to four characters gives the final code A261.</li>
+</ol>
+<p>Over the years, there have been several variations on the original Soundex algorithm. Most SQL database systems use a slight variation that does not consider vowels when looking for adjacent codes. For example, in the name Alol, the two _L_s are separated by a vowel. Basic Soundex would convert them into the code, 4, and keep them both. SQL Soundex would remove the vowel, find the two adjacent 4s, and remove one of them.</p>
+<p>Another relatively simple variation of the original algorithm uses the character codes shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-tbl-0003">Table 15.3</a>.</p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-tbl-0003"><strong>Table 15.3</strong></a><strong>:</strong> Refined Soundex Letter Codes</p>
+<p>LETTER</p>
+<p>CODE</p>
+<p>b, p</p>
+<p>1</p>
+<p>f, v</p>
+<p>2</p>
+<p>c, k, s</p>
+<p>3</p>
+<p>g, j</p>
+<p>4</p>
+<p>q, x, z</p>
+<p>5</p>
+<p>d, t</p>
+<p>6</p>
+<p>l</p>
+<p>7</p>
+<p>m, n</p>
+<p>8</p>
+<p>r</p>
+<p>9</p>
+<p>Still other examples include variations designed for use with non-English names and words. The <em>Daitch–Mokotoff Soundex</em> (D-M Soundex) was designed to represent Germanic and Slavic names better. Those kinds of variations tend to be much more complicated than the original Soundex algorithm.</p>
+<h3 id="metaphone">Metaphone</h3>
+<p>In 1990, Lawrence Philips published a new phonetic algorithm named <em>Metaphone</em>. It uses a more complex set of rules to represent English pronunciation more accurately. The following list shows the Metaphone rules:</p>
+<ol>
+<li>Drop duplicate adjacent letters, except for <em>C</em>.</li>
+<li>If the word starts with KN, GN, PN, AE, WR, drop the first letter.</li>
+<li>If the words ends with MB, drop the <em>B</em>.</li>
+<li>Convert <em>C</em>:<ol>
+<li>Convert <em>C</em> into <em>K</em> if part of SCH.</li>
+<li>Convert <em>C</em> into <em>X</em> if followed by IA or H.</li>
+<li>Convert <em>C</em> into <em>S</em> if followed by I, E, or Y.</li>
+<li>Convert all other <em>C_s into _K</em>.</li>
+</ol>
+</li>
+<li>Convert <em>D</em>:<ol>
+<li>Convert <em>C</em> into <em>J</em> if followed by GE, GY, or GI.</li>
+<li>Convert <em>C</em> into <em>T</em> otherwise.</li>
+</ol>
+</li>
+<li>Convert <em>G</em>:<ol>
+<li>Drop the <em>G</em> if part of GH unless it is at the end of the word or it comes before a vowel.</li>
+<li>Drop the <em>G</em> in GN and GNED at the end of the word.</li>
+<li>Convert <em>G</em> into J if part of GI, GE, or GY and not in GG.</li>
+<li>Convert all other <em>G_s into _K</em>.</li>
+</ol>
+</li>
+<li>If <em>H</em> comes after a vowel and not before a vowel, drop it.</li>
+<li>Convert CK into <em>K</em>.</li>
+<li>Convert PH into <em>F</em>.</li>
+<li>Convert <em>Q</em> into <em>K</em>.</li>
+<li>Convert <em>S</em> into <em>X</em> if followed by H, IO, or IA.</li>
+<li>Convert <em>T</em>:  <ol>
+<li>Convert <em>T</em> into <em>X</em> if part of TIA or TIO.  </li>
+<li>Convert TH into <em>0</em>.  </li>
+<li>Drop the <em>T</em> in TCH.</li>
+</ol>
+</li>
+<li>Convert <em>V</em> into <em>F</em>.</li>
+<li>Convert WH into <em>W</em> if at the beginning of the word. Otherwise, drop the _W_s if not followed by a vowel.</li>
+<li>Convert <em>X</em>:  <ol>
+<li>Convert <em>X</em> into <em>S</em> if at the beginning of the word.  </li>
+<li>Otherwise convert <em>X</em> into KS.</li>
+</ol>
+</li>
+<li>Drop <em>Y</em> if not followed by a vowel.</li>
+<li>Convert <em>Z</em> into <em>S</em>.</li>
+<li>Drop all remaining vowels after the first character.</li>
+</ol>
+<p>Metaphone is an improvement over Soundex, but it also has several variations. For example, <em>Double Metaphone</em> is the second version of the original Metaphone algorithm. It is called <em>Double</em> Metaphone because it can generate primary and secondary codes for words to differentiate between words that have the same primary code.</p>
+<p>Metaphone 3 further refines Metaphone's phonetic rules and provides better results with non-English words that are common in the United States and some common names. It is available as a commercial product. There are also versions that handle Spanish and German pronunciations.</p>
+<p>For more information on phonetic algorithms, see the following URLs:</p>
+<ul>
+<li><code>[https://en.wikipedia.org/wiki/Phonetic_algorithm](https://en.wikipedia.org/wiki/Phonetic_algorithm)</code></li>
+<li><code>[https://en.wikipedia.org/wiki/Soundex](https://en.wikipedia.org/wiki/Soundex)</code></li>
+<li><code>[https://en.wikipedia.org/wiki/Metaphone](https://en.wikipedia.org/wiki/Metaphone)</code></li>
+<li><code>[http://ntz-develop.blogspot.com/2011/03/phonetic-algorithms.html](http://ntz-develop.blogspot.com/2011/03/phonetic-algorithms.html)</code></li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>Many programs need to examine and manipulate strings. Even though programming libraries include many string manipulation tools, it's worth knowing how some of those algorithms work. For example, using a regular expression tool is much easier than writing your own, but the technique of using DFAs and NFAs to process commands is useful in many other situations. The Boyer–Moore string search algorithm is a well-known algorithm that any student of algorithms should see at least once. Edit distance algorithms let you determine how close two words, strings, or even files are to each other and to find the differences between them. Finally, Soundex and other phonetic algorithms are useful for finding names or other words when you're unsure of their spelling.</p>
+<p>One kind of string algorithm that isn't covered in this chapter is algorithms used for encryption and decryption. The next chapter describes some of the more important and interesting algorithms used to encrypt and decrypt strings and other data.</p>
+<h2 id="exercises">Exercises</h2>
+<p>You can find the answers to these exercises in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/b02.xhtml">Appendix B</a>. Asterisks indicate particularly difficult problems. Problems with two asterisks are exceptionally hard or time-consuming.</p>
+<ol>
+<li>Write a program that determines whether an expression entered by the user contains properly nested parentheses. Allow the expression to contain other characters as well, as in <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0055.png" /> .</li>
+<li>Write a program that parses and evaluates arithmetic expressions that contain real numbers and the operators <code>+</code>, <code>–</code>, <code>*</code>, and <code>/</code>.</li>
+<li>How would you modify the program you wrote for the preceding exercise to handle the unary negation operator, as in <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0056.png" /> ?</li>
+<li>How would you modify the program you wrote for Exercise 2 to handle functions such as sine, as in <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0057.png" /> ?</li>
+<li>Write a program that parses and evaluates Boolean expressions such as <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0058.png" /> , where <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0059.png" /> means True, <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0060.png" /> means False, &amp; means AND, | means OR, and – means NOT.</li>
+<li>
+<p>**Write a program similar to the one shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0014">Figure 15.14</a>. The program should build a parse tree for the expression entered by the user and then graph it. (Depending on how your program draws the graphics, the default coordinate system for the picture probably will have (0, 0) in the upper-left corner, and coordinates will increase to the right and down. The coordinate system may also use one unit in the X and Y directions per pixel, which means that the resulting graph will be fairly small. Unless you have experience with graphics programming, don't worry about scaling and transforming the result to fit the form nicely.)</p>
+<p><img alt="Screenshot of the program, GraphExpression, that builds a parse tree for an expression and then evaluates it many times to graph the expression." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f014.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0014"><strong>Figure 15.14</strong></a><strong>:</strong> This program, GraphExpression, builds a parse tree for an expression and then evaluates it many times to graph the expression.</p>
+</li>
+<li>
+<p>Build a state transition table for the DFA state transition diagram shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0004">Figure 15.4</a>.</p>
+</li>
+<li>Draw a state transition diagram for a DFA to match the regular expression ((AB)|(BA))*.</li>
+<li>Build a state transition table for the state transition diagram you drew for the preceding exercise.</li>
+<li>*Write a program that lets the user type a DFA's state transitions and an input string and determines whether the DFA accepts the input string.</li>
+<li>Do you think it would be better for a DFA to get its state transitions from a table similar to the one shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-tbl-0001">Table 15.1</a> or to use objects to represent the states? Why?</li>
+<li>How can you make a set of states for an NFA to see whether a pattern occurs anywhere within a string? For example, how could you determine whether the pattern ABA occurred anywhere within a long string? Draw the state transition diagram using a block to represent the pattern's machine (as done in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0010">Figure 15.10</a>).</li>
+<li>Draw the parse tree for the expression <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0061.png" /> . Then draw the NFA network you get by applying the rules described in this chapter to the parse tree.</li>
+<li>Convert the NFA state transition diagram you drew for the preceding exercise into a simple DFA state transition diagram.</li>
+<li>Suppose that you want to search some text of length <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0062.png" /> for a target substring of length <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0045.png" /> . Find an example where a brute-force search requires <img alt="images" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15-i0064.png" /> steps.</li>
+<li>Study the edit graph shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0013">Figure 15.13</a>. What rule should you follow to find the least-cost path from the upper-left corner to the lower-right corner? What is the true edit distance?</li>
+<li>*Write a program that calculates edit distance.</li>
+<li>
+<p>*Enhance the program you wrote for the preceding exercise to display the edits required to change one string into another. Display deleted characters as crossed out and inserted characters as underlined, as shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-fig-0015">Figure 15.15</a>.</p>
+<p><img alt="Screenshot of display with deleted characters that are crossed out and inserted characters as underlined." src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781119575993/files/images/c15f015.jpg" /></p>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-fig-0015"><strong>Figure 15.15</strong></a><strong>:</strong> By following the path through the edit graph, you can show exactly what edits were needed to change one string into another.</p>
+</li>
+<li>
+<p>Is edit distance commutative? In other words, is the edit distance between word 1 and word 2 the same as the edit distance between word 2 and word 1? Why or why not?  </p>
+</li>
+<li>*Modify the program you wrote for Exercise 17 to calculate the edit distance between two files instead of the differences between two strings.  </li>
+<li>*Modify the program you wrote for Exercise 18 to display the differences between two files instead of the differences between two strings.  </li>
+<li>Write a program that calculates Soundex encodings. When the program starts, make it verify that the names Smith, Smyth, Smithe, and Smythe all encode to S530. Also make the program verify the encoded values shown in <a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#c15-tbl-0004">Table 15.4</a>.</li>
+</ol>
+<p><a href="https://learning.oreilly.com/library/view/essential-algorithms-2nd/9781119575993/c15.xhtml#R_c15-tbl-0004"><strong>Table 15.4</strong></a><strong>:</strong> Soundex Encodings for Example Names</p>
+<p>NAME</p>
+<p>SOUNDEX ENCODING</p>
+<p>Robert</p>
+<p>R163</p>
+<p>Rupert</p>
+<p>R163</p>
+<p>Rubin</p>
+<p>R150</p>
+<p>Ashcraft</p>
+<p>A261</p>
+<p>Ashcroft</p>
+<p>A261</p>
+<p>Tymczak</p>
+<p>T522</p>
+<p>Pfister</p>
+<p>P236</p>
+<p>Honeyman</p>
+<p>H555</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <!-- https://github.com/squidfunk/mkdocs-material/blob/master/material/partials/footer.html -->
+
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+        <a href="http://danielavalero.com" target="_blank" rel="noopener" md-footer-link">
+            danielavalero.com
+        </a>
+        
+          <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/DanielaValero/learn-in-public" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+        
+
+        <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.path", "navigation.top", "header.autohide"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../../assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>

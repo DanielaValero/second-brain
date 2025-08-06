@@ -1,0 +1,1168 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://notes.danielavalero.com/05-reference%20system%20%F0%9F%A7%BE/Algorithms/searching-sorting-js/">
+      
+      
+        <link rel="prev" href="../hash-tables/">
+      
+      
+        <link rel="next" href="../searching/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>10. Searching and Sorting in JS - Daniela's second brain</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#10-searching-and-sorting-in-js" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!-- source https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/header.html -->
+<!-- Determine base classes -->
+
+
+  
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Header"
+  >
+
+    <!-- Link to home -->
+    <a
+      href="../../.."
+      title="Daniela&#39;s second brain"
+      class="md-header__button md-logo"
+      aria-label="Daniela's second brain"
+      data-md-component="logo"
+    >
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <a href="../../..">
+            <span class="md-ellipsis">
+              Daniela's second brain
+            </span>
+          </a>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              10. Searching and Sorting in JS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color palette -->
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+      <div class="md-header__source">
+        <a href="https://github.com/DanielaValero/second-brain" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Source: https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/nav.html -->
+<!-- Determine class according to configuration -->
+
+
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Source: https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/toc.html -->
+<!-- Determine title -->
+
+
+  
+
+
+<!-- Table of contents -->
+<nav class="md-nav md-nav--secondary" aria-label="Contents">
+  
+
+  <!--
+    Check whether the content starts with a level 1 headline. If it does, the
+    top-level anchor must be skipped, since it would be redundant to the link
+    to the current page that is located just above the anchor. Therefore we
+    directly continue with the children of the anchor.
+  -->
+  
+  
+    
+  
+
+  <!-- Table of contents and list -->
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#searching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Searching
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Searching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linear-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linear Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sorting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sorting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bubble-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bubble Sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selection-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selection Sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insertion-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Insertion Sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quicksort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quicksort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quickselect" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quickselect
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mergesort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mergesort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Count Sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascripts-built-in-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScript’s Built-in Sort
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-the-implement-square-root-function-for-an-integer-without-using-any-math-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      USE THE IMPLEMENT SQUARE ROOT FUNCTION FOR AN INTEGER WITHOUT USING ANY MATH LIBRARIES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-if-two-elements-of-an-array-add-up-to-a-given-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      FIND IF TWO ELEMENTS OF AN ARRAY ADD UP TO A GIVEN NUMBER
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-an-element-within-an-array-that-appears-only-once" class="md-nav__link">
+    <span class="md-ellipsis">
+      FIND AN ELEMENT WITHIN AN ARRAY THAT APPEARS ONLY ONCE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-javascript-sort-comparator-function-that-would-sort-string-by-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      CREATE A JAVASCRIPT SORT COMPARATOR FUNCTION THAT WOULD SORT STRING BY LENGTH
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implement-a-word-counter-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      IMPLEMENT A WORD COUNTER LIST
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+
+
+
+  
+  
+
+<h1 id="10-searching-and-sorting-in-js">10. Searching and Sorting in JS</h1>
+<p>Searching data and sorting through data are fundamental algorithms. <em>Searching</em> refers to iterating over the data structure’s elements to retrieve some data. <em>Sorting</em> refers to putting the data structure’s elements in order. The searching and sorting algorithms are different for every data structure. This chapter focuses on searching and sorting for arrays. By the end of this chapter, you will understand how to use common sorting and searching algorithms for arrays.</p>
+<h2 id="searching">Searching</h2>
+<p>As mentioned, searching is the task of looking for a specific element inside a data structure. When searching in an array, there are two main techniques depending on whether the array is sorted. In this section, you’ll learn about linear and binary searching. Linear searches are especially flexible because they can be used with both sorted and unsorted data. Binary searches are specifically used with sorted data. However, a linear search has a higher time complexity than a binary search.</p>
+<h3 id="linear-search">Linear Search</h3>
+<p>A linear search works by going through each element of the array one index after another sequentially. The following code example is an implementation of a linear search that iterates through the entire array of numbers to find out whether 4 and 5 exist within the array.</p>
+<p>1   <em>//iterate through the array and find</em></p>
+<p>2   <strong>function</strong> linearSearch(array,n){</p>
+<p>3       <strong>for</strong>(<strong>var</strong> i=0; i&lt;array.length; i++) {</p>
+<p>4           <strong>if</strong> (array[i]==n) {</p>
+<p>5               <strong>return true</strong>;</p>
+<p>6           }</p>
+<p>7       }</p>
+<p>8       <strong>return false</strong>;</p>
+<p>9   }</p>
+<p>10   console.log(linearSearch([1,2,3,4,5,6,7,8,9], 6)); <em>// true</em></p>
+<p>11   console.log(linearSearch([1,2,3,4,5,6,7,8,9], 10)); <em>// false</em></p>
+<p><strong>Time Complexity:</strong> O(<em>n</em>)</p>
+<p>As shown in Figure <a href="https://learning.oreilly.com/library/view/javascript-data-structures/9781484239889/html/465726_1_En_10_Chapter.xhtml#Fig1">10-1</a>, when 6 is searched for, it goes through six iterations. When 10 is searched for, it must iterate through all <em>n</em> elements before returning false; therefore, the time complexity is O(<em>n</em>).</p>
+<p><img alt="../images/465726_1_En_10_Chapter/465726_1_En_10_Fig1_HTML.jpg" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781484239889/files/images/465726_1_En_10_Chapter/465726_1_En_10_Fig1_HTML.jpg" /></p>
+<p>Figure 10-1</p>
+<p>Linear search</p>
+<p>As another example, with an array of [1,2,3,4,5] and a search term of 3, it would take three iterations to complete (1, 2, 3). The reason why this algorithm has a Big-O of O(<em>n</em>) is that, in the worst-case scenario, the entire array needs to be iterated. For example, if the search term is 5, it takes five iterations (1, 2, 3, 4, 5). If 6 is the search term, it goes through the entire array (1, 2, 3, 4, 5) and then returns false because it was not found.</p>
+<p>As noted previously, a linear search algorithm like this is great because it works whether or not the array is sorted. In a linear search algorithm, every element of the array is checked. So, you should use a linear search when the array is not sorted. If the array is sorted, you can do the search faster via a binary search.</p>
+<h3 id="binary-search">Binary Search</h3>
+<p>Binary search is a searching algorithm that works on sorted data. Unlike the linear search algorithm, in which every element of the array is checked, binary searches can check the middle value to see whether the desired value is greater or smaller than it. If the desired value is smaller, this algorithm can search through the smaller parts, or it can search through the bigger parts if the desired value is bigger.</p>
+<p>Figure <a href="https://learning.oreilly.com/library/view/javascript-data-structures/9781484239889/html/465726_1_En_10_Chapter.xhtml#Fig2">10-2</a> illustrates the process of a binary search. First, the search range is 1 to 9. Since the middle element, 5, is bigger than 3, the search range is restricted to 1 to 4. Finally, 3 is found as the middle element. Figure <a href="https://learning.oreilly.com/library/view/javascript-data-structures/9781484239889/html/465726_1_En_10_Chapter.xhtml#Fig3">10-3</a> illustrates searching for an item in the right half of the array.</p>
+<p><img alt="../images/465726_1_En_10_Chapter/465726_1_En_10_Fig2_HTML.jpg" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781484239889/files/images/465726_1_En_10_Chapter/465726_1_En_10_Fig2_HTML.jpg" /></p>
+<p>Figure 10-2</p>
+<p><em>Binary search in the left half of the array</em></p>
+<p><img alt="../images/465726_1_En_10_Chapter/465726_1_En_10_Fig3_HTML.jpg" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781484239889/files/images/465726_1_En_10_Chapter/465726_1_En_10_Fig3_HTML.jpg" /></p>
+<p>Figure 10-3</p>
+<p>Binary search in the right half of the array</p>
+<p>The following code implements the binary search algorithm described:</p>
+<p>1   <strong>function</strong> binarySearch(array,n){</p>
+<p>2       <strong>var</strong> lowIndex = 0, highIndex = array1.length-1;</p>
+<p>3</p>
+<p>4       <strong>while</strong>(lowIndex&lt;=highIndex){</p>
+<p>5           <strong>var</strong> midIndex = Math.floor((highIndex+lowIndex) /2);</p>
+<p>6           <strong>if</strong> (array[midIndex]==n) {</p>
+<p>7               <strong>return</strong> midIndex;</p>
+<p>8           } <strong>else if</strong> (n&gt;array[midIndex]) {</p>
+<p>9               lowIndex = midIndex;</p>
+<p>10           } <strong>else</strong> {</p>
+<p>11               highIndex = midIndex;</p>
+<p>12           }</p>
+<p>13       }</p>
+<p>14       <strong>return</strong> -1;</p>
+<p>15   }</p>
+<p>16   console.log(binarySearch([1,2,3,4], 4)); <em>// true</em></p>
+<p>17   console.log(binarySearch([1,2,3,4], 5)); <em>// -1</em></p>
+<p>The binary search algorithm is fast but can be done only if the array is sorted. It checks the middle element if that is the element that is being searched for. If the search element is bigger than the middle element, the lower bound is set to the middle element plus one. If the search element is less than the middle element, the higher bound is set to the middle element minus one.</p>
+<p>This way, the algorithm is continuously dividing the array into two sections: the lower half and the upper half. If the element is smaller than the middle element, it should look for it in the lower half; if the element is bigger than the middle element, it should look for it in the upper half.</p>
+<p>Binary searches are used by humans without them even knowing. An example is a phone directory that is arranged from <em>A</em> to <em>Z</em> by last name.</p>
+<p>If you are given the task of finding someone with the last name of Lezer, one would first go to the L section and open it halfway through. Lizar is on that page; this means that the lower section contains L + [a to i] and the upper section contains L + [i to z] last names. You would then check the middle of the lower section. Laar appears, so you would now check the upper section. This process repeats until Lezer is found.</p>
+<h2 id="sorting">Sorting</h2>
+<p>Sorting is one of the most important topics in computer science; it is faster and easier to locate items in a sorted array than in an unsorted sorted array. You can use sorting algorithms to sort an array in memory for searching later in the program or to write to a file for later retrieval. In this section, different sorting techniques will be explored. We will start with the naive sorting algorithms and then explore efficient sorting algorithms. Efficient sorting algorithms have various trade-offs that should be considered during usage.</p>
+<h3 id="bubble-sort">Bubble Sort</h3>
+<p>Bubble sorting is the simplest sorting algorithm. It simply iterates over the entire array and swaps elements if one is bigger than the other, as shown in Figure <a href="https://learning.oreilly.com/library/view/javascript-data-structures/9781484239889/html/465726_1_En_10_Chapter.xhtml#Fig4">10-4</a> and Figure <a href="https://learning.oreilly.com/library/view/javascript-data-structures/9781484239889/html/465726_1_En_10_Chapter.xhtml#Fig5">10-5</a>.</p>
+<p><img alt="../images/465726_1_En_10_Chapter/465726_1_En_10_Fig4_HTML.jpg" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781484239889/files/images/465726_1_En_10_Chapter/465726_1_En_10_Fig4_HTML.jpg" /></p>
+<p>Figure 10-4</p>
+<p><em>First run of the bubble sort</em></p>
+<p><img alt="../images/465726_1_En_10_Chapter/465726_1_En_10_Fig5_HTML.jpg" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781484239889/files/images/465726_1_En_10_Chapter/465726_1_En_10_Fig5_HTML.jpg" /></p>
+<p>Figure 10-5</p>
+<p><em>The rest of the bubble sort runs</em></p>
+<p>swap is a common function used in sorting. It simply switches two array element values and will be used as a helper function for most of the sorting algorithms mentioned.</p>
+<p>1   <strong>function</strong> swap(array, index1, index2) {</p>
+<p>2       <strong>var</strong> temp = array[index1];</p>
+<p>3       array[index1] = array[index2];</p>
+<p>4       array[index2] = temp;</p>
+<p>5   }</p>
+<p>The following bubbleSort code block illustrates the bubble sort algorithm previously described:</p>
+<p>1   <strong>function</strong> bubbleSort(array) {</p>
+<p>2       <strong>for</strong> (<strong>var</strong> i=0, arrayLength = array.length; i&lt;arrayLength; i++) {</p>
+<p>3           <strong>for</strong> (<strong>var</strong> j=0; j&lt;=i; j++) {</p>
+<p>4               <strong>if</strong> (array[i] &lt; array[j]) {</p>
+<p>5                   swap(array, i, j);</p>
+<p>6               }</p>
+<p>7           }</p>
+<p>8       }</p>
+<p>9       <strong>return</strong> array;</p>
+<p>10   }</p>
+<p>11   bubbleSort([6,1,2,3,4,5]); <em>// [1,2,3,4,5,6]</em></p>
+<p><strong>Time Complexity:</strong> O(<em>n__2</em>)</p>
+<p><strong>Space Complexity:</strong> O(1)</p>
+<p>Bubble sort is the worst type of sort because it compares every pair possible, whereas other sorting algorithms take advantage of the presorted parts of the array. Because bubble sort uses nested loops, it has a time complexity of O(<em>n__2</em>).</p>
+<h3 id="selection-sort">Selection Sort</h3>
+<p>Selection sorting works by scanning the elements for the smallest element and inserting it into the current position of the array. This algorithm is marginally better than bubble sort. Figure <a href="https://learning.oreilly.com/library/view/javascript-data-structures/9781484239889/html/465726_1_En_10_Chapter.xhtml#Fig6">10-6</a> shows this minimum selection process.</p>
+<p><img alt="../images/465726_1_En_10_Chapter/465726_1_En_10_Fig6_HTML.jpg" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781484239889/files/images/465726_1_En_10_Chapter/465726_1_En_10_Fig6_HTML.jpg" /></p>
+<p>Figure 10-6</p>
+<p>Selection sort</p>
+<p>The following code implements the selection sort. In the code, there is one for loop to iterate through the array and one nested for loop to scan to get the minimum element.</p>
+<p>1   <strong>function</strong> selectionSort(items) {</p>
+<p>2       <strong>var</strong> len = items.length,</p>
+<p>3           min;</p>
+<p>4</p>
+<p>5       <strong>for</strong> (<strong>var</strong> i=0; i &lt; len; i++){</p>
+<p>6           <em>// set minimum to this position</em></p>
+<p>7           min = i;</p>
+<p>8           <em>//check the rest of the array to see if anything is smaller</em></p>
+<p>9           <strong>for</strong> (j=i+1; j &lt; len; j++){</p>
+<p>10               <strong>if</strong> (items[j] &lt; items[min]){</p>
+<p>11                   min = j;</p>
+<p>12               }</p>
+<p>13           }</p>
+<p>14           <em>//if the minimum isn't in the position, swap it</em></p>
+<p>15           <strong>if</strong> (i != min){</p>
+<p>16               swap(items, i, min);</p>
+<p>17           }</p>
+<p>18       }</p>
+<p>19</p>
+<p>20       <strong>return</strong> items;</p>
+<p>21   }</p>
+<p>22   selectionSort([6,1,23,4,2,3]); <em>// [1, 2, 3, 4, 6, 23]</em></p>
+<p><strong>Time Complexity:</strong> O(_n_2)</p>
+<p><strong>Space Complexity:</strong> O(1)</p>
+<ul>
+<li>The time complexity for selection sort is still O(<em>n__2</em>) because of the nested for loop .</li>
+</ul>
+<h3 id="insertion-sort">Insertion Sort</h3>
+<p>Insertion sort works similarly to selection sort by searching the array sequentially and moving the unsorted items into a sorted sublist on the left side of the array. Figure <a href="https://learning.oreilly.com/library/view/javascript-data-structures/9781484239889/html/465726_1_En_10_Chapter.xhtml#Fig7">10-7</a> shows this process in detail.</p>
+<p><img alt="../images/465726_1_En_10_Chapter/465726_1_En_10_Fig7_HTML.jpg" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781484239889/files/images/465726_1_En_10_Chapter/465726_1_En_10_Fig7_HTML.jpg" /></p>
+<p>Figure 10-7</p>
+<p>Insertion sort</p>
+<p>The following code implements the insertion sort algorithm. The outer for loop iterates over the array indices, and the inner for loop moves the unsorted items into the sorted sublist on the left side of the array.</p>
+<p>1   <strong>function</strong> insertionSort(items) {</p>
+<p>2       <strong>var</strong> len = items.length, <em>// number of items in the array</em></p>
+<p>3           value,              <em>// the value currently being compared</em></p>
+<p>4           i,                  <em>// index into unsorted section</em></p>
+<p>5           j;                  <em>// index into sorted section</em></p>
+<p>6</p>
+<p>7       <strong>for</strong> (i=0; i &lt; len; i++) {</p>
+<p>8           <em>// store the current value because it may shift later</em></p>
+<p>9           value = items[i];</p>
+<p>10</p>
+<p>11           <em>// Whenever the value in the sorted section is greater than the value</em></p>
+<p>12           <em>// in the unsorted section, shift all items in the sorted section</em></p>
+<p>13           <em>// over by one. This creates space in which to insert the value.</em></p>
+<p>14</p>
+<p>15           <strong>for</strong> (j=i-1; j &gt; -1 &amp;&amp; items[j] &gt; value; j--) {</p>
+<p>16               items[j+1] = items[j];</p>
+<p>17           }</p>
+<p>18           items[j+1] = value;</p>
+<p>19       }</p>
+<p>20       <strong>return</strong> items;</p>
+<p>21   }</p>
+<p>22   insertionSort([6,1,23,4,2,3]); <em>// [1, 2, 3, 4, 6, 23]</em></p>
+<p><strong>Time Complexity:</strong> O(_n_2)</p>
+<p><strong>Space Complexity:</strong> O(1)</p>
+<p>Again, this sorting algorithm has a quadratic time complexity of O(_n_2) like bubble and insertion sort because of the nested for loop.</p>
+<h3 id="quicksort">Quicksort</h3>
+<p>Quicksort works by obtaining a pivot and partitioning the array around it (bigger elements on one side and smaller elements on the other side) until everything is sorted. The ideal pivot is the median of the array since it will partition the array evenly but getting the median of an unsorted array linear time to compute. Hence, a pivot is typically obtained by taking the median value of the first, middle, and last elements in the partition. This sort is a recursive one and uses the divide-and-conquer methodology to break the quadratic complexity barrier and get the time complexity down to O(<em>nlog_2(_n</em>)). However, with a pivot that partitions everything on one side, the time complexity is worse case: O(_n_2).</p>
+<p>Figure <a href="https://learning.oreilly.com/library/view/javascript-data-structures/9781484239889/html/465726_1_En_10_Chapter.xhtml#Fig8">10-8</a> shows the quicksort process’s partitioning steps in great detail.</p>
+<p><img alt="../images/465726_1_En_10_Chapter/465726_1_En_10_Fig8_HTML.jpg" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781484239889/files/images/465726_1_En_10_Chapter/465726_1_En_10_Fig8_HTML.jpg" /></p>
+<p>Figure 10-8</p>
+<p>Quicksort</p>
+<p>The following code shows an implementation of the quicksort algorithm:</p>
+<p>1   <strong>function</strong> quickSort(items) {</p>
+<p>2       <strong>return</strong> quickSortHelper(items, 0, items.length-1);</p>
+<p>3   }</p>
+<p>4</p>
+<p>5   <strong>function</strong> quickSortHelper(items, left, right) {</p>
+<p>6       <strong>var</strong> index;</p>
+<p>7       <strong>if</strong> (items.length &gt; 1) {</p>
+<p>8           index = partition(items, left, right);</p>
+<p>9</p>
+<p>10           <strong>if</strong> (left &lt; index - 1) {</p>
+<p>11               quickSortHelper(items, left, index - 1);</p>
+<p>12           }</p>
+<p>13</p>
+<p>14           <strong>if</strong> (index &lt; right) {</p>
+<p>15               quickSortHelper(items, index, right);</p>
+<p>16           }</p>
+<p>17       }</p>
+<p>18       <strong>return</strong> items;</p>
+<p>19   }</p>
+<p>20</p>
+<p>21   <strong>function</strong> partition(array, left, right) {</p>
+<p>22       <strong>var</strong> pivot = array[Math.floor((right + left) / 2)];</p>
+<p>23       <strong>while</strong> (left &lt;= right) {</p>
+<p>24           <strong>while</strong> (pivot &gt; array[left]) {</p>
+<p>25               left++;</p>
+<p>26           }</p>
+<p>27           <strong>while</strong> (pivot &lt; array[right]) {</p>
+<p>28               right--;</p>
+<p>29           }</p>
+<p>30           <strong>if</strong> (left &lt;= right) {</p>
+<p>31               <strong>var</strong> temp = array[left];</p>
+<p>32               array[left] = array[right];</p>
+<p>33               array[right]= temp;</p>
+<p>34               left++;</p>
+<p>35               right--;</p>
+<p>36           }</p>
+<p>37       }</p>
+<p>38       <strong>return</strong> left;</p>
+<p>39   }</p>
+<p>40</p>
+<p>41   quickSort([6,1,23,4,2,3]); <em>// [1, 2, 3, 4, 6, 23]</em></p>
+<p><strong>Time Complexity:</strong> O(<em>nlog_2(_n</em>)) on average, O(n2) for worst case</p>
+<p><strong>Space Complexity:</strong> O(<em>log_2(_n</em>))</p>
+<p>One downside about a quicksort algorithm is that it could potentially be O(<em>n_2) if a bad pivot is always picked . A bad pivot is one that it does not partition the array evenly. The ideal pivot is the median element of the array. In addition, a quicksort algorithm takes a bigger space complexity of O(_log_2(_n</em>)) compared to other sorting algorithms because of the call stack in recursion.</p>
+<p>Use a quicksort algorithm when the average performance should be optimal. This has to do with the fact that quicksort works better for the RAM cache.</p>
+<h3 id="quickselect">Quickselect</h3>
+<p>Quickselect is a selection algorithm to find the <em>k_th smallest element in an unordered list. Quickselect uses the same approach as a quicksort algorithm. A pivot is chosen, and the array is partitioned. Instead of recursing both sides like quicksort, however, it recurses only the side for the element. This reduces the complexity from O(_nlog_2(_n</em>)) to O(<em>n</em>).</p>
+<p>Quickselect is implemented in the following code:</p>
+<p>1   <strong>var</strong> array = [1,3,3,-2,3,14,7,8,1,2,2];</p>
+<p>2   <em>// sorted form: [-2, 1, 1, 2, 2, 3, 3, 3, 7, 8, 14]</em></p>
+<p>3</p>
+<p>4   <strong>function</strong> quickSelectInPlace(A, l, h, k){</p>
+<p>5       <strong>var</strong> p = partition(A, l, h);</p>
+<p>6       <strong>if</strong>(p==(k-1)) {</p>
+<p>7           <strong>return</strong> A[p];</p>
+<p>8       } <strong>else if</strong>(p&gt;(k-1)) {</p>
+<p>9           <strong>return</strong> quickSelectInPlace(A, l, p - 1,k);</p>
+<p>10       } <strong>else</strong> {</p>
+<p>11           <strong>return</strong> quickSelectInPlace(A, p + 1, h,k);</p>
+<p>12       }</p>
+<p>13   }</p>
+<p>14</p>
+<p>15   <strong>function</strong> medianQuickselect(array) {</p>
+<p>16       <strong>return</strong> quickSelectInPlace(array,0,array.length-1, Math.floor(array.length/2));</p>
+<p>17   }</p>
+<p>18</p>
+<p>19   quickSelectInPlace(array,0,array.length-1,5); <em>// 2</em></p>
+<p>20   <em>// 2 - because it's the fifth smallest element</em></p>
+<p>21   quickSelectInPlace(array,0,array.length-1,10); <em>// 7</em></p>
+<p>22   <em>// 7 - because it's the tenth smallest element</em></p>
+<p><strong>Time Complexity:</strong> O(<em>n</em>)</p>
+<h3 id="mergesort">Mergesort</h3>
+<p>Mergesort works by dividing the array into subarrays until each array has one element. Then, each subarray is <em>concatenated</em> (merged) in a sorted order (see Figure <a href="https://learning.oreilly.com/library/view/javascript-data-structures/9781484239889/html/465726_1_En_10_Chapter.xhtml#Fig9">10-9</a>).</p>
+<p><img alt="../images/465726_1_En_10_Chapter/465726_1_En_10_Fig9_HTML.jpg" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781484239889/files/images/465726_1_En_10_Chapter/465726_1_En_10_Fig9_HTML.jpg" /></p>
+<p>Figure 10-9</p>
+<p>Mergesort</p>
+<p>The merge function should add all the elements from both arrays in sorted order in a “result array.” To do this, the index of each array can be created to keep track of elements already compared. Once one array exhausts all its elements, the rest can be appended to the result array.</p>
+<p>1   <strong>function</strong> merge(leftA, rightA){</p>
+<p>2       <strong>var</strong> results= [], leftIndex= 0, rightIndex= 0;</p>
+<p>3</p>
+<p>4       <strong>while</strong> (leftIndex &lt; leftA.length &amp;&amp; rightIndex &lt; rightA.length) {</p>
+<p>5           <strong>if</strong>( leftA[leftIndex]&lt;rightA[rightIndex] ){</p>
+<p>6               results.push(leftA[leftIndex++]);</p>
+<p>7           } <strong>else</strong> {</p>
+<p>8               results.push(rightA[rightIndex++]);</p>
+<p>9           }</p>
+<p>10       }</p>
+<p>11       <strong>var</strong> leftRemains = leftA.slice(leftIndex),</p>
+<p>12           rightRemains = rightA.slice(rightIndex);</p>
+<p>13</p>
+<p>14       <em>// add remaining to resultant array</em></p>
+<p>15       <strong>return</strong> results.concat(leftRemains).concat(rightRemains);</p>
+<p>16   }</p>
+<p>The merging function works by taking the two arrays (left and right) and merging them into one resultant array. The elements need to be compared as they get merged to preserve order.</p>
+<p>Now, the mergeSort function has to partition the bigger array into two separate arrays and recursively call merge.</p>
+<p>1   <strong>function</strong> mergeSort(array) {</p>
+<p>2</p>
+<p>3       <strong>if</strong>(array.length&lt;2){</p>
+<p>4           <strong>return</strong> array; <em>// Base case: array is now sorted since it's just 1 element</em></p>
+<p>5       }</p>
+<p>6</p>
+<p>7       <strong>var</strong> midpoint = Math.floor((array.length)/2),</p>
+<p>8           leftArray = array.slice(0, midpoint),</p>
+<p>9           rightArray = array.slice(midpoint);</p>
+<p>10</p>
+<p>11       <strong>return</strong> merge(mergeSort(leftArray), mergeSort(rightArray));</p>
+<p>12   }</p>
+<p>13   mergeSort([6,1,23,4,2,3]); <em>// [1, 2, 3, 4, 6, 23]</em></p>
+<p><strong>Time Complexity:</strong> O(<em>nlog_2(_n</em>))</p>
+<p><strong>Space Complexity:</strong> O(<em>n</em>)</p>
+<p>Mergesort has a large space complexity of O(<em>n</em>) because of the need to create <em>n</em> number of arrays to be merged later. Use mergesort when a stable sort is needed. A stable sort is one that’s guaranteed not to reorder elements with identical keys. Mergesort is guaranteed to be O(<em>nlog__2__(n)</em>). A disadvantage of mergesort is that it uses O(<em>n</em>) in space.</p>
+<h3 id="count-sort">Count Sort</h3>
+<p>Count sort can be done in O(<em>k+n</em>) because it does not compare values. It works only for numbers and given a certain range. Instead of sorting by swapping elements, this count works by counting occurrences of each element in the array. Once occurrences of each element are counted, the new array can be created using those occurrences. This sorts the data without having to swap elements, as shown in Figure <a href="https://learning.oreilly.com/library/view/javascript-data-structures/9781484239889/html/465726_1_En_10_Chapter.xhtml#Fig10">10-10</a>.</p>
+<p><img alt="../images/465726_1_En_10_Chapter/465726_1_En_10_Fig10_HTML.jpg" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781484239889/files/images/465726_1_En_10_Chapter/465726_1_En_10_Fig10_HTML.jpg" /></p>
+<p>Figure 10-10</p>
+<p>Count sort</p>
+<p>Here’s an implementation using a JavaScript object:</p>
+<p>1   <strong>function</strong> countSort(array) {</p>
+<p>2       <strong>var</strong> hash = {}, countArr= [];</p>
+<p>3       <strong>for</strong>(<strong>var</strong> i=0;i&lt;array.length;i++){</p>
+<p>4           <strong>if</strong>(!hash[array[i]]){</p>
+<p>5               hash[array[i]] = 1;</p>
+<p>6           }<strong>else</strong>{</p>
+<p>7               hash[array[i]]++;</p>
+<p>8           }</p>
+<p>9       }</p>
+<p>10</p>
+<p>11       <strong>for</strong>(<strong>var</strong> key <strong>in</strong> hash){</p>
+<p>12           <em>// for any number of _ element, add it to array</em></p>
+<p>13           <strong>for</strong>(<strong>var</strong> i=0;i&lt;hash[key];i++) {</p>
+<p>14               countArr.push(parseInt(key));</p>
+<p>15           }</p>
+<p>16       }</p>
+<p>17</p>
+<p>18       <strong>return</strong> countArr;</p>
+<p>19   }</p>
+<p>20   countSort([6,1,23,2,3,2,1,2,2,3,3,1,123,123,4,2,3]); <em>// [1, 2, 3, 4, 6, 23]</em></p>
+<p><strong>Time Complexity:</strong> O(<em>k</em>+<em>n</em>)</p>
+<p><strong>Space Complexity:</strong> O(<em>k</em>)</p>
+<p>Use count sort when you’re sorting integers with a limited range. This will be the fastest sort for this case.</p>
+<h3 id="javascripts-built-in-sort">JavaScript’s Built-in Sort</h3>
+<p>JavaScript has a built-in sort() method for an array object, which sorts elements by ascending order. To use it, there is an optional parameter that you can pass in a comparator function.</p>
+<p>However, the default comparator function sorts alphabetically, so it will not work for numbers.</p>
+<p>1   <strong>var</strong> array1 = [12,3,4,2,1,34,23];</p>
+<p>2   array1.sort(); <em>// array1: [1, 12, 2, 23, 3, 34, 4]</em></p>
+<p>In the previous example, notice that numbers starting with 1 came first (1, 12), then numbers starting with 2, and so forth. This is because no comparator function was passed and JavaScript converted the elements into a string and sorted it according to the alphabet.</p>
+<p>To sort numbers correctly, use this:</p>
+<p>1   <strong>var</strong> array1 = [12,3,4,2,1,34,23];</p>
+<p>2</p>
+<p>3   <strong>function</strong> comparatorNumber(a,b) {</p>
+<p>4       <strong>return</strong> a-b;</p>
+<p>5   }</p>
+<p>6</p>
+<p>7   array1.sort(comparatorNumber);</p>
+<p>8   <em>// array1: [1, 2, 3, 4, 12, 23, 34]</em></p>
+<p>a-b indicates that it should be from smallest to biggest (ascending). Descending order can be done as follows:</p>
+<p>1   <strong>var</strong> array1 = [12,3,4,2,1,34,23];</p>
+<p>2</p>
+<p>3   <strong>function</strong> comparatorNumber(a,b) {</p>
+<p>4       <strong>return</strong> b-a;</p>
+<p>5   }</p>
+<p>6</p>
+<p>7   array1.sort(comparatorNumber); <em>// array1: [34, 23, 12, 4, 3, 2, 1]</em></p>
+<p>The sort() function can be useful when you need a quick way to sort something without implementing it yourself.</p>
+<h2 id="summary">Summary</h2>
+<p>There are two ways to search inside an array: linear search and binary search. Binary search is faster with O(<em>log_2(_n</em>)) time complexity, while linear search has O(<em>n</em>) time complexity. However, the binary search can be performed only on a sorted array.</p>
+<p>Table <a href="https://learning.oreilly.com/library/view/javascript-data-structures/9781484239889/html/465726_1_En_10_Chapter.xhtml#Tab1">10-1</a> summarizes time and space complexities of different sorting algorithms. The most efficient sorting algorithms are quicksort, mergesort, and count sort. Count sort, while the fastest, is limited to when the range of array’s values are known.</p>
+<p>Table 10-1</p>
+<p>Sorting Summary</p>
+<p>Algorithm</p>
+<p>Time Complexity</p>
+<p>Space Complexity</p>
+<p>Quicksort</p>
+<p>O(<em>nlog_2(_n</em>))</p>
+<p>O(<em>nlog_2(_n</em>))</p>
+<p>Mergesort</p>
+<p>O(<em>nlog_2(_n</em>))</p>
+<p>O(<em>nlog_2(_n</em>))</p>
+<p>Bubble sort</p>
+<p>O(_n_2)</p>
+<p>O(_n_2)</p>
+<p>Insertion sort</p>
+<p>O(_n_2)</p>
+<p>O(_n_2)</p>
+<p>Selection sort</p>
+<p>O(_n_2)</p>
+<p>O(_n_2)</p>
+<p>Count sort</p>
+<p>O(<em>k</em> + <em>n</em>)</p>
+<p>O(<em>k</em>)</p>
+<h2 id="exercises">Exercises</h2>
+<h3 id="use-the-implement-square-root-function-for-an-integer-without-using-any-math-libraries">USE THE IMPLEMENT SQUARE ROOT FUNCTION FOR AN INTEGER WITHOUT USING ANY MATH LIBRARIES</h3>
+<p>The first solution that may come to mind is trying every possibility from 1 to the number, as follows:</p>
+<p>1   <strong>function</strong> sqrtIntNaive(number){</p>
+<p>2       <strong>if</strong>(number == 0 || number == 1)</p>
+<p>3           <strong>return</strong> number;</p>
+<p>4</p>
+<p>5       <strong>var</strong> index = 1, square = 1;</p>
+<p>6</p>
+<p>7       <strong>while</strong>(square &lt; number){</p>
+<p>8           <strong>if</strong> (square == number){</p>
+<p>9               <strong>return</strong> square;</p>
+<p>10           }</p>
+<p>11</p>
+<p>12           index++;</p>
+<p>13           square = index*index;</p>
+<p>14       }</p>
+<p>15       <strong>return</strong> index;</p>
+<p>16   }</p>
+<p>17   sqrtIntNaive(9);</p>
+<p><strong>Time Complexity:</strong> O(<em>n</em>)</p>
+<p>This is essentially a linear search since it has to linearly check one by one the value for the square root.</p>
+<p>The binary search algorithm can be applied to this problem. Instead of going up 1 by 1, partition the range into upper half and lower half between 1 and the given number as follows:</p>
+<p>1   <strong>function</strong> sqrtInt(number) {</p>
+<p>2       <strong>if</strong>(number == 0 || number == 1) <strong>return</strong> number;</p>
+<p>3</p>
+<p>4       <strong>var</strong> start = 1, end = number, ans;</p>
+<p>5</p>
+<p>6       <strong>while</strong>(start &lt;= end) {</p>
+<p>7           <strong>let</strong> mid = parseInt((start+end)/2);</p>
+<p>8</p>
+<p>9           <strong>if</strong> (mid*mid == number)</p>
+<p>10               <strong>return</strong> mid;</p>
+<p>11</p>
+<p>12           <strong>if</strong>(mid*mid&lt;number){</p>
+<p>13               start = mid+1; <em>// use the upper section</em></p>
+<p>14               ans = mid;</p>
+<p>15           }<strong>else</strong>{</p>
+<p>16               end = mid-1; <em>// use the lower section</em></p>
+<p>17           }</p>
+<p>18       }</p>
+<p>19       <strong>return</strong> ans;</p>
+<p>20   }</p>
+<p>21   sqrtInt(9);</p>
+<p><strong>Time Complexity:</strong> O(<em>log_2(_n</em>))</p>
+<p><strong>Bonus: Find a Square Root of a Float</strong></p>
+<p>For this exercise, the only difference is using a threshold value to calculate accuracy to because the square root of a double will have decimals. Hence, the time complexity also stays the same.</p>
+<p>1   <strong>function</strong> sqrtDouble(number) {</p>
+<p>2       <strong>var</strong> threshold = 0.1;</p>
+<p>3       <em>//9 try middle,</em></p>
+<p>4       <strong>var</strong> upper = number;</p>
+<p>5       <strong>var</strong> lower = 0;</p>
+<p>6       <strong>var</strong> middle;</p>
+<p>7       <strong>while</strong>(upper-lower&gt;threshold){</p>
+<p>8           middle = (upper+lower)/2;</p>
+<p>9           <strong>if</strong>(middle*middle&gt;number){</p>
+<p>10               upper = middle;</p>
+<p>11           }<strong>else</strong>{</p>
+<p>12               lower = middle;</p>
+<p>13           }</p>
+<p>14       }</p>
+<p>15       <strong>return</strong> middle</p>
+<p>16   }</p>
+<p>17   sqrtDouble(9); <em>// 3.0234375</em></p>
+<h3 id="find-if-two-elements-of-an-array-add-up-to-a-given-number">FIND IF TWO ELEMENTS OF AN ARRAY ADD UP TO A GIVEN NUMBER</h3>
+<p>The simple approach to this problem is to check every other element for each element in the array.</p>
+<p>1   <strong>function</strong> findTwoSum(array, sum) {</p>
+<p>2</p>
+<p>3       <strong>for</strong>(<strong>var</strong> i=0, arrayLength = array.length; i&lt;arrayLength;i++){</p>
+<p>4           <strong>for</strong>(<strong>var</strong> j=i+1;j&lt;arrayLength;j++){</p>
+<p>5               <strong>if</strong>(array[j]+array[i] == sum){</p>
+<p>6                   <strong>return true</strong>;</p>
+<p>7               }</p>
+<p>8           }</p>
+<p>9       }</p>
+<p>10       <strong>return false</strong>;</p>
+<p>11   }</p>
+<p><strong>Time Complexity:</strong> O(_n_2)</p>
+<p><strong>Space Complexity:</strong> O(1)</p>
+<p>There is a lot of checking, and hence it takes quadratic time.</p>
+<p>A better approach is to store the already visited numbers and check against them. This way, it can be done in linear time.</p>
+<p>1   <strong>function</strong> findTwoSum(array, sum){</p>
+<p>2       <strong>var</strong> store = {};</p>
+<p>3</p>
+<p>4       <strong>for</strong>(<strong>var</strong> i=0, arrayLength = array.length; i&lt;arrayLength;i++){</p>
+<p>5           <strong>if</strong>(store[array[i]]){</p>
+<p>6               <strong>return true</strong>;</p>
+<p>7           }<strong>else</strong>{</p>
+<p>8               store[sum-array[i]] = array[i];</p>
+<p>9           }</p>
+<p>10       }</p>
+<p>11       <strong>return false</strong>;</p>
+<p>12   }</p>
+<p><strong>Time Complexity:</strong> O(<em>n</em>)</p>
+<p><strong>Space Complexity:</strong> O(<em>n</em>)</p>
+<p>This algorithm cuts the time complexity to O(<em>n</em>) but takes O(<em>n</em>) space as well to store items into the store object.</p>
+<h3 id="find-an-element-within-an-array-that-appears-only-once">FIND AN ELEMENT WITHIN AN ARRAY THAT APPEARS ONLY ONCE</h3>
+<p>Given a sorted array in which all elements appear twice (one after one) and one element appears only once, find that element in O(l_og__2__n_) complexity. This can be done by modifying the binary search algorithm and checking the addition indices.</p>
+<p>Input:   arr = [1, 1, 3, 3, 4, 5, 5, 7, 7, 8, 8]      Output:  4</p>
+<p>Input:   arr = [1, 1, 3, 3, 4, 4, 5, 5, 7, 7, 8]      Output:  8</p>
+<p>1   <strong>function</strong> findOnlyOnce(arr, low, high) {</p>
+<p>2       <strong>if</strong> (low &gt; high) {</p>
+<p>3           <strong>return null</strong>;</p>
+<p>4       }</p>
+<p>5       <strong>if</strong> (low == high) {</p>
+<p>6           <strong>return</strong> arr[low];</p>
+<p>7       }</p>
+<p>8</p>
+<p>9       <strong>var</strong> mid = Math.floor((high+low)/2);</p>
+<p>10</p>
+<p>11       <strong>if</strong> (mid%2 == 0) {</p>
+<p>12           <strong>if</strong> (arr[mid] == arr[mid+1]) {</p>
+<p>13               <strong>return</strong> findOnlyOnce(arr, mid+2, high);</p>
+<p>14           } <strong>else</strong> {</p>
+<p>15               <strong>return</strong> findOnlyOnce(arr, low, mid);</p>
+<p>16           }</p>
+<p>17       } <strong>else</strong> {</p>
+<p>18           <strong>if</strong> (arr[mid] == arr[mid-1]) {</p>
+<p>19               <strong>return</strong> findOnlyOnce(arr, mid+1, high);</p>
+<p>20           } <strong>else</strong> {</p>
+<p>21               <strong>return</strong> findOnlyOnce(arr, low, mid-1);</p>
+<p>22           }</p>
+<p>23       }</p>
+<p>24   }</p>
+<p>25   <strong>function</strong> findOnlyOnceHelper(arr) {</p>
+<p>26       <strong>return</strong> findOnlyOnce(arr, 0, arr.length);</p>
+<p>27   }</p>
+<p>28   findOnlyOnceHelper([ 1, 1, 2, 4, 4, 5, 5, 6, 6 ]);</p>
+<p><strong>Time Complexity:</strong> O(log2_n_)</p>
+<p><strong>Space Complexity:</strong> O(1)</p>
+<h3 id="create-a-javascript-sort-comparator-function-that-would-sort-string-by-length">CREATE A JAVASCRIPT SORT COMPARATOR FUNCTION THAT WOULD SORT STRING BY LENGTH</h3>
+<p>This is fairly simple. If it is an array of strings, strings all have a property of length, which can be used to sort the array.</p>
+<p>1   <strong>var</strong> mythical = ['dragon', 'slayer','magic','wizard of oz', 'ned stark'];</p>
+<p>2</p>
+<p>3   <strong>function</strong> sortComparator(a,b){</p>
+<p>4       <strong>return</strong> a.length - b.length;</p>
+<p>5   }</p>
+<p>6   mythical.sort(sortComparator);</p>
+<p>7   // ["magic", "dragon", "slayer", "ned stark", "wizard of of"]</p>
+<p><strong>Examples</strong></p>
+<p>Sort string elements, putting strings with a first, as shown here:</p>
+<p>1   <strong>var</strong> mythical = ['dragon', 'slayer','magic','wizard of oz', 'ned tark'];</p>
+<p>2</p>
+<p>3   <strong>function</strong> sortComparator(a,b){</p>
+<p>4       <strong>return</strong> a.indexOf("a") - b.indexOf("a");</p>
+<p>5   }</p>
+<p>6</p>
+<p>7   mythical.sort(sortComparator);</p>
+<p>8   // ["magic", "dragon", "slayer", "wizard of oz", "ned stark"]</p>
+<p>Sort object elements by the number of properties, as shown here:</p>
+<p>1   <strong>var</strong> mythical=[{prop1:", prop2:"},{prop1:", prop2:", prop3:"},{prop1:", prop2:"}];</p>
+<p>2</p>
+<p>3   <strong>function</strong> sortComparator(a,b){</p>
+<p>4       <strong>return</strong> Object.keys(a).length - Object.keys(b).length;</p>
+<p>5   }</p>
+<p>6</p>
+<p>7   mythical.sort(sortComparator);</p>
+<p>// [{prop1:", prop2:"},{prop1:", prop2:"},{prop1:", prop2:", prop3:"}]</p>
+<p>As shown, there’s a lot of flexibility with these comparators, and they can be used for sorting without needing to implement a sort yourself.</p>
+<h3 id="implement-a-word-counter-list">IMPLEMENT A WORD COUNTER LIST</h3>
+<p>Create a function that generates an object of words (as keys) and the number of times the words occur in a string ordered by highest to lowest occurrences.</p>
+<p>Here’s some example input: <strong>practice makes perfect. get perfect by practice. just practice</strong>.</p>
+<p>Here’s the example output: { practice: 3, perfect: 2, makes: 1, get: 1, by: 1, just: 1 }.</p>
+<p>1   <strong>function</strong> wordCount(sentence) {</p>
+<p>2       <em>// period with nothing so it doesn't count as word</em></p>
+<p>3       <strong>var</strong> wordsArray = sentence.replace(/[.]/g,"").split(" "),</p>
+<p>4           occurenceList = {}, answerList = {};</p>
+<p>5</p>
+<p>6       <strong>for</strong> (<strong>var</strong> i=0, wordsLength=wordsArray.length; i&lt;wordsLength;  i++) {</p>
+<p>7           <strong>var</strong> currentWord = wordsArray[i];</p>
+<p>8           // doesn't exist, set as 1st occurrence</p>
+<p>9           <strong>if</strong> (!occurenceList[currentWord]) {</p>
+<p>10               occurenceList[currentWord] = 1;</p>
+<p>11           } <strong>else</strong> {</p>
+<p>12               occurenceList[currentWord]++; <em>// add occurrences</em></p>
+<p>13           }</p>
+<p>14       }</p>
+<p>15</p>
+<p>16       <strong>var</strong> arrayTemp = [];</p>
+<p>17       // push the value and key as fixed array</p>
+<p>18       <strong>for</strong> (<strong>var</strong> prop <strong>in</strong> occurenceList) {</p>
+<p>19           arrayTemp.push([occurenceList[prop], prop]);</p>
+<p>20       }</p>
+<p>21</p>
+<p>22       <strong>function</strong> sortcomp(a, b) {</p>
+<p>23           <strong>return</strong> b[0] - a[0]; <em>// compare the first element of the array</em></p>
+<p>24       }</p>
+<p>25</p>
+<p>26       arrayTemp.sort(sortcomp); <em>//sort</em></p>
+<p>27</p>
+<p>28       <strong>for</strong> (<strong>var</strong> i = 0, arrlength = arrayTemp.length; i &lt; arrlength; i++) {</p>
+<p>29           <strong>var</strong> current = arrayTemp[i];</p>
+<p>30           answerList[current[1]] = current[0]; <em>// key value pairs</em></p>
+<p>31       }</p>
+<p>32       <strong>return</strong> answerList;</p>
+<p>33   }</p>
+<p>34   wordCount("practice makes perfect. get perfect by practice. just practice");</p>
+<p><strong>Time Complexity:</strong> O(<em>nlog_2(_n</em>))</p>
+<p><strong>Space Complexity:</strong> O(<em>n</em>)</p>
+<p>Time complexity is limited by the sorting algorithm that the JavaScript engine uses. Most use either mergesort or quicksort, which are both O(<em>nlog_2(_n</em>)).</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <!-- https://github.com/squidfunk/mkdocs-material/blob/master/material/partials/footer.html -->
+
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+        <a href="http://danielavalero.com" target="_blank" rel="noopener" md-footer-link">
+            danielavalero.com
+        </a>
+        
+          <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/DanielaValero/learn-in-public" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+        
+
+        <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.path", "navigation.top", "header.autohide"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../../assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>

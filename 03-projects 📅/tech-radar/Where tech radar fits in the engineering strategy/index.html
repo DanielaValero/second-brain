@@ -1,0 +1,513 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://notes.danielavalero.com/03-projects%20%F0%9F%93%85/tech-radar/Where%20tech%20radar%20fits%20in%20the%20engineering%20strategy/">
+      
+      
+        <link rel="prev" href="../Tech%20Radar%20-%20presentation/">
+      
+      
+        <link rel="next" href="../tech%20radar/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Where tech radar fits in the engineering strategy - Daniela's second brain</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#where-tech-radar-fits" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!-- source https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/header.html -->
+<!-- Determine base classes -->
+
+
+  
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Header"
+  >
+
+    <!-- Link to home -->
+    <a
+      href="../../.."
+      title="Daniela&#39;s second brain"
+      class="md-header__button md-logo"
+      aria-label="Daniela's second brain"
+      data-md-component="logo"
+    >
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <a href="../../..">
+            <span class="md-ellipsis">
+              Daniela's second brain
+            </span>
+          </a>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Where tech radar fits in the engineering strategy
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color palette -->
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+      <div class="md-header__source">
+        <a href="https://github.com/DanielaValero/second-brain" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Source: https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/nav.html -->
+<!-- Determine class according to configuration -->
+
+
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Source: https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/toc.html -->
+<!-- Determine title -->
+
+
+  
+
+
+<!-- Table of contents -->
+<nav class="md-nav md-nav--secondary" aria-label="Contents">
+  
+
+  <!--
+    Check whether the content starts with a level 1 headline. If it does, the
+    top-level anchor must be skipped, since it would be redundant to the link
+    to the current page that is located just above the anchor. Therefore we
+    directly continue with the children of the anchor.
+  -->
+  
+  
+    
+  
+
+  <!-- Table of contents and list -->
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-thinking-and-recording-tool-adrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      A thinking and recording tool: ADRs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-time-and-place-for-conversations-the-architecture-advisory-forum" class="md-nav__link">
+    <span class="md-ellipsis">
+      A time and place for conversations: The Architecture Advisory Forum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-light-to-illuminate-a-unified-goal-team-sourced-architectural-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      A light to illuminate a unified goal: Team-sourced Architectural Principles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-means-to-sense-the-current-technical-landscape-and-climate-tech-radar" class="md-nav__link">
+    <span class="md-ellipsis">
+      A means to sense the current technical landscape and climate: Tech radar
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+
+
+
+  
+  
+
+<p><strong class="hash" id="technicalDecisions">technicalDecisions</strong> <strong class="hash" id="techRadar">techRadar</strong> </p>
+<h1 id="where-tech-radar-fits">Where tech radar fits?</h1>
+<p>When you go and seek advice, spend most time and effort speaking to people who will disagree with you; those who you know think along different lines and where you know you will have blind spots. Not only this, challenge yourself. Consider “what’s bad about this alternative? What are its shortcomings?” Spend the most time thinking about the alternatives which challenge your decision most directly and fundamentally.</p>
+<p>To learn most effectively you need to feel safe, and when learning collectively everyone benefits from the broadest, most diverse range of inputs contributing to discussions. Remember, in this approach, we are explicitly not looking for consensus, but we are looking for a broad range of inputs and voices.</p>
+<blockquote>
+<p>Our adoption of the Advice Process opened up the space for anyone to make decisions, but it has also put conversations, the responsibility to seek out expertise, and think about impact at the core. The remainder of the elements of this approach, each of which supports the core element focus specifically on ensuring those conversations are as timely, focused and effective as possible. There are four of them:</p>
+</blockquote>
+<h3 id="a-thinking-and-recording-tool-adrs">A thinking and recording tool: ADRs</h3>
+<p>The first supporting element is <a href="https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records">Architectural Decision Records</a> or ADRs. These are lightweight documents, frequently stored in source code repositories alongside the artefacts they describe.</p>
+<h3 id="a-time-and-place-for-conversations-the-architecture-advisory-forum">A time and place for conversations: The Architecture Advisory Forum</h3>
+<p>The second supporting element in this alternative approach exists to make all the conversations supporting this advice-seeking easier: a weekly, hour-long Architecture Advisory Forum (“AAF”).</p>
+<p>Fundamentally, this is a regular and recurring place and time for conversations. Your ideal attendees are delegates from each team as well as your key representatives from your Advice Process checklist. However, the invite should remain completely open to encourage transparency and openness. The timeliness and quality of the conversations which take place is a key indicator of success, but equally important is the breadth and diversity of views shared, and the same goes for the contributors. If architecture is being “done” here, and lessons shared and learned, then you’re winning.</p>
+<h3 id="a-light-to-illuminate-a-unified-goal-team-sourced-architectural-principles">A light to illuminate a unified goal: Team-sourced Architectural Principles</h3>
+<p>-&gt; The principles, you’ll recall, give us an idea of the direction of travel which our ideal solution will ideally manifest,  Not all will be relevant, but some principles ought to help our decision-making. Recall that it’s an architectural principal’s primary goal to assist in the evaluation of multiple technical possibilities, and highlight the one which fits best.</p>
+<p>Having architectural principles is not new, though sadly I rarely encounter serviceable ones. Always important, in a world of highly-autonomous-teams they become essential because they are the means by which an aligned delivery direction is achieved without the need for control.</p>
+<p>So what makes a good architectural principle? Firstly, it must provide a criteria with which to evaluate our architectural decisions (which in practice means it must be specific, measurable, achievable, realistic and testable, aka “S.M.A.R.T”). Secondly, it must support the business’s strategic goals. Thirdly, it must articulate the consequences / implications it necessarily contains within it. Finally, taken together as a set, they should number neither too few to cover the key needs which architectural principles meet, nor too many that teams cannot remember them all.</p>
+<p>Remember that this approach is aimed at supporting team autonomy, so one key role played by our principles is as a minimal viable set of understandings and agreements between everyone.</p>
+<h3 id="a-means-to-sense-the-current-technical-landscape-and-climate-tech-radar">A means to sense the current technical landscape and climate: Tech radar</h3>
+<blockquote>
+<p>How do we also take note of our surrounding landscape and climate? Architectural decisions are also frequently based on what everyone else is doing, who has which skills, and what the general trends in the tech industry are. Enter the fourth and final supporting element: your own Technology Radar.</p>
+</blockquote>
+<p>The radar in comparison is a lot more advisory in nature. It will give an idea of what, if anything, is the current de-facto standard in our problem space, what’s been done in the past, and what other teams might be experimenting with. Going a different way is a lot less likely to raise eyebrows, but it is again a definite reason to address the deviation in the ADR.</p>
+<blockquote>
+<p>Result will give a great overview of the landscape and prevailing climate, and brings many discussions about where effort should be directed, and where it should be reduced. And just as with the principles, give rise to a general aligning of team understanding.</p>
+</blockquote>
+<p>Questions:
+- Shouldn't we include UX/UI design things?
+- Shouldn't we include human relate things like: managing team's cognitive load? etc?</p>
+<blockquote>
+<p>Result will give a great overview of the landscape and prevailing climate, and brings many discussions about where effort should be directed, and where it should be reduced. And just as with the principles, give rise to a general aligning of team understanding.</p>
+</blockquote>
+<p>Goal:
+- Have an overview of the landscape of technologies we use in the organisation and prevailing climate. The idea is to bring discussions about where our effort should be directed, and where should be reduced. With this we give rise to have a general alignment and understanding
+- Create a broadest engagement with your evolving architecture as possible, as well as a growing architectural mindset across all team members.</p>
+<p>Usages:
+- Link an assess technology with an ADR and/ or a discussion in a guild or arch forum
+- Entries in ADRs, or engineering principles can be linked to tech radar entries. Example: if we start using a new technology or decide to adopt a practice that was previously experimental, we would flag it here. This helps us keep track of how our decisions impact the technology landscape and whether we need to update our radar accordingly.</p>
+<p>How often to update it?
+- Cadence is specific to the guild. Can be: quarterly, half-yearly. The key is to pay attention of how the radar is being consumed/or not, by the guilds or arch forum.</p>
+<p>What about the usage of your radar? As with the principles, there is also a place in our ADRs for “Relevant Radar Blips”. This is where we flag both adherence to the existing landscape as reflected in the current radar, but also, and more importantly, potential changes to the existing radar which this decision will introduce. Perhaps it’s the spiking of a new framework, or a move from “experiment” to “adopt” for a specific practice.</p>
+<p>Again, this is great grist for the AAF discussion forum, and great content to capture in the ADR itself. You can even go so far as linking specific types of blip appearances and movements to the need to submit ADRs, though in my experience this happens anyway without anyone having to push it explicitly. Remember, your goals here are the broadest engagement with your evolving architecture as possible, as well as a growing architectural mindset across all team members.</p>
+<p>How about keeping your radar up to date? I've seen quarterly cadences work, and half-yearly too. The key is to pay attention to how the radar is being consumed (or not) at the AAF and elsewhere. That should give you a good idea when it's worth investing in a refresh.</p>
+<p><strong>Tech Radar</strong></p>
+<p>It helps you bring transparency in the enterprise to what technologies are being used, and how collaboration can happen among teams using a similar tool that dont work closely. It also gives visibility about consistency in the organisation.</p>
+<p>For example the status <strong>assess</strong> helps you to not jump on the latest new tech, to be able to analyse it, and make it public to the company to learn if other people are doing something and experimenting with it. Which will help making a better decision.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <!-- https://github.com/squidfunk/mkdocs-material/blob/master/material/partials/footer.html -->
+
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+        <a href="http://danielavalero.com" target="_blank" rel="noopener" md-footer-link">
+            danielavalero.com
+        </a>
+        
+          <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/DanielaValero/learn-in-public" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+        
+
+        <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.path", "navigation.top", "header.autohide"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../../assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>

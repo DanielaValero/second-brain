@@ -1,0 +1,1129 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://notes.danielavalero.com/05-reference%20system%20%F0%9F%A7%BE/Algorithms/sorting%20and%20searching/">
+      
+      
+        <link rel="prev" href="../searching/">
+      
+      
+        <link rel="next" href="../sorting-algorithms/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>4 Sorting and Searching - Daniela's second brain</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#4-sorting-and-searching" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!-- source https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/header.html -->
+<!-- Determine base classes -->
+
+
+  
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Header"
+  >
+
+    <!-- Link to home -->
+    <a
+      href="../../.."
+      title="Daniela&#39;s second brain"
+      class="md-header__button md-logo"
+      aria-label="Daniela's second brain"
+      data-md-component="logo"
+    >
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <a href="../../..">
+            <span class="md-ellipsis">
+              Daniela's second brain
+            </span>
+          </a>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4 Sorting and Searching
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color palette -->
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+      <div class="md-header__source">
+        <a href="https://github.com/DanielaValero/second-brain" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Source: https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/nav.html -->
+<!-- Determine class according to configuration -->
+
+
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Source: https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/toc.html -->
+<!-- Determine title -->
+
+
+  
+
+
+<!-- Table of contents -->
+<nav class="md-nav md-nav--secondary" aria-label="Contents">
+  
+
+  <!--
+    Check whether the content starts with a level 1 headline. If it does, the
+    top-level anchor must be skipped, since it would be redundant to the link
+    to the current page that is located just above the anchor. Therefore we
+    directly continue with the children of the anchor.
+  -->
+  
+  
+    
+  
+
+  <!-- Table of contents and list -->
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#insertion-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Insertion Sort
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Insertion Sort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#putting-the-insertion-in-insertion-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting the Insertion in Insertion Sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorting-via-insertion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting via Insertion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measuring-algorithm-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measuring Algorithm Efficiency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measuring Algorithm Efficiency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-aim-for-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Aim for Efficiency?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measuring-time-precisely" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measuring Time Precisely
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#counting-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Counting Steps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparing-to-well-known-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing to Well-Known Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-even-more-theoretical-precision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Even More Theoretical Precision
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-big-o-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Big O Notation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merge-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Merge Sort
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Merge Sort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#merging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Merging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-merging-to-sorting" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Merging to Sorting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sleep-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sleep Sort
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-sorting-to-searching" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Sorting to Searching
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="From Sorting to Searching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binary-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applications-of-binary-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications of Binary Search
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+
+
+
+  
+  
+
+<h1 id="4-sorting-and-searching">4 Sorting and Searching</h1>
+<p><img alt="" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781098128210/files/image_fi/book_art/circleart.png" /></p>
+<p>There are a few workhorse algorithms we use in nearly every kind of program. Sometimes these algorithms are so fundamental that we take them for granted or don’t even realize our code is relying on them.</p>
+<p>Several methods for sorting and searching are among these fundamental algorithms. They’re worth knowing because they’re commonly used and beloved by algorithm enthusiasts (and the sadists who give coding interviews). The implementation of these algorithms can be short and simple, but every character matters, and since they are so commonly needed, computer scientists have striven to enable them to sort and search with mind-melting speed. So we’ll also use this chapter to discuss algorithm speed and the special notation we use to compare algorithms’ efficiencies.</p>
+<p>We start by introducing insertion sort, a simple and intuitive sorting algorithm. We discuss the speed and efficiency of insertion sort and how to measure algorithm efficiency in general. Next, we look at merge sort, a faster algorithm that is the current state of the art for searching. We also explore sleep sort, a strange algorithm that isn’t used much in practice but is interesting as a curiosity. Finally, we discuss binary search and show some interesting applications of searching, including inverting mathematical functions.</p>
+<h2 id="insertion-sort">Insertion Sort</h2>
+<p>Imagine that you’ve been asked to sort all the files in a filing cabinet. Each file has a number assigned to it, and you need to rearrange the files so that the file with the lowest number is first in the cabinet, the file with the highest number is last, and the files’ numbers proceed in order in between.</p>
+<p>Whatever method you follow as you sort the filing cabinet, we can describe it as a “sorting algorithm.” But before you even think of opening Python to code an algorithm for this, take a moment to pause and consider how you would sort such a filing cabinet in real life. This may seem like a mundane task, but allow the adventurer within you to creatively consider a broad range of possibilities.</p>
+<p>In this section, we present a very simple sorting algorithm called <em>insertion sort</em>. This method relies on looking at each item in a list one at a time and inserting it into a new list that ends up being correctly sorted. Our algorithm’s code will have two sections: an insertion section, which performs the humble task of inserting a file into a list, and a sorting section, which performs insertion repeatedly until we have completed our sorting task.</p>
+<h3 id="putting-the-insertion-in-insertion-sort">Putting the Insertion in Insertion Sort</h3>
+<p>First, consider the task of insertion itself. Imagine that you have a filing cabinet whose files are already perfectly sorted. If someone hands you one new file and asks you to insert it into the right (sorted) position in the filing cabinet, how do you accomplish that? The task may seem so simple that it doesn’t warrant an explanation, or even the possibility of one (<em>just do it!</em> you might think). But in the world of algorithms, every task, however humble, must be explained completely.</p>
+<p>The following method describes a reasonable algorithm for inserting one file into a sorted filing cabinet. We’ll call the file we need to insert the “file to insert.” We’ll say that we can compare two files and call one file “higher than” the other one. This could mean that one file’s assigned number is higher than the other’s assigned number, or it could mean that it’s higher in an alphabetical or other ordering.</p>
+<ol>
+<li>Select the highest file in the filing cabinet. (We’ll start at the back of the cabinet and work our way to the front.)</li>
+<li>Compare the file you have selected with the file to insert.</li>
+<li>If the file you have selected is lower than the file to insert, place the file to insert one position behind that file.</li>
+<li>If the file you have selected is higher than the file to insert, select the next highest file in the filing cabinet.</li>
+<li>Repeat steps 2 to 4 until you have inserted your file or compared it with every existing file. If you have not yet inserted your file after comparing it with every existing file, insert it at the beginning of the filing cabinet.</li>
+</ol>
+<p>That method should more or less match the intuition you have for how to insert a record into a sorted list. If you prefer, you could also start at the beginning of the list, instead of the end, and follow an analogous process with the same results. Notice that we haven’t just inserted a record; we’ve inserted a record <em>in the correct position</em>, so after insertion, we’ll still have a sorted list. We can write a script in Python that executes this insertion algorithm. First, we can define our sorted filing cabinet. In this case, our filing cabinet will be a Python list, and our files will simply be numbers.</p>
+<div class="highlight"><pre><span></span><code>cabinet = [1,2,3,3,4,6,8,12]
+</code></pre></div>
+<p>Then, we can define the “file” (in this case, just a number) that we want to insert into our cabinet.</p>
+<div class="highlight"><pre><span></span><code>to_insert = 5
+</code></pre></div>
+<p>We proceed one at a time through every number in the list (every file in the cabinet). We’ll define a variable called <code>check_location</code>. As advertised, it will store the location in the cabinet that we want to check. We start at the back of the cabinet:</p>
+<div class="highlight"><pre><span></span><code>check_location = len(cabinet) - 1
+</code></pre></div>
+<p>We’ll also define a variable called <code>insert_location</code>. The goal of our algorithm is to determine the proper value of <code>insert_location</code>, and then it’s a simple matter of inserting the file at the <code>insert_location</code>. We’ll start out by assuming the <code>insert_location</code> is 0:</p>
+<div class="highlight"><pre><span></span><code>insert_location = 0
+</code></pre></div>
+<p>Then we can use a simple <code>if</code> statement to check whether the file to insert is higher than the file at the <code>check_location</code>. As soon as we encounter a number that’s lower than the number to insert, we use its location to decide where to insert our new number. We add 1 because our insertion takes place just behind the lower number we found:</p>
+<div class="highlight"><pre><span></span><code>if to_insert &gt; cabinet[check_location]:
+    insert_location = check_location + 1
+</code></pre></div>
+<p>After we know the right <code>insert_location</code>, we can use a built-in Python method for list manipulation called <code>insert</code> to put the file into the cabinet:</p>
+<div class="highlight"><pre><span></span><code>cabinet.insert(insert_location,to_insert)
+</code></pre></div>
+<p>Running this code will not work to insert our file properly yet, however. We need to put these steps together in one coherent insertion function. This function combines all of the previous code and also adds a <code>while</code> loop. The <code>while</code> loop is used to iterate over the files in the cabinet, starting with the last file and proceeding until either we find the right <code>insert_location</code> or we have examined every file. The final code for our cabinet insertion is in <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listing4-1">Listing 4-1</a>.</p>
+<div class="highlight"><pre><span></span><code>def insert_cabinet(cabinet,to_insert):
+  check_location = len(cabinet) - 1
+  insert_location = 0
+  while(check_location &gt;= 0):
+    if to_insert &gt; cabinet[check_location]:
+        insert_location = check_location + 1
+        check_location = - 1
+    check_location = check_location - 1
+  cabinet.insert(insert_location,to_insert)
+  return(cabinet)
+
+cabinet = [1,2,3,3,4,6,8,12]
+newcabinet = insert_cabinet(cabinet,5)
+print(newcabinet)
+</code></pre></div>
+<p><a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listinganchor4-1">Listing 4-1:</a> Inserting a numbered file into our cabinet</p>
+<p>When you run the code in <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listing4-1">Listing 4-1</a>, it will print out <code>newcabinet</code>, which you can see includes our new “file,” 5, inserted into our cabinet at the correct location (between 4 and 6).</p>
+<p>It’s worthwhile to think for a moment about one edge case of insertion: inserting into an empty list. Our insertion algorithm mentioned “proceeding sequentially through every file in the filing cabinet.” If there are no files in the filing cabinet, then there is nothing to proceed through sequentially. In this case, we need to heed only the last sentence, which tells us to insert our new file at the beginning of the cabinet. Of course, this is easier done than said, because the beginning of an empty cabinet is also the end and the middle of the cabinet. So all we need to do in this case is insert the file into the cabinet without regard to position. We can do this by using the <code>insert()</code> function in Python and inserting at location 0.</p>
+<h3 id="sorting-via-insertion">Sorting via Insertion</h3>
+<p>Now that we’ve rigorously defined insertion and know how to perform it, we’re almost at the point where we can perform an insertion sort. Insertion sort is simple: it takes each element of an unsorted list one at a time and uses our insertion algorithm to insert it correctly into a new, sorted list. In filing cabinet terms, we start with an unsorted filing cabinet, which we’ll call “old cabinet,” and an empty cabinet, which we’ll call “new cabinet.” We remove the first element of our old unsorted cabinet and add it to our new empty cabinet, using the insertion algorithm. We do the same with the second element of the old cabinet, then the third, and so on until we have inserted every element of the old cabinet into the new cabinet. Then, we forget about the old cabinet and use only our new, sorted cabinet. Since we’ve been inserting using our insertion algorithm, and it always returns a sorted list, we know that our new cabinet will be sorted at the end of the process.</p>
+<p>In Python, we start with an unsorted cabinet and an empty <code>newcabinet</code>:</p>
+<div class="highlight"><pre><span></span><code>cabinet = [8,4,6,1,2,5,3,7]
+newcabinet = []
+</code></pre></div>
+<p>We implement insertion sort by repeatedly calling our <code>insert_cabinet()</code> function from <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listing4-1">Listing 4-1</a>. In order to call it, we’ll need to have a file in our “hand,” which we accomplish by popping it out of the unsorted cabinet:</p>
+<div class="highlight"><pre><span></span><code>to_insert = cabinet.pop(0)
+newcabinet = insert_cabinet(newcabinet, to_insert)
+</code></pre></div>
+<p>In this snippet, we used a method called <code>pop()</code>. This method removes a list element at a specified index. In this case, we removed the element of <code>cabinet</code> at index 0. After we use <code>pop()</code>, <code>cabinet</code> no longer contains that element, and we store it in the variable <code>to_insert</code> so that we can put it into the <code>newcabinet</code>.</p>
+<p>We’ll put all of this together in <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listing4-2">Listing 4-2</a>, where we define an <code>insertion_sort()</code> function that loops through every element of our unsorted cabinet, inserting the elements one by one into <code>newcabinet</code>. Finally, at the end, we print out the result, a sorted cabinet called <code>sortedcabinet</code>.</p>
+<div class="highlight"><pre><span></span><code>cabinet = [8,4,6,1,2,5,3,7]
+def insertion_sort(cabinet):
+  newcabinet = []
+  while len(cabinet) &gt; 0:
+    to_insert = cabinet.pop(0)
+    newcabinet = insert_cabinet(newcabinet, to_insert)
+  return(newcabinet)
+
+sortedcabinet = insertion_sort(cabinet)
+print(sortedcabinet)
+</code></pre></div>
+<p><a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listinganchor4-2">Listing 4-2:</a> An implementation of insertion sort</p>
+<p>Now that we can do insertion sort, we can sort any list we encounter. We may be tempted to think that this means we have all the sorting knowledge we’ll ever need. However, sorting is so fundamental and important that we want to be able to do it in the best possible way. Before we discuss alternatives to insertion sort, let’s look at what it means for one algorithm to be better than another and, on an even more basic level, what it means for an algorithm to be good.</p>
+<h2 id="measuring-algorithm-efficiency">Measuring Algorithm Efficiency</h2>
+<p>Is insertion sort a good algorithm? This question is hard to answer unless we’re sure about what we mean by “good.” Insertion sort works—it sorts lists—so it’s good in the sense that it accomplishes its purpose. Another point in its favor is that it’s easy to understand and explain with reference to physical tasks that many people are familiar with. Yet another feather in its cap is that it doesn’t take too many lines of code to express. So far, insertion sort seems like a good algorithm.</p>
+<p>However, insertion sort has one crucial failing: it takes a long time to perform. The code in <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listing4-2">Listing 4-2</a> almost certainly ran in less than one second on your computer, so the “long time” that insertion sort takes is not the long time that it takes for a tiny seed to become a mighty redwood or even the long time that it takes to wait in line at the DMV. It’s more like a long time in comparison to how long it takes a gnat to flap its wings once.</p>
+<p>To fret about a gnat’s wing flap as a “long time” may seem a little extreme. But there are several good reasons to push algorithms as close as possible to zero-second running times.</p>
+<h3 id="why-aim-for-efficiency">Why Aim for Efficiency?</h3>
+<p>The first reason to relentlessly pursue algorithm efficiency is that it can increase our raw capabilities. If your inefficient algorithm takes one minute to sort an eight-item list, that may not seem like a problem. But consider that such an inefficient algorithm might take an hour to sort a thousand-item list, and a week to sort a million-item list. It may take a year or a century to sort a billion-item list, or it may not be able to sort it at all. If we make the algorithm better able to sort an eight-item list (something that seems trivial since it saves us only a minute), it may make the difference between being able to sort a billion-item list in an hour rather than a century, which can open up many possibilities. Advanced machine-learning methods like k-means clustering and k-NN supervised learning rely on ordering long lists, and improving the performance of a fundamental algorithm like sorting can enable us to perform these methods on big datasets that would otherwise be beyond our grasp.</p>
+<p>Even sorting short lists is important to do quickly if it’s something that we have to do many times. The world’s search engines, for example, collectively receive a trillion searches every few months and have to order each set of results from most to least relevant before delivering them to users. If they can cut the time required for one simple sort from one second to half a second, they cut their required processing time from a trillion seconds to half a trillion seconds. This saves time for users (saving a thousand seconds for half a billion people really adds up!) and reduces data processing costs, and by consuming less energy, efficient algorithms are even environmentally friendly.</p>
+<p>The final reason to create faster algorithms is the same reason that people try to do better in any pursuit. Even though there is no obvious need for it, people try to run the 100-meter dash faster, play chess better, and cook a tastier pizza than anyone ever has before. They do these things for the same reason George Mallory said he wanted to climb Mount Everest: “because it’s there.” It’s human nature to push the boundaries of the possible and strive to be better, faster, stronger, and more intelligent than anyone else. Algorithm researchers are trying to do better because, among other reasons, they wish to do something remarkable, whether or not it is practically useful.</p>
+<h3 id="measuring-time-precisely">Measuring Time Precisely</h3>
+<p>Since the time required for an algorithm to run is so important, we should be more precise than saying that insertion sort takes a “long time” or “less than a second.” How long, exactly, does it take? For a literal answer, we can use the <code>timeit</code> module in Python. With <code>timeit</code>, we can create a timer that we start just before running our sorting code and end just afterward. When we check the difference between the starting time and the ending time, we find how long it took to run our code.</p>
+<div class="highlight"><pre><span></span><code>from timeit import default_timer as timer
+
+start = timer()
+cabinet = [8,4,6,1,2,5,3,7]
+sortedcabinet = insertion_sort(cabinet)
+end = timer()
+print(end - start)
+</code></pre></div>
+<p>When I ran this code on my consumer-grade laptop, it ran in about 0.0017 seconds. This is a reasonable way to express how good insertion sort is—it can fully sort a list with eight items in 0.0017 seconds. If we want to compare insertion sort with any other sorting algorithm, we can compare the results of this <code>timeit</code> timing to see which is faster, and say the faster one is better.</p>
+<p>However, using these timings to compare algorithm performance has some problems. For example, when I ran the timing code a second time on my laptop, I found that it ran in 0.0008 seconds. A third time, I found that it ran on another computer in 0.03 seconds. The precise timing you get depends on the speed and architecture of your hardware, the current load on your operating system (OS), the version of Python you’re running, the OS’s internal task schedulers, the efficiency of your code, and probably other chaotic vagaries of randomness and electron motion and the phases of the moon. Since we can get very different results in each timing attempt, it’s hard to rely on timings to communicate about algorithms’ comparative efficiency. One programmer may brag that they can sort a list in <em>Y</em> seconds, while another programmer laughs and says that their algorithm gets better performance in <em>Z</em> seconds. We might find out they are running exactly the same code, but on different hardware at different times, so their comparison is not of algorithm efficiency but rather of hardware speed and luck.</p>
+<h3 id="counting-steps">Counting Steps</h3>
+<p>Instead of using timings in seconds, a more reliable measure of algorithm performance is the number of steps required to execute the algorithm. The number of steps an algorithm takes is a feature of the algorithm itself and isn’t dependent on the hardware architecture or even necessarily on the programming language. <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listing4-3">Listing 4-3</a> is our insertion sort code from Listings 4-1 and 4-2 with several lines added where we have specified <code>stepcounter+=1</code>. We increase our step counter every time we pick up a new file to insert from the old cabinet, every time we compare that file to another file in the new cabinet, and every time we insert the file into the new cabinet.</p>
+<div class="highlight"><pre><span></span><code>def insert_cabinet(cabinet,to_insert):
+  check_location = len(cabinet) - 1
+  insert_location = 0
+  global stepcounter
+  while(check_location &gt;= 0):
+    stepcounter += 1
+    if to_insert &gt; cabinet[check_location]:
+        insert_location = check_location + 1
+        check_location = - 1
+    check_location = check_location - 1
+  stepcounter += 1
+  cabinet.insert(insert_location,to_insert)
+  return(cabinet)
+
+def insertion_sort(cabinet):
+  newcabinet = []
+  global stepcounter
+  while len(cabinet) &gt; 0:
+    stepcounter += 1
+    to_insert = cabinet.pop(0)
+    newcabinet = insert_cabinet(newcabinet,to_insert)
+  return(newcabinet)
+
+cabinet = [8,4,6,1,2,5,3,7]
+stepcounter = 0
+sortedcabinet = insertion_sort(cabinet)
+print(stepcounter)
+</code></pre></div>
+<p><a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listinganchor4-3">Listing 4-3:</a> Our insertion sort code with a step counter</p>
+<p>In this case, we can run this code and see that it performs 36 steps in order to accomplish the insertion sort for a list of length 8. Let’s try to perform insertion sort for lists of other lengths and see how many steps we take.</p>
+<p>To do so, let’s write a function that can check the number of steps required for insertion sort for unsorted lists of different lengths. Instead of manually writing out each unsorted list, we can use a simple list comprehension in Python to generate a random list of any specified length. We can import Python’s <code>random</code> module to make the random creation of lists easier. Here’s how we can create a random unsorted cabinet of length 10:</p>
+<div class="highlight"><pre><span></span><code>import random
+size_of_cabinet = 10
+cabinet = [int(1000 * random.random()) for i in range(size_of_cabinet)]
+</code></pre></div>
+<p>Our function will simply generate a list of some given length, run our insertion sort code, and return the final value it finds for <code>stepcounter</code>.</p>
+<div class="highlight"><pre><span></span><code>def check_steps(size_of_cabinet):
+  cabinet = [int(1000 * random.random()) for i in range(size_of_cabinet)]
+  global stepcounter
+  stepcounter = 0
+  sortedcabinet = insertion_sort(cabinet)
+  return(stepcounter)
+</code></pre></div>
+<p>Let’s create a list of all numbers between 1 and 100 and check the number of steps required to sort lists of each length.</p>
+<div class="highlight"><pre><span></span><code>random.seed(5040)
+xs = list(range(1,100))
+ys = [check_steps(x) for x in xs]
+print(ys)
+</code></pre></div>
+<p>In this code, we start by calling the <code>random.seed()</code> function. This is not necessary but will ensure that you see the same results as those printed here if you run the same code. You can see that we define sets of values for <em>x</em>, stored in <code>xs</code>, and a set of values for <em>y</em>, stored in <code>ys</code>. The <em>x</em> values are simply the numbers between 1 and 100, and the <em>y</em> values are the number of steps required to sort randomly generated lists of each size corresponding to each <em>x</em>. If you look at the output, you can see how many steps insertion sort took to sort randomly generated lists of lengths 1, 2, 3 . . . , all the way to 99. We can plot the relationship between list length and sorting steps as follows. We’ll import <code>matplotlib.pyplot</code> in order to accomplish the plotting.</p>
+<div class="highlight"><pre><span></span><code>import matplotlib.pyplot as plt
+plt.plot(xs,ys)
+plt.title(&#39;Steps Required for Insertion Sort for Random Cabinets&#39;)
+plt.xlabel(&#39;Number of Files in Random Cabinet&#39;)
+plt.ylabel(&#39;Steps Required to Sort Cabinet by Insertion Sort&#39;)
+plt.show()
+</code></pre></div>
+<p><a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#figure4-1">Figure 4-1</a> shows the output. You can see that the output curve is a little jagged—sometimes a longer list will be sorted in fewer steps than will a shorter list. The reason for this is that we generated every list randomly. Occasionally our random list generation code will create a list that’s easy for insertion sort to deal with quickly (because it’s already partially sorted), and occasionally it will create a list that is harder to deal with quickly, strictly through random chance. For this same reason, you may find that the output on your screen doesn’t look exactly like the output printed here if you don’t use the same random seed, but the general shape should be the same.</p>
+<p><img alt="figure_4-1" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781098128210/files/image_fi/123456c04/figure_4-1.png" /></p>
+<p><a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#figureanchor4-1">Figure 4-1:</a> Insertion sort steps</p>
+<h3 id="comparing-to-well-known-functions">Comparing to Well-Known Functions</h3>
+<p>Looking beyond the superficial jaggedness of <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#figure4-1">Figure 4-1</a>, we can examine the general shape of the curve and try to reason about its growth rate. The number of steps required appears to grow quite slowly between <em>x</em> = 1 and about <em>x</em> = 10. After that, it seems to slowly get steeper (and more jagged). Between about <em>x</em> = 90 and <em>x</em> = 100, the growth rate appears very steep indeed.</p>
+<p>Saying that the plot gets gradually steeper as the list length increases is still not as precise as we want to be. Sometimes we talk colloquially about this kind of accelerating growth as “exponential.” Are we dealing with exponential growth here? Strictly speaking, there is a function called the <em>exponential function</em> defined by <em>e__x</em>, where <em>e</em> is Euler’s number, or about 2.71828. So does the number of steps required for insertion sort follow this exponential function that we could say fits the narrowest possible definition of exponential growth? We can get a clue about the answer by plotting our step curve together with an exponential growth curve, as follows. We will also import the <code>numpy</code> module in order to take the maximum and minimum of our step values.</p>
+<div class="highlight"><pre><span></span><code>import math
+import numpy as np
+random.seed(5040)
+xs = list(range(1,100))
+ys = [check_steps(x) for x in xs]
+ys_exp = [math.exp(x) for x in xs]
+plt.plot(xs,ys)
+axes = plt.gca()
+axes.set_ylim([np.min(ys),np.max(ys) + 140])
+plt.plot(xs,ys_exp)
+plt.title(&#39;Comparing Insertion Sort to the Exponential Function&#39;)
+plt.xlabel(&#39;Number of Files in Random Cabinet&#39;)
+plt.ylabel(&#39;Steps Required to Sort Cabinet&#39;)
+plt.show()
+</code></pre></div>
+<p>Just like before, we define <code>xs</code> to be all the numbers between 1 and 100, and <code>ys</code> to be the number of steps required to sort randomly generated lists of each size corresponding to each <em>x</em>. We also define a variable called <code>ys_exp</code>, which is <em>e__x</em> for each of the values stored in <code>xs</code>. We then plot both <code>ys</code> and <code>ys_exp</code> on the same plot. The result enables us to see how the growth of the number of steps required to sort a list relates to true exponential growth.</p>
+<p>Running this code creates the plot shown in <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#figure4-2">Figure 4-2</a>.</p>
+<p><img alt="figure_4-2" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781098128210/files/image_fi/123456c04/figure_4-2.png" /></p>
+<p><a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#figureanchor4-2">Figure 4-2:</a> Insertion sort steps compared to the exponential function</p>
+<p>We can see the true exponential growth curve shooting up toward infinity on the left side of the plot. Though the insertion sort step curve grows at an accelerating rate, its acceleration does not seem to get close to matching true exponential growth. If you plot other curves whose growth rate could also be called exponential, 2_×_ or 10_×<em>, you’ll see that all of these types of curves also grow much faster than our insertion sort step counter curve does. So if the insertion sort step curve doesn’t match exponential growth, what kind of growth might it match? Let’s try to plot a few more functions on the same plot. Here, we’ll plot _y</em> = <em>x</em>, <em>y</em> = <em>x_1.5, _y</em> = <em>x_2, and _y</em> = _x_3 along with the insertion sort step curve.</p>
+<div class="highlight"><pre><span></span><code>random.seed(5040)
+xs = list(range(1,100))
+ys = [check_steps(x) for x in xs]
+xs_exp = [math.exp(x) for x in xs]
+xs_squared = [x**2 for x in xs]
+xs_threehalves = [x**1.5 for x in xs]
+xs_cubed = [x**3 for x in xs]
+plt.plot(xs,ys)
+axes = plt.gca()
+axes.set_ylim([np.min(ys),np.max(ys) + 140])
+plt.plot(xs,xs_exp)
+plt.plot(xs,xs)
+plt.plot(xs,xs_squared)
+plt.plot(xs,xs_cubed)
+plt.plot(xs,xs_threehalves)
+plt.title(&#39;Comparing Insertion Sort to Other Growth Rates&#39;)
+plt.xlabel(&#39;Number of Files in Random Cabinet&#39;)
+plt.ylabel(&#39;Steps Required to Sort Cabinet&#39;)
+plt.show()
+</code></pre></div>
+<p>This results in <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#figure4-3">Figure 4-3</a>.</p>
+<p><img alt="figure_4-3" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781098128210/files/image_fi/123456c04/figure_4-3.png" /></p>
+<p><a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#figureanchor4-3">Figure 4-3:</a> Insertion sort steps compared to other growth rates</p>
+<p>There are five growth rates plotted in <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#figure4-3">Figure 4-3</a>, in addition to the jagged curve counting the steps required for insertion sort. You can see that the exponential curve grows the fastest, and next to it the cubic curve scarcely even makes an appearance on the plot because it also grows so fast. The <em>y</em> = <em>x</em> curve grows extremely slowly compared to the other curves; you can see it at the very bottom of the plot.</p>
+<p>The curves that are the closest to the insertion sort curve are <em>y</em> = <em>x_2 and _y</em> = <em>x_1.5. It isn’t obvious which curve is most comparable to the insertion sort curve, so we cannot speak with certainty about the exact growth rate of insertion sort. But after plotting, we’re able to make a statement like “if we are sorting a list with _n</em> elements, insertion sort will take somewhere between _n_1.5 and _n_2 steps.” This is a more precise and robust statement than “as long as a gnat’s wing flap” or “.002-ish seconds on my unique laptop this morning.”</p>
+<h3 id="adding-even-more-theoretical-precision">Adding Even More Theoretical Precision</h3>
+<p>To get even more precise, we should try to reason carefully about the steps required for insertion sort. Let’s imagine, once again, that we have a new unsorted list with <em>n</em> elements. In <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#table4-2">Table 4-2</a>, we proceed through each step of insertion sort individually and count the steps.</p>
+<p><strong><a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#tableanchor4-2">Table 4-2:</a></strong> Counting the Steps in Insertion Sort</p>
+<p><strong>Description of actions</strong></p>
+<p><strong>Number of steps required for pulling the file from the old cabinet</strong></p>
+<p><strong>Maximum number of steps required for comparing to other files</strong></p>
+<p><strong>Number of steps required for inserting the file into the new cabinet</strong></p>
+<p>Take the first file from the old cabinet and insert it into the (empty) new cabinet.</p>
+<p>1</p>
+<ol>
+<li>(There are no files to compare to.)</li>
+</ol>
+<p>1</p>
+<p>Take the second file from the old cabinet and insert it into the new cabinet (that now contains one file).</p>
+<p>1</p>
+<ol>
+<li>(There’s one file to compare to and we have to compare it.)</li>
+</ol>
+<p>1</p>
+<p>Take the third file from the old cabinet and insert it into the new cabinet (that now contains two files).</p>
+<p>1</p>
+<p>2 or fewer. (There are two files and we have to compare between 1 of them and all of them.)</p>
+<p>1</p>
+<p>Take the fourth file from the old cabinet and insert it into the new cabinet (that now contains three files).</p>
+<p>1</p>
+<p>3 or fewer. (There are three files and we have to compare between 1 of them and all of them.)</p>
+<p>1</p>
+<p>. . .</p>
+<p>. . .</p>
+<p>. . .</p>
+<p>. . .</p>
+<p>Take the <em>n_th file from the old cabinet and insert it into the new cabinet (that contains _n</em>   – 1 files).</p>
+<p>1</p>
+<p><em>n</em>   – 1 or fewer. (There are <em>n</em>   – 1 files and we have to compare between one of them and all of them.)</p>
+<p>1</p>
+<p>If we add up all the steps described in this table, we get the following maximum total steps:</p>
+<ul>
+<li>Steps required for pulling files: <em>n</em> (1 step for pulling each of <em>n</em> files)</li>
+<li>Steps required for comparison: up to 1 + 2 + . . . + (<em>n</em> – 1)</li>
+<li>Steps required for inserting files: <em>n</em> (1 step for inserting each of <em>n</em> files)</li>
+</ul>
+<p>If we add these up, we get an expression like the following:</p>
+<p><img alt="c04eq001" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781098128210/files/image_fi/123456c04/c04eq001.png" /></p>
+<p>We can simplify this expression using a handy identity:</p>
+<p><img alt="c04eq002" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781098128210/files/image_fi/123456c04/c04eq002.png" /></p>
+<p>If we use this identity and then add everything together and simplify, we find that the total number of steps required is</p>
+<p><img alt="c04eq003" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781098128210/files/image_fi/123456c04/c04eq003.png" /></p>
+<p>We finally have a very precise expression for the maximum total steps that could be required to perform insertion sort. But believe it or not, this expression may even be too precise, for several reasons. One is that it’s the maximum number of steps required, but the minimum and the average could be much lower, and almost every conceivable list that we might want to sort would require fewer steps. Remember the jaggedness in the curve we plotted in <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#figure4-1">Figure 4-1</a>—there’s always variation in how long it takes to perform an algorithm, depending on our choice of input.</p>
+<p>Another reason that our expression for the maximum steps could be called too precise is that knowing the number of steps for an algorithm is most important for large values of <em>n</em>, but as <em>n</em> gets very large, a small part of the expression starts to dominate the rest in importance because of the sharply diverging growth rates of different functions.</p>
+<p>Consider the expression <em>n_2 + _n</em>. It is a sum of two terms: an <em>n_2 term, and an _n</em> term. When <em>n</em> = 10, <em>n_2 + _n</em> is 110, which is 10% higher than <em>n_2. When _n</em> = 100, <em>n_2 + _n</em> is 10,100, which is only 1% higher than <em>n_2. As _n</em> grows, the <em>n_2 term in the expression becomes more important than the _n</em> term because quadratic functions grow so much faster than linear ones. So if we have one algorithm that takes <em>n_2+ _n</em> steps to perform and another algorithm that takes <em>n_2 steps to perform, as _n</em> grows very large, the difference between them will matter less and less. Both of them run in more or less _n_2 steps.</p>
+<h3 id="using-big-o-notation">Using Big O Notation</h3>
+<p>To say that an algorithm runs in more or less <em>n_2 steps is a reasonable balance between the precision we want and the conciseness we want (and the randomness we have). The way we express this type of “more or less” relationship formally is by using _big O</em> notation(the <em>O</em> is short for <em>order</em>). We might say that a particular algorithm is “big O of <em>n_2,” or _O</em>(<em>n_2), if, in the worst case, it runs in more or less _n_2 steps for large _n</em>. The technical definition states that the function <em>f</em>(<em>x</em>) is big- O of the function <em>g</em>(<em>x</em>) if there’s some constant number <em>M</em> such that the absolute value of <em>f</em>(<em>x</em>) is always less than <em>M</em> times <em>g</em>(<em>x</em>) for all sufficiently large values of <em>x</em>.</p>
+<p>In the case of insertion sort, when we look at our expression for the maximum number of steps required to perform the algorithm, we find that it’s a sum of two terms: one is a multiple of <em>n_2, and the other is a multiple of _n</em>. As we just discussed, the term that is a multiple of <em>n</em> will matter less and less as <em>n</em> grows, and the <em>n_2 term will come to be the only one that we are concerned with. So the worst case of insertion sort is that it is a _O</em>(_n_2) (“big O of _n_2”) algorithm.</p>
+<p>The quest for algorithm efficiency consists of seeking algorithms whose runtimes are big O of smaller and smaller functions. If we could find a way to alter insertion sort so that it is <em>O</em>(<em>n_1.5) instead of _O</em>(<em>n_2), that would be a major breakthrough that would make a huge difference in runtimes for large values of _n</em>. We can use big O notation to talk not only about time but also about space. Some algorithms can gain speed by storing big datasets in memory. They might be big O of a small function for runtime but big O of a larger function for memory requirements. Depending on the circumstances, it may be wise to gain speed by eating up memory, or to free up memory by sacrificing speed. In this chapter, we’ll focus on gaining speed and designing algorithms to have runtimes that are big O of the smallest possible functions, without regard to memory requirements.</p>
+<p>After learning insertion sort and seeing that its runtime performance is <em>O</em>(<em>n_2), it’s natural to wonder what level of improvement we can reasonably hope for. Could we find some holy grail algorithm that could sort any possible list in fewer than 10 steps? No. Every sorting algorithm will require at least _n</em> steps, because it will be necessary to consider each element of the list in turn, for each of the <em>n</em> elements. So any sorting algorithm will be at least <em>O</em>(<em>n</em>). We cannot do better than <em>O</em>(<em>n</em>), but can we do better than insertion sort’s <em>O</em>(<em>n_2)? We can. Next, we’ll consider an algorithm that’s known to be _O</em>(<em>n_log(_n</em>)), a significant improvement over insertion sort.</p>
+<h2 id="merge-sort">Merge Sort</h2>
+<p><em>Merge sort</em> is an algorithm that’s much quicker than insertion sort. Just like insertion sort, merge sort contains two parts: a part that merges two lists and a part that repeatedly uses merging to accomplish the actual sorting. Let’s consider the merging itself before we consider the sorting.</p>
+<p>Suppose we have two filing cabinets that are both sorted individually but have never been compared to each other. We want to combine their contents into one final filing cabinet that is also completely sorted. We will call this task a <em>merge</em> of the two sorted filing cabinets. How should we approach this problem?</p>
+<p>Once again, it’s worthwhile to consider how we would do this with real filing cabinets before we open Python and start writing code. In this case, we can imagine having three filing cabinets in front of us: the two full, sorted filing cabinets whose files we want to merge, and a third, empty filing cabinet that we will insert files into and that will eventually contain all of the files from the original two cabinets. We can call our two original cabinets the “left” and “right” cabinets, imagining that they are placed on our left and right.</p>
+<h3 id="merging">Merging</h3>
+<p>To merge, we can take the first file in both of the original cabinets simultaneously: the first left file with our left hand and the first right file with our right hand. Whichever file is lower is inserted into the new cabinet as its first file. To find the second file for the new cabinet, once again take the first file in the left and right cabinets, compare them, and insert whichever is lower into the last position in the new cabinet. When either the left cabinet or the right cabinet is empty, take the remaining files in the non-empty cabinet and place them all together at the end of the new cabinet. After this, your new cabinet will contain all the files from the left and right cabinets, sorted in order. We have successfully merged our original two cabinets.</p>
+<p>In Python, we’ll use the variables <code>left</code> and <code>right</code> to refer to our original sorted cabinets, and we’ll define a <code>newcabinet</code> list, which will start empty and eventually contain all elements of both <code>left</code> and <code>right</code>, in order.</p>
+<div class="highlight"><pre><span></span><code>newcabinet = []
+</code></pre></div>
+<p>We’ll define example cabinets that we’ll call <code>left</code> and <code>right</code>:</p>
+<div class="highlight"><pre><span></span><code>left = [1,3,4,4,5,7,8,9]
+right = [2,4,6,7,8,8,10,12,13,14]
+</code></pre></div>
+<p>To compare the respective first elements of our left and right cabinets, we’ll use the following <code>if</code> statements (which won’t be ready to run until we fill in the --snip-- sections):</p>
+<div class="highlight"><pre><span></span><code>   if left[0] &gt; right[0]:
+    --snip--
+   elif left[0] &lt;= right[0]:
+    --snip--
+</code></pre></div>
+<p>Remember that if the first element of the left cabinet is lower than the first element of the right cabinet, we want to pop that element out of the left cabinet and insert it into the <code>newcabinet</code>, and vice versa. We can accomplish that by using Python’s built-in <code>pop()</code> function, inserting it into our <code>if</code> statements as follows:</p>
+<div class="highlight"><pre><span></span><code>if left[0] &gt; right[0]:
+    to_insert = right.pop(0)
+    newcabinet.append(to_insert)
+elif left[0] &lt;= right[0]:
+    to_insert = left.pop(0)
+    newcabinet.append(to_insert)
+</code></pre></div>
+<p>This process—checking the first elements of the left and right cabinets and popping the appropriate one into the new cabinet—needs to continue as long as both of the cabinets still have at least one file. That’s why we will nest these <code>if</code> statements inside a <code>while</code> loop that checks the minimum length of <code>left</code> and <code>right</code>. As long as both <code>left</code> and <code>right</code> contain at least one file, it will continue its process:</p>
+<div class="highlight"><pre><span></span><code>while(min(len(left),len(right)) &gt; 0):
+    if left[0] &gt; right[0]:
+        to_insert = right.pop(0)
+        newcabinet.append(to_insert)
+    elif left[0] &lt;= right[0]:
+        to_insert = left.pop(0)
+        newcabinet.append(to_insert)
+</code></pre></div>
+<p>Our <code>while</code> loop will stop executing as soon as either <code>left</code> or <code>right</code> runs out of files to insert. At that point, if <code>left</code> is empty, we’ll insert all the files in <code>right</code> at the end of the new cabinet in their current order, and vice versa. We can accomplish that final insertion as follows:</p>
+<div class="highlight"><pre><span></span><code>if(len(left) &gt; 0):
+    for i in left:
+        newcabinet.append(i)
+
+if(len(right) &gt; 0):
+    for i in right:
+        newcabinet.append(i)
+</code></pre></div>
+<p>Finally, we combine all of those snippets into our final merging algorithm in Python as shown in <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listing4-4">Listing 4-4</a>.</p>
+<div class="highlight"><pre><span></span><code>def merging(left,right):
+    newcabinet = []
+    while(min(len(left),len(right)) &gt; 0):
+        if left[0] &gt; right[0]:
+            to_insert = right.pop(0)
+            newcabinet.append(to_insert)
+        elif left[0] &lt;= right[0]:
+            to_insert = left.pop(0)
+            newcabinet.append(to_insert)
+    if(len(left) &gt; 0):
+        for i in left:
+            newcabinet.append(i)
+    if(len(right)&gt;0):
+        for i in right:
+            newcabinet.append(i)
+    return(newcabinet)
+
+left = [1,3,4,4,5,7,8,9]
+right = [2,4,6,7,8,8,10,12,13,14]
+
+newcab=merging(left,right)
+</code></pre></div>
+<p><a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listinganchor4-4">Listing 4-4:</a> An algorithm to merge two sorted lists</p>
+<p>The code in <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listing4-4">Listing 4-4</a> creates <code>newcab</code>, a single list that contains all elements of <code>left</code> and <code>right</code>, merged and in order. You can run <code>print(newcab)</code> to see that our merging function worked.</p>
+<h3 id="from-merging-to-sorting">From Merging to Sorting</h3>
+<p>Once we know how to merge, merge sort is within our grasp. Let’s start by creating a simple merge sort function that works only on lists that have two or fewer elements. A one-element list is already sorted, so if we pass that as the input to our merge sort function, we should just return it unaltered. If we pass a two-element list to our merge sort function, we can split that list into two one-element lists (that are therefore already sorted) and call our merging function on those one-element lists to get a final, sorted two-element list. The following Python function accomplishes what we need:</p>
+<div class="highlight"><pre><span></span><code>import math
+
+def mergesort_two_elements(cabinet):
+    newcabinet = []
+    if(len(cabinet) == 1):
+        newcabinet = cabinet
+    else:
+        left = cabinet[:math.floor(len(cabinet)/2)]
+        right = cabinet[math.floor(len(cabinet)/2):]
+        newcabinet = merging(left,right)
+    return(newcabinet)
+</code></pre></div>
+<p>This code relies on Python’s list indexing syntax to split whatever cabinet we want to sort into a left cabinet and a right cabinet. You can see in the lines that define <code>left</code> and <code>right</code> that we’re using <code>:math.floor(len(cabinet)/2)</code> and <code>math.floor(len(cabinet)/2):</code> to refer to the entire first half or the entire second half of the original cabinet, respectively. You can call this function with any one- or two-element cabinet—for example, <code>mergesort_two_elements([3,1])</code>—and see that it successfully returns a sorted cabinet.</p>
+<p>Next, let’s write a function that can sort a list that has four elements. If we split a four-element list into two sublists, each sublist will have two elements. We could follow our merging algorithm to combine these lists. However, recall that our merging algorithm is designed to combine two already sorted lists. These two lists may not be sorted, so using our merging algorithm will not successfully sort them. However, each of our sublists has only two elements, and we just wrote a function that can perform merge sort on lists with two elements. So we can split our four-element list into two sublists, call our merge sort function that works on two-element lists on each of those sublists, and then merge the two sorted lists together to get a sorted result with four elements. This Python function accomplishes that:</p>
+<div class="highlight"><pre><span></span><code>def mergesort_four_elements(cabinet):
+    newcabinet = []
+    if(len(cabinet) == 1):
+        newcabinet = cabinet
+    else:
+        left = mergesort_two_elements(cabinet[:math.floor(len(cabinet)/2)])
+        right = mergesort_two_elements(cabinet[math.floor(len(cabinet)/2):])
+        newcabinet = merging(left,right)
+    return(newcabinet)
+
+cabinet = [2,6,4,1]
+newcabinet = mergesort_four_elements(cabinet)
+</code></pre></div>
+<p>We could continue writing these functions to work on successively larger lists. But the breakthrough comes when we realize that we can collapse that whole process by using recursion. Consider the function in <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listing4-5">Listing 4-5</a>, and compare it to the preceding <code>mergesort_four_elements()</code> function.</p>
+<div class="highlight"><pre><span></span><code>def mergesort(cabinet):
+    newcabinet = []
+    if(len(cabinet) == 1):
+        newcabinet = cabinet
+    else:
+   1 left = mergesort(cabinet[:math.floor(len(cabinet)/2)])
+   2 right = mergesort(cabinet[math.floor(len(cabinet)/2):])
+        newcabinet = merging(left,right)
+    return(newcabinet)
+</code></pre></div>
+<p><a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listinganchor4-5">Listing 4-5:</a> Implementing merge sort with recursion</p>
+<p>You can see that this function is nearly identical to our <code>mergesort_four_elements()</code> to function. The crucial difference is that to create the sorted left and right cabinets, it doesn’t call another function that works on smaller lists. Rather, it calls itself on the smaller list 12. Merge sort is a <em>divide and conquer</em> algorithm. We start with a large, unsorted list. Then we split that list repeatedly into smaller and smaller chunks (the dividing) until we end up with sorted (conquered) one-item lists, and then we simply merge them back together successively until we have built back up to one big sorted list. We can call this merge sort function on a list of any size and check that it works:</p>
+<div class="highlight"><pre><span></span><code>cabinet = [4,1,3,2,6,3,18,2,9,7,3,1,2.5,-9]
+newcabinet = mergesort(cabinet)
+print(newcabinet)
+</code></pre></div>
+<p>When we put all of our merge sort code together, we get <a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listing4-6">Listing 4-6</a>.</p>
+<div class="highlight"><pre><span></span><code>def merging(left,right):
+    newcabinet = []
+    while(min(len(left),len(right)) &gt; 0):
+        if left[0] &gt; right[0]:
+            to_insert = right.pop(0)
+            newcabinet.append(to_insert)
+        elif left[0] &lt;= right[0]:
+            to_insert = left.pop(0)
+            newcabinet.append(to_insert)
+    if(len(left) &gt; 0):
+        for i in left:
+            newcabinet.append(i)
+    if(len(right) &gt; 0):
+        for i in right:
+            newcabinet.append(i)
+    return(newcabinet)
+
+import math
+
+def mergesort(cabinet):
+    newcabinet = []
+    if(len(cabinet) == 1):
+        newcabinet=cabinet
+    else:
+        left = mergesort(cabinet[:math.floor(len(cabinet)/2)])
+        right = mergesort(cabinet[math.floor(len(cabinet)/2):])
+        newcabinet = merging(left,right)
+    return(newcabinet)
+
+cabinet = [4,1,3,2,6,3,18,2,9,7,3,1,2.5,-9]
+newcabinet=mergesort(cabinet)
+</code></pre></div>
+<p><a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listinganchor4-6">Listing 4-6:</a> Our complete merge sort code</p>
+<p>You could add a step counter to your merge sort code to check how many steps it takes to run and how it compares to insertion sort. The merge sort process consists of successively splitting the initial cabinet into sublists and then merging those sublists back together, preserving the sorting order. Every time we split a list, we’re cutting it in half. The number of times a list of length <em>n</em> can be split in half before each sublist has only one element is about log(<em>n</em>) (where the log is to base 2), and the number of comparisons we have to make at each merge is at most <em>n</em>. So <em>n</em> or fewer comparisons for each of log(<em>n</em>) comparisons means that merge sort is O(n×log(n)), which may not seem impressive but actually makes it the state of the art for sorting. In fact, when we call Python’s built-in sorting function <code>sorted</code> as follows:</p>
+<div class="highlight"><pre><span></span><code>print(sorted(cabinet))
+</code></pre></div>
+<p>Python is using a hybrid version of merge sort and insertion sort behind the scenes to accomplish this sorting task. By learning merge sort and insertion sort, you’ve gotten up to speed with the quickest sorting algorithm computer scientists have been able to create, something that is used millions of times every day in every imaginable kind of application.</p>
+<h2 id="sleep-sort">Sleep Sort</h2>
+<p>The enormous negative influence that the internet has had on humanity is occasionally counterbalanced by a small, shining treasure that it provides. Occasionally, the bowels of the internet even produce a scientific discovery that creeps into the world outside the purview of scientific journals or the “establishment.” In 2011, an anonymous poster on the online image board 4chan proposed and provided code for a sorting algorithm that had never been published before and has since come to be called <em>sleep sort</em>.</p>
+<p>Sleep sort wasn’t designed to resemble any real-world situation, like inserting files into a filing cabinet. If we’re seeking an analogy, we might consider the task of allocating lifeboat spots on the <em>Titanic</em> as it began to sink. We might want to allow children and younger people the first chance to get on the lifeboats, and then allow older people to try to get one of the remaining spots. If we make an announcement like “younger people get on the boats before older people,” we’d face chaos as everyone would have to compare their ages—they would face a difficult sorting problem amidst the chaos of the sinking ship.</p>
+<p>A sleep-sort approach to the <em>Titanic</em> lifeboats would be the following. We would announce, “Everyone please stand still and count to your age: 1, 2, 3, . . . . As soon as you have counted up to your current age, step forward to get on a lifeboat.” We can imagine that 8-year-olds would finish their counting about one second before the 9-year-olds, and so would have a one-second head start and be able to get a spot on the boats before those who were 9. The 8- and 9-year-olds would similarly be able to get on the boats before the 10-year-olds, and so on. Without doing any comparisons at all, we’d rely on individuals’ ability to pause for a length of time proportional to the metric we want to sort on and then insert themselves, and the sorting would happen effortlessly after that—with no direct inter-person comparisons.</p>
+<p>This <em>Titanic</em> lifeboat process shows the idea of sleep sort: allow each element to insert itself directly, but only after a pause in proportion to the metric it’s being sorted on. From a programming perspective, these pauses are called <em>sleeps</em> and can be implemented in most languages.</p>
+<p>In Python, we can implement sleep sort as follows. We will import the <code>threading</code> module, which will enable us to create different computer processes for each element of our list to sleep and then insert itself. We’ll also import the <code>time.sleep</code> module, which will enable us to put our different “threads” to sleep for the appropriate length of time.</p>
+<div class="highlight"><pre><span></span><code>import threading
+from time import sleep
+
+def sleep_sort(i):
+    sleep(i)
+    global sortedlist
+    sortedlist.append(i)
+    return(i)
+
+items = [2, 4, 5, 2, 1, 7]
+sortedlist = []
+ignore_result = [threading.Thread(target = sleep_sort, args = (i,)).start() \for i in items]
+</code></pre></div>
+<p>The sorted list will be stored in the <code>sortedlist</code> variable, and you can ignore the list we create called <code>ignore_result</code>. You can see that one advantage of sleep sort is that it can be written concisely in Python. It’s also fun to print the <code>sortedlist</code> variable before the sorting is done (in this case, within about 7 seconds) because depending on exactly when you execute the <code>print</code> command, you’ll see a different list. However, sleep sort also has some major disadvantages. One of these is that because it’s not possible to sleep for a negative length of time, sleep sort cannot sort lists with negative numbers. Another disadvantage is that sleep sort’s execution is highly dependent on outliers—if you append 1,000 to the list, you’ll have to wait at least 1,000 seconds for the algorithm to finish executing. Yet another disadvantage is that numbers that are close to each other may be inserted in the wrong order if the threads are not executed perfectly concurrently. Finally, since sleep sort uses threading, it will not be able to execute (well) on hardware or software that does not enable threading (well).</p>
+<p>If we had to express sleep sort’s runtime in big O notation, we might say that it is <em>O</em>(<em>max</em>(<em>list</em>)). Unlike the runtime of every other well-known sorting algorithm, its runtime depends not on the size of the list but on the size of the elements of the list. This makes sleep sort hard to rely on, because we can only be confident about its performance with certain lists—even a short list may take far too long to sort if any of its elements are too large.</p>
+<p>There may never be a practical use for sleep sort, even on a sinking ship. I include it here for a few reasons. First, because it is so different from all other extant sorting algorithms, it reminds us that even the most stale and static fields of research have room for creativity and innovation, and it provides a refreshingly new perspective on what may seem like a narrow field. Second, because it was designed and published anonymously and probably by someone outside the mainstream of research and practice, it reminds us that great thoughts and geniuses are found not only in fancy universities, established journals, and top firms, but also among the uncredentialed and unrecognized. Third, it represents a fascinating new generation of algorithms that are “native to computers,” meaning that they are not a translation of something that can be done with a cabinet and two hands like many old algorithms, but are fundamentally based on capabilities that are unique to computers (in this case, sleeping and threading). Fourth, the computer-native ideas it relies on (sleeping and threading) are very useful and worth putting in any algorithmicist’s toolbox for use in designing other algorithms. And fifth, I have an idiosyncratic affection for it, maybe just because it is a strange, creative misfit or maybe because I like its method of self-organizing order and the fact that I can use it if I’m ever in charge of saving a sinking ship.</p>
+<h2 id="from-sorting-to-searching">From Sorting to Searching</h2>
+<p>Searching, like sorting, is fundamental to a variety of tasks in computer science (and in the rest of life). We may want to search for a name in a phone book, or (since we’re living after the year 2000) we may need to access a database and find a relevant record.</p>
+<p>Searching is often merely a corollary of sorting. In other words, once we have sorted a list, searching is very straightforward—the sorting is often the hard part.</p>
+<h3 id="binary-search">Binary Search</h3>
+<p><em>Binary search</em> is a quick and effective method for searching for an element in a sorted list. It works a little like a guessing game. Suppose that someone is thinking of a number from 1 to 100 and you are trying to guess it. You may guess 50 as your first guess. Your friend says that 50 is incorrect but allows you to guess again and gives you a hint: 50 is too high. Since 50 is too high, you guess 49. Again, you are incorrect, and your friend tells you that 49 is too high and gives you another chance to guess. You could guess 48, then 47, and so on until you get the right answer. But that could take a long time—if the correct number is 1, it will take you 50 guesses to get it, which seems like too many guesses considering there were only 100 total possibilities to begin with.</p>
+<p>A better approach is to take larger jumps after you find out whether your guess is too high or too low. If 50 is too high, consider what we could learn from guessing 40 next instead of 49. If 40 is too low, we have eliminated 39 possibilities (1–39) and we’ll definitely be able to guess in at most 9 more guesses (41–49). If 40 is too high, we’ve at least eliminated 9 possibilities (41–49) and we’ll definitely be able to guess in at most 39 more guesses (1–39). So in the worst case, guessing 40 narrows down the possibilities from 49 (1–49) to 39 (1–39). By contrast, guessing 49 narrows down the possibilities from 49 (1–49) to 48 (1–48) in the worst case. Clearly, guessing 40 is a better searching strategy than guessing 49.</p>
+<p>It turns out that the best searching strategy is to guess exactly the midpoint of the remaining possibilities. If you do that and then check whether your guess was too high or too low, you can always eliminate half of the remaining possibilities. If you eliminate half of the possibilities in each round of guessing, you can actually find the right value quite quickly (<em>O</em>(log(<em>n</em>)) for those keeping score at home). For example, a list with 1,000 items will require only 10 guesses to find any element with a binary search strategy. If we’re allowed to have only 20 guesses, we can correctly find the position of an element in a list with more than a million items. Incidentally, this is why we can write guessing-game apps that can correctly “read your mind” by asking only about 20 questions.</p>
+<p>To implement this in Python, we will start by defining upper and lower bounds for what location a file can occupy in a filing cabinet. The lower bound will be 0, and the upper bound will be the length of the cabinet:</p>
+<div class="highlight"><pre><span></span><code>sorted_cabinet = [1,2,3,4,5]
+upperbound = len(sorted_cabinet)
+lowerbound = 0
+</code></pre></div>
+<p>To start, we will guess that the file is in the middle of the cabinet. We’ll import Python’s <em>math</em> library to use the <code>floor()</code> function, which can convert decimals to integers. Remember that guessing the halfway point gives us the maximum possible amount of information:</p>
+<div class="highlight"><pre><span></span><code>import math
+guess = math.floor(len(sorted_cabinet)/2)
+</code></pre></div>
+<p>Next, we will check whether our guess is too low or too high. We’ll take a different action depending on what we find. We use the <code>looking_for</code> variable for the value we are searching for:</p>
+<div class="highlight"><pre><span></span><code>if(sorted_cabinet[guess] &gt; looking_for):
+    --snip--
+if(sorted_cabinet[guess] &lt; looking_for):
+    --snip--
+</code></pre></div>
+<p>If the file in the cabinet is too high, then we’ll make our guess the new upper bound, since there is no use looking any higher in the cabinet. Then our new guess will be lower—to be precise, it will be halfway between the current guess and the lower bound:</p>
+<div class="highlight"><pre><span></span><code>looking_for = 3
+if(sorted_cabinet[guess] &gt; looking_for):
+    upperbound = guess
+    guess = math.floor((guess + lowerbound)/2)
+</code></pre></div>
+<p>We follow an analogous process if the file in the cabinet is too low:</p>
+<div class="highlight"><pre><span></span><code>if(sorted_cabinet[guess] &lt; looking_for):
+    lowerbound = guess
+    guess = math.floor((guess + upperbound)/2)
+</code></pre></div>
+<p>Finally, we can put all of these pieces together into a <code>binarysearch()</code> function. The function contains a <em>while</em> loop that will run for as long as it takes until we find the part of the cabinet we’ve been looking for (<a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listing4-7">Listing 4-7</a>).</p>
+<div class="highlight"><pre><span></span><code>import math
+sortedcabinet = [1,2,3,4,5,6,7,8,9,10]
+
+def binarysearch(sorted_cabinet,looking_for):
+    guess = math.floor(len(sorted_cabinet)/2)
+    upperbound = len(sorted_cabinet)
+    lowerbound = 0
+    while(abs(sorted_cabinet[guess] - looking_for) &gt; 0.0001):
+        if(sorted_cabinet[guess] &gt; looking_for):
+            upperbound = guess
+            guess = math.floor((guess + lowerbound)/2)
+        if(sorted_cabinet[guess] &lt; looking_for):
+            lowerbound = guess
+            guess = math.floor((guess + upperbound)/2)
+    return(guess)
+
+print(binarysearch(sortedcabinet,8))
+</code></pre></div>
+<p><a href="https://learning.oreilly.com/library/view/dive-into-algorithms/9781098128210/c04.xhtml#listinganchor4-7">Listing 4-7:</a> An implementation of binary search</p>
+<p>The final output of this code tells us that the number 8 is at position 7 in our <code>sorted_cabinet</code>. This is correct (remember that the index of Python lists starts at 0). This strategy of guessing in a way that eliminates half of the remaining possibilities is useful in many domains. For example, it’s the basis for the most efficient strategy on average in the formerly popular board game <em>Guess Who</em>. It’s also the best way (in theory) to look words up in a large, unfamiliar dictionary.</p>
+<h3 id="applications-of-binary-search">Applications of Binary Search</h3>
+<p>Besides guessing games and word lookups, binary search is used in a few other domains. For example, we can use the idea of binary search when debugging code. Suppose that we have written some code that doesn’t work, but we aren’t sure which part is faulty. We can use a binary search strategy to find the problem. We split the code in half and run both halves separately. Whichever half doesn’t run properly is the half where the problem lies. Again, we split the problematic part in half, and test each half to further narrow down the possibilities until we find the offending line of code. A similar idea is implemented in the popular code version-control software Git as <code>git bisect</code> (although <code>git``bisect</code> iterates through temporally separated versions of the code rather than through lines in one version).</p>
+<p>Another application of binary search is inverting a mathematical function. For example, imagine that we have to write a function that can calculate the arcsin, or inverse sine, of a given number. In only a few lines, we can write a function that will call our <code>binarysearch()</code> function to get the right answer. To start, we need to define a domain; these are the values that we will search through to find a particular arcsin value. The <code>sine</code> function is periodic and takes on all of its possible values between –pi/2 and pi/2, so numbers in between those extremes will constitute our domain. Next, we calculate sine values for each value in the domain. We call <code>binarysearch()</code> to find the position of the number whose sine is the number we’re looking for, and return the domain value with the corresponding index, like so:</p>
+<div class="highlight"><pre><span></span><code>def inverse_sin(number):
+    domain = [x * math.pi/10000 - math.pi/2 for x in list(range(0,10000))]
+    the_range = [math.sin(x) for x in domain]
+    result = domain[binarysearch(the_range,number)]
+    return(result)
+</code></pre></div>
+<p>You can run <code>inverse_sin(0.9)</code> and see that this function returns the correct answer: about 1.12.</p>
+<p>This is not the only way to invert a function. Some functions can be inverted through algebraic manipulation. However, algebraic function inversion can be difficult or even impossible for many functions. The binary search method presented here, by contrast, can work for any function, and with its <em>O</em>(log(<em>n</em>)) runtime, it’s also lightning fast.</p>
+<h2 id="summary">Summary</h2>
+<p>Sorting and searching may feel mundane to you, as if you’ve taken a break from an adventure around the world to attend a seminar on folding laundry. Maybe so, but remember that if you can fold clothes efficiently, you can pack more gear for your trek up Kilimanjaro. Sorting and searching algorithms can be enablers, helping you build newer and greater things on their shoulders. Besides that, it’s worth studying sorting and searching algorithms closely because they are fundamental and common, and the ideas you see in them can be useful for the rest of your intellectual life. In this chapter, we discussed some fundamental and interesting sorting algorithms, plus binary search. We also discussed how to compare algorithms and use big O notation.</p>
+<p>In the next chapter, we’ll turn to a few applications of pure math. We’ll see how we can use algorithms to explore the mathematical world, and how the mathematical world can help us understand our own.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <!-- https://github.com/squidfunk/mkdocs-material/blob/master/material/partials/footer.html -->
+
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+        <a href="http://danielavalero.com" target="_blank" rel="noopener" md-footer-link">
+            danielavalero.com
+        </a>
+        
+          <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/DanielaValero/learn-in-public" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+        
+
+        <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.path", "navigation.top", "header.autohide"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../../assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>
